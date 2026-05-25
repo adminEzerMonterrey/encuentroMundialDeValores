@@ -258,22 +258,28 @@ export default function Speakers() {
         {/* ── Keynotes Grid ── */}
         <div className="speakers__keynotes-grid">
           {keynotesData.map((keynote, idx) => (
-            <article className="keynote-card reveal-up" key={idx}>
-              <div className="keynote-card__glow" aria-hidden="true" style={{ background: keynote.gradient || "rgba(124, 58, 237, 0.4)" }}></div>
-              <div className="keynote-card__inner">
-                <div className="keynote-card__avatar">
-                  {keynote.img ? <img src={keynote.img} alt={keynote.name} loading="lazy" /> : <span style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', fontSize: '3rem', fontWeight: 700, color: '#fff'}}>{keynote.initials}</span>}
-                  <div className="keynote-card__ring" aria-hidden="true"></div>
-                </div>
-                <div className="keynote-card__info">
-                  <span className="keynote-card__badge">✨ Principal</span>
-                  <h3 className="keynote-card__name">{keynote.name}</h3>
-                  <p className="keynote-card__company">{keynote.company} · {keynote.role}</p>
-                  <p className="keynote-card__talk">
-                    <span className="keynote-card__talk-icon">{keynote.talkIcon || "🎤"}</span>
-                    {keynote.talkName}
-                  </p>
-                  <p className="keynote-card__bio">{keynote.bio}</p>
+            <article className="keynote-card reveal-up noselect" key={idx}>
+              {Array.from({ length: 25 }).map((_, i) => (
+                <div key={i} className={`keynote-tracker tr-${i + 1}`}></div>
+              ))}
+              
+              <div className="keynote-3d-content">
+                <div className="keynote-card__glow" aria-hidden="true" style={{ background: keynote.gradient || "rgba(124, 58, 237, 0.4)" }}></div>
+                <div className="keynote-card__inner">
+                  <div className="keynote-card__avatar">
+                    {keynote.img ? <img src={keynote.img} alt={keynote.name} loading="lazy" /> : <span style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', fontSize: '3rem', fontWeight: 700, color: '#fff'}}>{keynote.initials}</span>}
+                    <div className="keynote-card__ring" aria-hidden="true"></div>
+                  </div>
+                  <div className="keynote-card__info">
+                    <span className="keynote-card__badge">✨ Principal</span>
+                    <h3 className="keynote-card__name">{keynote.name}</h3>
+                    <p className="keynote-card__company">{keynote.company} · {keynote.role}</p>
+                    <p className="keynote-card__talk">
+                      <span className="keynote-card__talk-icon">{keynote.talkIcon || "🎤"}</span>
+                      {keynote.talkName}
+                    </p>
+                    <p className="keynote-card__bio">{keynote.bio}</p>
+                  </div>
                 </div>
               </div>
             </article>

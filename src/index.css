@@ -3674,3 +3674,92 @@ html, body {
     font-size: 1.2rem;
   }
 }
+
+/* ── 3D Hover Card ── */
+.keynote-card {
+  position: relative;
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "tr-1 tr-2 tr-3 tr-4 tr-5"
+    "tr-6 tr-7 tr-8 tr-9 tr-10"
+    "tr-11 tr-12 tr-13 tr-14 tr-15"
+    "tr-16 tr-17 tr-18 tr-19 tr-20"
+    "tr-21 tr-22 tr-23 tr-24 tr-25";
+  border-radius: var(--radius-xl);
+  height: 100%;
+  perspective: 1200px;
+  overflow: visible !important;
+  isolation: auto !important;
+  box-shadow: none !important;
+}
+
+.keynote-tracker {
+  position: relative;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+}
+
+.keynote-3d-content {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 700ms ease-out, filter 300ms ease, box-shadow 300ms ease;
+  pointer-events: none;
+}
+
+.keynote-tracker:hover ~ .keynote-3d-content {
+  transition: 300ms;
+  filter: brightness(1.2);
+  box-shadow: 0 0 40px rgba(124, 58, 237, 0.5);
+}
+
+.tr-1 { grid-area: tr-1; } .tr-2 { grid-area: tr-2; } .tr-3 { grid-area: tr-3; } .tr-4 { grid-area: tr-4; } .tr-5 { grid-area: tr-5; }
+.tr-6 { grid-area: tr-6; } .tr-7 { grid-area: tr-7; } .tr-8 { grid-area: tr-8; } .tr-9 { grid-area: tr-9; } .tr-10 { grid-area: tr-10; }
+.tr-11 { grid-area: tr-11; } .tr-12 { grid-area: tr-12; } .tr-13 { grid-area: tr-13; } .tr-14 { grid-area: tr-14; } .tr-15 { grid-area: tr-15; }
+.tr-16 { grid-area: tr-16; } .tr-17 { grid-area: tr-17; } .tr-18 { grid-area: tr-18; } .tr-19 { grid-area: tr-19; } .tr-20 { grid-area: tr-20; }
+.tr-21 { grid-area: tr-21; } .tr-22 { grid-area: tr-22; } .tr-23 { grid-area: tr-23; } .tr-24 { grid-area: tr-24; } .tr-25 { grid-area: tr-25; }
+
+.tr-1:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(15deg) rotateY(-10deg); }
+.tr-2:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(15deg) rotateY(-5deg); }
+.tr-3:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(15deg) rotateY(0deg); }
+.tr-4:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(15deg) rotateY(5deg); }
+.tr-5:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(15deg) rotateY(10deg); }
+
+.tr-6:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(7.5deg) rotateY(-10deg); }
+.tr-7:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(7.5deg) rotateY(-5deg); }
+.tr-8:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(7.5deg) rotateY(0deg); }
+.tr-9:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(7.5deg) rotateY(5deg); }
+.tr-10:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(7.5deg) rotateY(10deg); }
+
+.tr-11:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(-10deg); }
+.tr-12:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(-5deg); }
+.tr-13:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(0deg); }
+.tr-14:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(5deg); }
+.tr-15:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(0deg) rotateY(10deg); }
+
+.tr-16:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(-7.5deg) rotateY(-10deg); }
+.tr-17:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(-7.5deg) rotateY(-5deg); }
+.tr-18:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(-7.5deg) rotateY(0deg); }
+.tr-19:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(-7.5deg) rotateY(5deg); }
+.tr-20:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(-7.5deg) rotateY(10deg); }
+
+.tr-21:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(-15deg) rotateY(-10deg); }
+.tr-22:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(-15deg) rotateY(-5deg); }
+.tr-23:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(-15deg) rotateY(0deg); }
+.tr-24:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(-15deg) rotateY(5deg); }
+.tr-25:hover ~ .keynote-3d-content { transition: 125ms ease-in-out; transform: rotateX(-15deg) rotateY(10deg); }
+
+.noselect {
+  user-select: none;
+}

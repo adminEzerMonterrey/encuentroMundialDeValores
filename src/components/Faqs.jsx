@@ -8,8 +8,7 @@ const faqData = [
   { q: '¿Los talleres requieren preparación previa?', a: 'No, las sesiones no requieren conocimiento previo. Están diseñadas para todos los niveles.' },
   { q: '¿Puedo asistir solo a algunas sesiones?', a: 'Sí. Puedes moverte libremente entre las salas durante los bloques simultáneos.' },
   { q: '¿Habrá comida?', a: 'Sí, hay un bloque de comida de 1:00 a 2:20 PM con networking activo y stands empresariales.' },
-  { q: '¿Puedo ir aunque no sea de UDEM?', a: 'Sí. Hay cupo para invitados de TEC y UANL, y de otras universidades de la región.' },
-  { q: '🎩 ¿Qué es el Boleto Dorado?', a: <>Al igual que en la fábrica de Willy Wonka, el <strong>Boleto Dorado</strong> es el premio más especial del evento. Al registrarte, participas automáticamente en la rifa. El ganador recibirá una sorpresa que permanecerá en secreto hasta el mismísimo día del evento. Solo el elegido lo descubrirá. ✨</> }
+  { q: '¿Puedo ir aunque no sea de UDEM?', a: 'Sí. Hay cupo para invitados de TEC y UANL, y de otras universidades de la región.' }
 ];
 
 export default function Faqs() {
@@ -21,30 +20,6 @@ export default function Faqs() {
 
   return (
     <>
-      <section className="golden-ticket-section reveal-up" aria-labelledby="goldenTicketHeading">
-        <div className="container">
-          <div className="golden-ticket-card">
-            <span className="golden-ticket-badge">✨ Premio Especial · Encuentro Mundial de Valores 2026</span>
-            <img
-              src="Speakers/golden_ticket.png"
-              alt="Boleto Dorado Encuentro Mundial de Valores 2026"
-              className="golden-ticket-img"
-              loading="lazy"
-            />
-            <h2 className="golden-ticket-question" id="goldenTicketHeading">
-              ¿Serás tú el ganador<br/>del boleto dorado?
-            </h2>
-            <p className="golden-ticket-sub">
-              Al registrarte, participas automáticamente en la rifa del <strong style={{color:'#FFD700'}}>Boleto Dorado</strong>.
-              Un premio sorpresa aguarda al ganador… algo que no olvidarás. Como en la fábrica de Willy Wonka,
-              el destino del premio es un secreto — solo el elegido lo descubrirá el día del evento. 🎩
-            </p>
-            <a href="#registro"
-               className="btn--golden"><span>🎟️ Regístrate y participa →</span></a>
-          </div>
-        </div>
-      </section>
-
       <section className="section faqs" id="faqs" aria-labelledby="faqsHeading">
         <div className="container container--narrow">
           <div className="section-header reveal-up">
