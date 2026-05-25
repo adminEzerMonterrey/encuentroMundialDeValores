@@ -60,8 +60,7 @@ function SpeakerCard({ speaker, index, isCurrent, onClick }) {
         <p className="sc-card__role">{speaker.role}</p>
         <p className="sc-card__bio">{speaker.bio}</p>
         <div className="sc-card__footer">
-          <span className="sc-card__talk">{speaker.talkIcon} {speaker.talkName}</span>
-          <a href="#agenda" className="btn btn--ghost btn--sm">Ver →</a>
+          <a href="#agenda" className="btn btn--ghost btn--sm">Ver charla →</a>
         </div>
       </div>
     </article>
@@ -74,6 +73,10 @@ const keynotesData = [
   { img: "Speakers/Mauricio_Martinez.jpg", initials: "MM", name: "Mauricio Martinez", company: "Actor", role: "Cantante Mexicano", bio: "Reconocido actor y cantante. Explorará el impacto de la Inteligencia Artificial en la creatividad, el arte y la escenificación.", gradient: "linear-gradient(135deg,#7C3AED,#06b6d4)", talkIcon: "🎭", talkName: "Ser Humano en escena" },
   { img: "Speakers/Farid_Dieck_Assad.jpg", initials: "FD", name: "Farid Dieck", company: "Creador de contenido", role: "Psicólogo y Conferencista", bio: "Reconocido creador de contenido y psicólogo, abordando temas de identidad y arte en la era del avance tecnológico.", gradient: "linear-gradient(135deg,#f59e0b,#ef4444)", talkIcon: "🗣️", talkName: "Ser Humano en escena" },
   { img: "Speakers/Mariana_Trevino.jpg", initials: "MT", name: "Mariana Treviño", company: "Actriz", role: "Actriz de Teatro y Cine", bio: "Destacada actriz mexicana de cine y televisión. Compartirá su perspectiva única sobre el arte y la identidad frente a la IA.", gradient: "linear-gradient(135deg,#db2777,#9333ea)", talkIcon: "🎬", talkName: "Ser Humano en escena" },
+  { img: "Speakers/Marian_Rojas_Estape.jpg", initials: "MR", name: "Marian Rojas Estapé", company: "Médica Psiquiatra", role: "Escritora y Conferencista", bio: "Destacada médica psiquiatra española, autora de best sellers. Explorará la reconexión interior en la era digital.", gradient: "linear-gradient(135deg,#db2777,#7C3AED)", talkIcon: "🧠", talkName: "La mente en la era digital" },
+  { img: "Speakers/Dr_Arumugam_Murukiah.jpg", initials: "AM", name: "Dr. Arumugam Murukiah", company: "Broadline Technologies", role: "Estratega Tecnológico", bio: "Líder en transformación digital con más de 4 décadas de experiencia. Innovador en salud pública y cadenas de suministro en la India.", gradient: "linear-gradient(135deg,#f59e0b,#ef4444)", talkIcon: "⚙️", talkName: "IA Humanizada" },
+  { img: "Speakers/Caroline_Sanchez_Crozier.jpg", initials: "CC", name: "Caroline Sanchez Crozier", company: "CSC Consulting Group", role: "CEO & Fundadora", bio: "Líder tecnológico y presidenta del Comité de Tecnología e IA de LULAC. Inmigrante mexicana y pionera en equidad digital.", gradient: "linear-gradient(135deg,#db2777,#9333ea)", talkIcon: "🤝", talkName: "Tecnología y Educación" },
+  { img: "Speakers/Dra_Melina_Uncapher.jpg", initials: "MU", name: "Dr. Melina Uncapher", company: "SETA-ED", role: "CEO y Fundadora", bio: "Neurocientífica educativa con más de 20 años en investigación. Cofundadora del Institute for Applied Neuroscience.", gradient: "linear-gradient(135deg,#008FD3,#00C4CC)", talkIcon: "🧠", talkName: "Neurociencia Educativa" },
 ];
 
 // Data Array to keep JSX clean
