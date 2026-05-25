@@ -100,8 +100,22 @@ export default function Hero() {
     <section className="hero" id="hero" aria-labelledby="heroHeadline">
       <canvas className="hero__canvas" id="heroCanvas" aria-hidden="true" ref={canvasRef}></canvas>
       <div className="hero__overlay" aria-hidden="true"></div>
+      
+      {/* Nuevo fondo futurista */}
+      <div className="hero__beam"></div>
+      <div className="hero__glow-sphere"></div>
+      
+      {/* Íconos flotantes */}
+      <div className="hero__floating-icons">
+        <div className="float-icon icon-1">🌐</div>
+        <div className="float-icon icon-2">💡</div>
+        <div className="float-icon icon-3">🤖</div>
+        <div className="float-icon icon-4">⚡</div>
+        <div className="float-icon icon-5">🔒</div>
+        <div className="float-icon icon-6">🚀</div>
+      </div>
+
       <div className="hero__content">
-        <p className="hero__eyebrow reveal-up">EMV PRESENTA</p>
         <h1 className="hero__title reveal-up" id="heroHeadline" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: '1.05', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
           <span className="hero__title-gradient" style={{fontSize: 'clamp(2.5rem, 7vw, 4.5rem)', fontWeight: 800}}>Humanismo</span>
           <span className="hero__title-white" style={{fontSize: 'clamp(2.5rem, 7vw, 4.5rem)', fontWeight: 800}}>Y Valores</span>
@@ -112,26 +126,27 @@ export default function Hero() {
           "Asegurando que el avance tecnológico se alinea con los valores humanos y la responsabilidad social"
         </p>
 
-        {/* ── Countdown ── */}
-        <div className="hero__countdown reveal-up" role="timer" aria-live="polite" aria-label="Tiempo restante para el evento">
-          <p className="hero__countdown-label">El evento comienza en</p>
-          <div className="hero__countdown-units">
-            {[{ v: timeLeft.days,    l: 'Días' },
-              { v: timeLeft.hours,   l: 'Horas' },
-              { v: timeLeft.minutes, l: 'Min' },
-              { v: timeLeft.seconds, l: 'Seg' }].map(({ v, l }) => (
-              <div className="hero__countdown-unit" key={l}>
-                <span className="hero__countdown-number" aria-label={`${v} ${l}`}>
-                  {String(v).padStart(2, '0')}
-                </span>
-                <span className="hero__countdown-name">{l}</span>
-              </div>
-            ))}
-          </div>
-          {timeLeft.done && (
-            <p className="hero__countdown-done">🎉 ¡El evento ha comenzado!</p>
-          )}
+        <div className="hero__ctas reveal-up" style={{ marginTop: '2rem', marginBottom: '4rem' }}>
+          <a href="#registro" className="btn btn--primary btn--pill">DESCUBRE MÁS</a>
         </div>
+
+        {/* ── Countdown / Stats Container ── */}
+        <div className="hero__stats-container reveal-up" role="timer" aria-live="polite">
+          {[{ v: timeLeft.days,    l: 'DÍAS' },
+            { v: timeLeft.hours,   l: 'HORAS' },
+            { v: timeLeft.minutes, l: 'MINUTOS' },
+            { v: timeLeft.seconds, l: 'SEGUNDOS' }].map(({ v, l }) => (
+            <div className="hero__stat-card" key={l}>
+              <span className="hero__stat-value">{String(v).padStart(2, '0')}</span>
+              <span className="hero__stat-label">{l}</span>
+            </div>
+          ))}
+        </div>
+        
+        {timeLeft.done && (
+          <p className="hero__countdown-done text-center mt-4">🎉 ¡El evento ha comenzado!</p>
+        )}
+
         <p className="hero__meta reveal-up">
           <span className="hero__date-badge" style={{color: '#00B8D4', borderColor: '#00B8D4', background: 'rgba(0,184,212,0.1)'}}>MONTERREY · 3 Y 4 DE OCTUBRE DE 2026</span>
           <span className="hero__location">Showcenter Complex, San Pedro Garza García</span>

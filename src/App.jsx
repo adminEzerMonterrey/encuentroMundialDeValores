@@ -12,46 +12,35 @@ import Footer from './components/Footer';
 
 // Splash Screen Component
 function SplashScreen({ onDone }) {
+  const [phase, setPhase] = React.useState('loading'); // 'loading', 'revealing', 'done'
+
   useEffect(() => {
-    // Lock scroll
     document.body.style.overflow = 'hidden';
-    document.body.style.position = 'fixed';
-    document.body.style.top = '0';
-    document.body.style.width = '100%';
-
-    const splash = document.getElementById('introSplash');
     
-    const t1 = setTimeout(() => {
-      splash?.classList.add('expanding');
-      const t2 = setTimeout(() => {
-        splash?.classList.add('done');
-        // Restore scroll
-        document.body.style.position = '';
-        document.body.style.top = '';
-        document.body.style.width = '';
-        document.body.style.overflow = '';
-        
-        onDone();
-      }, 1800);
-      return () => clearTimeout(t2);
-    }, 2400);
+    // Solo mostramos las barras por unos instantes antes de revelar
+    const t = setTimeout(() => {
+      setPhase('revealing');
+    }, 800); // 800ms de espera antes de abrir las cortinas
 
-    return () => {
-      clearTimeout(t1);
-      document.body.style.position = '';
-      document.body.style.top = '';
-      document.body.style.width = '';
-      document.body.style.overflow = '';
-    };
-  }, [onDone]);
+    return () => clearTimeout(t);
+  }, []);
+
+  useEffect(() => {
+    if (phase === 'revealing') {
+      setTimeout(() => {
+        document.body.style.overflow = '';
+        onDone();
+      }, 1200); // Tiempo que tardan las cortinas en subir
+    }
+  }, [phase, onDone]);
+
+  if (phase === 'done') return null;
 
   return (
-    <div className="intro-splash" id="introSplash">
-      <div className="intro-orb" id="introOrb">
-        <span className="intro-orb-label">EMV PRESENTA</span>
-        <span className="intro-orb-title">Encuentro <span className="accent">Mundial</span></span>
-        <span className="intro-orb-sub">2026</span>
-      </div>
+    <div className={`loading-screen ${phase === 'revealing' ? 'is-revealing' : ''}`}>
+      <div className="loading-overlay v1"></div>
+      <div className="loading-overlay v2"></div>
+      <div className="loading-overlay v3"></div>
     </div>
   );
 }
