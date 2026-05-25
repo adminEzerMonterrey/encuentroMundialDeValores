@@ -3616,3 +3616,50 @@ html, body {
 
 /* Cleanup old splash CSS */
 .intro-splash { display: none !important; }
+
+/* ── Mobile Responsive for Futuristic Hero & Loader ── */
+@media (max-width: 768px) {
+  .hero__stats-container {
+    gap: var(--space-3);
+  }
+  .hero__stat-card {
+    min-width: 80px;
+    padding: var(--space-3);
+  }
+  .hero__stat-value {
+    font-size: 2rem;
+  }
+  .hero__stat-label {
+    font-size: 0.7rem;
+  }
+  .float-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .loading-percentage {
+    font-size: 3rem;
+  }
+  .loading-label {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__stats-container {
+    gap: 8px;
+  }
+  .hero__stat-card {
+    min-width: 65px;
+    padding: 8px;
+  }
+  .hero__stat-value {
+    font-size: 1.5rem;
+  }
+  .hero__stat-label {
+    font-size: 0.6rem;
+  }
+  .loading-top {
+    font-size: 1.2rem;
+  }
+}
