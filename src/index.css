@@ -2927,11 +2927,11 @@ html, body {
 
 /* ── Keynotes Grid ── */
 .speakers__keynotes-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   margin-bottom: 4rem;
-  align-items: stretch;
 }
 
 /* ── Banner card ── */
