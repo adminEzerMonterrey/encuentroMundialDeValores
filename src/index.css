@@ -2862,6 +2862,14 @@ html, body {
   width: 100%;
 }
 
+/* ── Keynotes Grid ── */
+.speakers__keynotes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
 /* ── Banner card ── */
 .sp-cta-banner {
   position: relative;

@@ -83,22 +83,19 @@ function SpeakerCard({ speaker, index, isCurrent, onClick }) {
   );
 }
 
-// Keynote speaker — separate from carousel
-const keynote = {
-  img: "Speakers/Emma_Seppala.jpg",
-  initials: "ES",
-  name: "Emma Seppälä",
-  company: "Stanford",
-  role: "Directora Científica / Psicóloga",
-  talkName: "Calma en tiempos de inteligencia artificial: la ciencia del bienestar emocional",
-  bio: "Reconocida psicóloga de Stanford, investiga la felicidad y el bienestar. Autora de 'The Happiness Track'. Ha impartido clases en Stanford y Yale.",
-};
+// Keynotes (Main Speakers) — separate from carousel
+const keynotesData = [
+  { img: "Speakers/Mons_Rogelio_Cabrera_Lopez.jpg", initials: "RC", name: "Mons. Rogelio Cabrera López", company: "Arquidiócesis de Monterrey", role: "Arzobispo Metropolitano", bio: "Presidente emérito de la Conferencia del Episcopado Mexicano. Participa activamente en diálogos nacionales por la paz y justicia social.", gradient: "linear-gradient(135deg,#7C3AED,#06b6d4)", trackClass: "track-a", trackName: "Reconocimiento", talkIcon: "🏆", talkName: "Reconocimiento David Noel" },
+  { img: "Speakers/Mauricio_Martinez.jpg", initials: "MM", name: "Mauricio Martinez", company: "Actor", role: "Cantante Mexicano", bio: "Reconocido actor y cantante. Explorará el impacto de la Inteligencia Artificial en la creatividad, el arte y la escenificación.", gradient: "linear-gradient(135deg,#7C3AED,#06b6d4)", trackClass: "track-b", trackName: "Arte y Creatividad", talkIcon: "🎭", talkName: "Ser Humano en escena" },
+  { img: "Speakers/Farid_Dieck_Assad.jpg", initials: "FD", name: "Farid Dieck", company: "Creador de contenido", role: "Psicólogo y Conferencista", bio: "Reconocido creador de contenido y psicólogo, abordando temas de identidad y arte en la era del avance tecnológico.", gradient: "linear-gradient(135deg,#f59e0b,#ef4444)", trackClass: "track-b", trackName: "Arte y Creatividad", talkIcon: "🗣️", talkName: "Ser Humano en escena" },
+  { img: "Speakers/Mariana_Trevino.jpg", initials: "MT", name: "Mariana Treviño", company: "Actriz", role: "Actriz de Teatro y Cine", bio: "Destacada actriz mexicana de cine y televisión. Compartirá su perspectiva única sobre el arte y la identidad frente a la IA.", gradient: "linear-gradient(135deg,#db2777,#9333ea)", trackClass: "track-b", trackName: "Arte y Creatividad", talkIcon: "🎬", talkName: "Ser Humano en escena" },
+];
 
 // Data Array to keep JSX clean
 const speakersData = [
+  { img: "Speakers/Emma_Seppala.jpg", initials: "ES", name: "Emma Seppälä", company: "Stanford", role: "Directora Científica / Psicóloga", bio: "Reconocida psicóloga de Stanford, investiga la felicidad y el bienestar. Autora de 'The Happiness Track'. Ha impartido clases en Stanford y Yale.", gradient: "linear-gradient(135deg,#FF9900,#e65c00)", trackClass: "track-a", trackName: "Bienestar", talkIcon: "🧘‍♀️", talkName: "Calma en tiempos de IA" },
   { img: "Speakers/Marian_Rojas_Estape.jpg", initials: "MR", name: "Marian Rojas Estapé", company: "Médica Psiquiatra", role: "Escritora y Conferencista", bio: "Destacada médica psiquiatra española, autora de best sellers. Explorará la reconexión interior en la era digital.", gradient: "linear-gradient(135deg,#db2777,#7C3AED)", trackClass: "track-a", trackName: "IA & Salud", talkIcon: "🧠", talkName: "La mente en la era digital" },
   { img: "Speakers/Dan_Levy.jpg", initials: "DL", name: "Dan Levy", company: "Harvard Kennedy School", role: "Profesor Titular", bio: "Especializado en inteligencia artificial y métodos cuantitativos. Cofundador de Teachly y autor sobre enseñanza con IA.", gradient: "linear-gradient(135deg,#0078D4,#00c6ff)", trackClass: "track-c", trackName: "Educación", talkIcon: "📚", talkName: "Gobernanza de la IA" },
-  { img: "Speakers/Mons_Rogelio_Cabrera_Lopez.jpg", initials: "RC", name: "Mons. Rogelio Cabrera López", company: "Arquidiócesis de Monterrey", role: "Arzobispo Metropolitano", bio: "Presidente emérito de la Conferencia del Episcopado Mexicano. Participa activamente en diálogos nacionales por la paz y justicia social.", gradient: "linear-gradient(135deg,#7C3AED,#06b6d4)", trackClass: "track-a", trackName: "Reconocimiento", talkIcon: "🏆", talkName: "Reconocimiento David Noel" },
   { img: "Speakers/Dra_Maria_Cristina_Gonzalez.jpg", initials: "CG", name: "Dra. María Cristina González Parás", company: "EMV", role: "Directora General", bio: "Directora del Encuentro Mundial de Valores. Promotora incansable de la ética, los valores humanos y la responsabilidad social.", gradient: "linear-gradient(135deg,#db2777,#f59e0b)", trackClass: "track-a", trackName: "Reconocimiento", talkIcon: "🏆", talkName: "Apertura y Reconocimiento" },
   { img: "Speakers/Dr_Arumugam_Murukiah.jpg", initials: "AM", name: "Dr. Arumugam Murukiah", company: "Broadline Technologies", role: "Estratega Tecnológico", bio: "Líder en transformación digital con más de 4 décadas de experiencia. Innovador en salud pública y cadenas de suministro en la India.", gradient: "linear-gradient(135deg,#f59e0b,#ef4444)", trackClass: "track-a", trackName: "Autonomía Humana", talkIcon: "⚙️", talkName: "IA Humanizada" },
   { img: "Speakers/Caroline_Sanchez_Crozier.jpg", initials: "CC", name: "Caroline Sanchez Crozier", company: "CSC Consulting Group", role: "CEO & Fundadora", bio: "Líder tecnológico y presidenta del Comité de Tecnología e IA de LULAC. Inmigrante mexicana y pionera en equidad digital.", gradient: "linear-gradient(135deg,#db2777,#9333ea)", trackClass: "track-c", trackName: "Inclusión Social", talkIcon: "🤝", talkName: "Tecnología y Educación" },
@@ -114,9 +111,6 @@ const speakersData = [
   { img: "Speakers/Santos_Guzman_Lopez_UANL.jpg", initials: "SG", name: "Santos Guzmán López", company: "UANL", role: "Rector", bio: "Médico y doctor en Medicina. Promueve la excelencia académica, inclusión e innovación con un profundo enfoque humanista.", gradient: "linear-gradient(135deg,#f59e0b,#008FD3)", trackClass: "track-c", trackName: "Educación Superior", talkIcon: "🎓", talkName: "IA en la Educación" },
   { img: "Speakers/Jorge_Ramos.jpg", initials: "JR", name: "Jorge Ramos", company: "Periodista", role: "Escritor y Periodista", bio: "Influyente periodista hispanohablante y escritor. Cubrió eventos históricos y es autor de 15 libros sobre política e inmigración.", gradient: "linear-gradient(135deg,#db2777,#7C3AED)", trackClass: "track-a", trackName: "Autonomía Humana", talkIcon: "🎙️", talkName: "Compromiso con la verdad" },
   { img: "Speakers/Mimi_Edmunds.jpg", initials: "ME", name: "Marian Mimi Edmunds", company: "Periodista", role: "Productora Documental", bio: "Experimentada periodista e investigadora. Ex colaboradora de CBS, PBS y Discovery Network, con múltiples nominaciones al Emmy.", gradient: "linear-gradient(135deg,#0078D4,#00c6ff)", trackClass: "track-a", trackName: "Autonomía Humana", talkIcon: "🎥", talkName: "Compromiso con la verdad" },
-  { img: "Speakers/Mauricio_Martinez.jpg", initials: "MM", name: "Mauricio Martinez", company: "Actor", role: "Cantante Mexicano", bio: "Reconocido actor y cantante. Explorará el impacto de la Inteligencia Artificial en la creatividad, el arte y la escenificación.", gradient: "linear-gradient(135deg,#7C3AED,#06b6d4)", trackClass: "track-b", trackName: "Arte y Creatividad", talkIcon: "🎭", talkName: "Ser Humano en escena" },
-  { img: "Speakers/Farid_Dieck_Assad.jpg", initials: "FD", name: "Farid Dieck", company: "Creador de contenido", role: "Psicólogo y Conferencista", bio: "Reconocido creador de contenido y psicólogo, abordando temas de identidad y arte en la era del avance tecnológico.", gradient: "linear-gradient(135deg,#f59e0b,#ef4444)", trackClass: "track-b", trackName: "Arte y Creatividad", talkIcon: "🗣️", talkName: "Ser Humano en escena" },
-  { img: "Speakers/Mariana_Trevino.jpg", initials: "MT", name: "Mariana Treviño", company: "Actriz", role: "Actriz de Teatro y Cine", bio: "Destacada actriz mexicana de cine y televisión. Compartirá su perspectiva única sobre el arte y la identidad frente a la IA.", gradient: "linear-gradient(135deg,#db2777,#9333ea)", trackClass: "track-b", trackName: "Arte y Creatividad", talkIcon: "🎬", talkName: "Ser Humano en escena" },
   { img: "Speakers/David_Eaton.jpg", initials: "DE", name: "David Eaton", company: "Rotary Distrito 4130", role: "Gobernador Electo", bio: "Líder empresarial y ambientalista, ex directivo de CPKC Railroad e impulsor de importantes iniciativas de conservación.", gradient: "linear-gradient(135deg,#008FD3,#00C4CC)", trackClass: "track-a", trackName: "Rotarios", talkIcon: "🌍", talkName: "Liderazgo Rotario" },
   { img: "", initials: "SR", name: "Salvador Rizzo Tavares", company: "Grupo RIZZO", role: "CEO & Fundador", bio: "Empresario tecnológico y Director de Rotary International. Pionero en aulas inteligentes y educación digital en Latam.", gradient: "linear-gradient(135deg,#059669,#6C63FF)", trackClass: "track-a", trackName: "Rotarios", talkIcon: "💻", talkName: "Innovación Tecnológica" },
   { img: "Speakers/Padre_David_Jasso.jpg", initials: "DJ", name: "Padre David Jasso", company: "Arquidiócesis de Monterrey", role: "Sacerdote", bio: "Sacerdote, comunicólogo y ex directivo del Club Rayados. Promotor del talento humano y la pastoral social latinoamericana.", gradient: "linear-gradient(135deg,#FF9900,#e65c00)", trackClass: "track-a", trackName: "Espiritualidad", talkIcon: "🕊️", talkName: "Conexión y Fe" },
@@ -261,27 +255,30 @@ export default function Speakers() {
           <p className="section-subtitle">Líderes de la industria tech compartiendo su visión del futuro.</p>
         </div>
 
-        {/* ── Keynote Featured Card ── */}
-        <article className="keynote-card reveal-up" id="keynoteCard">
-          <div className="keynote-card__glow" aria-hidden="true"></div>
-          <div className="keynote-card__inner">
-            <div className="keynote-card__avatar">
-              <img src={keynote.img} alt={keynote.name} loading="lazy" />
-              <div className="keynote-card__ring" aria-hidden="true"></div>
-            </div>
-            <div className="keynote-card__info">
-              <span className="keynote-card__badge">✨ Keynote Speaker</span>
-              <h3 className="keynote-card__name">{keynote.name}</h3>
-              <p className="keynote-card__company">{keynote.company} · {keynote.role}</p>
-              <p className="keynote-card__talk">
-                <span className="keynote-card__talk-icon">🎤</span>
-                {keynote.talkName}
-              </p>
-              <p className="keynote-card__bio">{keynote.bio}</p>
-              <a href="#agenda" className="btn btn--ghost btn--sm">Ver en agenda →</a>
-            </div>
-          </div>
-        </article>
+        {/* ── Keynotes Grid ── */}
+        <div className="speakers__keynotes-grid">
+          {keynotesData.map((keynote, idx) => (
+            <article className="keynote-card reveal-up" key={idx}>
+              <div className="keynote-card__glow" aria-hidden="true" style={{ background: keynote.gradient || "rgba(124, 58, 237, 0.4)" }}></div>
+              <div className="keynote-card__inner">
+                <div className="keynote-card__avatar">
+                  {keynote.img ? <img src={keynote.img} alt={keynote.name} loading="lazy" /> : <span style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', fontSize: '3rem', fontWeight: 700, color: '#fff'}}>{keynote.initials}</span>}
+                  <div className="keynote-card__ring" aria-hidden="true"></div>
+                </div>
+                <div className="keynote-card__info">
+                  <span className="keynote-card__badge">✨ Principal</span>
+                  <h3 className="keynote-card__name">{keynote.name}</h3>
+                  <p className="keynote-card__company">{keynote.company} · {keynote.role}</p>
+                  <p className="keynote-card__talk">
+                    <span className="keynote-card__talk-icon">{keynote.talkIcon || "🎤"}</span>
+                    {keynote.talkName}
+                  </p>
+                  <p className="keynote-card__bio">{keynote.bio}</p>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
 
       <div className="sc-wrap reveal-up">
