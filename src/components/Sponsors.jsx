@@ -202,50 +202,25 @@ export default function Sponsors() {
         </div>
       </section>
 
-      {/* ═══════════ UBICACIÓN — CIRCULAR MAP ═══════════ */}
+      {/* ═══════════ UBICACIÓN ═══════════ */}
       <section className="section ubicacion" id="ubicacion" aria-labelledby="ubicacionHeading">
         <div className="container">
           <div className="section-header section-header--left reveal-up">
             <span className="section-tag">05 / UBICACIÓN</span>
-            <h2 className="section-title" id="ubicacionHeading">Ubicación</h2>
+            <h2 className="section-title" id="ubicacionHeading">Sedes del Evento</h2>
             <p className="section-subtitle section-subtitle--left">Nos vemos en <span className="text-accent">San Pedro Garza
-                García,</span> <span className="text-lime">Nuevo León</span></p>
+                García</span> y <span className="text-lime">Monterrey</span>, Nuevo León</p>
           </div>
 
-          <div className="ubicacion-layout reveal-up">
-            {/* Circular map bubble */}
-            <div className="ubicacion-globe-wrap">
-              <div className="ubicacion-venue-label" aria-hidden="true">UDEM — CAMPUS SAN PEDRO<br/>ESTOA NIVEL B, SALAS 5, 7, 8, 9 Y 10
-              </div>
-              <div className="ubicacion-globe">
-                <iframe className="ubicacion-iframe" title="Mapa UDEM Campus San Pedro" loading="lazy"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.3!2d-100.3942!3d25.6607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662953ec6b7af35%3A0x5a5a5a5a5a5a5a5a!2sUniversidad+de+Monterrey!5e0!3m2!1ses!2smx!4v1680000000000"
-                  allowFullScreen="" aria-label="Mapa de UDEM San Pedro Garza García"></iframe>
-              </div>
-              <div className="ubicacion-pin-icon" aria-hidden="true">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    fill="var(--color-accent)" />
-                </svg>
-              </div>
-            </div>
-
-            {/* Info panel */}
-            <div className="ubicacion-info-panel">
-              <div className="ubicacion-info-row">
-                <span className="ubicacion-info-icon">🏛️</span>
-                <div>
-                  <p className="ubicacion-info-label">Venue</p>
-                  <p className="ubicacion-info-value">UDEM — ESTOA Nivel B</p>
-                  <p className="ubicacion-info-sub">Salas 5, 7, 8, 9 y 10</p>
-                </div>
-              </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }} className="reveal-up">
+            {/* Showcenter */}
+            <div className="ubicacion-info-panel" style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--color-text-primary)' }}>Día 1: Showcenter</h3>
               <div className="ubicacion-info-row">
                 <span className="ubicacion-info-icon">📍</span>
                 <div>
                   <p className="ubicacion-info-label">Dirección</p>
-                  <p className="ubicacion-info-value">Ave. Ignacio Morones Prieto 4500 Pte.</p>
+                  <p className="ubicacion-info-value">Showcenter Complex</p>
                   <p className="ubicacion-info-sub">San Pedro Garza García, N.L.</p>
                 </div>
               </div>
@@ -253,14 +228,38 @@ export default function Sponsors() {
                 <span className="ubicacion-info-icon">📅</span>
                 <div>
                   <p className="ubicacion-info-label">Fecha y hora</p>
-                  <p className="ubicacion-info-value">21 de Abril 2026</p>
-                  <p className="ubicacion-info-sub">9:00 AM – 5:00 PM</p>
+                  <p className="ubicacion-info-value">3 de Octubre 2026</p>
+                  <p className="ubicacion-info-sub">9:00 AM – 6:30 PM</p>
                 </div>
               </div>
-              <a href="https://maps.google.com/?q=UDEM+San+Pedro+Garza+Garcia+Nuevo+Leon" target="_blank"
-                rel="noopener noreferrer" className="btn btn--primary btn--lg ubicacion-cta btn--starry">
+              <a href="https://maps.app.goo.gl/3soFQcgwREkTLrG8A" target="_blank"
+                rel="noopener noreferrer" className="btn btn--primary btn--lg ubicacion-cta btn--full" style={{marginTop: 'auto'}}>
                 Ver en Google Maps →
-                <div className="star-1"><svg xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" version="1.1" viewBox="0 0 784.11 815.53"><g><path className="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"></path></g></svg></div><div className="star-2"><svg xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" version="1.1" viewBox="0 0 784.11 815.53"><g><path className="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"></path></g></svg></div><div className="star-3"><svg xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" version="1.1" viewBox="0 0 784.11 815.53"><g><path className="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"></path></g></svg></div><div className="star-4"><svg xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" version="1.1" viewBox="0 0 784.11 815.53"><g><path className="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"></path></g></svg></div><div className="star-5"><svg xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" version="1.1" viewBox="0 0 784.11 815.53"><g><path className="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"></path></g></svg></div><div className="star-6"><svg xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" version="1.1" viewBox="0 0 784.11 815.53"><g><path className="fil0" d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"></path></g></svg></div>
+              </a>
+            </div>
+
+            {/* Cintermex */}
+            <div className="ubicacion-info-panel" style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--color-text-primary)' }}>Día 2: Cintermex</h3>
+              <div className="ubicacion-info-row">
+                <span className="ubicacion-info-icon">📍</span>
+                <div>
+                  <p className="ubicacion-info-label">Dirección</p>
+                  <p className="ubicacion-info-value">Cintermex</p>
+                  <p className="ubicacion-info-sub">Monterrey, N.L.</p>
+                </div>
+              </div>
+              <div className="ubicacion-info-row">
+                <span className="ubicacion-info-icon">📅</span>
+                <div>
+                  <p className="ubicacion-info-label">Fecha y hora</p>
+                  <p className="ubicacion-info-value">4 de Octubre 2026</p>
+                  <p className="ubicacion-info-sub">9:00 AM – 1:00 PM</p>
+                </div>
+              </div>
+              <a href="https://maps.app.goo.gl/V8zw5poX5C9VxUqF9" target="_blank"
+                rel="noopener noreferrer" className="btn btn--primary btn--lg ubicacion-cta btn--full" style={{marginTop: 'auto'}}>
+                Ver en Google Maps →
               </a>
             </div>
           </div>
