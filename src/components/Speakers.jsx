@@ -46,38 +46,24 @@ function SpeakerCard({ speaker, index, isCurrent, onClick }) {
       tabIndex="0"
       onClick={onClick}
     >
-      <div className="sc-card__av" style={{ '--g': speaker.gradient }}>
-        {speaker.img ? <img src={speaker.img} alt={speaker.name} loading="lazy" /> : <span>{speaker.initials}</span>}
-      </div>
-      <div className="sc-card__body">
+      {/* Photo */}
+      <div className="sc-card__photo">
+        {speaker.img
+          ? <img src={speaker.img} alt={speaker.name} loading="lazy" />
+          : <div className="sc-card__photo-fallback" style={{ '--gradient': speaker.gradient }}>{speaker.initials}</div>}
         <span className={`sc-card__badge ${speaker.trackClass}`}>{speaker.trackName}</span>
+      </div>
+
+      {/* Info */}
+      <div className="sc-card__body">
         <h3 className="sc-card__name">{speaker.name}</h3>
         <p className="sc-card__company">{speaker.company}</p>
         <p className="sc-card__role">{speaker.role}</p>
         <p className="sc-card__bio">{speaker.bio}</p>
         <div className="sc-card__footer">
           <span className="sc-card__talk">{speaker.talkIcon} {speaker.talkName}</span>
-          <a href="#agenda" className="btn btn--ghost btn--sm">Ver en agenda →</a>
+          <a href="#agenda" className="btn btn--ghost btn--sm">Ver →</a>
         </div>
-      </div>
-
-      {/* Cyber Inject */}
-      <div className="sc-card-glare" aria-hidden="true"></div>
-      <div className="sc-scan-line" aria-hidden="true"></div>
-      <div className="sc-cyber-lines" aria-hidden="true">
-        <span></span><span></span><span></span><span></span>
-      </div>
-      <div className="sc-glowing-elements" aria-hidden="true">
-        <div className="sc-glow-orb"></div>
-        <div className="sc-glow-orb"></div>
-        <div className="sc-glow-orb"></div>
-      </div>
-      <div className="sc-particles" aria-hidden="true">
-        <span></span><span></span><span></span>
-        <span></span><span></span><span></span>
-      </div>
-      <div className="sc-corners" aria-hidden="true">
-        <span></span><span></span><span></span><span></span>
       </div>
     </article>
   );
@@ -262,24 +248,26 @@ export default function Speakers() {
               {Array.from({ length: 25 }).map((_, i) => (
                 <div key={i} className={`keynote-tracker tr-${i + 1}`}></div>
               ))}
-              
+
               <div className="keynote-3d-content">
-                <div className="keynote-card__glow" aria-hidden="true" style={{ background: keynote.gradient || "rgba(124, 58, 237, 0.4)" }}></div>
-                <div className="keynote-card__inner">
-                  <div className="keynote-card__avatar">
-                    {keynote.img ? <img src={keynote.img} alt={keynote.name} loading="lazy" /> : <span style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', fontSize: '3rem', fontWeight: 700, color: '#fff'}}>{keynote.initials}</span>}
-                    <div className="keynote-card__ring" aria-hidden="true"></div>
-                  </div>
-                  <div className="keynote-card__info">
-                    <span className="keynote-card__badge">✨ Principal</span>
-                    <h3 className="keynote-card__name">{keynote.name}</h3>
-                    <p className="keynote-card__company">{keynote.company} · {keynote.role}</p>
-                    <p className="keynote-card__talk">
-                      <span className="keynote-card__talk-icon">{keynote.talkIcon || "🎤"}</span>
-                      {keynote.talkName}
-                    </p>
-                    <p className="keynote-card__bio">{keynote.bio}</p>
-                  </div>
+                {/* Photo */}
+                <div className="keynote-card__photo">
+                  {keynote.img
+                    ? <img src={keynote.img} alt={keynote.name} loading="lazy" />
+                    : <div className="keynote-card__photo-fallback" style={{ background: keynote.gradient }}>{keynote.initials}</div>}
+                  <span className={`keynote-card__badge ${keynote.trackClass}`}>✨ Principal</span>
+                </div>
+
+                {/* Info */}
+                <div className="keynote-card__body">
+                  <h3 className="keynote-card__name">{keynote.name}</h3>
+                  <p className="keynote-card__company">{keynote.company}</p>
+                  <p className="keynote-card__role">{keynote.role}</p>
+                  <p className="keynote-card__talk">
+                    <span className="keynote-card__talk-icon">{keynote.talkIcon || "🎤"}</span>
+                    {keynote.talkName}
+                  </p>
+                  <p className="keynote-card__bio">{keynote.bio}</p>
                 </div>
               </div>
             </article>
