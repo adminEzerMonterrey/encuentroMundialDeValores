@@ -123,7 +123,7 @@ export default function Hero() {
           <span className="hero__title-gradient" style={{fontSize: 'clamp(2.8rem, 8vw, 5rem)', fontWeight: 800, lineHeight: '0.95', textAlign: 'center'}}>Inteligencia<br/>Artificial</span>
         </h1>
         <p className="hero__tagline reveal-up" style={{ fontStyle: 'italic', maxWidth: '700px', margin: '1rem auto 2rem', fontSize: 'clamp(0.9rem, 2.5vw, 1.15rem)', lineHeight: '1.5' }}>
-          "Asegurando que el avance tecnológico se alinea con los valores humanos y la responsabilidad social"
+          "Asegurando que el avance tecnológico se alinee con los valores humanos y la responsabilidad social"
         </p>
 
         <div className="hero__ctas reveal-up" style={{ marginTop: '2rem', marginBottom: '4rem' }}>
@@ -149,7 +149,7 @@ export default function Hero() {
 
         <p className="hero__meta reveal-up">
           <span className="hero__date-badge" style={{color: '#00B8D4', borderColor: '#00B8D4', background: 'rgba(0,184,212,0.1)'}}>MONTERREY · 3 Y 4 DE OCTUBRE DE 2026</span>
-          <span className="hero__location">Showcenter Complex, San Pedro Garza García</span>
+          <span className="hero__location">Showcenter (Día 1) & Cintermex (Día 2)</span>
           <span className="hero__ticket-price" aria-label="Costo del boleto: $80 pesos mexicanos — precio anticipado">
             🎟️ Boleto <strong>$80 MXN</strong>
             <span className="hero__ticket-tag">precio anticipado</span>

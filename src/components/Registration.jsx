@@ -27,37 +27,37 @@ export default function Registration() {
                   <path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"/>
                 </svg>
               </div>
-              <span className="reg-card__tag reg-card__tag--internal">Comunidad UDEM</span>
-              <h3 className="reg-card__title">Estudiante Interno</h3>
+              <span className="reg-card__tag reg-card__tag--internal">Entrada General</span>
+              <h3 className="reg-card__title">Asistente General</h3>
               <p className="reg-card__desc">
-                ¿Eres estudiante, profesor o colaborador de la UDEM? Este registro es para ti.
+                Acceso completo a todas las conferencias, paneles y actividades en Showcenter y Cintermex.
               </p>
               <ul className="reg-card__perks">
                 <li>
-                  <span className="reg-card__perk-icon" aria-hidden="true">🎓</span>
-                  <span>Registro con matrícula UDEM</span>
+                  <span className="reg-card__perk-icon" aria-hidden="true">🎫</span>
+                  <span>Acceso a los 2 días de evento</span>
                 </li>
                 <li>
                   <span className="reg-card__perk-icon" aria-hidden="true">🍽️</span>
-                  <span>Comida & catering incluido</span>
+                  <span>Coffee breaks y áreas de networking</span>
                 </li>
                 <li>
                   <span className="reg-card__perk-icon" aria-hidden="true">🎁</span>
-                  <span>Rifa de premios exclusivos</span>
+                  <span>Kit de bienvenida y sorpresas</span>
                 </li>
               </ul>
               <div className="reg-card__price">
-                <span className="reg-card__price-amount">$80 <small>MXN</small></span>
-                <span className="reg-card__price-label">precio anticipado</span>
+                <span className="reg-card__price-amount">$1,500 <small>MXN</small></span>
+                <span className="reg-card__price-label">precio de preventa</span>
               </div>
               <a
-                href="https://forms.gle/mekWvaAYoASKALE17"
+                href="https://www.encuentromundialdevalores.org"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn--primary btn--lg btn--full reg-card__cta"
                 id="regInternalBtn"
               >
-                Registrarme como interno →
+                Comprar mi boleto →
               </a>
             </div>
             {/* Decorative corners */}
@@ -81,37 +81,37 @@ export default function Registration() {
                   <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                 </svg>
               </div>
-              <span className="reg-card__tag reg-card__tag--external">Comunidad Externa</span>
-              <h3 className="reg-card__title">Estudiante Externo</h3>
+              <span className="reg-card__tag reg-card__tag--external">Estudiantes y Maestros</span>
+              <h3 className="reg-card__title">Boleto Estudiantil</h3>
               <p className="reg-card__desc">
-                ¿Vienes de otra universidad o institución? Bienvenido a Encuentro Mundial de Valores 2026.
+                ¿Eres estudiante o maestro activo? Disfruta de un precio preferencial en el EMV 2026.
               </p>
               <ul className="reg-card__perks">
                 <li>
-                  <span className="reg-card__perk-icon" aria-hidden="true">🌐</span>
-                  <span>Abierto a todas las universidades</span>
+                  <span className="reg-card__perk-icon" aria-hidden="true">🎓</span>
+                  <span>Descuento especial con credencial</span>
                 </li>
                 <li>
-                  <span className="reg-card__perk-icon" aria-hidden="true">🍽️</span>
-                  <span>Comida & catering incluido</span>
+                  <span className="reg-card__perk-icon" aria-hidden="true">🎫</span>
+                  <span>Acceso a los 2 días de evento</span>
                 </li>
                 <li>
                   <span className="reg-card__perk-icon" aria-hidden="true">🤝</span>
-                  <span>Networking con la comunidad tech</span>
+                  <span>Networking con grandes líderes</span>
                 </li>
               </ul>
               <div className="reg-card__price">
-                <span className="reg-card__price-amount">$80 <small>MXN</small></span>
-                <span className="reg-card__price-label">precio anticipado</span>
+                <span className="reg-card__price-amount">$500 <small>MXN</small></span>
+                <span className="reg-card__price-label">precio de preventa</span>
               </div>
               <a
-                href="https://forms.gle/AB37gPTKFFnn18q5A"
+                href="https://www.encuentromundialdevalores.org"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn--lg btn--full reg-card__cta reg-card__cta--external"
                 id="regExternalBtn"
               >
-                Registrarme como externo →
+                Comprar mi boleto →
               </a>
             </div>
             {/* Decorative corners */}

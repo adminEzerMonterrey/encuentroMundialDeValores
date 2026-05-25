@@ -46,8 +46,8 @@ export default function Footer() {
           </nav>
         </div>
         <div className="footer__bottom">
-          <p>© 2026 EMV — Universidad de Monterrey. Organizado con 💜 por estudiantes de EMV.</p>
-          <p className="footer__legal">Evento gratuito · 250 lugares disponibles · San Pedro Garza García, N.L.</p>
+          <p>© 2026 Encuentro Mundial de Valores. Todos los derechos reservados.</p>
+          <p className="footer__legal">Evento presencial · Monterrey, México · <a href="https://www.encuentromundialdevalores.org" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'underline'}}>www.encuentromundialdevalores.org</a></p>
         </div>
       </div>
     </footer>
