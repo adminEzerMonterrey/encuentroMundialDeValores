@@ -589,36 +589,115 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .agenda-tab:hover{color:var(--color-text-primary);border-color:var(--color-accent)}
 .agenda-tab.active{background:var(--color-accent);border-color:var(--color-accent);color:#fff;box-shadow:var(--shadow-glow)}
 
-/* Table */
-.agenda-table{border:1px solid var(--color-border-subtle);border-radius:var(--radius-lg);overflow:hidden}
-.agenda-table__head{display:grid;grid-template-columns:160px 200px 1fr;gap:0;padding:16px 32px;background:rgba(255,255,255,.03);border-bottom:1px solid var(--color-border-subtle)}
-.agenda-table__head span{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.14em;color:var(--color-text-muted);text-transform:uppercase}
 
-.ag-row{display:grid;grid-template-columns:160px 200px 1fr;gap:0;padding:28px 32px;border-bottom:1px solid var(--color-border-subtle);transition:background var(--transition-fast);align-items:center}
-.ag-row:last-child{border-bottom:none}
-.ag-row:hover{background:rgba(255,255,255,.025)}
-.ag-row--featured{background:rgba(139,92,246,.07);border-left:3px solid var(--color-accent)}
-.ag-row--featured:hover{background:rgba(139,92,246,.1)}
-.ag-row--break{background:rgba(26,188,156,.04);border-left:3px solid var(--color-lime)}
-.ag-row--block{background:rgba(22,27,46,.5);align-items:flex-start;padding-block:var(--space-3)}
-.ag-row--hidden{display:none}
+/* ── Agenda List Layout ── */
+.agenda-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: rgba(10, 15, 36, 0.4);
+}
 
-.ag-row__time{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.ag-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.ag-dot--accent{background:var(--color-accent);box-shadow:0 0 8px var(--color-accent-glow)}
-.ag-dot--lime{background:var(--color-lime);box-shadow:0 0 8px var(--color-lime-glow)}
-.ag-time{font-family:var(--font-mono);font-size:1.1rem;font-weight:700;color:#fff}
-.ag-dur{font-family:var(--font-mono);font-size:.75rem;color:rgba(255,255,255,.55);background:rgba(255,255,255,.06);border:1px solid var(--color-border-subtle);border-radius:var(--radius-full);padding:2px 8px}
-.ag-speaker-dash{font-size:1.1rem;color:rgba(255,255,255,.4)}
-.ag-speaker-name{display:block;font-size:1rem;font-weight:600;color:#fff}
-.ag-speaker-role{display:block;font-size:.85rem;color:rgba(255,255,255,.6)}
-.ag-block-label{display:inline-block;font-family:var(--font-mono);font-size:.75rem;font-weight:700;letter-spacing:.1em;color:var(--color-lime);background:rgba(46,134,193,.1);border:1px solid rgba(46,134,193,.25);border-radius:var(--radius-full);padding:4px 12px}
-.ag-row__talk{font-size:1.1rem;color:rgba(255,255,255,.75)}
-.ag-row__talk--bold{font-size:1.15rem;font-weight:700;color:#fff}
-.ag-block-tracks{display:flex;flex-wrap:wrap;gap:8px}
-.agenda-tab-pill{font-size:.7rem;font-weight:600;border-radius:var(--radius-full);padding:3px 12px}
-.agenda-table__head span{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.14em;color:rgba(255,255,255,.5);text-transform:uppercase}
+.ag-day-header {
+  padding: 12px 24px;
+  font-weight: 700;
+  color: #000;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
+.ag-card {
+  border-left: 5px solid;
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: background var(--transition-fast);
+}
+.ag-card:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+.ag-card:last-child {
+  border-bottom: none;
+}
+.ag-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.ag-card__type {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--color-text-secondary);
+}
+.ag-card__track {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: 1px solid;
+  border-radius: var(--radius-full);
+  padding: 4px 16px;
+}
+.ag-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+}
+.ag-card__speakers {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 12px;
+  margin-top: 4px;
+  align-items: center;
+}
+.ag-card__speaker-row {
+  display: contents; /* allows children to join grid */
+}
+.ag-card__speaker-name-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ag-card__speaker-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.ag-card__speaker-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+.ag-card__speaker-role {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .ag-card__speakers {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .ag-card__speaker-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .ag-card__speaker-role {
+    padding-left: 20px;
+  }
+}
 /* ════════════════════════════════
    SPONSORS — LOGO CARDS
    ════════════════════════════════ */

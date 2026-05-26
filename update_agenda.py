@@ -1,4 +1,130 @@
-import React from 'react';
+import re
+
+css_path = 'src/index.css'
+with open(css_path, 'r') as f:
+    css_content = f.read()
+
+# Replace agenda table styles with new card styles
+css_new = """
+/* ── Agenda List Layout ── */
+.agenda-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: rgba(10, 15, 36, 0.4);
+}
+
+.ag-day-header {
+  padding: 12px 24px;
+  font-weight: 700;
+  color: #000;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ag-card {
+  border-left: 5px solid;
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: background var(--transition-fast);
+}
+.ag-card:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+.ag-card:last-child {
+  border-bottom: none;
+}
+.ag-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.ag-card__type {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--color-text-secondary);
+}
+.ag-card__track {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: 1px solid;
+  border-radius: var(--radius-full);
+  padding: 4px 16px;
+}
+.ag-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+}
+.ag-card__speakers {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 12px;
+  margin-top: 4px;
+  align-items: center;
+}
+.ag-card__speaker-row {
+  display: contents; /* allows children to join grid */
+}
+.ag-card__speaker-name-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ag-card__speaker-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.ag-card__speaker-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+.ag-card__speaker-role {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .ag-card__speakers {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .ag-card__speaker-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .ag-card__speaker-role {
+    padding-left: 20px;
+  }
+}
+"""
+
+start_idx = css_content.find("/* Table */")
+end_idx = css_content.find("/* ════════════════════════════════\n   SPONSORS")
+if start_idx != -1 and end_idx != -1:
+    css_content = css_content[:start_idx] + css_new + css_content[end_idx:]
+    with open(css_path, 'w') as f:
+        f.write(css_content)
+
+jsx_path = 'src/components/Agenda.jsx'
+jsx_content = """import React from 'react';
 
 // Data for Agenda to keep JSX clean
 const agendaData = [
@@ -277,3 +403,9 @@ export default function Agenda() {
     </section>
   );
 }
+"""
+
+with open(jsx_path, 'w') as f:
+    f.write(jsx_content)
+
+print('Done')
