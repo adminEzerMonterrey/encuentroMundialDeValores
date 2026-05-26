@@ -2584,7 +2584,7 @@ a.nav__brand {
   backdrop-filter: blur(12px);
   z-index: 1;
 }
-.ag-blob-wrapper .agenda-table {
+.ag-blob-wrapper .agenda-list {
   position: relative;
   z-index: 2;
 }
