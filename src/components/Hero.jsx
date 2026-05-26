@@ -126,7 +126,7 @@ export default function Hero() {
             INTELIGENCIA ARTIFICIAL
           </span>
         </h1>
-        <p className="hero__tagline reveal-up" style={{ fontStyle: 'italic', maxWidth: '700px', margin: '1rem auto 2rem', fontSize: 'clamp(0.9rem, 2.5vw, 1.15rem)', lineHeight: '1.5' }}>
+        <p className="hero__tagline reveal-up" style={{ fontStyle: 'italic', maxWidth: '100%', margin: '1rem auto 2rem', fontSize: 'clamp(0.9rem, 2.5vw, 1.15rem)', lineHeight: '1.5', whiteSpace: 'nowrap' }}>
           "Asegurando que el avance tecnológico se alinee con los valores humanos y la responsabilidad social"
         </p>
 
