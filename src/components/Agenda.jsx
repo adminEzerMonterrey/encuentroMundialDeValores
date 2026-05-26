@@ -133,7 +133,7 @@ export default function Agenda() {
                 <span className="ag-time">17:30</span><span className="ag-dur">PM</span>
               </div>
               <div className="ag-row__speaker" role="cell">
-                <span className="ag-speaker-name">Mauricio Martinez / Farid Dieck / Mariana Treviño</span><span className="ag-speaker-role">Creativos</span>
+                <span className="ag-speaker-name">Mauricio Martinez / Farid Dieck</span><span className="ag-speaker-role">Creativos</span>
               </div>
               <div className="ag-row__talk ag-row__talk--bold" role="cell"><span className="agenda-tab-pill track-b" style={{marginRight:8}}>Arte y Creatividad</span>Ser Humano en escena: Creatividad, Arte e Identidad en tiempos de IA</div>
             </div>
