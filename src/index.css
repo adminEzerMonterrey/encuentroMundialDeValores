@@ -181,7 +181,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .hero__title-year{color:var(--color-lime);text-shadow:0 0 40px var(--color-lime-glow);-webkit-text-stroke:2px var(--color-lime);color:transparent}
 .pixel-checker{display:inline-block;width:clamp(40px,8vw,80px);height:clamp(40px,8vw,80px);background-image:linear-gradient(45deg,#fff 25%,transparent 25%),linear-gradient(-45deg,#fff 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#fff 75%),linear-gradient(-45deg,transparent 75%,#fff 75%);background-size:calc(clamp(40px,8vw,80px)/4) calc(clamp(40px,8vw,80px)/4);background-position:0 0,0 50%,50% -50%,-50% 0;opacity:.85;flex-shrink:0}
 .hero__title-gradient {
-  background: linear-gradient(90deg, #ff6b35 0%, #ff007f 50%, #6f00ff 100%);
+  background: linear-gradient(90deg, #ff6b35 0%, #ff3cac 50%, #7b2fbe 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

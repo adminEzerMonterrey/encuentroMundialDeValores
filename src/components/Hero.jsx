@@ -117,10 +117,10 @@ export default function Hero() {
 
       <div className="hero__content">
         <h1 className="hero__title reveal-up" id="heroHeadline" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: '1.05', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
-          <span className="hero__title-gradient" style={{fontSize: 'clamp(2.5rem, 7vw, 4.5rem)', fontWeight: 800}}>Humanismo</span>
-          <span className="hero__title-white" style={{fontSize: 'clamp(2.5rem, 7vw, 4.5rem)', fontWeight: 800}}>Y Valores</span>
-          <span className="hero__title-white" style={{fontSize: 'clamp(1rem, 3vw, 1.8rem)', fontWeight: 600, letterSpacing: '0.05em', margin: '0.4em 0'}}>en la era de la</span>
-          <span className="hero__title-gradient" style={{fontSize: 'clamp(2.8rem, 8vw, 5rem)', fontWeight: 800, lineHeight: '0.95', textAlign: 'center'}}>Inteligencia<br/>Artificial</span>
+          <span className="hero__title-gradient" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3rem, 8vw, 5.5rem)', fontWeight: 400, letterSpacing: '0.05em'}}>Humanismo</span>
+          <span className="hero__title-white" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3rem, 8vw, 5.5rem)', fontWeight: 400, letterSpacing: '0.05em'}}>Y Valores</span>
+          <span className="hero__title-white" style={{fontFamily: '"Helvetica Neue LT Pro 57 Condensed", "Oswald", "Helvetica Neue", "Arial Narrow", sans-serif', fontSize: 'clamp(1.2rem, 3.5vw, 2.2rem)', fontWeight: 500, letterSpacing: '0.02em', margin: '0.2em 0'}}>en la era de la</span>
+          <span className="hero__title-gradient" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3.5rem, 9vw, 6.5rem)', fontWeight: 400, lineHeight: '0.9', textAlign: 'center', letterSpacing: '0.05em'}}>Inteligencia<br/>Artificial</span>
         </h1>
         <p className="hero__tagline reveal-up" style={{ fontStyle: 'italic', maxWidth: '700px', margin: '1rem auto 2rem', fontSize: 'clamp(0.9rem, 2.5vw, 1.15rem)', lineHeight: '1.5' }}>
           "Asegurando que el avance tecnológico se alinee con los valores humanos y la responsabilidad social"
