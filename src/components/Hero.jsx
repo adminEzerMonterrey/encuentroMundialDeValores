@@ -148,7 +148,7 @@ export default function Hero() {
         )}
 
         <p className="hero__meta reveal-up">
-          <span className="hero__date-badge" style={{color: '#00B8D4', borderColor: '#00B8D4', background: 'rgba(0,184,212,0.1)'}}>MONTERREY · 3 Y 4 DE OCTUBRE DE 2026</span>
+          <span className="hero__date-badge" style={{color: 'var(--color-cyan)', borderColor: 'var(--color-cyan)', background: 'rgba(46,134,193,0.1)'}}>MONTERREY · 3 Y 4 DE OCTUBRE DE 2026</span>
           <span className="hero__location">Showcenter (Día 1) & Cintermex (Día 2)</span>
         </p>
         <div className="hero__ctas reveal-up">
