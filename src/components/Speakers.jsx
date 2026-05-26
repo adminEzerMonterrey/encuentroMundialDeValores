@@ -49,7 +49,7 @@ function SpeakerCard({ speaker, index, isCurrent, onClick }) {
       {/* Photo */}
       <div className="sc-card__photo">
         {speaker.img
-          ? <img src={speaker.img} alt={speaker.name} loading="lazy" />
+          ? <img src={speaker.img} alt={speaker.name} loading="lazy" style={speaker.imgPosition ? { objectPosition: speaker.imgPosition } : undefined} />
           : <div className="sc-card__photo-fallback" style={{ '--gradient': speaker.gradient }}>{speaker.initials}</div>}
       </div>
 
@@ -71,8 +71,7 @@ function SpeakerCard({ speaker, index, isCurrent, onClick }) {
 const keynotesData = [
   { img: "Speakers/Mons_Rogelio_Cabrera_Lopez.jpg", initials: "RC", name: "Mons. Rogelio Cabrera López", company: "Arquidiócesis de Monterrey", role: "Arzobispo Metropolitano", bio: "Presidente emérito de la Conferencia del Episcopado Mexicano. Participa activamente en diálogos nacionales por la paz y justicia social.", gradient: "linear-gradient(135deg,#7C3AED,#06b6d4)", talkIcon: "🏆", talkName: "Reconocimiento David Noel" },
   { img: "Speakers/Mauricio_Martinez.jpg", initials: "MM", name: "Mauricio Martinez", company: "Actor", role: "Cantante Mexicano", bio: "Reconocido actor y cantante. Explorará el impacto de la Inteligencia Artificial en la creatividad, el arte y la escenificación.", gradient: "linear-gradient(135deg,#7C3AED,#06b6d4)", talkIcon: "🎭", talkName: "Ser Humano en escena" },
-  { img: "Speakers/Farid_Dieck_Assad.jpg", initials: "FD", name: "Farid Dieck", company: "Creador de contenido", role: "Psicólogo y Conferencista", bio: "Reconocido creador de contenido y psicólogo, abordando temas de identidad y arte en la era del avance tecnológico.", gradient: "linear-gradient(135deg,#f59e0b,#ef4444)", talkIcon: "🗣️", talkName: "Ser Humano en escena" },
-  { img: "Speakers/Mariana_Trevino.jpg", initials: "MT", name: "Mariana Treviño", company: "Actriz", role: "Actriz de Teatro y Cine", bio: "Destacada actriz mexicana de cine y televisión. Compartirá su perspectiva única sobre el arte y la identidad frente a la IA.", gradient: "linear-gradient(135deg,#db2777,#9333ea)", talkIcon: "🎬", talkName: "Ser Humano en escena" },
+  { img: "Speakers/Farid_Dieck_Assad.jpg", initials: "FD", name: "Farid Dieck", company: "Creador de contenido", role: "Psicólogo y Conferencista", bio: "Reconocido creador de contenido y psicólogo, abordando temas de identidad y arte en la era del avance tecnológico.", gradient: "linear-gradient(135deg,#f59e0b,#ef4444)", talkIcon: "🗣️", talkName: "Ser Humano en escena", imgPosition: "center center" },
   { img: "Speakers/Marian_Rojas_Estape.jpg", initials: "MR", name: "Marian Rojas Estapé", company: "Médica Psiquiatra", role: "Escritora y Conferencista", bio: "Destacada médica psiquiatra española, autora de best sellers. Explorará la reconexión interior en la era digital.", gradient: "linear-gradient(135deg,#db2777,#7C3AED)", talkIcon: "🧠", talkName: "La mente en la era digital" },
   { img: "Speakers/Dr_Arumugam_Murukiah.jpg", initials: "AM", name: "Dr. Arumugam Murukiah", company: "Broadline Technologies", role: "Estratega Tecnológico", bio: "Líder en transformación digital con más de 4 décadas de experiencia. Innovador en salud pública y cadenas de suministro en la India.", gradient: "linear-gradient(135deg,#f59e0b,#ef4444)", talkIcon: "⚙️", talkName: "IA Humanizada" },
   { img: "Speakers/Caroline_Sanchez_Crozier.jpg", initials: "CC", name: "Caroline Sanchez Crozier", company: "CSC Consulting Group", role: "CEO & Fundadora", bio: "Líder tecnológico y presidenta del Comité de Tecnología e IA de LULAC. Inmigrante mexicana y pionera en equidad digital.", gradient: "linear-gradient(135deg,#db2777,#9333ea)", talkIcon: "🤝", talkName: "Tecnología y Educación" },
@@ -251,7 +250,7 @@ export default function Speakers() {
                 {/* Photo */}
                 <div className="keynote-card__photo">
                   {keynote.img
-                    ? <img src={keynote.img} alt={keynote.name} loading="lazy" />
+                    ? <img src={keynote.img} alt={keynote.name} loading="lazy" style={keynote.imgPosition ? { objectPosition: keynote.imgPosition } : undefined} />
                     : <div className="keynote-card__photo-fallback" style={{ background: keynote.gradient }}>{keynote.initials}</div>}
                 </div>
 
