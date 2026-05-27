@@ -46,13 +46,7 @@ function SplashScreen({ onDone }) {
 
 // Global Particles Background
 function GlobalParticles() {
-  return (
-    <div id="starfield-bg" aria-hidden="true" style={{position:'fixed', inset:0, zIndex:0, pointerEvents:'none', overflow:'hidden'}}>
-      <div id="bg-stars"></div>
-      <div id="bg-stars2"></div>
-      <div id="bg-stars3"></div>
-    </div>
-  );
+  return null;
 }
 
 function App() {

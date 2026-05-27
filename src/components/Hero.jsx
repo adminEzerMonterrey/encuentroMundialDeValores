@@ -49,10 +49,6 @@ export default function Hero() {
           "Asegurando que el avance tecnológico se alinee con los valores humanos y la responsabilidad social"
         </p>
 
-        <div className="hero__ctas reveal-up" style={{ marginTop: '2rem', marginBottom: '4rem' }}>
-          <a href="#registro" className="btn btn--primary btn--pill">Comprar Boleto</a>
-        </div>
-
         {/* ── Countdown / Stats Container ── */}
         <div className="hero__stats-container reveal-up" role="timer" aria-live="polite">
           {[{ v: timeLeft.days,    l: 'DÍAS' },
@@ -77,11 +73,6 @@ export default function Hero() {
         <div className="hero__ctas reveal-up">
           <a href="#speakers" className="btn btn--primary btn--lg">Ver Speakers →</a>
           <a href="#agenda" className="btn btn--ghost btn--lg">Ver agenda</a>
-        </div>
-        <div className="hero__motto reveal-up" aria-label="Inspirando. Transformando. Conectando.">
-          <span>--INSPIRANDO.</span>
-          <span>----TRANSFORMANDO.</span>
-          <span>------CONECTANDO.</span>
         </div>
       </div>
       <div className="hero__scroll-indicator" aria-hidden="true">
