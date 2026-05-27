@@ -67,15 +67,11 @@ function SpeakerCard({ speaker, index, isCurrent, onClick }) {
   );
 }
 
-// Keynotes (Main Speakers) — separate from carousel
-const keynotesData = [
-  { img: "Speakers/Marian_Rojas_Estape.jpg", initials: "MR", name: "Marian Rojas Estapé", company: "Médica Psiquiatra", role: "Escritora y Conferencista", bio: "Destacada médica psiquiatra española, autora de best sellers. Explorará la reconexión interior en la era digital.", gradient: "linear-gradient(135deg,#E91E8C,#8B5CF6)", talkIcon: "🧠", talkName: "La mente en la era digital" },
-  { img: "", initials: "JR", name: "Jorge Ramos", company: "Periodista", role: "Escritor y Periodista", bio: "Influyente periodista hispanohablante y escritor. Cubrió eventos históricos y es autor de 15 libros sobre política e inmigración.", gradient: "linear-gradient(135deg,#E91E8C,#8B5CF6)", talkIcon: "🎙️", talkName: "Compromiso con la verdad" },
-  { img: "Speakers/Gurudev_Sri_Sri_Ravi_Shankar.jpeg", initials: "GS", name: "Gurudev Sri Sri Ravi Shankar", company: "El Arte de Vivir", role: "Líder Humanitario", bio: "Líder humanitario y maestro espiritual, fundador de la organización internacional El Arte de Vivir.", gradient: "linear-gradient(135deg,#E91E8C,#F0922A)", talkIcon: "🧘‍♂️", talkName: "Sabiduría Eterna" }
-];
-
 // Data Array to keep JSX clean
 const speakersData = [
+  { img: "Speakers/Marian_Rojas_Estape.jpg", initials: "MR", name: "Marian Rojas Estapé", company: "Médica Psiquiatra", role: "Escritora y Conferencista", bio: "Destacada médica psiquiatra española, autora de best sellers. Explorará la reconexión interior en la era digital.", gradient: "linear-gradient(135deg,#E91E8C,#8B5CF6)", talkIcon: "🧠", talkName: "La mente en la era digital" },
+  { img: "", initials: "JR", name: "Jorge Ramos", company: "Periodista", role: "Escritor y Periodista", bio: "Influyente periodista hispanohablante y escritor. Cubrió eventos históricos y es autor de 15 libros sobre política e inmigración.", gradient: "linear-gradient(135deg,#E91E8C,#8B5CF6)", talkIcon: "🎙️", talkName: "Compromiso con la verdad" },
+  { img: "Speakers/Gurudev_Sri_Sri_Ravi_Shankar.jpeg", initials: "GS", name: "Gurudev Sri Sri Ravi Shankar", company: "El Arte de Vivir", role: "Líder Humanitario", bio: "Líder humanitario y maestro espiritual, fundador de la organización internacional El Arte de Vivir.", gradient: "linear-gradient(135deg,#E91E8C,#F0922A)", talkIcon: "🧘‍♂️", talkName: "Sabiduría Eterna" },
   { img: "Speakers/Mons_Rogelio_Cabrera_Lopez.jpg", initials: "RC", name: "Mons. Rogelio Cabrera López", company: "Arquidiócesis de Monterrey", role: "Arzobispo Metropolitano", bio: "Presidente emérito de la Conferencia del Episcopado Mexicano. Participa activamente en diálogos nacionales por la paz y justicia social.", gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)", trackClass: "track-a", trackName: "Reconocimiento", talkIcon: "🕊️", talkName: "Reconocimiento" },
   { img: "Speakers/Mauricio_Martinez.jpg", initials: "MM", name: "Mauricio Martínez", company: "Actor", role: "Cantante Mexicano", bio: "Reconocido actor y cantante. Explorará el impacto de la Inteligencia Artificial en la creatividad, el arte y la escenificación.", gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)", trackClass: "track-a", trackName: "Creatividad", talkIcon: "🎭", talkName: "Ser Humano en escena" },
   { img: "Speakers/Farid_Dieck_Assad.jpg", initials: "FD", name: "Farid Dieck", company: "Creador de contenido", role: "Psicólogo y Conferencista", bio: "Reconocido creador de contenido y psicólogo, abordando temas de identidad y arte en la era del avance tecnológico.", gradient: "linear-gradient(135deg,#F0922A,#ef4444)", trackClass: "track-a", trackName: "Identidad", talkIcon: "🗣️", talkName: "Ser Humano en escena" },
@@ -237,43 +233,21 @@ export default function Speakers() {
     <section className="section speakers" id="speakers" aria-labelledby="speakersHeading">
       <div className="container">
         <div className="section-header reveal-up">
-          <span className="section-tag">02 / PANELISTAS DESTACADOS</span>
-          <h2 className="section-title" id="speakersHeading">Panelistas Destacados</h2>
-          <p className="section-subtitle">Conoce a nuestros invitados estelares.</p>
+          <span className="section-tag">02 / COLLAGE</span>
+          <h2 className="section-title" id="speakersHeading">Collage</h2>
+          <p className="section-subtitle">Los rostros del Encuentro Mundial de Valores.</p>
         </div>
 
-        {/* ── Keynotes Grid ── */}
-        <div className="speakers__keynotes-grid">
-          {keynotesData.map((keynote, idx) => (
-            <article className="keynote-card reveal-up noselect" key={idx} style={{ width: 'min(300px, 90vw)', display: 'flex', flexDirection: 'column' }}>
-              {Array.from({ length: 25 }).map((_, i) => (
-                <div key={i} className={`keynote-tracker tr-${i + 1}`}></div>
-              ))}
-
-              <div className="keynote-3d-content" style={{ flex: 1 }}>
-                {/* Photo */}
-                <div className="keynote-card__photo">
-                  {keynote.img
-                    ? <img src={keynote.img} alt={keynote.name} loading="lazy" style={keynote.imgPosition ? { objectPosition: keynote.imgPosition } : undefined} />
-                    : <div className="keynote-card__photo-fallback" style={{ background: keynote.gradient }}>{keynote.initials}</div>}
-                </div>
-
-                {/* Info */}
-                <div className="keynote-card__body">
-                  <h3 className="keynote-card__name">{keynote.name}</h3>
-                  <p className="keynote-card__company">{keynote.company}</p>
-                  <p className="keynote-card__role">{keynote.role}</p>
-                  {(keynote.talkIcon || keynote.talkName) && (
-                    <p className="keynote-card__talk">
-                      <span className="keynote-card__talk-icon">{keynote.talkIcon || "🎤"}</span>
-                      {keynote.talkName}
-                    </p>
-                  )}
-                  <p className="keynote-card__bio">{keynote.bio}</p>
-                  <a href="#agenda" className="btn btn--primary btn--sm" style={{ marginTop: 'auto', alignSelf: 'flex-start', position: 'relative', zIndex: 25 }}>Ver en agenda →</a>
-                </div>
-              </div>
-            </article>
+        {/* ── Speakers Collage ── */}
+        <div className="speakers-collage reveal-up">
+          {speakersData.map((speaker, idx) => (
+            <div className="collage-item" key={idx}>
+              {speaker.img ? (
+                <img src={speaker.img} alt={speaker.name} loading="lazy" style={speaker.imgPosition ? { objectPosition: speaker.imgPosition } : undefined} />
+              ) : (
+                <div className="collage-fallback" style={{ background: speaker.gradient }}>{speaker.initials}</div>
+              )}
+            </div>
           ))}
         </div>
       </div>
