@@ -171,7 +171,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* ════════════════════════════════
    HERO
    ════════════════════════════════ */
-.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden;padding-top:80px}
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden;padding-top:80px;background:linear-gradient(to bottom, #000000 70%, var(--color-bg) 100%)}
 .hero__canvas{position:absolute;inset:0;width:100%;height:100%}
 .hero__overlay{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(139,92,246,.12) 0%,transparent 70%),radial-gradient(ellipse 60% 40% at 80% 60%,rgba(26,188,156,.04) 0%,transparent 60%);pointer-events:none}
 .hero__content{position:relative;z-index:2;text-align:center;padding:var(--space-6) var(--space-3);max-width:900px}
