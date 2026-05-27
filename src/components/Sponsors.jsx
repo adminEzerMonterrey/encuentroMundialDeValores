@@ -14,23 +14,23 @@ export default function Sponsors() {
 
           <div className="sp-grid reveal-up" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2.5rem', alignItems: 'center', justifyContent: 'center' }}>
             {[
-              { src: "1.- Secretaría de Igualdad e Inclusión.png", alt: "Secretaría de Igualdad e Inclusión" },
-              { src: "AC logo 100 aniversaario_sin slogan_color.png", alt: "AC 100 Aniversario" },
-              { src: "BEREL.png", alt: "Berel" },
-              { src: "CFC logo horizontal naranja.png", alt: "CFC" },
-              { src: "Consejo Interreligioso.png", alt: "Consejo Interreligioso" },
-              { src: "Fundación Chapa González.png", alt: "Fundación Chapa González" },
-              { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
-              { src: "Logo FD Estandar.png", alt: "Logo FD" },
-              { src: "Monterrey.png", alt: "Monterrey" },
-              { src: "Pasteles de Laura.png", alt: "Pasteles de Laura" },
-              { src: "Rotarios.jpeg", alt: "Rotarios" },
-              { src: "San Pedro Garza García.png", alt: "San Pedro Garza García" },
-              { src: "Secretaría de Educación NL.png", alt: "Secretaría de Educación NL" },
-              { src: "U-ERRE logotipo comercial RGB.png", alt: "U-ERRE" },
-              { src: "UANL.png", alt: "UANL" },
-              { src: "UDEM.jpg", alt: "UDEM" },
-              { src: "logo fundacion alta 01.png", alt: "Fundación ALTA" }
+              { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión" },
+              { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "AC 100 Aniversario" },
+              { src: "berel.png", alt: "Berel" },
+              { src: "cfc-logo-horizontal-naranja.png", alt: "CFC" },
+              { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
+              { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
+              { src: "itesm.png", alt: "Tecnológico de Monterrey" },
+              { src: "logo-fd-estandar.png", alt: "Logo FD" },
+              { src: "monterrey.png", alt: "Monterrey" },
+              { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" },
+              { src: "rotarios.jpeg", alt: "Rotarios" },
+              { src: "san-pedro-garza-garcia.png", alt: "San Pedro Garza García" },
+              { src: "secretaria-de-educacion-nl.png", alt: "Secretaría de Educación NL" },
+              { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
+              { src: "uanl.png", alt: "UANL" },
+              { src: "udem.jpg", alt: "UDEM" },
+              { src: "logo-fundacion-alta-01.png", alt: "Fundación ALTA" }
             ].map((sponsor, idx) => (
               <div key={idx} className="sp-card" aria-label={sponsor.alt} style={{ padding: '3rem', display: 'flex', justifyContent: 'center', alignItems: 'center', background: 'rgba(255, 107, 53, 0.1)', borderRadius: '16px', border: '1px solid rgba(255, 107, 53, 0.3)', aspectRatio: '3/2', width: '100%', height: 'auto', transition: 'all 0.3s ease' }}>
                 <img src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
