@@ -3,167 +3,39 @@ import React from 'react';
 export default function Sponsors() {
   return (
     <>
-      {/* ═══════════ SPONSORS — LOGO CARDS ═══════════ */}
+      {/* ═══════════ PATROCINADORES — LOGO CARDS ═══════════ */}
       <section className="section sponsors" id="sponsors" aria-labelledby="sponsorsHeading">
         <div className="container">
           <div className="section-header reveal-up">
-            <span className="section-tag">04 / SPONSORS</span>
-            <h2 className="section-title" id="sponsorsHeading">Patrocinadores</h2>
-            <p className="section-subtitle">Empresas que hacen posible el Encuentro Mundial de Valores 2026.</p>
+            <span className="section-tag">04 / COLABORADORES</span>
+            <h2 className="section-title" id="sponsorsHeading">Colaboradores y Patrocinadores</h2>
+            <p className="section-subtitle">Instituciones y empresas que hacen posible el Encuentro Mundial de Valores 2026.</p>
           </div>
 
-          <div className="sp-grid reveal-up">
-
-            {/* Accenture */}
-            <a href="https://www.accenture.com" target="_blank" rel="noopener noreferrer"
-               className="sp-card sp-card--acc" aria-label="Accenture">
-              <b></b>
-              <div className="sp-card__logo">
-                <img src="Sponsors/accenture.jpeg" alt="Accenture" loading="lazy" style={{width:'80%', objectFit:'contain'}} />
+          <div className="sp-grid reveal-up" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.5rem', alignItems: 'center', justifyContent: 'center' }}>
+            {[
+              { src: "1.- Secretaría de Igualdad e Inclusión.png", alt: "Secretaría de Igualdad e Inclusión" },
+              { src: "AC logo 100 aniversaario_sin slogan_color.png", alt: "AC 100 Aniversario" },
+              { src: "BEREL.png", alt: "Berel" },
+              { src: "CFC logo horizontal naranja.png", alt: "CFC" },
+              { src: "Consejo Interreligioso.png", alt: "Consejo Interreligioso" },
+              { src: "Fundación Chapa González.png", alt: "Fundación Chapa González" },
+              { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
+              { src: "Logo FD Estandar.png", alt: "Logo FD" },
+              { src: "Monterrey.png", alt: "Monterrey" },
+              { src: "Pasteles de Laura.png", alt: "Pasteles de Laura" },
+              { src: "Rotarios.jpeg", alt: "Rotarios" },
+              { src: "San Pedro Garza García.png", alt: "San Pedro Garza García" },
+              { src: "Secretaría de Educación NL.png", alt: "Secretaría de Educación NL" },
+              { src: "U-ERRE logotipo comercial RGB.png", alt: "U-ERRE" },
+              { src: "UANL.png", alt: "UANL" },
+              { src: "UDEM.jpg", alt: "UDEM" },
+              { src: "logo fundacion alta 01.png", alt: "Fundación ALTA" }
+            ].map((sponsor, idx) => (
+              <div key={idx} className="sp-card" aria-label={sponsor.alt} style={{ padding: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)', aspectRatio: '3/2' }}>
+                <img src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
-              <div className="sp-content">
-                <p className="sp-title">Accenture<br/><span>Patrocinador Oficial</span></p>
-              </div>
-            </a>
-
-            {/* SAP */}
-            <div className="sp-card sp-card--sap" aria-label="SAP">
-              <b></b>
-              <div className="sp-card__logo">
-                <img src="Sponsors/sap.png" alt="SAP" loading="lazy" style={{width:'80%', objectFit:'contain'}} />
-              </div>
-              <div className="sp-content">
-                <p className="sp-title">SAP<br/><span>Patrocinador Oficial</span></p>
-              </div>
-            </div>
-
-            {/* Hexaware */}
-            <a href="https://www.hexaware.com" target="_blank" rel="noopener noreferrer"
-               className="sp-card sp-card--hex" aria-label="Hexaware Technologies">
-              <b></b>
-              <div className="sp-card__logo">
-                <img src="Sponsors/hexaware.svg" alt="Hexaware" loading="lazy" style={{width:'85%', objectFit:'contain'}} />
-              </div>
-              <div className="sp-content">
-                <p className="sp-title">Hexaware<br/><span>Patrocinador Oficial</span></p>
-              </div>
-            </a>
-
-            {/* AWS */}
-            <a href="https://www.instagram.com/aws.cloud.club.udem/" target="_blank" rel="noopener noreferrer"
-               className="sp-card sp-card--aws" aria-label="Club AWS UDEM">
-              <b></b>
-              <div className="sp-card__logo">
-                <img src="Sponsors/aws.png" alt="AWS" loading="lazy" style={{width:'80%', objectFit:'contain'}} />
-              </div>
-              <div className="sp-content">
-                <p className="sp-title">Club AWS<br/><span>Patrocinador Oficial</span></p>
-              </div>
-            </a>
-
-            {/* Snowflake */}
-            <a href="https://www.snowflake.com" target="_blank" rel="noopener noreferrer"
-               className="sp-card sp-card--snow" aria-label="Snowflake">
-              <b></b>
-              <div className="sp-card__logo">
-                <img src="Sponsors/snowflake.svg" alt="Snowflake" loading="lazy" style={{width:'80%', objectFit:'contain'}} />
-              </div>
-              <div className="sp-content">
-                <p className="sp-title">Snowflake<br/><span>Patrocinador Oficial</span></p>
-              </div>
-            </a>
-
-            {/* Doña Tota */}
-            <div className="sp-card sp-card--tota" aria-label="Doña Tota">
-              <b></b>
-              <div className="sp-card__logo">
-                <img src="Sponsors/dona-tota.webp" alt="Doña Tota" loading="lazy" style={{width:'80%', objectFit:'contain', borderRadius: '8px'}} />
-              </div>
-              <div className="sp-content">
-                <p className="sp-title">Doña Tota<br/><span>Patrocinador Oficial</span></p>
-              </div>
-            </div>
-
-            {/* OFF-XILE */}
-            <div className="sp-card sp-card--offxile" aria-label="OFF-XILE">
-              <b></b>
-              <div className="sp-card__logo">
-                <img src="Sponsors/offxile.jpg" alt="OFF-XILE" loading="lazy" style={{width:'80%', objectFit:'contain', borderRadius: '8px'}} />
-              </div>
-              <div className="sp-content">
-                <p className="sp-title">OFF-XILE<br/><span>Patrocinador Oficial</span></p>
-              </div>
-            </div>
-
-            {/* Banco Base */}
-            <a href="https://www.bancobase.com" target="_blank" rel="noopener noreferrer"
-               className="sp-card sp-card--base" aria-label="Banco Base">
-              <b></b>
-              <div className="sp-card__logo">
-                <img src="Sponsors/banco_base_logo.jpeg" alt="Banco Base" loading="lazy" style={{width:'80%', objectFit:'contain', borderRadius: '8px'}} />
-              </div>
-              <div className="sp-content">
-                <p className="sp-title">Banco Base<br/><span>Patrocinador Oficial</span></p>
-              </div>
-            </a>
-
-            {/* CUB Security */}
-            <div className="sp-card sp-card--cub" aria-label="CUB Security">
-              <b></b>
-              <div className="sp-card__logo">
-                <img src="Sponsors/cub_security_logo.jpeg" alt="CUB Security" loading="lazy" style={{width:'80%', objectFit:'contain', borderRadius: '8px'}} />
-              </div>
-              <div className="sp-content">
-                <p className="sp-title">CUB Security<br/><span>Patrocinador Oficial</span></p>
-              </div>
-            </div>
-
-            {/* Danuanalitica */}
-            <div className="sp-card sp-card--danu" aria-label="Danuanalitica">
-              <b></b>
-              <div className="sp-card__logo">
-                <img src="Sponsors/danuanalitica_logo.jpeg" alt="Danuanalitica" loading="lazy" style={{width:'80%', objectFit:'contain', borderRadius: '8px'}} />
-              </div>
-              <div className="sp-content">
-                <p className="sp-title">Danuanalitica<br/><span>Patrocinador Oficial</span></p>
-              </div>
-            </div>
-
-            {/* Endava */}
-            <a href="https://www.endava.com" target="_blank" rel="noopener noreferrer"
-               className="sp-card sp-card--endava" aria-label="Endava">
-              <b></b>
-              <div className="sp-card__logo">
-                <img src="Sponsors/endava_logo.jpeg" alt="Endava" loading="lazy" style={{width:'80%', objectFit:'contain', borderRadius: '8px'}} />
-              </div>
-              <div className="sp-content">
-                <p className="sp-title">Endava<br/><span>Patrocinador Oficial</span></p>
-              </div>
-            </a>
-
-            {/* SoftServe */}
-            <a href="https://www.softserveinc.com" target="_blank" rel="noopener noreferrer"
-               className="sp-card sp-card--softserve" aria-label="SoftServe">
-              <b></b>
-              <div className="sp-card__logo">
-                <img src="Sponsors/softserve_logo.jpeg" alt="SoftServe" loading="lazy" style={{width:'80%', objectFit:'contain', borderRadius: '8px'}} />
-              </div>
-              <div className="sp-content">
-                <p className="sp-title">SoftServe<br/><span>Patrocinador Oficial</span></p>
-              </div>
-            </a>
-
-            {/* ACM */}
-            <div className="sp-card sp-card--acm" aria-label="ACM">
-              <b></b>
-              <div className="sp-card__logo">
-                <img src="Sponsors/acm.jpg" alt="ACM" loading="lazy" style={{width:'80%', objectFit:'contain', borderRadius: '8px'}} />
-              </div>
-              <div className="sp-content">
-                <p className="sp-title">ACM<br/><span>Patrocinador Oficial</span></p>
-              </div>
-            </div>
-
+            ))}
           </div>
 
           {/* CTA para nuevos patrocinadores */}
@@ -173,15 +45,15 @@ export default function Sponsors() {
               <div className="sp-cta-banner__content">
                 <span className="sp-cta-banner__eyebrow">✦ ¿Quieres formar parte? ✦</span>
                 <h3 className="sp-cta-banner__title">
-                  Sé patrocinador del<br/>
+                  Sé colaborador del<br/>
                   <span className="sp-cta-banner__title--accent">Encuentro Mundial de Valores 2026</span>
                 </h3>
                 <p className="sp-cta-banner__sub">
-                  Conecta tu marca con +250 estudiantes y profesionistas de tecnología.<br/>
+                  Únete a las instituciones líderes que están transformando nuestro futuro.<br/>
                   Escríbenos y hagámoslo juntos.
                 </p>
                 <a
-                  href="https://www.instagram.com/encuentromundialdevalores?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  href="https://www.instagram.com/encuentromundialdevalores?igsh=MXo0OXZ3d3hxOGl6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="sp-cta-banner__btn"

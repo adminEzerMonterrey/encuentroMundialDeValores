@@ -40,9 +40,9 @@ export default function Navbar() {
           <li>
             <a href="https://www.superboletos.com/landing-evento/GKkYPxPOI36IfcL_nK2DYQ" className="nav__link" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Registro</a>
           </li>
-          <li><a href="#speakers" className="nav__link" onClick={closeMenu}>Speakers</a></li>
+          <li><a href="#speakers" className="nav__link" onClick={closeMenu}>Ponentes</a></li>
           <li><a href="#agenda" className="nav__link" onClick={closeMenu}>Agenda</a></li>
-          <li><a href="#sponsors" className="nav__link" onClick={closeMenu}>Sponsors</a></li>
+          <li><a href="#sponsors" className="nav__link" onClick={closeMenu}>Colaboradores</a></li>
           <li><a href="#ubicacion" className="nav__link" onClick={closeMenu}>Ubicación</a></li>
           <li><a href="#faqs" className="nav__link" onClick={closeMenu}>FAQs</a></li>
           <li>

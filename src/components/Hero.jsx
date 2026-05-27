@@ -72,7 +72,7 @@ export default function Hero() {
           <span className="hero__location">Showcenter (Día 1) & Cintermex (Día 2)</span>
         </p>
         <div className="hero__ctas reveal-up">
-          <a href="#speakers" className="btn btn--primary btn--lg">Ver Speakers →</a>
+          <a href="#speakers" className="btn btn--primary btn--lg">Ver Ponentes →</a>
           <a href="#agenda" className="btn btn--ghost btn--lg">Ver agenda</a>
         </div>
       </div>
