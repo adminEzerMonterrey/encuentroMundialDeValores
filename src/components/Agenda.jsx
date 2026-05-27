@@ -11,7 +11,7 @@ const agendaData = [
   },
   {
     type: "Ceremonia de apertura",
-    title: "Entrega de reconocimiento · Familia David Noel Ramírez",
+    title: "Mensaje de Bienvenida",
     track: "IA, Salud y Espiritualidad",
     color: "var(--color-cyan)",
     speakers: [

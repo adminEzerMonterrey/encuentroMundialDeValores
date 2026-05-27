@@ -38,7 +38,7 @@ export default function Navbar() {
         </button>
         <ul className={`nav__menu ${isOpen ? 'open' : ''}`} id="navMenu" role="list">
           <li>
-            <a href="#registro" className="nav__link" onClick={closeMenu}>Registro</a>
+            <a href="https://www.superboletos.com/landing-evento/GKkYPxPOI36IfcL_nK2DYQ" className="nav__link" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Registro</a>
           </li>
           <li><a href="#speakers" className="nav__link" onClick={closeMenu}>Speakers</a></li>
           <li><a href="#agenda" className="nav__link" onClick={closeMenu}>Agenda</a></li>
@@ -46,7 +46,7 @@ export default function Navbar() {
           <li><a href="#ubicacion" className="nav__link" onClick={closeMenu}>Ubicación</a></li>
           <li><a href="#faqs" className="nav__link" onClick={closeMenu}>FAQs</a></li>
           <li>
-            <a href="#registro" className="btn--gradient-border nav__cta" onClick={closeMenu}>
+            <a href="https://www.superboletos.com/landing-evento/GKkYPxPOI36IfcL_nK2DYQ" className="btn--gradient-border nav__cta" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
               <strong>COMPRAR BOLETO</strong>
             </a>
           </li>
@@ -54,7 +54,8 @@ export default function Navbar() {
       </nav>
 
       <a 
-        href="#registro" 
+        href="https://www.superboletos.com/landing-evento/GKkYPxPOI36IfcL_nK2DYQ" 
+        target="_blank" rel="noopener noreferrer"
         className="sticky-cta"
         id="stickyCTA" 
         aria-label="Comprar boleto para el evento"
