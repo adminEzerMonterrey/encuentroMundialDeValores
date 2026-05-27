@@ -32,7 +32,6 @@ export default function Footer() {
               <ul role="list">
                 <li><a href="#sponsors">Colaboradores</a></li>
                 <li><a href="#ubicacion">Ubicación</a></li>
-                <li><a href="#faqs">FAQs</a></li>
               </ul>
             </div>
             <div className="footer__nav-col">

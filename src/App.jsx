@@ -6,7 +6,6 @@ import StatsBand from './components/StatsBand';
 import Speakers from './components/Speakers';
 import Agenda from './components/Agenda';
 import Sponsors from './components/Sponsors';
-import Faqs from './components/Faqs';
 import Footer from './components/Footer';
 
 // Splash Screen Component
@@ -145,8 +144,6 @@ function App() {
           <Agenda />
           <div className="section-orb section-orb--3" aria-hidden="true"></div>
           <Sponsors />
-          <div className="section-orb section-orb--4" aria-hidden="true"></div>
-          <Faqs />
         </main>
         <Footer />
       </div>
