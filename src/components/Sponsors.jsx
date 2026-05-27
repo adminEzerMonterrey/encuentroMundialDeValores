@@ -13,44 +13,50 @@ export default function Sponsors() {
           </div>
 
           <div className="sponsors-tiers" style={{ display: 'flex', flexDirection: 'column', gap: '4rem', alignItems: 'center' }}>
-            {/* Fila 1 - Más Importantes */}
-            <div className="sponsor-tier tier-1 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '3rem' }}>
+            {/* Fila 1 - Universidades / Gobierno Monterrey */}
+            <div className="sponsor-tier tier-1 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '1rem' }}>
               {[
-                { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión" },
-                { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "AC 100 Aniversario" },
-                { src: "berel.png", alt: "Berel" },
-                { src: "itesm.png", alt: "Tecnológico de Monterrey" },
-              ].map((sponsor, idx) => (
-                <img key={idx} src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '140px', width: 'auto', maxWidth: '300px', objectFit: 'contain', filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))' }} />
-              ))}
-            </div>
-
-            {/* Fila 2 - Medianos */}
-            <div className="sponsor-tier tier-2 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '2.5rem' }}>
-              {[
+                { src: "monterrey.png", alt: "Gobierno de Monterrey" },
                 { src: "udem.jpg", alt: "UDEM" },
+                { src: "itesm.png", alt: "Tecnológico de Monterrey" },
                 { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
                 { src: "uanl.png", alt: "UANL" },
-                { src: "monterrey.png", alt: "Monterrey" },
-                { src: "san-pedro-garza-garcia.png", alt: "San Pedro Garza García" },
-                { src: "secretaria-de-educacion-nl.png", alt: "Secretaría de Educación NL" },
               ].map((sponsor, idx) => (
-                <img key={idx} src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '90px', width: 'auto', maxWidth: '220px', objectFit: 'contain', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }} />
+                <div key={idx} style={{ padding: '1rem 2rem', border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.95)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <img src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '90px', width: 'auto', maxWidth: '250px', objectFit: 'contain' }} />
+                </div>
               ))}
             </div>
 
-            {/* Fila 3 - Pequeños */}
-            <div className="sponsor-tier tier-3 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '2rem' }}>
+            {/* Fila 2 - Gobierno y Empresas */}
+            <div className="sponsor-tier tier-2 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '1rem' }}>
               {[
-                { src: "cfc-logo-horizontal-naranja.png", alt: "CFC" },
-                { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
-                { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
-                { src: "logo-fd-estandar.png", alt: "Logo FD" },
-                { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" },
-                { src: "rotarios.jpeg", alt: "Rotarios" },
-                { src: "logo-fundacion-alta-01.png", alt: "Fundación ALTA" }
+                { src: "secretaria-de-educacion-nl.png", alt: "Secretaría de Educación NL" },
+                { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión" },
+                { src: "san-pedro-garza-garcia.png", alt: "San Pedro Garza García" },
+                { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "Arca Continental" },
+                { src: "rotarios.jpeg", alt: "Rotary" },
               ].map((sponsor, idx) => (
-                <img key={idx} src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '60px', width: 'auto', maxWidth: '160px', objectFit: 'contain', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }} />
+                <div key={idx} style={{ padding: '1rem 2rem', border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.95)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <img src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '80px', width: 'auto', maxWidth: '220px', objectFit: 'contain' }} />
+                </div>
+              ))}
+            </div>
+
+            {/* Fila 3 - Fundaciones y Sociedad Civil */}
+            <div className="sponsor-tier tier-3 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '1rem' }}>
+              {[
+                { src: "logo-fd-estandar.png", alt: "Fundación Deacero" },
+                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor" },
+                { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
+                { src: "cfc-logo-horizontal-naranja.png", alt: "Charter for Compassion" },
+                { src: "berel.png", alt: "Berel" },
+                { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
+                { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" }
+              ].map((sponsor, idx) => (
+                <div key={idx} style={{ padding: '1rem 1.5rem', border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.95)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <img src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '70px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} />
+                </div>
               ))}
             </div>
           </div>
