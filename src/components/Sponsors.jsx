@@ -23,7 +23,7 @@ export default function Sponsors() {
                 { src: "uanl.png", alt: "UANL" },
               ].map((sponsor, idx) => (
                 <div key={idx} style={{ padding: '1rem 2rem', border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.95)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '90px', width: 'auto', maxWidth: '250px', objectFit: 'contain' }} />
+                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '90px', width: 'auto', maxWidth: '250px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
@@ -38,7 +38,7 @@ export default function Sponsors() {
                 { src: "rotarios.jpeg", alt: "Rotary" },
               ].map((sponsor, idx) => (
                 <div key={idx} style={{ padding: '1rem 2rem', border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.95)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '80px', width: 'auto', maxWidth: '220px', objectFit: 'contain' }} />
+                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '80px', width: 'auto', maxWidth: '220px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
@@ -55,7 +55,7 @@ export default function Sponsors() {
                 { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" }
               ].map((sponsor, idx) => (
                 <div key={idx} style={{ padding: '1rem 1.5rem', border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.95)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '70px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} />
+                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '70px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
