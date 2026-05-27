@@ -12,30 +12,47 @@ export default function Sponsors() {
             <p className="section-subtitle">Instituciones y empresas que hacen posible el Encuentro Mundial de Valores 2026.</p>
           </div>
 
-          <div className="sp-grid reveal-up" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1px', background: 'rgba(255, 255, 255, 0.2)', border: '1px solid rgba(255, 255, 255, 0.2)', alignItems: 'stretch' }}>
-            {[
-              { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión" },
-              { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "AC 100 Aniversario" },
-              { src: "berel.png", alt: "Berel" },
-              { src: "cfc-logo-horizontal-naranja.png", alt: "CFC" },
-              { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
-              { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
-              { src: "itesm.png", alt: "Tecnológico de Monterrey" },
-              { src: "logo-fd-estandar.png", alt: "Logo FD" },
-              { src: "monterrey.png", alt: "Monterrey" },
-              { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" },
-              { src: "rotarios.jpeg", alt: "Rotarios" },
-              { src: "san-pedro-garza-garcia.png", alt: "San Pedro Garza García" },
-              { src: "secretaria-de-educacion-nl.png", alt: "Secretaría de Educación NL" },
-              { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
-              { src: "uanl.png", alt: "UANL" },
-              { src: "udem.jpg", alt: "UDEM" },
-              { src: "logo-fundacion-alta-01.png", alt: "Fundación ALTA" }
-            ].map((sponsor, idx) => (
-              <div key={idx} className="sp-card" aria-label={sponsor.alt} style={{ padding: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#ffffff', aspectRatio: '3/2', width: '100%', height: '100%', transition: 'all 0.3s ease' }}>
-                <img src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
-              </div>
-            ))}
+          <div className="sponsors-tiers" style={{ display: 'flex', flexDirection: 'column', gap: '4rem', alignItems: 'center' }}>
+            {/* Fila 1 - Más Importantes */}
+            <div className="sponsor-tier tier-1 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '3rem' }}>
+              {[
+                { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión" },
+                { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "AC 100 Aniversario" },
+                { src: "berel.png", alt: "Berel" },
+                { src: "itesm.png", alt: "Tecnológico de Monterrey" },
+              ].map((sponsor, idx) => (
+                <img key={idx} src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '140px', width: 'auto', maxWidth: '300px', objectFit: 'contain', filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))' }} />
+              ))}
+            </div>
+
+            {/* Fila 2 - Medianos */}
+            <div className="sponsor-tier tier-2 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '2.5rem' }}>
+              {[
+                { src: "udem.jpg", alt: "UDEM" },
+                { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
+                { src: "uanl.png", alt: "UANL" },
+                { src: "monterrey.png", alt: "Monterrey" },
+                { src: "san-pedro-garza-garcia.png", alt: "San Pedro Garza García" },
+                { src: "secretaria-de-educacion-nl.png", alt: "Secretaría de Educación NL" },
+              ].map((sponsor, idx) => (
+                <img key={idx} src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '90px', width: 'auto', maxWidth: '220px', objectFit: 'contain', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }} />
+              ))}
+            </div>
+
+            {/* Fila 3 - Pequeños */}
+            <div className="sponsor-tier tier-3 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '2rem' }}>
+              {[
+                { src: "cfc-logo-horizontal-naranja.png", alt: "CFC" },
+                { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
+                { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
+                { src: "logo-fd-estandar.png", alt: "Logo FD" },
+                { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" },
+                { src: "rotarios.jpeg", alt: "Rotarios" },
+                { src: "logo-fundacion-alta-01.png", alt: "Fundación ALTA" }
+              ].map((sponsor, idx) => (
+                <img key={idx} src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '60px', width: 'auto', maxWidth: '160px', objectFit: 'contain', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }} />
+              ))}
+            </div>
           </div>
 
           {/* CTA para nuevos patrocinadores */}
