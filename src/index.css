@@ -355,14 +355,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   font-weight: 700;
   color: rgba(255,255,255,.9);
 }
-/* bottom gradient overlay */
-.keynote-card__photo::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, transparent 40%, rgba(17,24,51,.98) 100%);
-  pointer-events: none;
-}
+
 /* Badge pinned on photo */
 .keynote-card__badge {
   position: absolute;
@@ -493,14 +486,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   color: rgba(255,255,255,.9);
   background: var(--gradient, linear-gradient(135deg, var(--color-accent), var(--color-lime)));
 }
-/* gradient overlay at bottom of photo */
-.sc-card__photo::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, transparent 40%, rgba(17,24,51,.98) 100%);
-  pointer-events: none;
-}
+
 /* Badge pinned to top-left of photo */
 .sc-card__badge {
   position: absolute;
