@@ -30,15 +30,15 @@ export default function Hero() {
     <section className="hero" id="hero" aria-labelledby="heroHeadline">
 
       <div className="hero__content">
-        <h1 className="hero__title reveal-up" id="heroHeadline" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: '1', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', columnGap: '0.15em' }}>
-            <span className="hero__title-gradient" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: 400, lineHeight: '1'}}>HUMANISMO</span>
-            <span className="hero__title-white" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: 400, lineHeight: '1'}}>Y</span>
-            <span className="hero__title-white" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: 400, lineHeight: '1'}}>VALORES</span>
+        <h1 className="hero__title reveal-up" id="heroHeadline" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: '1', textTransform: 'uppercase', marginBottom: '1.5rem', gap: '0' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', columnGap: '0.12em', lineHeight: '0.9' }}>
+            <span className="hero__title-gradient" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: 400, lineHeight: '0.9', letterSpacing: '-0.02em'}}>HUMANISMO</span>
+            <span className="hero__title-white" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: 400, lineHeight: '0.9', letterSpacing: '-0.02em'}}>Y</span>
+            <span className="hero__title-white" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: 400, lineHeight: '0.9', letterSpacing: '-0.02em'}}>VALORES</span>
           </div>
-          <span className="hero__title-white" style={{fontFamily: '"Helvetica Neue LT Pro 57 Condensed", "Oswald", "Helvetica Neue", "Arial Narrow", sans-serif', fontSize: 'clamp(1.2rem, 3.5vw, 2.4rem)', fontWeight: 400, marginTop: '-0.35em', marginBottom: '-0.2em', color: '#e5e7eb', letterSpacing: '0.15em'}}>EN LA ERA DE LA</span>
-          <span className="hero__title-gradient" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: 400, textAlign: 'center', lineHeight: '0.85', display: 'inline-block', marginTop: '-0.15em'}}>
-            INTELIGENCIA&nbsp;&nbsp;&nbsp;&nbsp;ARTIFICIAL
+          <span className="hero__title-white" style={{fontFamily: '"Helvetica Neue LT Pro 57 Condensed", "Oswald", "Helvetica Neue", "Arial Narrow", sans-serif', fontSize: 'clamp(1.2rem, 3.5vw, 2.4rem)', fontWeight: 400, marginTop: '0.05em', marginBottom: '0.05em', color: '#e5e7eb', letterSpacing: '0.15em'}}>EN LA ERA DE LA</span>
+          <span className="hero__title-gradient" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: 400, textAlign: 'center', lineHeight: '0.9', display: 'inline-block', letterSpacing: '-0.02em'}}>
+            INTELIGENCIA ARTIFICIAL
           </span>
         </h1>
         <p className="hero__tagline reveal-up" style={{ fontStyle: 'italic', maxWidth: '100%', margin: '1rem auto 2rem', fontSize: 'clamp(0.9rem, 2.5vw, 1.15rem)', lineHeight: '1.5', whiteSpace: 'nowrap' }}>
