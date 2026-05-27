@@ -316,7 +316,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   z-index: 10;
   width: 100%;
   flex: 1 1 auto;
-  height: auto;
+  height: 100%;
   background: var(--color-bg-card);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-xl);
@@ -3836,7 +3836,8 @@ html, body {
   isolation: auto !important;
   display: flex !important;
   flex-direction: column !important;
-  height: 100%;
+  height: auto !important;
+  align-self: stretch;
 }
 
 /* The 25 invisible tracker cells — absolute, cover entire card */
