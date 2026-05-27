@@ -60,7 +60,7 @@ function SpeakerCard({ speaker, index, isCurrent, onClick }) {
         <p className="sc-card__role">{speaker.role}</p>
         <p className="sc-card__bio">{speaker.bio}</p>
         <div className="sc-card__footer">
-          <a href="#agenda" className="btn btn--ghost btn--sm">Ver charla →</a>
+          <a href="#agenda" className="btn btn--ghost btn--sm" onClick={(e) => e.stopPropagation()}>Ver charla →</a>
         </div>
       </div>
     </article>
@@ -270,7 +270,7 @@ export default function Speakers() {
                     </p>
                   )}
                   <p className="keynote-card__bio">{keynote.bio}</p>
-                  <a href="#agenda" className="btn btn--primary btn--sm" style={{ marginTop: 'auto', alignSelf: 'flex-start', position: 'relative', zIndex: 30 }}>Ver en agenda →</a>
+                  <a href="#agenda" className="btn btn--primary btn--sm" style={{ marginTop: 'auto', alignSelf: 'flex-start', position: 'relative', zIndex: 25 }}>Ver en agenda →</a>
                 </div>
               </div>
             </article>

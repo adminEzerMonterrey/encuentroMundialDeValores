@@ -383,6 +383,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   gap: var(--space-1);
   padding: var(--space-4) var(--space-4) var(--space-5);
   flex: 1;
+  position: relative;
+  z-index: 21;
 }
 .keynote-card__name {
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);
