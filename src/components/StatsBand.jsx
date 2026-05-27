@@ -15,7 +15,7 @@ export default function StatsBand() {
       const start  = performance.now();
       const tick   = (now) => {
         const t = Math.min((now - start) / DURATION, 1);
-        el.textContent = Math.round(easeOut(t) * target);
+        el.textContent = Math.round(easeOut(t) * target).toLocaleString();
         if (t < 1) requestAnimationFrame(tick);
       };
       requestAnimationFrame(tick);
@@ -39,19 +39,19 @@ export default function StatsBand() {
     <section className="stats-band" aria-label="Estadísticas del evento" ref={sectionRef}>
       <div className="container stats-band__grid">
         <div className="stat-item reveal-up">
-          <span className="stat-item__number" data-target="250">0</span>
-          <span className="stat-item__label">Lugares disponibles</span>
+          <span className="stat-item__number" data-target="2500">0</span>
+          <span className="stat-item__label">Lugares</span>
         </div>
         <div className="stat-item reveal-up">
-          <span className="stat-item__number" data-target="16">0</span>
-          <span className="stat-item__label">Speakers</span>
+          <span className="stat-item__number" data-target="26">0</span>
+          <span className="stat-item__label">Participantes</span>
         </div>
         <div className="stat-item reveal-up">
-          <span className="stat-item__number" data-target="13">0</span>
-          <span className="stat-item__label">Charlas</span>
+          <span className="stat-item__number" data-target="20">0</span>
+          <span className="stat-item__label">Ponencias magistrales</span>
         </div>
         <div className="stat-item reveal-up">
-          <span className="stat-item__number" data-target="8">0</span>
+          <span className="stat-item__number" data-target="18">0</span>
           <span className="stat-item__label">Horas de contenido</span>
         </div>
       </div>

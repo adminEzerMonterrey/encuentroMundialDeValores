@@ -23,7 +23,7 @@ export default function Navbar() {
     <>
       <nav className={`nav ${isScrolled ? 'scrolled' : ''}`} id="nav" role="navigation" aria-label="Navegación principal">
         <a href="#" className="nav__brand" aria-label="Volver al inicio" onClick={closeMenu}>
-          <img src="/images/EMV XVIII-Blanco.png" alt="Encuentro Mundial de Valores" style={{ height: '40px', objectFit: 'contain' }} />
+          <img src="/images/EMV XVIII-Blanco.png" alt="Encuentro Mundial de Valores" style={{ height: '60px', objectFit: 'contain' }} />
           <span className="nav__year">2026</span>
         </a>
         <button 
@@ -47,7 +47,7 @@ export default function Navbar() {
           <li><a href="#faqs" className="nav__link" onClick={closeMenu}>FAQs</a></li>
           <li>
             <a href="#registro" className="btn--gradient-border nav__cta" onClick={closeMenu}>
-              <strong>REGISTRARME</strong>
+              <strong>COMPRAR BOLETO</strong>
             </a>
           </li>
         </ul>
@@ -57,10 +57,10 @@ export default function Navbar() {
         href="#registro" 
         className="sticky-cta"
         id="stickyCTA" 
-        aria-label="Registrarme en el evento"
+        aria-label="Comprar boleto para el evento"
         style={{ display: isScrolled ? '' : 'none' }}
       >
-        <strong>REGISTRARME →</strong>
+        <strong>COMPRAR BOLETO →</strong>
         <div className="sticky-stars-container">
           <div className="sticky-stars"></div>
         </div>
