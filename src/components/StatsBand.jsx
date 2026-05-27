@@ -43,8 +43,8 @@ export default function StatsBand() {
           <span className="stat-item__label">Lugares</span>
         </div>
         <div className="stat-item reveal-up">
-          <span className="stat-item__number" data-target="26">0</span>
-          <span className="stat-item__label">Participantes</span>
+          <span className="stat-item__number" data-target="30">0</span>
+          <span className="stat-item__label">Panelistas</span>
         </div>
         <div className="stat-item reveal-up">
           <span className="stat-item__number" data-target="20">0</span>
