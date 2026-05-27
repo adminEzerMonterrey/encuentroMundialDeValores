@@ -12,7 +12,7 @@ export default function Sponsors() {
             <p className="section-subtitle">Instituciones y empresas que hacen posible el Encuentro Mundial de Valores 2026.</p>
           </div>
 
-          <div className="sp-grid reveal-up" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2.5rem', alignItems: 'center', justifyContent: 'center' }}>
+          <div className="sp-grid reveal-up" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1px', background: 'rgba(255, 255, 255, 0.2)', border: '1px solid rgba(255, 255, 255, 0.2)', alignItems: 'stretch' }}>
             {[
               { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión" },
               { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "AC 100 Aniversario" },
@@ -32,8 +32,8 @@ export default function Sponsors() {
               { src: "udem.jpg", alt: "UDEM" },
               { src: "logo-fundacion-alta-01.png", alt: "Fundación ALTA" }
             ].map((sponsor, idx) => (
-              <div key={idx} className="sp-card" aria-label={sponsor.alt} style={{ padding: '3rem', display: 'flex', justifyContent: 'center', alignItems: 'center', background: 'rgba(255, 107, 53, 0.1)', borderRadius: '16px', border: '1px solid rgba(255, 107, 53, 0.3)', aspectRatio: '3/2', width: '100%', height: 'auto', transition: 'all 0.3s ease' }}>
-                <img src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+              <div key={idx} className="sp-card" aria-label={sponsor.alt} style={{ padding: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#ffffff', aspectRatio: '3/2', width: '100%', height: '100%', transition: 'all 0.3s ease' }}>
+                <img src={`Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
               </div>
             ))}
           </div>
