@@ -23,8 +23,8 @@ export default function Navbar() {
     <>
       <nav className={`nav ${isScrolled ? 'scrolled' : ''}`} id="nav" role="navigation" aria-label="Navegación principal">
         <a href="#" className="nav__brand" aria-label="Volver al inicio" onClick={closeMenu}>
-          <img src="/images/EMV XVIII-Blanco.png" alt="Encuentro Mundial de Valores" style={{ height: '60px', objectFit: 'contain' }} />
-          <span className="nav__year">2026</span>
+          <img src="/images/EMV XVIII-Blanco.png" alt="Encuentro Mundial de Valores" style={{ height: '90px', objectFit: 'contain' }} />
+          <span className="nav__year" style={{ alignSelf: 'flex-end', paddingBottom: '10px' }}>2026</span>
         </a>
         <button 
           className={`nav__hamburger ${isOpen ? 'open' : ''}`} 
@@ -37,9 +37,6 @@ export default function Navbar() {
           <span></span><span></span><span></span>
         </button>
         <ul className={`nav__menu ${isOpen ? 'open' : ''}`} id="navMenu" role="list">
-          <li>
-            <a href="https://www.superboletos.com/landing-evento/GKkYPxPOI36IfcL_nK2DYQ" className="nav__link" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Registro</a>
-          </li>
           <li><a href="#speakers" className="nav__link" onClick={closeMenu}>Ponentes</a></li>
           <li><a href="#agenda" className="nav__link" onClick={closeMenu}>Agenda</a></li>
           <li><a href="#sponsors" className="nav__link" onClick={closeMenu}>Colaboradores</a></li>
