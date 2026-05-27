@@ -9,7 +9,7 @@ export default function Footer() {
             <img src="/images/EMV XVIII-Blanco.png" alt="Encuentro Mundial de Valores 2026" style={{ height: '50px', objectFit: 'contain', marginBottom: '8px' }} />
             <p className="footer__tagline">El futuro de la tecnología empieza aquí.</p>
             <div className="footer__socials" aria-label="Redes sociales">
-              <a href="https://www.instagram.com/saitcudem/" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.instagram.com/encuentromundialdevalores?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"
                 className="footer__social-link" aria-label="Instagram EMV">
                 <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
                   <path
@@ -38,8 +38,8 @@ export default function Footer() {
             <div className="footer__nav-col">
               <h4 className="footer__nav-title">Contacto</h4>
               <ul role="list">
-                <li><a href="https://www.instagram.com/saitcudem/" target="_blank" rel="noopener noreferrer">saitc@udem.edu.mx</a></li>
-                <li><a href="https://www.instagram.com/saitcudem/" target="_blank" rel="noopener noreferrer">@saitc_udem</a></li>
+                <li><a href="https://www.instagram.com/encuentromundialdevalores?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">saitc@udem.edu.mx</a></li>
+                <li><a href="https://www.instagram.com/encuentromundialdevalores?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">@saitc_udem</a></li>
               </ul>
             </div>
           </nav>

@@ -181,7 +181,7 @@ export default function Sponsors() {
                   Escríbenos y hagámoslo juntos.
                 </p>
                 <a
-                  href="https://www.instagram.com/saitcudem/"
+                  href="https://www.instagram.com/encuentromundialdevalores?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="sp-cta-banner__btn"
