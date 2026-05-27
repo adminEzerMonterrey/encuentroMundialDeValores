@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer__top">
           <div className="footer__brand">
             <img src="/images/EMV XVIII-Blanco.png" alt="Encuentro Mundial de Valores 2026" style={{ height: '50px', objectFit: 'contain', marginBottom: '8px' }} />
-            <p className="footer__tagline">El futuro de la tecnología empieza aquí.</p>
+            <p className="footer__tagline">Despertando la consciencia para transformar al mundo.</p>
             <div className="footer__socials" aria-label="Redes sociales">
               <a href="https://www.instagram.com/encuentromundialdevalores?igsh=MXo0OXZ3d3hxOGl6" target="_blank" rel="noopener noreferrer"
                 className="footer__social-link" aria-label="Instagram EMV">
@@ -23,7 +23,7 @@ export default function Footer() {
               <h4 className="footer__nav-title">Evento</h4>
               <ul role="list">
                 <li><a href="https://www.superboletos.com/landing-evento/GKkYPxPOI36IfcL_nK2DYQ" target="_blank" rel="noopener noreferrer">Registro</a></li>
-                <li><a href="#speakers">Ponentes</a></li>
+                <li><a href="#speakers">Panelistas</a></li>
                 <li><a href="#agenda">Agenda</a></li>
               </ul>
             </div>
@@ -37,8 +37,8 @@ export default function Footer() {
             <div className="footer__nav-col">
               <h4 className="footer__nav-title">Contacto</h4>
               <ul role="list">
-                <li><a href="https://www.instagram.com/encuentromundialdevalores?igsh=MXo0OXZ3d3hxOGl6" target="_blank" rel="noopener noreferrer">saitc@udem.edu.mx</a></li>
-                <li><a href="https://www.instagram.com/encuentromundialdevalores?igsh=MXo0OXZ3d3hxOGl6" target="_blank" rel="noopener noreferrer">@saitc_udem</a></li>
+                <li><a href="mailto:info@encuentromundialdevalores.org" target="_blank" rel="noopener noreferrer">info@encuentromundialdevalores.org</a></li>
+                <li><a href="https://www.instagram.com/encuentromundialdevalores?igsh=MXo0OXZ3d3hxOGl6" target="_blank" rel="noopener noreferrer">@encuentromundialdevalores</a></li>
               </ul>
             </div>
           </nav>
