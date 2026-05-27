@@ -245,12 +245,12 @@ export default function Speakers() {
         {/* ── Keynotes Grid ── */}
         <div className="speakers__keynotes-grid">
           {keynotesData.map((keynote, idx) => (
-            <article className="keynote-card reveal-up noselect" key={idx} style={{ width: 'min(300px, 90vw)' }}>
+            <article className="keynote-card reveal-up noselect" key={idx} style={{ width: 'min(300px, 90vw)', display: 'flex', flexDirection: 'column' }}>
               {Array.from({ length: 25 }).map((_, i) => (
                 <div key={i} className={`keynote-tracker tr-${i + 1}`}></div>
               ))}
 
-              <div className="keynote-3d-content">
+              <div className="keynote-3d-content" style={{ flex: 1 }}>
                 {/* Photo */}
                 <div className="keynote-card__photo">
                   {keynote.img
