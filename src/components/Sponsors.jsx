@@ -266,60 +266,6 @@ export default function Sponsors() {
         </div>
       </section>
 
-      {/* ═══════════ COLABORADORES — LOGO CARDS ═══════════ */}
-      <section className="section colaboradores" id="colaboradores" aria-labelledby="colaboradoresHeading">
-        <div className="container">
-          <div className="section-header reveal-up">
-            <span className="section-tag">06 / COMUNIDAD</span>
-            <h2 className="section-title section-title--sm" id="colaboradoresHeading">Colaboradores &amp; Comunidad</h2>
-            <p className="section-subtitle">La red estudiantil que hace posible este evento.</p>
-          </div>
-
-          <div className="colab-grid reveal-up">
-
-            <div className="colab-card">
-              <div className="colab-card__img">
-                <img src="Colaboradores/acm.jpg" alt="ACM UDEM" loading="lazy" />
-              </div>
-              <span className="colab-card__name">ACM — UDEM</span>
-              <span className="colab-card__role">Association for Computing Machinery · UDEM</span>
-            </div>
-
-            <div className="colab-card">
-              <div className="colab-card__img">
-                <img src="Colaboradores/herc.jpg" alt="HERC UDEM" loading="lazy" />
-              </div>
-              <span className="colab-card__name">HERC UDEM</span>
-              <span className="colab-card__role">Human Exploration Rover Challenge · UDEM</span>
-            </div>
-
-            <div className="colab-card">
-              <div className="colab-card__img">
-                <img src="Colaboradores/era.jpg" alt="ERA UDEM" loading="lazy" />
-              </div>
-              <span className="colab-card__name">ERA UDEM</span>
-              <span className="colab-card__role">Engineering Research Association · UDEM</span>
-            </div>
-
-            <div className="colab-card">
-              <div className="colab-card__img">
-                <img src="Colaboradores/cpc.jpg" alt="CPC UDEM" loading="lazy" />
-              </div>
-              <span className="colab-card__name">Club de Prog. Competitiva</span>
-              <span className="colab-card__role">Programación Competitiva · UDEM</span>
-            </div>
-
-            <div className="colab-card">
-              <div className="colab-card__img">
-                <img src="Sponsors/aws.png" alt="Club AWS UDEM" loading="lazy" />
-              </div>
-              <span className="colab-card__name">Club AWS — UDEM</span>
-              <span className="colab-card__role">Amazon Web Services Cloud Club · UDEM</span>
-            </div>
-
-          </div>
-        </div>
-      </section>
     </>
   );
 }
