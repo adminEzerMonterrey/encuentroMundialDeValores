@@ -12,24 +12,24 @@ export default function Sponsors() {
             <p className="section-subtitle">Instituciones y empresas que hacen posible el Encuentro Mundial de Valores 2026.</p>
           </div>
 
-          <div className="sponsors-tiers" style={{ display: 'flex', flexDirection: 'column', gap: '4rem', alignItems: 'center' }}>
-            {/* Fila 1 - Universidades / Gobierno Monterrey */}
-            <div className="sponsor-tier tier-1 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '1rem' }}>
+          <div className="sponsors-tiers" style={{ display: 'flex', flexDirection: 'column', gap: '0', alignItems: 'center', width: '100%' }}>
+            {/* Fila 1 - Monterrey, UDEM, Tec, U-ERRE, UANL */}
+            <div className="sponsor-tier tier-1 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '0', width: '100%' }}>
               {[
                 { src: "monterrey.png", alt: "Gobierno de Monterrey" },
                 { src: "udem.jpg", alt: "UDEM" },
                 { src: "itesm.png", alt: "Tecnológico de Monterrey" },
                 { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
-                { src: "uanl.png", alt: "UANL" },
+                { src: "uanl.png", alt: "Universidad de Montemorelos" },
               ].map((sponsor, idx) => (
-                <div key={idx} style={{ padding: '1rem 2rem', border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.95)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '90px', width: 'auto', maxWidth: '250px', objectFit: 'contain' }} />
+                <div key={idx} style={{ flex: '1 1 18%', minWidth: '140px', padding: '1.2rem 1.5rem', border: '1px solid rgba(255,255,255,0.12)', background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '80px', width: 'auto', maxWidth: '200px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
 
-            {/* Fila 2 - Gobierno y Empresas */}
-            <div className="sponsor-tier tier-2 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '1rem' }}>
+            {/* Fila 2 - Educación NL, Igualdad, San Pedro, Arca Continental, Rotary */}
+            <div className="sponsor-tier tier-2 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '0', width: '100%' }}>
               {[
                 { src: "secretaria-de-educacion-nl.png", alt: "Secretaría de Educación NL" },
                 { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión" },
@@ -37,14 +37,14 @@ export default function Sponsors() {
                 { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "Arca Continental" },
                 { src: "rotarios.jpeg", alt: "Rotary" },
               ].map((sponsor, idx) => (
-                <div key={idx} style={{ padding: '1rem 2rem', border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.95)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '80px', width: 'auto', maxWidth: '220px', objectFit: 'contain' }} />
+                <div key={idx} style={{ flex: '1 1 18%', minWidth: '140px', padding: '1.2rem 1.5rem', border: '1px solid rgba(255,255,255,0.12)', background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '70px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
 
-            {/* Fila 3 - Fundaciones y Sociedad Civil */}
-            <div className="sponsor-tier tier-3 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '1rem' }}>
+            {/* Fila 3 - Deacero, Fundación Montemayor, Chapa González, CFC, Berel, Consejo, Pasteles */}
+            <div className="sponsor-tier tier-3 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '0', width: '100%' }}>
               {[
                 { src: "logo-fd-estandar.png", alt: "Fundación Deacero" },
                 { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor" },
@@ -52,10 +52,10 @@ export default function Sponsors() {
                 { src: "cfc-logo-horizontal-naranja.png", alt: "Charter for Compassion" },
                 { src: "berel.png", alt: "Berel" },
                 { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
-                { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" }
+                { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" },
               ].map((sponsor, idx) => (
-                <div key={idx} style={{ padding: '1rem 1.5rem', border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.95)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '70px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} />
+                <div key={idx} style={{ flex: '1 1 13%', minWidth: '120px', padding: '1rem 1.2rem', border: '1px solid rgba(255,255,255,0.12)', background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '60px', width: 'auto', maxWidth: '160px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
