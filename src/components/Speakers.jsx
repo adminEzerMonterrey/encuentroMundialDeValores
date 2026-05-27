@@ -69,7 +69,7 @@ function SpeakerCard({ speaker, index, isCurrent, onClick }) {
 
 // Keynotes (Main Speakers) — separate from carousel
 const keynotesData = [
-  { img: "Speakers/Mons_Rogelio_Cabrera_Lopez.jpg", initials: "RC", name: "Mons. Rogelio Cabrera López", company: "Arquidiócesis de Monterrey", role: "Arzobispo Metropolitano", bio: "Presidente emérito de la Conferencia del Episcopado Mexicano. Participa activamente en diálogos nacionales por la paz y justicia social.", gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)", talkIcon: "🏆", talkName: "Reconocimiento David Noel" },
+  { img: "Speakers/Mons_Rogelio_Cabrera_Lopez.jpg", initials: "RC", name: "Mons. Rogelio Cabrera López", company: "Arquidiócesis de Monterrey", role: "Arzobispo Metropolitano", bio: "Presidente emérito de la Conferencia del Episcopado Mexicano. Participa activamente en diálogos nacionales por la paz y justicia social.", gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)" },
   { img: "Speakers/Mauricio_Martinez.jpg", initials: "MM", name: "Mauricio Martinez", company: "Actor", role: "Cantante Mexicano", bio: "Reconocido actor y cantante. Explorará el impacto de la Inteligencia Artificial en la creatividad, el arte y la escenificación.", gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)", talkIcon: "🎭", talkName: "Ser Humano en escena" },
   { img: "Speakers/Farid_Dieck_Assad.jpg", initials: "FD", name: "Farid Dieck", company: "Creador de contenido", role: "Psicólogo y Conferencista", bio: "Reconocido creador de contenido y psicólogo, abordando temas de identidad y arte en la era del avance tecnológico.", gradient: "linear-gradient(135deg,#F0922A,#ef4444)", talkIcon: "🗣️", talkName: "Ser Humano en escena", imgPosition: "center center" },
   { img: "Speakers/Marian_Rojas_Estape.jpg", initials: "MR", name: "Marian Rojas Estapé", company: "Médica Psiquiatra", role: "Escritora y Conferencista", bio: "Destacada médica psiquiatra española, autora de best sellers. Explorará la reconexión interior en la era digital.", gradient: "linear-gradient(135deg,#E91E8C,#8B5CF6)", talkIcon: "🧠", talkName: "La mente en la era digital" },
@@ -259,12 +259,14 @@ export default function Speakers() {
                   <h3 className="keynote-card__name">{keynote.name}</h3>
                   <p className="keynote-card__company">{keynote.company}</p>
                   <p className="keynote-card__role">{keynote.role}</p>
-                  <p className="keynote-card__talk">
-                    <span className="keynote-card__talk-icon">{keynote.talkIcon || "🎤"}</span>
-                    {keynote.talkName}
-                  </p>
+                  {(keynote.talkIcon || keynote.talkName) && (
+                    <p className="keynote-card__talk">
+                      <span className="keynote-card__talk-icon">{keynote.talkIcon || "🎤"}</span>
+                      {keynote.talkName}
+                    </p>
+                  )}
                   <p className="keynote-card__bio">{keynote.bio}</p>
-                  <a href="#agenda" className="btn btn--primary btn--sm" style={{ marginTop: 'auto', alignSelf: 'flex-start' }}>Ver en agenda →</a>
+                  <a href="#agenda" className="btn btn--primary btn--sm" style={{ marginTop: 'auto', alignSelf: 'flex-start', position: 'relative', zIndex: 30 }}>Ver en agenda →</a>
                 </div>
               </div>
             </article>
