@@ -28,11 +28,6 @@ export default function Hero() {
 
   return (
     <section className="hero" id="hero" aria-labelledby="heroHeadline">
-      <div className="hero__overlay" aria-hidden="true"></div>
-      
-      {/* Nuevo fondo futurista */}
-      <div className="hero__beam"></div>
-      <div className="hero__glow-sphere"></div>
 
       <div className="hero__content">
         <h1 className="hero__title reveal-up" id="heroHeadline" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: '1', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
