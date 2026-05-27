@@ -30,14 +30,14 @@ export default function Hero() {
     <section className="hero" id="hero" aria-labelledby="heroHeadline">
 
       <div className="hero__content">
-        <h1 className="hero__title reveal-up" id="heroHeadline" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: '1', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
+        <h1 className="hero__title reveal-up" id="heroHeadline" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: '1', textTransform: 'uppercase', marginBottom: '1.5rem', gap: '0.5px' }}>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', columnGap: '0.15em' }}>
             <span className="hero__title-gradient" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: 400, lineHeight: '1'}}>HUMANISMO</span>
             <span className="hero__title-white" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: 400, lineHeight: '1'}}>Y</span>
             <span className="hero__title-white" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: 400, lineHeight: '1'}}>VALORES</span>
           </div>
-          <span className="hero__title-white" style={{fontFamily: '"Helvetica Neue LT Pro 57 Condensed", "Oswald", "Helvetica Neue", "Arial Narrow", sans-serif', fontSize: 'clamp(1.2rem, 3.5vw, 2.4rem)', fontWeight: 400, marginTop: '-0.5em', marginBottom: '-0.25em', color: '#e5e7eb', letterSpacing: '0.15em'}}>EN LA ERA DE LA</span>
-          <span className="hero__title-gradient" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: 400, textAlign: 'center', lineHeight: '0.85', display: 'inline-block', marginTop: '-0.1em'}}>
+          <span className="hero__title-white" style={{fontFamily: '"Helvetica Neue LT Pro 57 Condensed", "Oswald", "Helvetica Neue", "Arial Narrow", sans-serif', fontSize: 'clamp(1.2rem, 3.5vw, 2.4rem)', fontWeight: 400, margin: 0, color: '#e5e7eb', letterSpacing: '0.15em'}}>EN LA ERA DE LA</span>
+          <span className="hero__title-gradient" style={{fontFamily: '"Bebas Neue", sans-serif', fontSize: 'clamp(3.5rem, 10vw, 7rem)', fontWeight: 400, textAlign: 'center', lineHeight: '0.85', display: 'inline-block', margin: 0}}>
             INTELIGENCIA&nbsp;&nbsp;&nbsp;&nbsp;ARTIFICIAL
           </span>
         </h1>
