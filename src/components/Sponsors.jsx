@@ -16,11 +16,11 @@ export default function Sponsors() {
             {/* Fila 1 - Monterrey, UDEM, Tec, U-ERRE, UANL */}
             <div className="sponsor-tier tier-1 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '0', width: '100%' }}>
               {[
-                { src: "monterrey.png", alt: "Gobierno de Monterrey" },
-                { src: "udem.jpg", alt: "UDEM" },
-                { src: "itesm.png", alt: "Tecnológico de Monterrey" },
+                { src: "Monterrey.png", alt: "Gobierno de Monterrey" },
+                { src: "UDEM.jpg", alt: "UDEM" },
+                { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
                 { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
-                { src: "uanl.png", alt: "Universidad de Montemorelos" },
+                { src: "UANL.png", alt: "Universidad de Montemorelos" },
               ].map((sponsor, idx) => (
                 <div key={idx} style={{ flex: '1 1 18%', minWidth: '140px', padding: '1.2rem 1.5rem', border: '1px solid rgba(255,255,255,0.12)', background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '80px', width: 'auto', maxWidth: '200px', objectFit: 'contain' }} />
@@ -35,7 +35,7 @@ export default function Sponsors() {
                 { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión" },
                 { src: "san-pedro-garza-garcia.png", alt: "San Pedro Garza García" },
                 { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "Arca Continental" },
-                { src: "rotarios.jpeg", alt: "Rotary" },
+                { src: "Rotarios.jpeg", alt: "Rotary" },
               ].map((sponsor, idx) => (
                 <div key={idx} style={{ flex: '1 1 18%', minWidth: '140px', padding: '1.2rem 1.5rem', border: '1px solid rgba(255,255,255,0.12)', background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '70px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} />
@@ -50,7 +50,7 @@ export default function Sponsors() {
                 { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor" },
                 { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
                 { src: "cfc-logo-horizontal-naranja.png", alt: "Charter for Compassion" },
-                { src: "berel.png", alt: "Berel" },
+                { src: "BEREL.png", alt: "Berel" },
                 { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
                 { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" },
               ].map((sponsor, idx) => (
