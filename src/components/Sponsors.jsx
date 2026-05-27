@@ -140,7 +140,7 @@ export default function Sponsors() {
             <div className="ubicacion-info-panel" style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', margin: 0 }}>Día 2: Cintermex</h3>
-                <img src="/images/Logo_Alta_sinFondo Cinternex stroke.png" alt="Cintermex Logo" style={{ height: '40px', objectFit: 'contain' }} />
+                <img src="/images/Logo_Alta_sinFondo Cinternex stroke.png" alt="Cintermex Logo" style={{ height: '70px', objectFit: 'contain' }} />
               </div>
               <div className="ubicacion-info-row">
                 <span className="ubicacion-info-icon">📍</span>
