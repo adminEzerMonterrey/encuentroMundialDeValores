@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer__top">
           <div className="footer__brand">
             <img src="/images/EMV XVIII-Blanco.png" alt="Encuentro Mundial de Valores 2026" style={{ height: '50px', objectFit: 'contain', marginBottom: '8px' }} />
-            <p className="footer__tagline">Despertando la consciencia para transformar al mundo.</p>
+            <p className="footer__tagline">Navegando con Valores</p>
             <div className="footer__socials" aria-label="Redes sociales">
               <a href="https://www.instagram.com/encuentromundialdevalores?igsh=MXo0OXZ3d3hxOGl6" target="_blank" rel="noopener noreferrer"
                 className="footer__social-link" aria-label="Instagram EMV">

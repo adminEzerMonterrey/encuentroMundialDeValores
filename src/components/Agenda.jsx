@@ -228,7 +228,7 @@ export default function Agenda() {
         <div className="section-header reveal-up">
           <span className="section-tag">03 / AGENDA</span>
           <h2 className="section-title" id="agendaHeading">Agenda Oficial</h2>
-          <p className="section-subtitle">Orden cronológico de participación · <span className="text-accent">3 y 4 de octubre de 2026</span></p>
+          <p className="section-subtitle"><span className="text-accent">3 y 4 de octubre de 2026</span></p>
         </div>
 
         <div className="ag-blob-wrapper" style={{ marginTop: '3rem' }}>
