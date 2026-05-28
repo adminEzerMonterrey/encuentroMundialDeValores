@@ -48,15 +48,15 @@ export default function Sponsors() {
             <div className="sponsor-tier tier-3 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '0', width: '100%' }}>
               {[
                 { src: "logo-fd-estandar.png", alt: "Fundación Deacero", scale: 1.15 },
-                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", scale: 5, className: "sponsor-fundacion", containerClassName: "sponsor-fundacion-container" },
+                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", flex: '1 1 35%', maxWidth: '100%', width: '90%', height: 'auto', className: "sponsor-fundacion", containerClassName: "sponsor-fundacion-container" },
                 { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González", scale: 1.5 },
                 { src: "cfc-logo-horizontal-naranja.jpeg", alt: "Charter for Compassion", scale: 1.2 },
                 { src: "BEREL.png", alt: "Berel", scale: 1.5 },
                 { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso", scale: 1.5 },
                 { src: "pasteles-de-laura.png", alt: "Pasteles de Laura", scale: 1.5 },
               ].map((sponsor, idx) => (
-                <div key={idx} className={sponsor.containerClassName || ''} style={{ flex: '1 1 13%', minWidth: '90px', padding: '0.8rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}?v=4`} alt={sponsor.alt} className={sponsor.className || ''} loading="lazy" style={{ height: sponsor.scale ? `${50 * sponsor.scale}px` : '50px', width: 'auto', maxWidth: sponsor.scale ? `${130 * sponsor.scale}px` : '130px', objectFit: 'contain' }} />
+                <div key={idx} className={sponsor.containerClassName || ''} style={{ flex: sponsor.flex || '1 1 13%', minWidth: '90px', padding: '1.2rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <img src={`/Sponsors/${sponsor.src}?v=4`} alt={sponsor.alt} className={sponsor.className || ''} loading="lazy" style={{ height: sponsor.height || (sponsor.scale ? `${50 * sponsor.scale}px` : '50px'), width: sponsor.width || 'auto', maxWidth: sponsor.maxWidth || (sponsor.scale ? `${130 * sponsor.scale}px` : '130px'), objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
