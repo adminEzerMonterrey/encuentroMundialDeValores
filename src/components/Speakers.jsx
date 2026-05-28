@@ -49,7 +49,7 @@ function SpeakerCard({ speaker, index, isCurrent, onClick }) {
       {/* Photo */}
       <div className="sc-card__photo">
         {speaker.img
-          ? <img src={speaker.img} alt={speaker.name} loading="lazy" style={speaker.imgPosition ? { objectPosition: speaker.imgPosition } : undefined} />
+          ? <img src={speaker.img} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.imgPosition || undefined, transform: speaker.imgScale ? `scale(${speaker.imgScale})` : undefined }} />
           : <div className="sc-card__photo-fallback" style={{ '--gradient': speaker.gradient }}>{speaker.initials}</div>}
       </div>
 
@@ -72,7 +72,7 @@ const speakersData = [
   { img: "/Speakers/Marian_Rojas_Estape.jpg", initials: "MR", name: "Marian Rojas Estapé", company: "Médica Psiquiatra", role: "Escritora y Conferencista", bio: "Destacada médica psiquiatra española, autora de best sellers. Explorará la reconexión interior en la era digital.", gradient: "linear-gradient(135deg,#E91E8C,#8B5CF6)", talkIcon: "🧠", talkName: "La mente en la era digital" },
   { img: "/Speakers/Jorge_Ramos.jpeg", initials: "JR", name: "Jorge Ramos", company: "Periodista", role: "Escritor y Periodista", bio: "Influyente periodista hispanohablante y escritor. Cubrió eventos históricos y es autor de 15 libros sobre política e inmigración.", gradient: "linear-gradient(135deg,#E91E8C,#8B5CF6)", talkIcon: "🎙️", talkName: "Compromiso con la verdad" },
   { img: "/Speakers/Gurudev_Sri_Sri_Ravi_Shankar.jpeg", initials: "GS", name: "Gurudev Sri Sri Ravi Shankar", company: "El Arte de Vivir", role: "Líder Humanitario", bio: "Líder humanitario y maestro espiritual, fundador de la organización internacional El Arte de Vivir.", gradient: "linear-gradient(135deg,#E91E8C,#F0922A)", talkIcon: "🧘‍♂️", talkName: "Sabiduría Eterna" },
-  { img: "/Speakers/Mons_Rogelio_Cabrera_Lopez.jpg", initials: "RC", name: "Mons. Rogelio Cabrera López", company: "Arquidiócesis de Monterrey", role: "Arzobispo Metropolitano", bio: "Presidente emérito de la Conferencia del Episcopado Mexicano. Participa activamente en diálogos nacionales por la paz y justicia social.", gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)", trackClass: "track-a", trackName: "Reconocimiento", talkIcon: "🕊️", talkName: "Reconocimiento" },
+  { img: "/Speakers/Mons_Rogelio_Cabrera_Lopez.jpg", imgScale: "1.4", initials: "RC", name: "Mons. Rogelio Cabrera López", company: "Arquidiócesis de Monterrey", role: "Arzobispo Metropolitano", bio: "Presidente emérito de la Conferencia del Episcopado Mexicano. Participa activamente en diálogos nacionales por la paz y justicia social.", gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)", trackClass: "track-a", trackName: "Reconocimiento", talkIcon: "🕊️", talkName: "Reconocimiento" },
   { img: "/Speakers/Mauricio_Martinez.jpg", initials: "MM", name: "Mauricio Martínez", company: "Actor", role: "Cantante Mexicano", bio: "Reconocido actor y cantante. Explorará el impacto de la Inteligencia Artificial en la creatividad, el arte y la escenificación.", gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)", trackClass: "track-a", trackName: "Creatividad", talkIcon: "🎭", talkName: "Ser Humano en escena" },
   { img: "/Speakers/Farid_Dieck_Assad.jpg", initials: "FD", name: "Farid Dieck", company: "Creador de contenido", role: "Psicólogo y Conferencista", bio: "Reconocido creador de contenido y psicólogo, abordando temas de identidad y arte en la era del avance tecnológico.", gradient: "linear-gradient(135deg,#F0922A,#ef4444)", trackClass: "track-a", trackName: "Identidad", talkIcon: "🗣️", talkName: "Ser Humano en escena" },
   { img: "/Speakers/Dr._Arumugam_Mrukiah.png", initials: "AM", name: "Dr. Arumugam Murukiah", company: "Broadline Technologies", role: "Emprendedor y Líder Digital", bio: "Líder en transformation digital con más de 4 décadas de experiencia. Innovador en salud pública y cadenas de suministro en la India.", gradient: "linear-gradient(135deg,#F0922A,#ef4444)", trackClass: "track-a", trackName: "Tecnología", talkIcon: "⚙️", talkName: "IA Humanizada" },
@@ -242,7 +242,7 @@ export default function Speakers() {
           {speakersData.map((speaker, idx) => (
             <div className="collage-item" key={idx}>
               {speaker.img ? (
-                <img src={speaker.img} alt={speaker.name} loading="lazy" style={speaker.imgPosition ? { objectPosition: speaker.imgPosition } : undefined} />
+                <img src={speaker.img} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.imgPosition || undefined, transform: speaker.imgScale ? `scale(${speaker.imgScale})` : undefined }} />
               ) : (
                 <div className="collage-fallback" style={{ background: speaker.gradient }}>{speaker.initials}</div>
               )}
