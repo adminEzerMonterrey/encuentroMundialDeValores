@@ -232,8 +232,8 @@ export default function Speakers() {
     <section className="section speakers" id="speakers" aria-labelledby="speakersHeading">
       <div className="container">
         <div className="section-header reveal-up">
-          <span className="section-tag">02 / COLLAGE</span>
-          <h2 className="section-title" id="speakersHeading">Collage</h2>
+          <span className="section-tag">02 / PANELISTAS</span>
+          <h2 className="section-title" id="speakersHeading">Panelistas</h2>
           <p className="section-subtitle">Los rostros del Encuentro Mundial de Valores.</p>
         </div>
 
@@ -248,13 +248,6 @@ export default function Speakers() {
               )}
             </div>
           ))}
-        </div>
-      </div>
-
-      <div className="container" style={{ marginTop: '4rem' }}>
-        <div className="section-header reveal-up">
-          <h2 className="section-title">Panelistas</h2>
-          <p className="section-subtitle">Expertos de la industria compartiendo su visión del futuro.</p>
         </div>
       </div>
 
