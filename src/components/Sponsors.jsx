@@ -103,8 +103,7 @@ export default function Sponsors() {
           <div className="section-header section-header--left reveal-up">
             <span className="section-tag">05 / UBICACIÓN</span>
             <h2 className="section-title" id="ubicacionHeading">Sedes del Evento</h2>
-            <p className="section-subtitle section-subtitle--left">Nos vemos en <span className="text-accent">San Pedro Garza
-                García</span> y <span className="text-lime">Monterrey</span>, Nuevo León</p>
+            <p className="section-subtitle section-subtitle--left">Nos vemos en <span className="text-accent">Showcenter</span> y <span className="text-lime">Cintermex</span>, Nuevo León</p>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }} className="reveal-up">
