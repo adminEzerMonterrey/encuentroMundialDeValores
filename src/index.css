@@ -4226,14 +4226,9 @@ a.nav__brand {
     height: 35px !important;
     max-width: 90px !important;
   }
-  .sponsor-fundacion-container {
-    flex: 1 1 100% !important;
-    min-width: 100% !important;
-    padding: 1.5rem !important;
-  }
   .sponsor-fundacion {
-    height: 180px !important;
-    max-width: 90% !important;
+    height: 100px !important;
+    max-width: 100% !important;
   }
   .sponsor-pasteles {
     height: 40px !important;
