@@ -43,7 +43,7 @@ export default function Navbar() {
           <li><a href="#ubicacion" className="nav__link" onClick={closeMenu}>Ubicación</a></li>
           <li>
             <a href="https://www.superboletos.com/landing-evento/GKkYPxPOI36IfcL_nK2DYQ" className="btn--gradient-border nav__cta" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
-              <strong>COMPRAR BOLETO</strong>
+              <strong>COMPRAR BOLETOS</strong>
             </a>
           </li>
         </ul>
@@ -54,10 +54,10 @@ export default function Navbar() {
         target="_blank" rel="noopener noreferrer"
         className="sticky-cta"
         id="stickyCTA" 
-        aria-label="Comprar boleto para el evento"
+        aria-label="Comprar boletos para el evento"
         style={{ display: isScrolled ? '' : 'none' }}
       >
-        <strong>COMPRAR BOLETO →</strong>
+        <strong>COMPRAR BOLETOS →</strong>
         <div className="sticky-stars-container">
           <div className="sticky-stars"></div>
         </div>

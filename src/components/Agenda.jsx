@@ -98,7 +98,7 @@ const agendaData = [
     track: "IA y Autonomía Humana",
     color: "var(--color-accent)",
     speakers: [
-      { name: "Marian Mimi Edmunds", role: "Periodista y Productora · CBS 60 Minutes" },
+      { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora · CBS 60 Minutes" },
       { name: "Jorge Lerdo de Tejada", role: "Global Ambassador · Singularity University" },
       { name: "Jorge Ramos", role: "Periodista · Univision" }
     ]
@@ -127,8 +127,7 @@ const agendaData = [
     track: "IA y Autonomía Humana",
     color: "var(--color-accent)",
     speakers: [
-      { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" },
-      { name: "Salvador Rizzo Tavares", role: "Rotarios" }
+      { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" }
     ]
   },
   {
@@ -146,7 +145,7 @@ const agendaData = [
     track: "IA y Autonomía Humana",
     color: "var(--color-accent)",
     speakers: [
-      { name: "Marian Mimi Edmunds", role: "Periodista y Productora" }
+      { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora" }
     ]
   },
   {
