@@ -20,7 +20,8 @@ export default function Sponsors() {
                 { src: "UDEM.jpg", alt: "UDEM" },
                 { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
                 { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
-                { src: "UANL.png", alt: "Universidad de Montemorelos" },
+                { src: "UANL.png", alt: "UANL" },
+                { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos" },
               ].map((sponsor, idx) => (
                 <div key={idx} style={{ flex: '1 1 18%', minWidth: '100px', padding: '1.2rem 1rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <img src={`/Sponsors/${sponsor.src}?v=3`} alt={sponsor.alt} loading="lazy" style={{ height: '60px', width: 'auto', maxWidth: '160px', objectFit: 'contain' }} />
