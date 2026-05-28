@@ -4209,11 +4209,11 @@ a.nav__brand {
 /* SPONSORS MOBILE OVERRIDES */
 @media (max-width: 768px) {
   .sponsor-rotary {
-    height: 25px !important;
-    max-width: 75px !important;
+    height: 35px !important;
+    max-width: 90px !important;
   }
   .sponsor-fundacion {
-    height: 50px !important;
-    max-width: 140px !important;
+    height: 90px !important;
+    max-width: 260px !important;
   }
 }

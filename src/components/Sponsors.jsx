@@ -36,7 +36,7 @@ export default function Sponsors() {
                 { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión" },
                 { src: "san-pedro-garza-garcia.png", alt: "San Pedro Garza García" },
                 { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "Arca Continental" },
-                { src: "Rotarios.jpeg", alt: "Rotary", scale: 0.7, className: "sponsor-rotary", containerClassName: "sponsor-rotary-container" },
+                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", scale: 2.5, className: "sponsor-fundacion", containerClassName: "sponsor-fundacion-container" },
               ].map((sponsor, idx) => (
                 <div key={idx} className={sponsor.containerClassName || ''} style={{ flex: '1 1 18%', minWidth: '100px', padding: '1rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <img src={`/Sponsors/${sponsor.src}?v=4`} alt={sponsor.alt} className={sponsor.className || ''} loading="lazy" style={{ height: sponsor.scale ? `${55 * sponsor.scale}px` : '55px', width: 'auto', maxWidth: sponsor.scale ? `${150 * sponsor.scale}px` : '150px', objectFit: 'contain' }} />
@@ -48,7 +48,7 @@ export default function Sponsors() {
             <div className="sponsor-tier tier-3 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '0', width: '100%' }}>
               {[
                 { src: "logo-fd-estandar.png", alt: "Fundación Deacero", scale: 1.15 },
-                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", scale: 1.2, className: "sponsor-fundacion", containerClassName: "sponsor-fundacion-container" },
+                { src: "Rotarios.jpeg", alt: "Rotary", scale: 0.8, className: "sponsor-rotary", containerClassName: "sponsor-rotary-container" },
                 { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González", scale: 1.5 },
                 { src: "cfc-logo-horizontal-naranja.jpeg", alt: "Charter for Compassion", scale: 1.2 },
                 { src: "BEREL.png", alt: "Berel", scale: 1.5 },
