@@ -39,6 +39,9 @@ function SplashScreen({ onDone }) {
       <div className="loading-overlay v1"></div>
       <div className="loading-overlay v2"></div>
       <div className="loading-overlay v3"></div>
+      <div className="splash-dove-wrapper">
+        <img src="/images/icono-de-la-paloma-en-blanco-y-negro-vector-fondos.webp" alt="Dove" className="splash-dove" />
+      </div>
     </div>
   );
 }
