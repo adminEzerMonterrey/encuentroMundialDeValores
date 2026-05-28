@@ -85,11 +85,11 @@ const agendaData = [
     track: "IA, Educación e Inclusión",
     color: "var(--color-orange)",
     speakers: [
-      { name: "Por definir", role: "Rector · UANL" },
-      { name: "Por definir", role: "Próximo Rector · UDEM" },
-      { name: "Mario Adrián Flores Castro", role: "Vicepresidente · Tecnológico de Monterrey" },
+      { name: "Juan Paura García", role: "Secretario de Educación · Nuevo León" },
       { name: "Ángel Casán Marcos", role: "Rector · Universidad Regiomontana U-ERRE" },
-      { name: "Juan Paura García", role: "Secretario de Educación · Nuevo León" }
+      { name: "Mario Adrián Flores Castro", role: "Vicepresidente · Tecnológico de Monterrey" },
+      { name: "Por definir", role: "Próximo Rector · UDEM" },
+      { name: "Por definir", role: "Rector · UANL" }
     ]
   },
   {
