@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="footer__nav-col">
               <h4 className="footer__nav-title">Evento</h4>
               <ul role="list">
-                <li><a href="https://www.superboletos.com/landing-evento/GKkYPxPOI36IfcL_nK2DYQ" target="_blank" rel="noopener noreferrer">Registro</a></li>
+                <li><a href="https://www.superboletos.com/landing-evento/GKkYPxPOI36IfcL_nK2DYQ" target="_blank" rel="noopener noreferrer">Compra tu Boleto</a></li>
                 <li><a href="#speakers">Panelistas</a></li>
                 <li><a href="#agenda">Agenda</a></li>
               </ul>
