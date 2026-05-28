@@ -49,7 +49,7 @@ function SpeakerCard({ speaker, index, isCurrent, onClick }) {
       {/* Photo */}
       <div className="sc-card__photo">
         {speaker.img
-          ? <img src={speaker.img} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.imgPosition || undefined, transform: speaker.imgScale ? `scale(${speaker.imgScale})` : undefined }} />
+          ? <img src={speaker.img} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.imgPosition || undefined, transform: speaker.imgScale ? `scale(${speaker.imgScale})` : undefined, transformOrigin: speaker.imgScale ? 'top center' : undefined }} />
           : <div className="sc-card__photo-fallback" style={{ '--gradient': speaker.gradient }}>{speaker.initials}</div>}
       </div>
 
@@ -242,7 +242,7 @@ export default function Speakers() {
           {speakersData.map((speaker, idx) => (
             <div className="collage-item" key={idx}>
               {speaker.img ? (
-                <img src={speaker.img} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.imgPosition || undefined, transform: speaker.imgScale ? `scale(${speaker.imgScale})` : undefined }} />
+                <img src={speaker.img} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.imgPosition || undefined, transform: speaker.imgScale ? `scale(${speaker.imgScale})` : undefined, transformOrigin: speaker.imgScale ? 'top center' : undefined }} />
               ) : (
                 <div className="collage-fallback" style={{ background: speaker.gradient }}>{speaker.initials}</div>
               )}
