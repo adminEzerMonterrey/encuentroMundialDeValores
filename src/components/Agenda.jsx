@@ -11,7 +11,7 @@ const agendaData = [
   },
   {
     type: "Ceremonia de apertura",
-    title: "Mensaje de Bienvenida",
+    title: "Entrega de reconocimiento · Familia David Noel Ramírez",
     track: "IA, Salud y Espiritualidad",
     color: "var(--color-cyan)",
     speakers: [
@@ -85,8 +85,8 @@ const agendaData = [
     track: "IA, Educación e Inclusión",
     color: "var(--color-orange)",
     speakers: [
-      { name: "Santos Guzmán López", role: "Rector · UANL" },
-      { name: "Eugenio Garza y Garza", role: "Próximo Rector · UDEM" },
+      { name: "Por definir", role: "Rector · UANL" },
+      { name: "Por definir", role: "Próximo Rector · UDEM" },
       { name: "Mario Adrián Flores Castro", role: "Vicepresidente · Tecnológico de Monterrey" },
       { name: "Ángel Casán Marcos", role: "Rector · Universidad Regiomontana U-ERRE" },
       { name: "Juan Paura García", role: "Secretario de Educación · Nuevo León" }
@@ -162,7 +162,7 @@ const agendaData = [
   {
     type: "Consejo Interreligioso · Sala Espiritualidad",
     title: "Consejo Interreligioso",
-    track: "Espiritualidad / Interreligioso",
+    track: "IA y Espiritualidad",
     color: "var(--color-lime)",
     speakers: [
       { name: "Mons. Rogelio Cabrera López", role: "Arzobispo Metropolitano de Monterrey" },
@@ -193,7 +193,7 @@ const agendaData = [
   {
     type: "Sesión especial",
     title: "Sabiduría ancestral y el futuro tecnológico",
-    track: "Espiritualidad / Interreligioso",
+    track: "IA y Espiritualidad",
     color: "var(--color-lime)",
     speakers: [
       { name: "Abuelo Maya Antonio Oxté", role: "Sabio Maya · Tzucacab, Yucatán" }
@@ -217,6 +217,24 @@ const agendaData = [
       { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" },
       { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" },
       { name: "Caroline Sánchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" }
+    ]
+  },
+  {
+    type: "Presentación especial",
+    title: "Nayo Escobar · Comediante y creador de contenido",
+    track: "IA y Autonomía Humana",
+    color: "var(--color-accent)",
+    speakers: [
+      { name: "Nayo Escobar", role: "Comediante y creador de contenido" }
+    ]
+  },
+  {
+    type: "Presentación de libro",
+    title: "Inteligencia Artificial y Paz Mundial",
+    track: "IA y Espiritualidad",
+    color: "var(--color-lime)",
+    speakers: [
+      { name: "Pastor Federico Elizondo", role: "Autor · Inteligencia Artificial y Paz Mundial" }
     ]
   }
 ];
