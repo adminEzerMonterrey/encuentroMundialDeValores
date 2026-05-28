@@ -3758,34 +3758,6 @@ a.nav__brand {
   transform: translateY(-100%);
 }
 
-.splash-dove-wrapper {
-  position: absolute;
-  z-index: 20;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: doveHover 2s ease-in-out infinite;
-}
-
-.splash-dove {
-  width: clamp(100px, 20vw, 180px);
-  height: auto;
-  object-fit: contain;
-  transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.8s ease;
-  filter: invert(1);
-  mix-blend-mode: screen;
-}
-
-.loading-screen.is-revealing .splash-dove {
-  transform: translateY(-120vh) scale(0.6) rotate(15deg);
-  opacity: 0;
-}
-
-@keyframes doveHover {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
 .loading-content {
   position: relative;
   z-index: 11;
