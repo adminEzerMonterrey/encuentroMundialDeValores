@@ -20,11 +20,11 @@ export default function Sponsors() {
                 { src: "UDEM.jpg", alt: "UDEM" },
                 { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
                 { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
-                { src: "UANL.png", alt: "UANL" },
                 { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos" },
+                { src: "UANL.png", alt: "UANL" },
               ].map((sponsor, idx) => (
                 <div key={idx} style={{ flex: '1 1 18%', minWidth: '100px', padding: '1.2rem 1rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}?v=3`} alt={sponsor.alt} loading="lazy" style={{ height: '60px', width: 'auto', maxWidth: '160px', objectFit: 'contain' }} />
+                  <img src={`/Sponsors/${sponsor.src}?v=4`} alt={sponsor.alt} loading="lazy" style={{ height: '60px', width: 'auto', maxWidth: '160px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
@@ -39,7 +39,7 @@ export default function Sponsors() {
                 { src: "Rotarios.jpeg", alt: "Rotary" },
               ].map((sponsor, idx) => (
                 <div key={idx} style={{ flex: '1 1 18%', minWidth: '100px', padding: '1rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}?v=3`} alt={sponsor.alt} loading="lazy" style={{ height: '55px', width: 'auto', maxWidth: '150px', objectFit: 'contain' }} />
+                  <img src={`/Sponsors/${sponsor.src}?v=4`} alt={sponsor.alt} loading="lazy" style={{ height: '55px', width: 'auto', maxWidth: '150px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
@@ -56,7 +56,7 @@ export default function Sponsors() {
                 { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" },
               ].map((sponsor, idx) => (
                 <div key={idx} style={{ flex: '1 1 13%', minWidth: '90px', padding: '0.8rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}?v=3`} alt={sponsor.alt} loading="lazy" style={{ height: sponsor.scale ? `${50 * sponsor.scale}px` : '50px', width: 'auto', maxWidth: sponsor.scale ? `${130 * sponsor.scale}px` : '130px', objectFit: 'contain' }} />
+                  <img src={`/Sponsors/${sponsor.src}?v=4`} alt={sponsor.alt} loading="lazy" style={{ height: sponsor.scale ? `${50 * sponsor.scale}px` : '50px', width: 'auto', maxWidth: sponsor.scale ? `${130 * sponsor.scale}px` : '130px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
