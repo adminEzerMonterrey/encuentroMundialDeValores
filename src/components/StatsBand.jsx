@@ -8,7 +8,7 @@ export default function StatsBand() {
     if (!els || !els.length) return;
 
     const easeOut = t => 1 - Math.pow(1 - t, 3);
-    const DURATION = 2000;
+    const DURATION = 4000;
 
     const animate = (el) => {
       const target = parseInt(el.dataset.target, 10);
