@@ -109,9 +109,9 @@ export default function Sponsors() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '2rem' }} className="reveal-up">
             {/* Showcenter */}
             <div className="ubicacion-info-panel" style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '0.5rem' }}>
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', margin: 0 }}>Día 1: Showcenter</h3>
-                <img src="/images/logo showcenter.png" alt="Showcenter Complex Logo" style={{ height: '40px', objectFit: 'contain' }} />
+                <img src="/images/logo showcenter.png" alt="Showcenter Complex Logo" style={{ height: '40px', maxWidth: '100px', objectFit: 'contain' }} />
               </div>
               <div className="ubicacion-info-row">
                 <span className="ubicacion-info-icon">📍</span>
@@ -137,9 +137,9 @@ export default function Sponsors() {
 
             {/* Cintermex */}
             <div className="ubicacion-info-panel" style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '0.5rem' }}>
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', margin: 0 }}>Día 2: Cintermex</h3>
-                <img src="/images/Logo_Alta_sinFondo Cinternex stroke.png" alt="Cintermex Logo" style={{ height: '70px', objectFit: 'contain' }} />
+                <img src="/images/Logo_Alta_sinFondo Cinternex stroke.png" alt="Cintermex Logo" style={{ height: 'auto', maxHeight: '50px', maxWidth: '120px', objectFit: 'contain' }} />
               </div>
               <div className="ubicacion-info-row">
                 <span className="ubicacion-info-icon">📍</span>
