@@ -60,7 +60,7 @@ function SpeakerCard({ speaker, index, isCurrent, onClick }) {
         <p className="sc-card__role">{speaker.role}</p>
         <p className="sc-card__bio">{speaker.bio}</p>
         <div className="sc-card__footer">
-          <a href="#agenda" className="btn btn--ghost btn--sm" onClick={(e) => e.stopPropagation()}>Ver charla →</a>
+          <a href="#agenda" className="btn btn--ghost btn--sm" onClick={(e) => e.stopPropagation()}>Ver agenda →</a>
         </div>
       </div>
     </article>
