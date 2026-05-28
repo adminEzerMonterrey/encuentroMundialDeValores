@@ -46,16 +46,16 @@ export default function Sponsors() {
             {/* Fila 3 - Deacero, Fundación Montemayor, Chapa González, CFC, Berel, Consejo, Pasteles */}
             <div className="sponsor-tier tier-3 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '0', width: '100%' }}>
               {[
-                { src: "logo-fd-estandar.png", alt: "Fundación Deacero" },
-                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor" },
-                { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
+                { src: "logo-fd-estandar.png", alt: "Fundación Deacero", scale: 1.4 },
+                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", scale: 1.4 },
+                { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González", scale: 1.4 },
                 { src: "cfc-logo-horizontal-naranja.png", alt: "Charter for Compassion" },
                 { src: "BEREL.png", alt: "Berel" },
                 { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
                 { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" },
               ].map((sponsor, idx) => (
                 <div key={idx} style={{ flex: '1 1 13%', minWidth: '90px', padding: '0.8rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '50px', width: 'auto', maxWidth: '130px', objectFit: 'contain' }} />
+                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: sponsor.scale ? `${50 * sponsor.scale}px` : '50px', width: 'auto', maxWidth: sponsor.scale ? `${130 * sponsor.scale}px` : '130px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
