@@ -43,7 +43,7 @@ const agendaData = [
     track: "IA, Salud y Espiritualidad",
     color: "var(--color-cyan)",
     speakers: [
-      { name: "Marian Rojas Estapé", role: "Psiquiatra" },
+      { name: "Marian Rojas Estapé", role: "Psiquiatra · Instituto Rojas Estapé" },
       { name: "Mónica Zambrano Vignau", role: "HUMIND" },
       { name: "Sofía Lozano Snively", role: "Ingenium" }
     ]
@@ -110,7 +110,8 @@ const agendaData = [
     color: "var(--color-accent)",
     speakers: [
       { name: "Mauricio Martínez", role: "Actor y cantante · Broadway" },
-      { name: "Farid Dieck Assad", role: "Psicólogo · Influencer · 60M seguidores" }
+      { name: "Farid Dieck Assad", role: "Psicólogo · Influencer · 60M seguidores" },
+      { name: "Nayo Escobar", role: "Empresario, músico y creador de contenido" }
     ]
   },
 
@@ -224,7 +225,7 @@ const agendaData = [
     track: "IA y Autonomía Humana",
     color: "var(--color-accent)",
     speakers: [
-      { name: "Nayo Escobar", role: "Creador de contenido" }
+      { name: "Nayo Escobar", role: "Empresario, músico y creador de contenido" }
     ]
   },
   {
