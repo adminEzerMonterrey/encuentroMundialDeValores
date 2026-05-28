@@ -23,7 +23,7 @@ export default function Navbar() {
     <>
       <nav className={`nav ${isScrolled ? 'scrolled' : ''}`} id="nav" role="navigation" aria-label="Navegación principal">
         <a href="#" className="nav__brand" aria-label="Volver al inicio" onClick={closeMenu}>
-          <img src="/images/EMV XVIII-Blanco.png" alt="Encuentro Mundial de Valores" style={{ height: 'clamp(105px, 16vw, 130px)', objectFit: 'contain', transition: 'height 0.3s ease' }} />
+          <img src="/images/EMV XVIII-Blanco.png" alt="Encuentro Mundial de Valores" style={{ height: 'clamp(90px, 6vw, 100px)', objectFit: 'contain', transition: 'height 0.3s ease' }} />
           <span className="nav__year" style={{ alignSelf: 'flex-end', paddingBottom: '10px' }}>2026</span>
         </a>
         <button 
