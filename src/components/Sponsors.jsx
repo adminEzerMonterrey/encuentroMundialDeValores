@@ -19,12 +19,12 @@ export default function Sponsors() {
                 { src: "Monterrey.png", alt: "Gobierno de Monterrey" },
                 { src: "UDEM.jpg", alt: "UDEM" },
                 { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
+                { src: "UANL.png", alt: "UANL" },
                 { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
                 { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos" },
-                { src: "UANL.png", alt: "UANL" },
               ].map((sponsor, idx) => (
-                <div key={idx} style={{ flex: '1 1 18%', minWidth: '100px', padding: '1.2rem 1rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}?v=4`} alt={sponsor.alt} loading="lazy" style={{ height: '60px', width: 'auto', maxWidth: '160px', objectFit: 'contain' }} />
+                <div key={idx} style={{ flex: '1 1 15%', minWidth: '90px', padding: '1.2rem 1rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={{ height: '60px', width: 'auto', maxWidth: '160px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
