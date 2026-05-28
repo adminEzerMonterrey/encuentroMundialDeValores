@@ -221,11 +221,11 @@ const agendaData = [
   },
   {
     type: "Presentación especial",
-    title: "Nayo Escobar · Por definir",
+    title: "Por definir",
     track: "IA y Autonomía Humana",
     color: "var(--color-accent)",
     speakers: [
-      { name: "Nayo Escobar", role: "Por definir" }
+      { name: "Nayo Escobar", role: "Creador de contenido" }
     ]
   },
   {
