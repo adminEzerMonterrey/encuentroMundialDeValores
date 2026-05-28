@@ -1414,7 +1414,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* ════════════════════════════════
    GLOBAL OVERFLOW FIX — prevent horizontal scroll
    ════════════════════════════════ */
-html, body {
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
