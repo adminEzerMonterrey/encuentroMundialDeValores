@@ -16,10 +16,10 @@ export default function Sponsors() {
             {/* Fila 1 - Monterrey, UDEM, Tec, U-ERRE, UANL */}
             <div className="sponsor-tier tier-1 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '0', width: '100%' }}>
               {[
-                { src: "Monterrey.png", alt: "Gobierno de Monterrey" },
-                { src: "UDEM.jpg", alt: "UDEM" },
-                { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
-                { src: "UANL.png", alt: "UANL" },
+                { src: "monterrey.png", alt: "Gobierno de Monterrey" },
+                { src: "udem.jpg", alt: "UDEM" },
+                { src: "itesm.png", alt: "Tecnológico de Monterrey" },
+                { src: "uanl.png", alt: "UANL" },
                 { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
                 { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos" },
               ].map((sponsor, idx) => (
@@ -36,7 +36,7 @@ export default function Sponsors() {
                 { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión" },
                 { src: "san-pedro-garza-garcia.png", alt: "San Pedro Garza García" },
                 { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "Arca Continental" },
-                { src: "Rotarios.jpeg", alt: "Rotary" },
+                { src: "rotarios.jpeg", alt: "Rotary" },
               ].map((sponsor, idx) => (
                 <div key={idx} style={{ flex: '1 1 18%', minWidth: '100px', padding: '1rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <img src={`/Sponsors/${sponsor.src}?v=4`} alt={sponsor.alt} loading="lazy" style={{ height: '55px', width: 'auto', maxWidth: '150px', objectFit: 'contain' }} />
@@ -50,8 +50,8 @@ export default function Sponsors() {
                 { src: "logo-fd-estandar.png", alt: "Fundación Deacero", scale: 1.15 },
                 { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", scale: 2.2 },
                 { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González", scale: 1.4 },
-                { src: "cfc-logo-horizontal-naranja.png", alt: "Charter for Compassion" },
-                { src: "BEREL.png", alt: "Berel" },
+                { src: "cfc-logo-horizontal-naranja.jpeg", alt: "Charter for Compassion" },
+                { src: "berel.png", alt: "Berel" },
                 { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
                 { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" },
               ].map((sponsor, idx) => (
