@@ -11,7 +11,7 @@ const agendaData = [
   },
   {
     type: "Ceremonia de apertura",
-    title: "Entrega de reconocimiento · Familia David Noel Ramírez",
+    title: "Mensaje de Bienvenida",
     track: "IA, Salud y Espiritualidad",
     color: "var(--color-cyan)",
     speakers: [
@@ -56,7 +56,7 @@ const agendaData = [
     speakers: [
       { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" },
       { name: "Caroline Sánchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" },
-      { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED (por confirmar)" }
+      { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" }
     ]
   },
   {
@@ -100,7 +100,7 @@ const agendaData = [
     speakers: [
       { name: "Marian Mimi Edmunds", role: "Periodista y Productora · CBS 60 Minutes" },
       { name: "Jorge Lerdo de Tejada", role: "Global Ambassador · Singularity University" },
-      { name: "Jorge Ramos", role: "Periodista · Univision (por confirmar)" }
+      { name: "Jorge Ramos", role: "Periodista · Univision" }
     ]
   },
   {
