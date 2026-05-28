@@ -48,7 +48,7 @@ export default function Sponsors() {
             <div className="sponsor-tier tier-3 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '0', width: '100%' }}>
               {[
                 { src: "logo-fd-estandar.png", alt: "Fundación Deacero", scale: 1.15 },
-                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", scale: 2.8 },
+                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", scale: 3.5 },
                 { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González", scale: 1.5 },
                 { src: "cfc-logo-horizontal-naranja.jpeg", alt: "Charter for Compassion", scale: 1.2 },
                 { src: "BEREL.png", alt: "Berel", scale: 1.5 },
