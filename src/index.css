@@ -1464,8 +1464,8 @@ a.nav__brand {
   }
   .sc-card {
     scroll-snap-align: center;
-    flex: 0 0 85vw;
-    max-width: 340px;
+    flex: 0 0 75vw;
+    max-width: 280px;
   }
 }
 
@@ -4061,6 +4061,15 @@ html, body {
 @media (max-width: 520px) {
   .sponsor-tier {
     gap: 0 !important;
+  }
+  .sponsor-tier div {
+    min-width: 80px !important;
+    padding: 10px !important;
+  }
+  .sponsor-tier img {
+    height: auto !important;
+    max-height: 40px !important;
+    max-width: 100% !important;
   }
   .sponsors .container {
     padding-inline: var(--space-2);
