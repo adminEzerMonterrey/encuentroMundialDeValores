@@ -2934,7 +2934,7 @@ a.nav__brand {
 }
 
 /* ── Mobile Touch & Overflow Fixes ── */
-html, body {
+body {
   overflow-x: hidden !important;
   width: 100%;
 }
@@ -2972,7 +2972,7 @@ html, body {
   }
 }
 
-html, body {
+body {
   /* Strict horizontal overflow prevent for iOS/Safari */
   overflow-x: hidden !important;
   position: relative;
