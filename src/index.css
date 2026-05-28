@@ -4232,4 +4232,8 @@ a.nav__brand {
   .sponsor-pasteles {
     transform: scale(1.5);
   }
+  .nav__logo-img {
+    transform: scale(1.4);
+    transform-origin: left center;
+  }
 }
