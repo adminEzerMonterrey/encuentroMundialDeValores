@@ -244,8 +244,8 @@ export default function Agenda() {
     <section className="section agenda" id="agenda" aria-labelledby="agendaHeading">
       <div className="container">
         <div className="section-header reveal-up">
-          <span className="section-tag">03 / AGENDA</span>
-          <h2 className="section-title" id="agendaHeading">Agenda Oficial</h2>
+          <span className="section-tag">03 / PROGRAMA PRELIMINAR</span>
+          <h2 className="section-title" id="agendaHeading">Programa Preliminar</h2>
           <p className="section-subtitle"><span className="text-accent">3 y 4 de octubre de 2026</span></p>
         </div>
 

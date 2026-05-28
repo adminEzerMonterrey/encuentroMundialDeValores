@@ -4205,3 +4205,18 @@ a.nav__brand {
   .float-icon { animation: none !important; }
   .sp-cta-banner { animation: none !important; }
 }
+
+/* SPONSORS MOBILE OVERRIDES */
+@media (max-width: 768px) {
+  .sponsor-rotary {
+    height: 25px !important;
+    max-width: 75px !important;
+  }
+  .sponsor-fundacion-container {
+    flex: 1 1 100% !important;
+  }
+  .sponsor-fundacion {
+    height: 140px !important;
+    max-width: 95% !important;
+  }
+}

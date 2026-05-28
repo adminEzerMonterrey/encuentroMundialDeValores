@@ -38,7 +38,7 @@ export default function Navbar() {
         </button>
         <ul className={`nav__menu ${isOpen ? 'open' : ''}`} id="navMenu" role="list">
           <li><a href="#speakers" className="nav__link" onClick={closeMenu}>Panelistas</a></li>
-          <li><a href="#agenda" className="nav__link" onClick={closeMenu}>Agenda</a></li>
+          <li><a href="#agenda" className="nav__link" onClick={closeMenu}>Programa Preliminar</a></li>
           <li><a href="#sponsors" className="nav__link" onClick={closeMenu}>Colaboradores</a></li>
           <li><a href="#ubicacion" className="nav__link" onClick={closeMenu}>Ubicación</a></li>
           <li>
