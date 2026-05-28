@@ -55,7 +55,7 @@ const agendaData = [
     color: "var(--color-accent)",
     speakers: [
       { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" },
-      { name: "Caroline Sánchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" },
+      { name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" },
       { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" }
     ]
   },
@@ -156,7 +156,7 @@ const agendaData = [
     color: "var(--color-orange)",
     speakers: [
       { name: "Alejandro Almazán Zimerman", role: "Head of Google for Education · LATAM" },
-      { name: "Caroline Sánchez Crozier", role: "CEO CSC Consulting" }
+      { name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting" }
     ]
   },
   {
@@ -216,7 +216,7 @@ const agendaData = [
     speakers: [
       { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" },
       { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" },
-      { name: "Caroline Sánchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" }
+      { name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" }
     ]
   },
   {
