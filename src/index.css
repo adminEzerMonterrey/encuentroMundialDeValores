@@ -4211,7 +4211,7 @@ a.nav__brand {
   .sponsor-tier div {
     overflow: hidden !important;
   }
-  .sponsor-tier img {
+  .sponsor-tier img:not(.sponsor-pasteles):not(.sponsor-fundacion):not(.sponsor-rotary) {
     max-width: 100% !important;
     max-height: 100% !important;
     width: auto !important;
