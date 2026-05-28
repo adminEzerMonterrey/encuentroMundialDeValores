@@ -3973,3 +3973,222 @@ html, body {
   -webkit-user-select: none;
 }
 
+/* ════════════════════════════════════════════════════════════
+   MOBILE OPTIMIZATION — Comprehensive Pass
+   ════════════════════════════════════════════════════════════ */
+
+/* ── 1. Nav: Hide "2026" on mobile to prevent hamburger overlap ── */
+@media (max-width: 768px) {
+  .nav__year {
+    display: none;
+  }
+  .nav__brand img {
+    height: clamp(40px, 6vw, 60px) !important;
+  }
+  .nav {
+    padding: var(--space-1) var(--space-2);
+  }
+}
+
+/* ── 2. Mobile menu: Full screen, proper z-index, complete display ── */
+@media (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100dvh;
+    background: #0A0A0F !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-3);
+    transform: translateX(100%);
+    transition: transform 0.35s cubic-bezier(.4,0,.2,1);
+    z-index: 999;
+    padding: var(--space-8) var(--space-4);
+    overflow-y: auto;
+  }
+  .nav__menu.open {
+    transform: translateX(0);
+  }
+  .nav__link {
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
+    padding: var(--space-2) var(--space-4);
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .nav__menu .btn--gradient-border {
+    margin-top: var(--space-3);
+    font-size: 0.85rem;
+    padding: 0 1.5rem;
+    height: 2.5rem;
+  }
+  .nav__hamburger {
+    z-index: 1001;
+  }
+}
+
+/* ── 3. Hero: Full viewport on mobile, more breathing room ── */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100svh;
+    padding-top: 60px;
+    padding-bottom: var(--space-4);
+  }
+  .hero__content {
+    padding: var(--space-4) var(--space-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__date-badge {
+    font-size: 0.72rem !important;
+    padding: 4px 12px !important;
+    white-space: nowrap;
+  }
+  .hero__location {
+    font-size: 0.78rem;
+    text-align: center;
+  }
+}
+
+/* ── 4. Sponsors: Prevent logos from overflowing table on mobile ── */
+@media (max-width: 520px) {
+  .sponsor-tier {
+    gap: 0 !important;
+  }
+  .sponsors .container {
+    padding-inline: var(--space-2);
+  }
+  .sponsors-tiers {
+    overflow: hidden;
+    border-radius: var(--radius-md);
+  }
+}
+
+/* ── 5. Ubicación cards: Fit within viewport on mobile ── */
+@media (max-width: 480px) {
+  .ubicacion .container {
+    padding-inline: var(--space-2);
+  }
+  .ubicacion-info-panel {
+    padding: var(--space-3) !important;
+    box-sizing: border-box;
+  }
+}
+
+/* ── 6. Agenda: Fix scroll blocking on mobile ── */
+@media (max-width: 768px) {
+  .ag-blob-wrapper {
+    overflow: visible;
+    margin-top: var(--space-4) !important;
+  }
+  .ag-blob {
+    display: none;
+  }
+  .ag-blob-bg {
+    display: none;
+  }
+  .agenda-list {
+    position: relative;
+    z-index: 2;
+  }
+  .ag-card {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .ag-card__title {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .ag-card__header {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .ag-card__track {
+    font-size: 0.65rem;
+  }
+  .ag-day-header {
+    font-size: 0.8rem;
+    padding: var(--space-2) var(--space-3);
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+}
+
+/* ── 7. Collage: Smaller items on very small screens ── */
+@media (max-width: 480px) {
+  .collage-item {
+    width: 65px;
+    height: 65px;
+  }
+  .speakers-collage {
+    gap: 6px;
+  }
+}
+
+/* ── 8. Performance: Disable heavy animations on mobile ── */
+@media (max-width: 768px) {
+  .ag-blob,
+  .ag-blob--1,
+  .ag-blob--2,
+  .ag-blob--3 {
+    animation: none !important;
+    display: none !important;
+  }
+  .float-icon {
+    display: none;
+  }
+  .hero__stat-card {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .sp-cta-banner {
+    animation: none;
+    background-size: 100% 100%;
+  }
+}
+
+/* ── 9. Sticky CTA: Proper sizing on mobile ── */
+@media (max-width: 480px) {
+  .sticky-cta {
+    bottom: var(--space-2);
+    left: var(--space-2);
+    right: var(--space-2);
+    padding: var(--space-2);
+    font-size: 0.85rem;
+  }
+}
+
+/* ── 10. General mobile polish ── */
+@media (max-width: 768px) {
+  .container {
+    padding-inline: var(--space-3);
+  }
+  .section-title {
+    font-size: clamp(1.8rem, 7vw, 2.8rem);
+  }
+  .section-subtitle {
+    font-size: clamp(0.85rem, 3vw, 1rem);
+  }
+  .sp-cta-banner__content {
+    padding: var(--space-4) var(--space-3);
+  }
+  .sp-cta-banner__title {
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
+  }
+  .sp-cta-banner__sub {
+    font-size: 0.85rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ag-blob { animation: none !important; display: none !important; }
+  .float-icon { animation: none !important; }
+  .sp-cta-banner { animation: none !important; }
+}

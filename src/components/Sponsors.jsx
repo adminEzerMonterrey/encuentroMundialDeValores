@@ -22,8 +22,8 @@ export default function Sponsors() {
                 { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
                 { src: "UANL.png", alt: "Universidad de Montemorelos" },
               ].map((sponsor, idx) => (
-                <div key={idx} style={{ flex: '1 1 18%', minWidth: '140px', padding: '1.2rem 1.5rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '80px', width: 'auto', maxWidth: '200px', objectFit: 'contain' }} />
+                <div key={idx} style={{ flex: '1 1 18%', minWidth: '100px', padding: '1.2rem 1rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '60px', width: 'auto', maxWidth: '160px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
@@ -37,8 +37,8 @@ export default function Sponsors() {
                 { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "Arca Continental" },
                 { src: "Rotarios.jpeg", alt: "Rotary" },
               ].map((sponsor, idx) => (
-                <div key={idx} style={{ flex: '1 1 18%', minWidth: '140px', padding: '1.2rem 1.5rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '70px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} />
+                <div key={idx} style={{ flex: '1 1 18%', minWidth: '100px', padding: '1rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '55px', width: 'auto', maxWidth: '150px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
@@ -54,8 +54,8 @@ export default function Sponsors() {
                 { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
                 { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" },
               ].map((sponsor, idx) => (
-                <div key={idx} style={{ flex: '1 1 13%', minWidth: '120px', padding: '1rem 1.2rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '60px', width: 'auto', maxWidth: '160px', objectFit: 'contain' }} />
+                <div key={idx} style={{ flex: '1 1 13%', minWidth: '90px', padding: '0.8rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '50px', width: 'auto', maxWidth: '130px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
@@ -106,7 +106,7 @@ export default function Sponsors() {
             <p className="section-subtitle section-subtitle--left">Nos vemos en <span className="text-accent">Showcenter</span> y <span className="text-lime">Cintermex</span>, Nuevo León</p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }} className="reveal-up">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '2rem' }} className="reveal-up">
             {/* Showcenter */}
             <div className="ubicacion-info-panel" style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
