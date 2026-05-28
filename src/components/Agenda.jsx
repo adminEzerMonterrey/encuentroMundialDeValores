@@ -87,7 +87,7 @@ const agendaData = [
     speakers: [
       { name: "Juan Paura García", role: "Secretario de Educación · Nuevo León" },
       { name: "Ángel Casán Marcos", role: "Rector · Universidad Regiomontana U-ERRE" },
-      { name: "Mario Adrián Flores Castro", role: "Vicepresidente · Tecnológico de Monterrey" },
+      { name: "Mario Adrián Flores Castro", role: "Vicepresidente · Tecnológico de Monterrey, Campus Monterrey" },
       { name: "Por definir", role: "Próximo Rector · UDEM" },
       { name: "Por definir", role: "Rector · UANL" }
     ]

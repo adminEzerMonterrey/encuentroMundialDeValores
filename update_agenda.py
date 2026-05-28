@@ -213,7 +213,7 @@ const agendaData = [
     speakers: [
       { name: "Santos Guzmán López", role: "Rector · UANL" },
       { name: "Eugenio Garza y Garza", role: "Próximo Rector · UDEM" },
-      { name: "Mario Adrián Flores Castro", role: "Vicepresidente · Tecnológico de Monterrey" },
+      { name: "Mario Adrián Flores Castro", role: "Vicepresidente · Tecnológico de Monterrey, Campus Monterrey" },
       { name: "Ángel Casán Marcos", role: "Rector · Universidad Regiomontana U-ERRE" },
       { name: "Juan Paura García", role: "Secretario de Educación · Nuevo León" }
     ]
