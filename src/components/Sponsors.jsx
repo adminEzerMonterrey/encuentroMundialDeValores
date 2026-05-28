@@ -23,7 +23,7 @@ export default function Sponsors() {
                 { src: "UANL.png", alt: "Universidad de Montemorelos" },
               ].map((sponsor, idx) => (
                 <div key={idx} style={{ flex: '1 1 18%', minWidth: '100px', padding: '1.2rem 1rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '60px', width: 'auto', maxWidth: '160px', objectFit: 'contain' }} />
+                  <img src={`/Sponsors/${sponsor.src}?v=3`} alt={sponsor.alt} loading="lazy" style={{ height: '60px', width: 'auto', maxWidth: '160px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
@@ -38,7 +38,7 @@ export default function Sponsors() {
                 { src: "Rotarios.jpeg", alt: "Rotary" },
               ].map((sponsor, idx) => (
                 <div key={idx} style={{ flex: '1 1 18%', minWidth: '100px', padding: '1rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: '55px', width: 'auto', maxWidth: '150px', objectFit: 'contain' }} />
+                  <img src={`/Sponsors/${sponsor.src}?v=3`} alt={sponsor.alt} loading="lazy" style={{ height: '55px', width: 'auto', maxWidth: '150px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
@@ -55,7 +55,7 @@ export default function Sponsors() {
                 { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" },
               ].map((sponsor, idx) => (
                 <div key={idx} style={{ flex: '1 1 13%', minWidth: '90px', padding: '0.8rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}`} alt={sponsor.alt} loading="lazy" style={{ height: sponsor.scale ? `${50 * sponsor.scale}px` : '50px', width: 'auto', maxWidth: sponsor.scale ? `${130 * sponsor.scale}px` : '130px', objectFit: 'contain' }} />
+                  <img src={`/Sponsors/${sponsor.src}?v=3`} alt={sponsor.alt} loading="lazy" style={{ height: sponsor.scale ? `${50 * sponsor.scale}px` : '50px', width: 'auto', maxWidth: sponsor.scale ? `${130 * sponsor.scale}px` : '130px', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
