@@ -11,7 +11,7 @@ const agendaData = [
   },
   {
     type: "Ceremonia de apertura",
-    title: "Mensaje de Bienvenida",
+    title: "Inauguración",
     track: "IA, Salud y Espiritualidad",
     color: "var(--color-cyan)",
     speakers: [
@@ -61,7 +61,7 @@ const agendaData = [
   },
   {
     type: "Panel",
-    title: '"Reinventing Medicine in the Age of AI: Beyond the Doctor of the Gaps"',
+    title: '"Reinventando la medicina en la frontera de la IA: Redefiniendo el papel del médico"',
     track: "IA, Salud y Espiritualidad",
     color: "var(--color-cyan)",
     speakers: [
@@ -100,7 +100,7 @@ const agendaData = [
     speakers: [
       { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora · CBS 60 Minutes" },
       { name: "Jorge Lerdo de Tejada", role: "Global Ambassador · Singularity University" },
-      { name: "Jorge Ramos", role: "Periodista · Univision" }
+      { name: "Jorge Ramos", role: "Periodista · fundador \"Tres Alebrijes\" y creador \"Así Veo las Cosas\"" }
     ]
   },
   {
