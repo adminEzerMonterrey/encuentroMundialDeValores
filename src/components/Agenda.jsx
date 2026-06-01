@@ -51,8 +51,8 @@ const agendaData = [
   {
     type: "Panel",
     title: '"IA Humanizada: Tecnología, Educación e Innovación Industrial Integrada"',
-    track: "IA y Autonomía Humana",
-    color: "var(--color-accent)",
+    track: "IA, Educación e Inclusión",
+    color: "var(--color-orange)",
     speakers: [
       { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" },
       { name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" },
