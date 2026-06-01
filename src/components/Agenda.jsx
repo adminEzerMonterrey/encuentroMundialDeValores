@@ -133,7 +133,7 @@ const agendaData = [
   },
   {
     type: "Sesión paralela · Sala Salud",
-    title: "Salud e IA: sesión especializada",
+    title: "La nueva frontera de la Medicina Inteligente",
     track: "IA, Salud y Espiritualidad",
     color: "var(--color-cyan)",
     speakers: [
