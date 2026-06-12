@@ -136,8 +136,8 @@ const agendaData = [
     bgColor: "var(--color-orange)"
   },
   {
-    type: "Ceremonia de apertura",
-    title: "Entrega de reconocimiento · Familia David Noel Ramírez",
+    type: "8:30 am · Ceremonia de apertura",
+    title: "Inauguración",
     track: "IA, Salud y Espiritualidad",
     color: "var(--color-cyan)",
     speakers: [
@@ -146,7 +146,7 @@ const agendaData = [
     ]
   },
   {
-    type: "Conferencia magistral",
+    type: "10:00 am · Conferencia magistral",
     title: '"Calma en tiempos de IA: la ciencia del bienestar emocional"',
     track: "IA, Salud y Espiritualidad",
     color: "var(--color-cyan)",
@@ -155,7 +155,7 @@ const agendaData = [
     ]
   },
   {
-    type: "Conferencia magistral",
+    type: "10:30 am · Conferencia magistral",
     title: '"La mente en la era digital: dopamina, ansiedad y reconexión interior"',
     track: "IA, Salud y Espiritualidad",
     color: "var(--color-cyan)",
@@ -164,30 +164,46 @@ const agendaData = [
     ]
   },
   {
-    type: "Panel",
+    type: "11:15 am · Panel",
     title: '"El Ser Humano como Guía, la IA como Soporte"',
     track: "IA, Salud y Espiritualidad",
     color: "var(--color-cyan)",
     speakers: [
-      { name: "Marian Rojas Estapé", role: "Psiquiatra" },
+      { name: "Marian Rojas Estapé", role: "Psiquiatra · Instituto Rojas Estapé" },
       { name: "Mónica Zambrano Vignau", role: "HUMIND" },
       { name: "Sofía Lozano Snively", role: "Ingenium" }
     ]
   },
   {
-    type: "Panel",
-    title: '"IA Humanizada: Tecnología, Educación e Innovación Industrial Integrada"',
+    type: "12:00 pm · Sesión de preguntas y respuestas",
+    title: "Q&R con David Eaton",
     track: "IA y Autonomía Humana",
     color: "var(--color-accent)",
     speakers: [
-      { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" },
-      { name: "Caroline Sánchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" },
-      { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED (por confirmar)" }
+      { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" }
     ]
   },
   {
-    type: "Panel",
-    title: '"Reinventing Medicine in the Age of AI: Beyond the Doctor of the Gaps"',
+    type: "12:30 pm · Panel",
+    title: '"IA Humanizada: Tecnología, Educación e Innovación Industrial Integrada"',
+    track: "IA, Educación e Inclusión",
+    color: "var(--color-orange)",
+    speakers: [
+      { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" },
+      { name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" },
+      { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" }
+    ]
+  },
+  {
+    type: "13:30 pm · Receso",
+    title: "Receso",
+    track: "Receso",
+    color: "var(--color-border-subtle)",
+    speakers: []
+  },
+  {
+    type: "14:30 pm · Panel",
+    title: '"Reinventando la medicina en la frontera de la IA: Redefiniendo el papel del médico"',
     track: "IA, Salud y Espiritualidad",
     color: "var(--color-cyan)",
     speakers: [
@@ -196,7 +212,7 @@ const agendaData = [
     ]
   },
   {
-    type: "Panel",
+    type: "15:30 pm · Panel",
     title: '"Educación en la Era de la IA: Retos y Oportunidades"',
     track: "IA, Educación e Inclusión",
     color: "var(--color-orange)",
@@ -206,37 +222,37 @@ const agendaData = [
     ]
   },
   {
-    type: "Mesa de rectores",
+    type: "16:30 pm · Mesa de rectores",
     title: '"¿Cómo integrar IA en la Educación Superior sin perder el Factor Humano?"',
     track: "IA, Educación e Inclusión",
     color: "var(--color-orange)",
     speakers: [
-      { name: "Santos Guzmán López", role: "Rector · UANL" },
-      { name: "Eugenio Garza y Garza", role: "Próximo Rector · UDEM" },
-      { name: "Mario Adrián Flores Castro", role: "Vicepresidente · Tecnológico de Monterrey, Campus Monterrey" },
+      { name: "Juan Paura García", role: "Secretario de Educación · Nuevo León" },
       { name: "Ángel Casán Marcos", role: "Rector · Universidad Regiomontana U-ERRE" },
-      { name: "Juan Paura García", role: "Secretario de Educación · Nuevo León" }
+      { name: "Mario Adrián Flores Castro", role: "Vicepresidente · Tecnológico de Monterrey, Campus Monterrey" },
+      { name: "Por definir", role: "Próximo Rector · UDEM" },
+      { name: "Por definir", role: "Rector · UANL" }
     ]
   },
   {
-    type: "Panel",
+    type: "17:15 pm · Panel",
     title: '"El compromiso con la verdad en la era de la Inteligencia Artificial"',
     track: "IA y Autonomía Humana",
     color: "var(--color-accent)",
     speakers: [
       { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora · CBS 60 Minutes" },
-      { name: "Jorge Lerdo de Tejada", role: "Global Ambassador · Singularity University" },
-      { name: "Jorge Ramos", role: "Periodista · Univision (por confirmar)" }
+      { name: "Jorge Lerdo de Tejada", role: "Global Ambassador · Singularity University" }
     ]
   },
   {
-    type: "Panel",
+    type: "18:00 pm · Panel",
     title: '"Ser Humano en escena: Creatividad, Arte e Identidad en tiempos de IA"',
     track: "IA y Autonomía Humana",
     color: "var(--color-accent)",
     speakers: [
       { name: "Mauricio Martínez", role: "Actor y cantante · Broadway" },
-      { name: "Farid Dieck Assad", role: "Psicólogo · Influencer · 60M seguidores" }
+      { name: "Farid Dieck Assad", role: "Psicólogo · Influencer · 60M seguidores" },
+      { name: "Nayo Escobar", role: "Empresario, músico y creador de contenido" }
     ]
   },
 
