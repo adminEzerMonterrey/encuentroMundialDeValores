@@ -4357,7 +4357,7 @@ a.nav__brand {
 
 @media (min-width: 768px) {
   .speakers-modal-info {
-    padding: var(--space-6) var(--space-7) var(--space-6) var(--space-6);
+    padding: 1cm;
   }
 }
 
