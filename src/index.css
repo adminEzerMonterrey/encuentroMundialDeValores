@@ -4264,14 +4264,14 @@ a.nav__brand {
 
 .speakers-modal-content {
   position: relative;
-  background: linear-gradient(135deg, rgba(15, 20, 42, 0.95) 0%, rgba(8, 10, 24, 0.98) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
   width: 100%;
-  max-width: 760px;
+  max-width: 900px;
   max-height: 90vh;
-  overflow-y: auto;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6), 0 0 40px rgba(139, 92, 246, 0.15);
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 50px rgba(139, 92, 246, 0.2);
   animation: modalScaleUp 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
@@ -4279,9 +4279,9 @@ a.nav__brand {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: var(--color-text-secondary);
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -4293,7 +4293,7 @@ a.nav__brand {
   transition: all 0.2s ease;
 }
 .speakers-modal-close:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
   transform: rotate(90deg);
 }
@@ -4301,31 +4301,32 @@ a.nav__brand {
 .speakers-modal-body {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-4);
-  padding: var(--space-5);
+  gap: 0;
+  height: 100%;
+  overflow-y: auto;
+  max-height: 90vh;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .speakers-modal-body {
-    grid-template-columns: 240px 1fr;
-    gap: var(--space-5);
+    grid-template-columns: 1.1fr 1.3fr;
+    max-height: none;
+    overflow-y: visible;
   }
 }
 
 .speakers-modal-photo {
   width: 100%;
-  height: 280px;
-  border-radius: 16px;
+  height: 320px;
   overflow: hidden;
   position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.08);
   background: #0d0e1b;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .speakers-modal-photo {
     height: 100%;
-    min-height: 280px;
+    min-height: 450px;
   }
 }
 
@@ -4342,7 +4343,7 @@ a.nav__brand {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700;
   color: #fff;
 }
@@ -4350,6 +4351,14 @@ a.nav__brand {
 .speakers-modal-info {
   display: flex;
   flex-direction: column;
+  padding: var(--space-5);
+  background: #000;
+}
+
+@media (min-width: 768px) {
+  .speakers-modal-info {
+    padding: var(--space-6) var(--space-7) var(--space-6) var(--space-6);
+  }
 }
 
 .speakers-modal-tag {
@@ -4359,15 +4368,16 @@ a.nav__brand {
   background: linear-gradient(90deg, #1ABC9C, #8B5CF6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .speakers-modal-name {
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: clamp(1.8rem, 4.5vw, 2.3rem);
   font-weight: 800;
   color: #fff;
-  margin: 0 0 6px 0;
-  line-height: 1.15;
+  margin: 0 0 10px 0;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .speakers-modal-company {
@@ -4385,16 +4395,30 @@ a.nav__brand {
 
 .speakers-modal-divider {
   height: 1px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.08), transparent);
-  margin-bottom: 16px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.12), transparent);
+  margin-bottom: 18px;
 }
 
 .speakers-modal-bio {
   font-size: 0.92rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 16px;
 }
+
+.speakers-modal-bullets {
+  margin: 0 0 24px 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.speakers-modal-bullets li {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 10px;
+}
+
 
 .speakers-modal-talk {
   margin-top: auto;

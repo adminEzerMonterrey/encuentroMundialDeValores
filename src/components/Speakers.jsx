@@ -70,7 +70,28 @@ function SpeakerCard({ speaker, index, isCurrent, onClick }) {
 // Data Array to keep JSX clean
 const speakersData = [
   { img: "/speakers/marian-rojas-estape.jpg", initials: "MR", name: "Marian Rojas Estapé", company: "Instituto Rojas Estapé", role: "Psiquiatra, escritora y conferencista", bio: "Destacada médica psiquiatra española, autora de best sellers. Explorará la reconexión interior en la era digital.", gradient: "linear-gradient(135deg,#E91E8C,#8B5CF6)", talkIcon: "🧠", talkName: "La mente en la era digital" },
-  { img: "/speakers/dr-bimal-desai.jpg", initials: "BD", name: "Dr. Bimal Desai", company: "Children's Hospital Philadelphia", role: "Chief Health Informatics Officer", bio: "Innovador en salud digital y pionero en el uso de IA y herramientas digitales para mejorar la atención en pediatría.", gradient: "linear-gradient(135deg,#FF9900,#e65c00)", trackClass: "track-a", trackName: "Salud", talkIcon: "⚕️", talkName: "Reinventing Medicine" },
+  { 
+    img: "/speakers/dr-bimal-desai.jpg", 
+    initials: "BD", 
+    name: "Dr. Bimal Desai", 
+    company: "Children's Hospital Philadelphia", 
+    role: "Chief Health Informatics Officer", 
+    bio: "Innovador en salud digital y pionero en el uso de IA y herramientas digitales para mejorar la atención en pediatría.", 
+    longBio: "El Dr. Bimal Desai es un médico pediatra e innovador en salud digital, reconocido por liderar la transformación tecnológica en uno de los hospitales pediátricos más importantes del mundo. Su trabajo integra la informática biomédica, la inteligencia artificial y el diseño centrado en el ser humano para mejorar la atención médica y el bienestar de los pacientes.",
+    bullets: [
+      "VP y Chief Health Informatics Officer en Children's Hospital of Philadelphia (CHOP)",
+      "MD, Washington University School of Medicine; MBI, Oregon Health & Science University",
+      "Certificado en Informática Clínica y Pediatría por juntas médicas americanas",
+      "Pionero en el uso de IA, registros electrónicos de salud y herramientas digitales en pediatría",
+      "Ganador del Healthcare Innovator Award",
+      "Profesor Clínico Asistente, Perelman School of Medicine, Universidad de Pennsylvania"
+    ],
+    gradient: "linear-gradient(135deg,#FF9900,#e65c00)", 
+    trackClass: "track-a", 
+    trackName: "Salud", 
+    talkIcon: "⚕️", 
+    talkName: "Reinventing Medicine" 
+  },
   { img: "/speakers/emma-seppala.jpg", initials: "ES", name: "Emma Seppälä", company: "Stanford", role: "Directora Científica / Psicóloga", bio: "Reconocida psicóloga de Stanford, investiga la felicidad y el bienestar. Autora de 'The Happiness Track'. Ha impartido clases en Stanford y Yale.", gradient: "linear-gradient(135deg,#FF9900,#e65c00)", trackClass: "track-a", trackName: "Bienestar", talkIcon: "🧘‍♀️", talkName: "Calma en tiempos de IA" },
   { img: "/speakers/dr-arumugam-mrukiah.jpg", initials: "AM", name: "Dr. Arumugam Murukiah", company: "Broadline Technologies", role: "Emprendedor y Líder Digital", bio: "Líder en transformation digital con más de 4 décadas de experiencia. Innovador en salud pública y cadenas de suministro en la India.", gradient: "linear-gradient(135deg,#F0922A,#ef4444)", trackClass: "track-a", trackName: "Tecnología", talkIcon: "⚙️", talkName: "IA Humanizada" },
   { img: "/speakers/dra-melina-uncapher.jpg", initials: "MU", name: "Dr. Melina Uncapher", company: "SETA-ED", role: "CEO y Fundadora", bio: "Neurocientífica educativa con más de 20 años en investigación. Cofundadora del Institute for Applied Neuroscience.", gradient: "linear-gradient(135deg,#008FD3,#00C4CC)", trackClass: "track-a", trackName: "Educación", talkIcon: "🧠", talkName: "Neurociencia Educativa" },
@@ -341,7 +362,14 @@ export default function Speakers() {
                 <p className="speakers-modal-company">{activeModalSpeaker.company}</p>
                 <p className="speakers-modal-role">{activeModalSpeaker.role}</p>
                 <div className="speakers-modal-divider"></div>
-                <p className="speakers-modal-bio">{activeModalSpeaker.bio}</p>
+                <p className="speakers-modal-bio">{activeModalSpeaker.longBio || activeModalSpeaker.bio}</p>
+                {activeModalSpeaker.bullets && activeModalSpeaker.bullets.length > 0 && (
+                  <ul className="speakers-modal-bullets">
+                    {activeModalSpeaker.bullets.map((bullet, bulletIdx) => (
+                      <li key={bulletIdx}>{bullet}</li>
+                    ))}
+                  </ul>
+                )}
                 {activeModalSpeaker.talkName && (
                   <div className="speakers-modal-talk">
                     <span className="speakers-modal-talk-icon">{activeModalSpeaker.talkIcon}</span>
