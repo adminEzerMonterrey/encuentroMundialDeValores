@@ -4309,9 +4309,28 @@ a.nav__brand {
 
 @media (min-width: 768px) {
   .speakers-modal-body {
-    grid-template-columns: 1.1fr 1.3fr;
     max-height: none;
     overflow-y: visible;
+  }
+  .speakers-modal-body--photo-left {
+    grid-template-columns: 1.1fr 1.3fr;
+  }
+  .speakers-modal-body--photo-left .speakers-modal-photo {
+    grid-column: 1;
+  }
+  .speakers-modal-body--photo-left .speakers-modal-info {
+    grid-column: 2;
+  }
+  
+  .speakers-modal-body--photo-right {
+    grid-template-columns: 1.3fr 1.1fr;
+  }
+  .speakers-modal-body--photo-right .speakers-modal-photo {
+    grid-column: 2;
+  }
+  .speakers-modal-body--photo-right .speakers-modal-info {
+    grid-column: 1;
+    grid-row: 1;
   }
 }
 

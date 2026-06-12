@@ -69,7 +69,24 @@ function SpeakerCard({ speaker, index, isCurrent, onClick }) {
 
 // Data Array to keep JSX clean
 const speakersData = [
-  { img: "/speakers/marian-rojas-estape.jpg", initials: "MR", name: "Marian Rojas Estapé", company: "Instituto Rojas Estapé", role: "Psiquiatra, escritora y conferencista", bio: "Destacada médica psiquiatra española, autora de best sellers. Explorará la reconexión interior en la era digital.", gradient: "linear-gradient(135deg,#E91E8C,#8B5CF6)", talkIcon: "🧠", talkName: "La mente en la era digital" },
+  {
+    img: "/speakers/marian-rojas-estape.jpg",
+    initials: "MR",
+    name: "Marian Rojas Estapé",
+    company: "Instituto Rojas Estapé",
+    role: "Psiquiatra, escritora y conferencista",
+    bio: "Destacada médica psiquiatra española, autora de best sellers. Explorará la reconexión interior en la era digital.",
+    longBio: "Destacada médica psiquiatra española, escritora y conferencista internacional.",
+    bullets: [
+      "Autora del best seller \"Cómo hacer que te pasen cosas buenas\" (2018) y otros más: \"Encuentra tu persona vitamina\" (2021), \"Recupera tu mente, reconquista tu vida\" (2024)",
+      "Reconocida por su profunda comprensión de cómo la tecnología digital impacta la salud mental.",
+      "Explora las reacciones neurobiológicas ante la conectividad constante, ofreciendo claves para gestionar los efectos de la era digital en nuestro equilibrio emocional."
+    ],
+    photoPosition: "right",
+    gradient: "linear-gradient(135deg,#E91E8C,#8B5CF6)",
+    talkIcon: "🧠",
+    talkName: "La mente en la era digital: dopamina, ansiedad y reconexión interior"
+  },
   { 
     img: "/speakers/dr-bimal-desai.jpg", 
     initials: "BD", 
@@ -86,16 +103,106 @@ const speakersData = [
       "Ganador del Healthcare Innovator Award",
       "Profesor Clínico Asistente, Perelman School of Medicine, Universidad de Pennsylvania"
     ],
+    photoPosition: "left",
     gradient: "linear-gradient(135deg,#FF9900,#e65c00)", 
     trackClass: "track-a", 
     trackName: "Salud", 
     talkIcon: "⚕️", 
     talkName: "Reinventing Medicine" 
   },
-  { img: "/speakers/emma-seppala.jpg", initials: "ES", name: "Emma Seppälä", company: "Stanford", role: "Directora Científica / Psicóloga", bio: "Reconocida psicóloga de Stanford, investiga la felicidad y el bienestar. Autora de 'The Happiness Track'. Ha impartido clases en Stanford y Yale.", gradient: "linear-gradient(135deg,#FF9900,#e65c00)", trackClass: "track-a", trackName: "Bienestar", talkIcon: "🧘‍♀️", talkName: "Calma en tiempos de IA" },
-  { img: "/speakers/dr-arumugam-mrukiah.jpg", initials: "AM", name: "Dr. Arumugam Murukiah", company: "Broadline Technologies", role: "Emprendedor y Líder Digital", bio: "Líder en transformation digital con más de 4 décadas de experiencia. Innovador en salud pública y cadenas de suministro en la India.", gradient: "linear-gradient(135deg,#F0922A,#ef4444)", trackClass: "track-a", trackName: "Tecnología", talkIcon: "⚙️", talkName: "IA Humanizada" },
-  { img: "/speakers/dra-melina-uncapher.jpg", initials: "MU", name: "Dr. Melina Uncapher", company: "SETA-ED", role: "CEO y Fundadora", bio: "Neurocientífica educativa con más de 20 años en investigación. Cofundadora del Institute for Applied Neuroscience.", gradient: "linear-gradient(135deg,#008FD3,#00C4CC)", trackClass: "track-a", trackName: "Educación", talkIcon: "🧠", talkName: "Neurociencia Educativa" },
-  { img: "/speakers/caroline-sanchez-crozier.jpeg", imgPosition: "top center", imgScale: "1.05", initials: "CC", name: "Caroline Sanchez Crozier", company: "CSC Consulting Group", role: "CEO & Fundadora", bio: "Líder tecnológico y presidenta del Comité de Tecnología e IA de LULAC. Inmigrante mexicana y pionera en equidad digital.", gradient: "linear-gradient(135deg,#E91E8C,#9333ea)", trackClass: "track-a", trackName: "Educación", talkIcon: "🤝", talkName: "Tecnología y Educación" },
+  {
+    img: "/speakers/emma-seppala.jpg",
+    initials: "ES",
+    name: "Emma Seppälä",
+    company: "Stanford",
+    role: "Directora Científica / Psicóloga",
+    bio: "Reconocida psicóloga de Stanford, investiga la felicidad y el bienestar. Autora de 'The Happiness Track'. Ha impartido clases en Stanford y Yale.",
+    longBio: "Reconocida psicóloga de Stanford, investiga la felicidad y el bienestar. Su trabajo demuestra cómo priorizar la felicidad no solo mejora la calidad de vida, sino que también impulsa un mayor éxito, productividad y resiliencia. Ha impartido clases en Stanford y Yale, compartiendo sus hallazgos con audiencias globales.",
+    bullets: [
+      "Autora de \"The Happiness Track: How to Apply the Science of Happiness to Accelerate Your Success\"",
+      "Directora Científica en el Stanford Center for Compassion and Altruism Research",
+      "Directora de Facultad del Programa de Liderazgo de Mujeres en la Yale School of Management",
+      "Co-Directora del Yale's Compassion Research Lab"
+    ],
+    photoPosition: "right",
+    gradient: "linear-gradient(135deg,#FF9900,#e65c00)",
+    trackClass: "track-a",
+    trackName: "Bienestar",
+    talkIcon: "🧘‍♀️",
+    talkName: "Calma en tiempos de inteligencia artificial: la ciencia del bienestar emocional"
+  },
+  {
+    img: "/speakers/dr-arumugam-mrukiah.jpg",
+    initials: "AM",
+    name: "Dr. Arumugam Murukiah",
+    company: "Broadline Technologies",
+    role: "Emprendedor y Líder Digital",
+    bio: "Líder en transformation digital con más de 4 décadas de experiencia. Innovador en salud pública y cadenas de suministro en la India.",
+    longBio: "Emprendedor y líder digital con 4 décadas transformando sistemas públicos y corporativos.",
+    bullets: [
+      "Ha diseñado e implementado soluciones tecnológicas de alto impacto en salud, logística y energía.",
+      "Ha colaborado con corporaciones globales como IBM, HP, SAP, Siemens y Xerox, liderando proyectos críticos de infraestructura tecnológica y operaciones globales.",
+      "Fundador de Broadline Technologies, impulsando transformación digital en gobiernos, salud y empresas",
+      "Su modelo de cadena de suministro para el sistema de salud pública del estado de Tamil Nadu, India, es considerado una referencia internacional por organismos multilaterales debido a su eficiencia y escalabilidad."
+    ],
+    photoPosition: "right",
+    gradient: "linear-gradient(135deg,#F0922A,#ef4444)",
+    trackClass: "track-a",
+    trackName: "Tecnología",
+    talkIcon: "⚙️",
+    talkName: "IA Humanizada"
+  },
+  {
+    img: "/speakers/dra-melina-uncapher.jpg",
+    initials: "MU",
+    name: "Dr. Melina Uncapher",
+    company: "SETA-ED",
+    role: "CEO y Fundadora",
+    bio: "Neurocientífica educativa con más de 20 años en investigación. Cofundadora del Institute for Applied Neuroscience.",
+    longBio: "Fundadora y CEO de SETA-ED, es neurocientífica educativa con 20+ años en investigación. Sus trabajos en Stanford y UCSF han generado más de 4,000 citas.",
+    bullets: [
+      "Fundadora y CEO de SETA-ED, empresa dedicada a soluciones transformadoras en educación basadas en neurociencia (2024)",
+      "Cofundadora y Chief of R&D de AERDF, uno de los principales nonprofits de I+D educativo de EE.UU.",
+      "Ex Profesora de Neurociencia Educativa en Stanford University y UC San Francisco (UCSF)",
+      "Cofundadora del Institute for Applied Neuroscience, nonprofit que equipa a educadores con herramientas basadas en ciencia del aprendizaje",
+      "Investigadora financiada por los National Institutes of Health (NIH) sobre el impacto de la tecnología en la cognición estudiantil",
+      "Publicaciones académicas citadas más de 4,000 veces; destacada en The New York Times, PBS y FrontlineScript Supervisor en el documental de PBS \"The Brain\" y productora de un cortometraje premiado sobre el cerebro",
+      "MacArthur Scholar: su trabajo guía a legisladores en prácticas basadas en evidencia sobre memoria y justicia",
+      "Doctorado en Neurobiología, UC Irvine; Posdoctorado en Stanford University"
+    ],
+    photoPosition: "right",
+    gradient: "linear-gradient(135deg,#008FD3,#00C4CC)",
+    trackClass: "track-a",
+    trackName: "Educación",
+    talkIcon: "🧠",
+    talkName: "Neurociencia Educativa"
+  },
+  {
+    img: "/speakers/caroline-sanchez-crozier.jpeg",
+    imgPosition: "top center",
+    imgScale: "1.05",
+    initials: "CC",
+    name: "Caroline Sanchez Crozier",
+    company: "CSC Consulting Group",
+    role: "CEO & Fundadora",
+    bio: "Líder tecnológico y presidenta del Comité de Tecnología e IA de LULAC. Inmigrante mexicana y pionera en equidad digital.",
+    longBio: "Inmigrante mexicana y líder tecnológico, fundó CSC Consulting Group y dirige Latinx Digital Leaders Now.",
+    bullets: [
+      "CEO y Fundadora de CSC Consulting Group por más de 34 años; Apple fue su primer socio estratégico",
+      "Presidenta del Comité de Tecnología e IA de LULAC (League of United Latin American Citizens)",
+      "Proveedora de servicios IT para las Escuelas Públicas de Chicago, el 3er sistema escolar más grande de EE.UU.",
+      "Forma parte del 1% de mujeres en STEM en Estados Unidos",
+      "Líder del Grupo de Trabajo de Equidad y Defensa del Plan Estratégico de Ciencias de la Computación de ISBE (Illinois)",
+      "Miembro de CS4IL y defensora de la equidad digital como nuevo derecho civil",
+      "Inmigrante mexicana, graduada universitaria de primera generación"
+    ],
+    photoPosition: "right",
+    gradient: "linear-gradient(135deg,#E91E8C,#9333ea)",
+    trackClass: "track-a",
+    trackName: "Educación",
+    talkIcon: "🤝",
+    talkName: "Tecnología y Educación"
+  },
   { img: "/speakers/alejandro-almazan-zimerman.jpg", initials: "AA", name: "Alejandro Almazán Zimerman", company: "Google for Education", role: "Head Latam", bio: "Lidera iniciativas que conectan a millones de estudiantes con herramientas digitales. Visión en innovación tecnológica y transformación social.", gradient: "linear-gradient(135deg,#2E86C1,#8B5CF6)", trackClass: "track-c", trackName: "Educación", talkIcon: "🌐", talkName: "IA en Educación" },
   { img: "/speakers/dra-alma-rosa-marroquin.jpg", initials: "AR", name: "Dra. Alma Rosa Marroquín Escamilla", company: "Gobierno de Nuevo León", role: "Secretaria de Salud", bio: "Médica pediatra liderando la transformación del sistema de salud de Nuevo León enfocada en un modelo integral y equitativo.", gradient: "linear-gradient(135deg,#059669,#8B5CF6)", trackClass: "track-a", trackName: "Salud", talkIcon: "🏥", talkName: "Reinventing Medicine" },
   { img: "/speakers/dra-sofialeticia-morales-garza.png", initials: "SM", name: "Dra. Sofialeticia Morales Garza", company: "Legado Nuevo León", role: "Coordinadora Educativa", bio: "Ex Secretaria de Educación de NL. Impulsora de modelos educativos innovadores y asesora para Naciones Unidas.", gradient: "linear-gradient(135deg,#a3335f,#8B5CF6)", trackClass: "track-c", trackName: "Educación", talkIcon: "🎓", talkName: "IA en Educación" },
@@ -344,7 +451,7 @@ export default function Speakers() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </button>
-            <div className="speakers-modal-body">
+            <div className={`speakers-modal-body ${activeModalSpeaker.photoPosition === 'left' ? 'speakers-modal-body--photo-left' : 'speakers-modal-body--photo-right'}`}>
               <div className="speakers-modal-photo">
                 {activeModalSpeaker.img ? (
                   <img src={activeModalSpeaker.img} alt={activeModalSpeaker.name} />
