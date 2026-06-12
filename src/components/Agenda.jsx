@@ -138,16 +138,17 @@ const agendaData = [
     bgColor: "var(--color-cyan)"
   },
   {
-    type: "Taller / Sesión privada",
+    type: "9:00 a 10:30 am · Taller / Sesión privada",
     title: "Sesión Rotarios · Liderazgo, comunidad y tecnología al servicio del bien",
     track: "IA y Autonomía Humana",
     color: "var(--color-accent)",
     speakers: [
-      { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" }
+      { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" },
+      { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora" }
     ]
   },
   {
-    type: "Sesión paralela · Sala Salud",
+    type: "9:00 a 10:30 am · Sesión paralela · Sala Salud",
     title: "La nueva frontera de la Medicina Inteligente",
     track: "IA, Salud y Espiritualidad",
     color: "var(--color-cyan)",
@@ -156,26 +157,81 @@ const agendaData = [
     ]
   },
   {
-    type: "Sesión paralela · Sala Autonomía Humana",
-    title: "Medios de comunicación e IA",
-    track: "IA y Autonomía Humana",
-    color: "var(--color-accent)",
-    speakers: [
-      { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora" }
-    ]
-  },
-  {
-    type: "Sesión paralela · Sala Educación",
-    title: "Educación, Google e Inclusión Digital",
+    type: "9:00 a 10:30 am · Sesión paralela · Sala Educación",
+    title: '"Del Cerebro al Aula: Repensando la Educación en la Era Digital"',
     track: "IA, Educación e Inclusión",
     color: "var(--color-orange)",
     speakers: [
-      { name: "Alejandro Almazán Zimerman", role: "Head of Google for Education · LATAM" },
-      { name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting" }
+      { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" }
     ]
   },
   {
-    type: "Consejo Interreligioso · Sala Espiritualidad",
+    type: "9:00 a 10:30 am · Sesión especial · Sala Espiritualidad",
+    title: '"De Ingeniero Informático a Monje Budista" y Sabiduría ancestral',
+    track: "IA y Espiritualidad",
+    color: "var(--color-lime)",
+    speakers: [
+      { name: "Bhikkhu Pannakara", role: "Monje Budista" },
+      { name: "Abuelo Maya Antonio Oxté", role: "Sabio Maya · Tzucacab, Yucatán" }
+    ]
+  },
+  {
+    type: "9:00 a 10:30 am · Sesión paralela · Sala Salud",
+    title: '"Relaciones Soberanas: la ciencia detrás de las relaciones prósperas y herramientas para cultivar conexiones significativas"',
+    track: "IA, Salud y Espiritualidad",
+    color: "var(--color-cyan)",
+    speakers: [
+      { name: "Emma Seppälä", role: "Psicóloga · Stanford & Yale" }
+    ]
+  },
+  {
+    type: "11:00 am a 12:30 pm · Conferencia · Sala Espiritualidad",
+    title: '"Espiritualidad cristiana e Inteligencia Artificial"',
+    track: "IA y Espiritualidad",
+    color: "var(--color-lime)",
+    speakers: [
+      { name: "Padre David Jasso", role: "Sacerdote · Arquidiócesis de Monterrey" }
+    ]
+  },
+  {
+    type: "11:00 am a 12:30 pm · Conferencia · Sala Espiritualidad",
+    title: '"¿Quién decide por ti? Libertad humana en la era del algoritmo"',
+    track: "IA, Salud y Espiritualidad",
+    color: "var(--color-cyan)",
+    speakers: [
+      { name: "Farid Dieck Assad", role: "Psicólogo · Influencer · 60M seguidores" }
+    ]
+  },
+  {
+    type: "11:00 am a 12:30 pm · Sesión paralela · Sala Salud",
+    title: '"Diseño e implementación de soluciones tecnológicas de alto impacto en el sector salud"',
+    track: "IA, Salud y Espiritualidad",
+    color: "var(--color-cyan)",
+    speakers: [
+      { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" }
+    ]
+  },
+  {
+    type: "11:00 am a 12:30 pm · Sesión paralela · Sala Educación",
+    title: '"Del Potencial a la Oportunidad: El Camino de las Mujeres en la Economía Digital"',
+    track: "IA, Educación e Inclusión",
+    color: "var(--color-orange)",
+    speakers: [
+      { name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" }
+    ]
+  },
+  {
+    type: "11:00 am a 12:30 pm · Diálogo · Sala Autonomía Humana",
+    title: "Diálogo sobre liderazgo, comunidad y tecnología",
+    track: "IA y Autonomía Humana",
+    color: "var(--color-accent)",
+    speakers: [
+      { name: "David Eaton", role: "Rotary Distrito 4130" },
+      { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora · CBS 60 Minutes" }
+    ]
+  },
+  {
+    type: "11:00 am a 12:30 pm · Consejo Interreligioso · Sala Espiritualidad",
     title: "Consejo Interreligioso",
     track: "IA y Espiritualidad",
     color: "var(--color-lime)",
@@ -188,50 +244,12 @@ const agendaData = [
     ]
   },
   {
-    type: "Sesión paralela · Sala Salud",
-    title: "Bienestar emocional e IA",
-    track: "IA, Salud y Espiritualidad",
-    color: "var(--color-cyan)",
-    speakers: [
-      { name: "Emma Seppälä", role: "Psicóloga · Stanford & Yale" }
-    ]
-  },
-  {
     type: "Charter for Compassion",
     title: "Charter for Compassion",
     track: "IA, Salud y Espiritualidad",
     color: "var(--color-cyan)",
     speakers: [
       { name: "Representante Charter for Compassion", role: "" }
-    ]
-  },
-  {
-    type: "Sesión especial",
-    title: "Sabiduría ancestral y el futuro tecnológico",
-    track: "IA y Espiritualidad",
-    color: "var(--color-lime)",
-    speakers: [
-      { name: "Abuelo Maya Antonio Oxté", role: "Sabio Maya · Tzucacab, Yucatán" }
-    ]
-  },
-  {
-    type: "Conferencia / Sala Espiritualidad",
-    title: "Salud mental y autonomía personal ante la IA",
-    track: "IA, Salud y Espiritualidad",
-    color: "var(--color-cyan)",
-    speakers: [
-      { name: "Farid Dieck Assad", role: "Psicólogo · Influencer · 60M seguidores" }
-    ]
-  },
-  {
-    type: "Panel · Sala Autonomía Humana",
-    title: '"IA Humanizada: soluciones tecnológicas con impacto"',
-    track: "IA y Autonomía Humana",
-    color: "var(--color-accent)",
-    speakers: [
-      { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" },
-      { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" },
-      { name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" }
     ]
   },
   {
