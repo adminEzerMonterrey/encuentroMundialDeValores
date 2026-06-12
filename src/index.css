@@ -4465,7 +4465,7 @@ a.nav__brand {
   font-size: 0.78rem;
   font-weight: 700;
   color: #fff;
-  margin: 0 0 2px 0;
+  margin: 2px 0 0 0;
 }
 
 .speakers-modal-talk-track {
@@ -4474,6 +4474,7 @@ a.nav__brand {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  margin: 0 0 2px 0;
 }
 
 @keyframes modalFadeIn {

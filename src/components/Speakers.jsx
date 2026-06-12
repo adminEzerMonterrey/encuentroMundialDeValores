@@ -890,10 +890,10 @@ export default function Speakers() {
                     onClick={() => setActiveModalSpeaker(null)}
                   >
                     <div className="speakers-modal-talk-details">
-                      <h4 className="speakers-modal-talk-title">"{activeModalSpeaker.talkName}"</h4>
                       {activeModalSpeaker.trackName && (
                         <span className="speakers-modal-talk-track">{activeModalSpeaker.trackName}</span>
                       )}
+                      <h4 className="speakers-modal-talk-title">"{activeModalSpeaker.talkName}"</h4>
                     </div>
                   </a>
                 )}
