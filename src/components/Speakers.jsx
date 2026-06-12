@@ -546,13 +546,102 @@ const speakersData = [
     name: "Abuelo Maya Antonio Oxté",
     company: "Medicina Tradicional",
     role: "Sabio Maya",
-    bio: "Médico tradicional y maestro espiritual de Yucatán. Puente vivo entre el profundo conocimiento ancestral y el mundo actual.", gradient: "linear-gradient(135deg,#a3335f,#8B5CF6)", trackClass: "track-a", trackName: "Espiritualidad", talkIcon: "🌿", talkName: "Sabiduría Ancestral" },
-  { img: "/speakers/pastor-federico.jpeg", initials: "FE", name: "Pastor Federico Elizondo", company: "Autor", role: "Autor", bio: "Autor del libro: Inteligencia Artificial y Paz Mundial, una visión cristiana ética.", gradient: "linear-gradient(135deg,#0078D4,#00c6ff)", trackClass: "track-a", trackName: "Espiritualidad", talkIcon: "📖", talkName: "IA y Paz Mundial" },
-  { img: "/speakers/javier-prieto.jpg", initials: "JP", name: "Javier Prieto", company: "SELIDER", role: "Presidente y Fundador", bio: "Presidente y Fundador de SELIDER. Maestro de Ceremonias del Encuentro Mundial de Valores.", gradient: "linear-gradient(135deg,#00d4fe,#29ABE2)", trackClass: "track-a", trackName: "Presentación", talkIcon: "🎤", talkName: "Maestro de Ceremonias" },
+    bio: "Médico tradicional y maestro espiritual de Yucatán. Puente vivo entre el profundo conocimiento ancestral y el mundo actual.",
+    longBio: "El Abuelo Antonio Oxté es uno de los sabios, médicos tradicionales y maestros espirituales mayas más importantes de nuestra generación, originario de Tzucacab, Yucatán.",
+    bullets: [
+      "Su labor se centra en la preservación y difusión de la cosmovisión, astronomía, medicina y arquitectura maya, actuando como un puente entre el conocimiento ancestral y el mundo actual."
+    ],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#a3335f,#8B5CF6)",
+    trackClass: "track-a",
+    trackName: "Espiritualidad",
+    talkIcon: "🌿",
+    talkName: "Sabiduría Ancestral"
+  },
+  {
+    img: "/speakers/pastor-federico.jpeg",
+    initials: "FE",
+    name: "Pastor Federico Elizondo",
+    company: "Autor",
+    role: "Autor",
+    bio: "Autor del libro: Inteligencia Artificial y Paz Mundial, una visión cristiana ética.",
+    longBio: "Autor del libro: Inteligencia Artificial y Paz Mundial, una visión cristiana ética.",
+    bullets: [
+      "Autor del libro: Inteligencia Artificial y Paz Mundial"
+    ],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#0078D4,#00c6ff)",
+    trackClass: "track-a",
+    trackName: "Espiritualidad",
+    talkIcon: "📖",
+    talkName: "IA y Paz Mundial"
+  },
+  {
+    img: "/speakers/javier-prieto.jpg",
+    initials: "JP",
+    name: "Javier Prieto",
+    company: "SELIDER",
+    role: "Presidente y Fundador",
+    bio: "Presidente y Fundador de SELIDER. Maestro de Ceremonias del Encuentro Mundial de Valores.",
+    longBio: "Presidente y Fundador de SELIDER y MAESTRO DE CEREMONIAS de este magno evento.",
+    bullets: [
+      "Presidente y Fundador de SELIDER",
+      "Maestro de Ceremonias del Encuentro Mundial de Valores"
+    ],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#00d4fe,#29ABE2)",
+    trackClass: "track-a",
+    trackName: "Presentación",
+    talkIcon: "🎤",
+    talkName: "Maestro de Ceremonias"
+  },
   { img: "/speakers/monica-zambrano-vignau.jpg", initials: "MZ", name: "Monica Zambrano Vignau", company: "HUMIND", role: "Experta en Bienestar Emocional", bio: "Participa en el panel de IA y Salud: 'El Ser Humano como Guía, la IA como Soporte'.", gradient: "linear-gradient(135deg,#a3335f,#8B5CF6)", trackClass: "track-a", trackName: "Salud", talkIcon: "❤️", talkName: "El Ser Humano como Guía" },
   { img: "/speakers/sofia-lozano-snively.jpeg", initials: "SL", name: "Sofía Lozano Snively", company: "Ingenium", role: "Experta en Bienestar", bio: "Participa en el panel de IA y Salud: 'El Ser Humano como Guía, la IA como Soporte'.", gradient: "linear-gradient(135deg,#2E86C1,#8B5CF6)", trackClass: "track-a", trackName: "Salud", talkIcon: "❤️", talkName: "El Ser Humano como Guía" },
-  { img: "/speakers/david-eaton.jpg", initials: "DE", name: "David Eaton", company: "Rotary Distrito 4130", role: "Gobernador Electo", bio: "Líder empresarial y ambientalista, ex directivo de CPKC Railroad e impulsor de importantes iniciativas de conservación.", gradient: "linear-gradient(135deg,#008FD3,#00C4CC)", trackClass: "track-a", trackName: "Rotarios", talkIcon: "🌍", talkName: "Liderazgo Rotario" },
-  { img: "/speakers/dr-gerardo-de-jesus-mendoza-jimenez.png", initials: "GM", name: "Dr. Gerardo de Jesús Mendoza", company: "Desarrollo Magisterial", role: "Encargado de la Subsecretaría", bio: "Encargado de la Subsecretaría de Desarrollo Magisterial. Presentador del evento.", gradient: "linear-gradient(135deg,#E91E8C,#8B5CF6)", trackClass: "track-c", trackName: "Presentación", talkIcon: "🎙️", talkName: "Presentador" },
+  {
+    img: "/speakers/david-eaton.jpg",
+    initials: "DE",
+    name: "David Eaton",
+    company: "Rotary Distrito 4130",
+    role: "Gobernador Electo",
+    bio: "Líder empresarial y ambientalista, ex directivo de CPKC Railroad e impulsor de importantes iniciativas de conservación.",
+    longBio: "David Eaton es un líder empresarial y ambientalista de Monterrey con 25 años en CPKC Railroad. Gobernador Electo del Distrito Rotario 4130 (2026/2027), supervisa 72 clubes en el noreste de México. Miembro del Club Rotario Metropolitano desde hace 28 años, impulsa la iniciativa Operation Pollination para conservar la mariposa Monarca.",
+    bullets: [
+      "Gobernador Electo del Distrito Rotario 4130 (2026/2027), responsable de 72 clubes en el noreste de México",
+      "28 años de servicio en el Club Rotario Metropolitano de Monterrey",
+      "Director de Desarrollo de Negocios para México, CPKC Railroad (casi 25 años en la empresa)",
+      "Ex Vicepresidente de Asuntos Corporativos, Bienes Raíces, Servicio al Cliente y Operaciones en CPKC México",
+      "Presidente del Consejo de NASCO (North America's SuperCorridor Coalition) para América del Norte",
+      "Vicepresidente de la Cámara Americana de Comercio (AMCHAM), División Noreste",
+      "Presidente de la Asociación Nacional de Transporte de Carga (NFTA) 2020-2022",
+      "Impulsor de \"Operation Pollination\": recaudó más de $100,000 USD para 60,000 árboles oyamel para la mariposa Monarca",
+      "Licenciado en Derecho, Universidad de Arizona; Maestría en Derecho Comercial, Tecnológico de Monterrey (ITESM)"
+    ],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#008FD3,#00C4CC)",
+    trackClass: "track-a",
+    trackName: "Rotarios",
+    talkIcon: "🌍",
+    talkName: "Liderazgo Rotario"
+  },
+  {
+    img: "/speakers/dr-gerardo-de-jesus-mendoza-jimenez.png",
+    initials: "GM",
+    name: "Dr. Gerardo de Jesús Mendoza",
+    company: "Desarrollo Magisterial",
+    role: "Encargado de la Subsecretaría",
+    bio: "Encargado de la Subsecretaría de Desarrollo Magisterial. Presentador del evento.",
+    longBio: "Dr. Gerardo de Jesús Mendoza Jiménez\nEncargado de la Subsecretaría de Desarrollo Magisterial\nPRESENTADOR",
+    bullets: [
+      "Encargado de la Subsecretaría de Desarrollo Magisterial del Estado",
+      "Presentador oficial del evento"
+    ],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#E91E8C,#8B5CF6)",
+    trackClass: "track-c",
+    trackName: "Presentación",
+    talkIcon: "🎙️",
+    talkName: "Presentador"
+  },
 ];
 
 export default function Speakers() {
