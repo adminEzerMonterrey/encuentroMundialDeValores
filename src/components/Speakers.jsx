@@ -884,14 +884,18 @@ export default function Speakers() {
                 <p className="speakers-modal-role">{activeModalSpeaker.role}</p>
                 
                 {activeModalSpeaker.talkName && (
-                  <div className="speakers-modal-talk">
+                  <a 
+                    href="#agenda" 
+                    className="speakers-modal-talk"
+                    onClick={() => setActiveModalSpeaker(null)}
+                  >
                     <div className="speakers-modal-talk-details">
                       <h4 className="speakers-modal-talk-title">"{activeModalSpeaker.talkName}"</h4>
                       {activeModalSpeaker.trackName && (
                         <span className="speakers-modal-talk-track">{activeModalSpeaker.trackName}</span>
                       )}
                     </div>
-                  </div>
+                  </a>
                 )}
 
                 <div className="speakers-modal-divider"></div>
