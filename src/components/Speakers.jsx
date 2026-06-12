@@ -102,10 +102,26 @@ const speakersData = [
 
 export default function Speakers() {
   const [current, setCurrent] = useState(0); // Alberto is at 0 in this array format since we pushed him. Usually it was Alberto -> Beatriz -> Arturo.
+  const [activeModalSpeaker, setActiveModalSpeaker] = useState(null);
   const trackRef = useRef(null);
   const autoTimerRef = useRef(null);
   
   const total = speakersData.length;
+
+  // Listen to Escape key to close modal
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setActiveModalSpeaker(null);
+      }
+    };
+    if (activeModalSpeaker) {
+      window.addEventListener('keydown', handleKeyDown);
+    }
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [activeModalSpeaker]);
 
   const getOffset = useCallback((idx) => {
     const track = trackRef.current;
@@ -240,7 +256,15 @@ export default function Speakers() {
         {/* ── Speakers Collage ── */}
         <div className="speakers-collage reveal-up">
           {speakersData.map((speaker, idx) => (
-            <div className="collage-item" key={idx}>
+            <div 
+              className={`collage-item ${speaker.name === "Dr. Bimal Desai" ? 'collage-item--clickable' : ''}`} 
+              key={idx}
+              onClick={() => {
+                if (speaker.name === "Dr. Bimal Desai") {
+                  setActiveModalSpeaker(speaker);
+                }
+              }}
+            >
               {speaker.img ? (
                 <img src={speaker.img.includes('?v=') ? speaker.img.replace(/v=\d+/, 'v=4') : `${speaker.img}?v=4`} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.imgPosition || undefined, transform: `${speaker.imgScale ? `scale(${speaker.imgScale})` : ''} ${speaker.imgOffsetY ? `translateY(${speaker.imgOffsetY})` : ''}`.trim() || undefined, transformOrigin: speaker.imgScale ? 'top center' : undefined }} />
               ) : (
@@ -290,6 +314,50 @@ export default function Speakers() {
           ))}
         </div>
       </div>
+
+      {/* ── Speakers Modal Overlay ── */}
+      {activeModalSpeaker && (
+        <div className="speakers-modal-overlay" onClick={() => setActiveModalSpeaker(null)}>
+          <div className="speakers-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="speakers-modal-close" onClick={() => setActiveModalSpeaker(null)} aria-label="Cerrar modal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" width="24" height="24">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+            <div className="speakers-modal-body">
+              <div className="speakers-modal-photo">
+                {activeModalSpeaker.img ? (
+                  <img src={activeModalSpeaker.img} alt={activeModalSpeaker.name} />
+                ) : (
+                  <div className="speakers-modal-fallback" style={{ background: activeModalSpeaker.gradient }}>
+                    {activeModalSpeaker.initials}
+                  </div>
+                )}
+              </div>
+              <div className="speakers-modal-info">
+                <span className="speakers-modal-tag">EXPOSITOR</span>
+                <h3 className="speakers-modal-name">{activeModalSpeaker.name}</h3>
+                <p className="speakers-modal-company">{activeModalSpeaker.company}</p>
+                <p className="speakers-modal-role">{activeModalSpeaker.role}</p>
+                <div className="speakers-modal-divider"></div>
+                <p className="speakers-modal-bio">{activeModalSpeaker.bio}</p>
+                {activeModalSpeaker.talkName && (
+                  <div className="speakers-modal-talk">
+                    <span className="speakers-modal-talk-icon">{activeModalSpeaker.talkIcon}</span>
+                    <div className="speakers-modal-talk-details">
+                      <h4 className="speakers-modal-talk-title">{activeModalSpeaker.talkName}</h4>
+                      {activeModalSpeaker.trackName && (
+                        <span className="speakers-modal-talk-track">{activeModalSpeaker.trackName}</span>
+                      )}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
