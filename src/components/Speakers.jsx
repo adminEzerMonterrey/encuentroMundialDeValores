@@ -882,6 +882,18 @@ export default function Speakers() {
                 <h3 className="speakers-modal-name">{activeModalSpeaker.name}</h3>
                 <p className="speakers-modal-company">{activeModalSpeaker.company}</p>
                 <p className="speakers-modal-role">{activeModalSpeaker.role}</p>
+                
+                {activeModalSpeaker.talkName && (
+                  <div className="speakers-modal-talk">
+                    <div className="speakers-modal-talk-details">
+                      <h4 className="speakers-modal-talk-title">{activeModalSpeaker.talkName}</h4>
+                      {activeModalSpeaker.trackName && (
+                        <span className="speakers-modal-talk-track">{activeModalSpeaker.trackName}</span>
+                      )}
+                    </div>
+                  </div>
+                )}
+
                 <div className="speakers-modal-divider"></div>
                 <p className="speakers-modal-bio">{activeModalSpeaker.longBio || activeModalSpeaker.bio}</p>
                 {activeModalSpeaker.bullets && activeModalSpeaker.bullets.length > 0 && (
@@ -890,17 +902,6 @@ export default function Speakers() {
                       <li key={bulletIdx}>{bullet}</li>
                     ))}
                   </ul>
-                )}
-                {activeModalSpeaker.talkName && (
-                  <div className="speakers-modal-talk">
-                    <span className="speakers-modal-talk-icon">{activeModalSpeaker.talkIcon}</span>
-                    <div className="speakers-modal-talk-details">
-                      <h4 className="speakers-modal-talk-title">{activeModalSpeaker.talkName}</h4>
-                      {activeModalSpeaker.trackName && (
-                        <span className="speakers-modal-talk-track">{activeModalSpeaker.trackName}</span>
-                      )}
-                    </div>
-                  </div>
                 )}
               </div>
             </div>
