@@ -278,12 +278,10 @@ export default function Speakers() {
         <div className="speakers-collage reveal-up">
           {speakersData.map((speaker, idx) => (
             <div 
-              className={`collage-item ${speaker.name === "Dr. Bimal Desai" ? 'collage-item--clickable' : ''}`} 
+              className="collage-item collage-item--clickable" 
               key={idx}
               onClick={() => {
-                if (speaker.name === "Dr. Bimal Desai") {
-                  setActiveModalSpeaker(speaker);
-                }
+                setActiveModalSpeaker(speaker);
               }}
             >
               {speaker.img ? (
