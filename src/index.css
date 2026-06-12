@@ -4362,61 +4362,61 @@ a.nav__brand {
 }
 
 .speakers-modal-tag {
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   background: linear-gradient(90deg, #1ABC9C, #8B5CF6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .speakers-modal-name {
-  font-size: clamp(1.8rem, 4.5vw, 2.3rem);
+  font-size: clamp(1.3rem, 3.2vw, 1.7rem);
   font-weight: 800;
   color: #fff;
-  margin: 0 0 10px 0;
+  margin: 0 0 6px 0;
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
 .speakers-modal-company {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: #1ABC9C;
   margin-bottom: 2px;
 }
 
 .speakers-modal-role {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   color: var(--color-text-secondary);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .speakers-modal-divider {
   height: 1px;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.12), transparent);
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .speakers-modal-bio {
-  font-size: 0.92rem;
-  line-height: 1.6;
+  font-size: 0.8rem;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .speakers-modal-bullets {
-  margin: 0 0 24px 0;
+  margin: 0 0 16px 0;
   padding-left: 20px;
   list-style-type: disc;
 }
 
 .speakers-modal-bullets li {
-  font-size: 0.85rem;
-  line-height: 1.5;
+  font-size: 0.78rem;
+  line-height: 1.45;
   color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 
