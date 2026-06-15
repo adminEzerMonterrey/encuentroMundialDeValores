@@ -471,23 +471,6 @@ const speakersData = [
     talkName: "Reconocimiento"
   },
   {
-    img: "/speakers/gurudev-sri-sri-ravi-shankar.jpeg",
-    initials: "GS",
-    name: "Gurudev Sri Sri Ravi Shankar",
-    company: "El Arte de Vivir",
-    role: "Líder Humanitario",
-    bio: "Líder humanitario y maestro espiritual, fundador de la organización internacional El Arte de Vivir.",
-    longBio: "POR CONFIRMAR\nLíder humanitario y maestro espiritual, fundador de la organización internacional El Arte de Vivir.",
-    bullets: [
-      "Líder humanitario y maestro espiritual",
-      "Fundador de la organización internacional El Arte de Vivir"
-    ],
-    photoPosition: "left",
-    gradient: "linear-gradient(135deg,#E91E8C,#F0922A)",
-    talkIcon: "🧘‍♂️",
-    talkName: "Sabiduría Eterna"
-  },
-  {
     img: "/speakers/padre-david-jasso.png",
     imgPosition: "center 60%",
     imgScale: "1.1",

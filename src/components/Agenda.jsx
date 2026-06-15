@@ -239,8 +239,7 @@ const agendaData = [
       { name: "Mons. Rogelio Cabrera López", role: "Arzobispo Metropolitano de Monterrey" },
       { name: "Padre David Jasso", role: "Sacerdote · Arquidiócesis de Monterrey" },
       { name: "Abuelo Maya Antonio Oxté", role: "Sabio Maya · Tzucacab, Yucatán" },
-      { name: "Bhikkhu Pannakara", role: "Monje Budista" },
-      { name: "Gurudev Sri Sri Ravi Shankar", role: "Líder espiritual · Fundador Arte de Vivir" }
+      { name: "Bhikkhu Pannakara", role: "Monje Budista" }
     ]
   },
   {
