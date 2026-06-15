@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 
 // Subcomponent for the cyber tilt logic
-function SpeakerCard({ speaker, index, isCurrent, onClick }) {
+function SpeakerCard({ speaker, index, isCurrent, onClick, onOpenModal }) {
   const cardRef = useRef(null);
   const [isTilting, setIsTilting] = useState(false);
 
@@ -60,7 +60,15 @@ function SpeakerCard({ speaker, index, isCurrent, onClick }) {
         <p className="sc-card__role">{speaker.role}</p>
         <p className="sc-card__bio">{speaker.bio}</p>
         <div className="sc-card__footer">
-          <a href="#agenda" className="btn btn--ghost btn--sm" onClick={(e) => e.stopPropagation()}>Ver agenda →</a>
+          <button 
+            className="btn btn--ghost btn--sm" 
+            onClick={(e) => { 
+              e.stopPropagation(); 
+              onOpenModal(speaker); 
+            }}
+          >
+            Ver semblanza →
+          </button>
         </div>
       </div>
     </article>
@@ -821,6 +829,7 @@ export default function Speakers() {
                 index={idx} 
                 isCurrent={idx === current}
                 onClick={() => { if (idx !== current) goTo(idx); }}
+                onOpenModal={setActiveModalSpeaker}
               />
             ))}
           </div>
