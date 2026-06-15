@@ -785,7 +785,7 @@ export default function Speakers() {
         <div className="section-header reveal-up">
           <span className="section-tag">02 / PANELISTAS</span>
           <h2 className="section-title" id="speakersHeading">Panelistas</h2>
-          <p className="section-subtitle">Los rostros del Encuentro Mundial de Valores.</p>
+          <p className="section-subtitle">Click para conocer a los rostros del Encuentro Mundial de Valores.</p>
         </div>
 
         {/* ── Speakers Collage ── */}
