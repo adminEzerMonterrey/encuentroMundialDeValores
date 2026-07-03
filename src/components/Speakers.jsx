@@ -854,7 +854,7 @@ export default function Speakers() {
               }}
             >
               {speaker.img ? (
-                <img src={speaker.img.includes('?v=') ? speaker.img.replace(/v=\d+/, 'v=4') : `${speaker.img}?v=4`} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.imgPosition || undefined, transform: `${speaker.imgScale ? `scale(${speaker.imgScale})` : ''} ${speaker.imgOffsetY ? `translateY(${speaker.imgOffsetY})` : ''}`.trim() || undefined, transformOrigin: speaker.imgScale ? 'top center' : undefined }} />
+                <img src={speaker.img.includes('?v=') ? speaker.img.replace(/v=\d+/, 'v=4') : `${speaker.img}?v=4`} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.imgPosition || undefined, transform: speaker.imgScale ? `scale(${speaker.imgScale})` : undefined, transformOrigin: speaker.imgScale ? 'top center' : undefined }} />
               ) : (
                 <div className="collage-fallback" style={{ background: speaker.gradient }}>{speaker.initials}</div>
               )}
