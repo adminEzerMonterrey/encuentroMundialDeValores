@@ -409,6 +409,33 @@ const speakersData = [
     talkName: "Compromiso con la verdad"
   },
   {
+    img: "/speakers/sebastian-yatra.png",
+    initials: "SY",
+    name: "Sebastian Yatra",
+    company: "Embajador de Causas Sociales",
+    role: "Cantautor y Activista",
+    bio: "Embajador de Causas Sociales y fenómeno musical internacional. Nominado al Grammy y ganador de 2 Latin Grammys.",
+    longBio: "Sebastián Obando Giraldo, conocido artísticamente como Sebastián Yatra, nació en Medellín, Colombia. Es un fenómeno musical internacional y Embajador de Causas Sociales. Alcanzó reconocimiento internacional con su sencillo 'Traicionera' (2016) y se consolidó en la música global. Billboard lo ha descrito como 'en una racha ganadora' y NPR señaló: 'Parece que Sebastián Yatra lo puede hacer todo'.",
+    bullets: [
+      "Ganador de 2 Premios Grammy Latino (2022): Mejor Canción Pop y Mejor Álbum Pop Vocal por \"Dharma\"",
+      "Nominado al Grammy (EE.UU.) por Mejor Álbum de Pop Latino (2020 y 2023)",
+      "10 premios Billboard Latin Music Awards y 4 premios Premio Lo Nuestro",
+      "Discos de Diamante en España, México, Guatemala, El Salvador, Honduras, Costa Rica, Nicaragua y Panamá",
+      "Multi-platino en Colombia, España, Argentina, Perú, México, EE.UU., Chile, Ecuador y Venezuela",
+      "Colaboraciones con Carlos Vives, Daddy Yankee, Luis Fonsi, Reik, Aitana, Pablo Alborán, entre otros",
+      "Exitoso \"Dharma Tour\" con sold-outs en toda América Latina y España (2022-2023)",
+      "Actor y presentador: participación en producciones de televisión y cine internacionales",
+      "Activista social: utiliza su plataforma para causas benéficas y conciencia social",
+      "Más de 30 millones de oyentes mensuales en Spotify; canciones con miles de millones de reproducciones"
+    ],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)",
+    trackClass: "track-a",
+    trackName: "Causas Sociales y Música",
+    talkIcon: "🎵",
+    talkName: "El poder de la música en las causas sociales"
+  },
+  {
     img: "/speakers/jorge-lerdo-de-tejada.jpeg",
     initials: "JL",
     name: "Jorge Lerdo de Tejada",
