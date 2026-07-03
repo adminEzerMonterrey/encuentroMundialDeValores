@@ -633,6 +633,33 @@ const speakersData = [
     talkIcon: "🎙️",
     talkName: "Presentador"
   },
+  {
+    img: "/speakers/dr-jesus-gonzalez-alvarez.png",
+    initials: "JG",
+    name: "Dr. Jesús González Álvarez",
+    company: "ÍNTTEGRA Sistemas, Servicios y Salud",
+    role: "CEO y Director General",
+    bio: "CEO de ÍNTTEGRA con más de 25 años en rehabilitación física y medicina regenerativa. Director General de Cooperación Internacional.",
+    longBio: "CEO de ÍNTTEGRA Sistemas, Servicios y Salud, con más de 25 años de trayectoria en rehabilitación física y medicina regenerativa. Director General de Cooperación Internacional y Jefe de Área del Hospital San Lucas en Monterrey, utiliza PNLE, PNIE e IEE para transformar vidas y organizaciones a través de conferencias internacionales y mentoría especializada.",
+    bullets: [
+      "CEO y Director General de ÍNTTEGRA, Sistemas, Servicios y Salud, S. de R.L. de C.V.",
+      "Director General del Plan Desarrollo Salud Mundial y su Centro de Salud Mundial (desde 2023)",
+      "Director General del Centro de Cooperación Internacional y de la Oficina de Gestión de Proyectos y Comodities (desde 2024)",
+      "Miembro del Comité Ejecutivo del Centro de Cooperación Internacional Grupo Sirius (desde 2023)",
+      "Jefe de Área del Hospital San Lucas en Monterrey, Nuevo León",
+      "Especialista en Medicina Regenerativa e Integrativa, Rehabilitación Física y Kinesiología",
+      "Conferencista Internacional con presencia en foros de salud, bienestar y desarrollo humano",
+      "Mentor de Vida, Ejecutivo y Empresarial con enfoque en salud y desarrollo transpersonal",
+      "Certificado en técnicas de PNLE, PNIE e IEE para transformación personal y organizacional",
+      "Más de 25 años de trayectoria en el sector salud y cooperación internacional"
+    ],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#059669,#8B5CF6)",
+    trackClass: "track-a",
+    trackName: "Salud",
+    talkIcon: "🏥",
+    talkName: "Medicina Regenerativa e Integrativa"
+  }
 ];
 
 export default function Speakers() {
