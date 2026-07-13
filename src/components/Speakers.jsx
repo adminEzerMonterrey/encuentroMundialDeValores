@@ -613,8 +613,51 @@ const speakersData = [
     talkIcon: "🎤",
     talkName: "Maestro de Ceremonias"
   },
-  { img: "/speakers/monica-zambrano-vignau.jpg", initials: "MZ", name: "Monica Zambrano Vignau", company: "HUMIND", role: "Experta en Bienestar Emocional", bio: "Participa en el panel de IA y Salud: 'El Ser Humano como Guía, la IA como Soporte'.", gradient: "linear-gradient(135deg,#a3335f,#8B5CF6)", trackClass: "track-a", trackName: "Salud", talkIcon: "❤️", talkName: "El Ser Humano como Guía" },
-  { img: "/speakers/sofia-lozano-snively.jpeg?v=2", imgScale: "1.4", imgOffsetY: "-10px", imgPosition: "center 20%", initials: "SL", name: "Sofía Lozano Snively", company: "Ingenium", role: "Experta en Bienestar", bio: "Participa en el panel de IA y Salud: 'El Ser Humano como Guía, la IA como Soporte'.", gradient: "linear-gradient(135deg,#2E86C1,#8B5CF6)", trackClass: "track-a", trackName: "Salud", talkIcon: "❤️", talkName: "El Ser Humano como Guía" },
+  {
+    img: "/speakers/monica-zambrano-vignau.jpg",
+    initials: "MZ",
+    name: "Monica Zambrano Vignau",
+    company: "Humind Care A.C.",
+    role: "Cofundadora",
+    bio: "Cofundadora de Humind Care A.C. Mónica convirtió el dolor en propósito tras perder a su hijo por suicidio, impulsando la salud mental de niños y adolescentes.",
+    longBio: "Mónica Zambrano de la Garza convirtió el dolor más profundo en propósito de vida. Tras perder a su hijo Fernando, de 17 años, por suicidio, decidió junto a su esposo Óscar de la Garza crear Humind Care A.C., una asociación sin fines de lucro pionera en México enfocada en la salud mental de niños y adolescentes. Con Licenciatura en Estudios Internacionales por la UDEM y Diplomado en Suicidología por SAK Fundación, Mónica se ha convertido en una voz poderosa en la prevención del suicidio y el bienestar emocional, demostrando que la experiencia vivida puede transformarse en el mayor motor de cambio social.",
+    bullets: [
+      "Cofundadora de Humind Care A.C., asociación sin fines de lucro líder en salud mental infantil y adolescente en México",
+      "Impulsora de la Clínica de Internamiento Humind, en alianza con la reconocida Clínica Menninger de Houston, EE.UU.",
+      "Sobreviviente de duelo por suicidio y oradora pública sobre prevención del suicidio y salud mental",
+      "Diplomado en Suicidología por SAK Fundación; Licenciatura en Estudios Internacionales por la UDEM",
+      "Miembro del SIPINNA San Pedro y de la Comisión Estatal de Prevención del Suicidio de Nuevo León"
+    ],
+    gradient: "linear-gradient(135deg,#a3335f,#8B5CF6)",
+    trackClass: "track-a",
+    trackName: "Salud",
+    talkIcon: "❤️",
+    talkName: "El Ser Humano como Guía"
+  },
+  {
+    img: "/speakers/sofia-lozano-snively.jpeg?v=2",
+    imgScale: "1.4",
+    imgOffsetY: "-10px",
+    imgPosition: "center 20%",
+    initials: "SL",
+    name: "Sofía Lozano Snively",
+    company: "Ingenium ABP",
+    role: "Directora General",
+    bio: "Directora General de Ingenium ABP. Cuenta con una destacada trayectoria al servicio de los derechos humanos, la igualdad de género y la salud mental.",
+    longBio: "Hay quienes convierten la indignación en propósito. Sofía Lozano Snively ha construido una trayectoria entera al servicio de los derechos humanos, la igualdad de género y la salud mental. Internacionalista por la UDEM y maestra en Políticas Públicas y Género por la FLACSO, hoy dirige Ingenium ABP impulsando la educación en salud mental y demostrando que el verdadero progreso se mide en dignidad y bienestar para todas las personas.",
+    bullets: [
+      "Directora General de Ingenium ABP, impulsando la educación en salud mental (desde Jun 2024)",
+      "Codirectora de Alternativas Pacíficas A.C. y Consultora en Data Cívica",
+      "Maestra en Políticas Públicas y Género por FLACSO; Internacionalista por la UDEM",
+      "Coeditora del Protocolo contra la Violencia Política en Nuevo León",
+      "Seleccionada para el Programa IVLP de EE.UU. en \"Ending Gender-Based Violence\""
+    ],
+    gradient: "linear-gradient(135deg,#2E86C1,#8B5CF6)",
+    trackClass: "track-a",
+    trackName: "Salud",
+    talkIcon: "❤️",
+    talkName: "El Ser Humano como Guía"
+  },
   {
     img: "/speakers/david-eaton.jpg",
     initials: "DE",
