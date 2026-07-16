@@ -137,137 +137,172 @@ const agendaData = [
     location: "CINTERMEX",
     bgColor: "var(--color-cyan)"
   },
+  // --- 9:00 - 10:00 AM ---
   {
-    type: "9:00 a 10:30 am · Taller / Sesión privada",
-    title: "Sesión Rotarios · Liderazgo, comunidad y tecnología al servicio del bien",
-    track: "IA y Autonomía Humana",
+    type: "9:00 - 10:00 AM · Sala Antártida (Capacidad: 110)",
+    title: "Sala de Espiritualidad con Pastor Elizondo",
+    track: "Espiritual",
+    color: "var(--color-lime)",
+    speakers: [{ name: "Pastor Elizondo", role: "Conferencista" }]
+  },
+  {
+    type: "9:00 - 10:00 AM · Sala Canadá A (Capacidad: 270)",
+    title: "Sala de Comunicación con Abuelo Maya y Yatra",
+    track: "Comunicación",
+    color: "var(--color-orange)",
+    speakers: [
+      { name: "Abuelo Maya", role: "Líder Espiritual Maya" },
+      { name: "Yatra", role: "Músico y Facilitador" }
+    ]
+  },
+  {
+    type: "9:00 - 10:00 AM · Sala Europa (Capacidad: 280)",
+    title: "Sala de Liderazgo Rotario con David Eaton y Salvador Rizzo",
+    track: "Rotarios",
     color: "var(--color-accent)",
     speakers: [
       { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" },
-      { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora" }
+      { name: "Salvador Rizzo", role: "Líder Rotario" }
     ]
   },
   {
-    type: "9:00 a 10:30 am · Sesión paralela · Sala Salud",
-    title: "La nueva frontera de la Medicina Inteligente",
-    track: "IA, Salud y Espiritualidad",
+    type: "9:00 - 10:00 AM · Sala Oceanía (Capacidad: 110)",
+    title: '"La Nueva Frontera de la Medicina Inteligente"',
+    track: "Salud",
     color: "var(--color-cyan)",
-    speakers: [
-      { name: "Dr. Bimal Desai", role: "VP & CHIO · Children's Hospital of Philadelphia" }
-    ]
+    speakers: [{ name: "Dr. Bimal Desai", role: "VP & CHIO · Children's Hospital of Philadelphia" }]
   },
   {
-    type: "9:00 a 10:30 am · Sesión paralela · Sala Educación",
-    title: '"Del Cerebro al Aula: Repensando la Educación en la Era Digital"',
-    track: "IA, Educación e Inclusión",
+    type: "9:00 - 10:00 AM · Sala Canadá B (Capacidad: 270)",
+    title: '"Del Potencial a la Oportunidad: El Camino de las Mujeres en la Economía Digital"',
+    track: "Educación",
     color: "var(--color-orange)",
-    speakers: [
-      { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" }
-    ]
+    speakers: [{ name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" }]
   },
+  // --- 10:10 - 11:00 AM ---
   {
-    type: "9:00 a 10:30 am · Sesión especial · Sala Espiritualidad",
-    title: '"De Ingeniero Informático a Monje Budista" y Sabiduría ancestral',
-    track: "IA y Espiritualidad",
-    color: "var(--color-lime)",
-    speakers: [
-      { name: "Bhikkhu Pannakara", role: "Monje Budista" },
-      { name: "Abuelo Maya Antonio Oxté", role: "Sabio Maya · Tzucacab, Yucatán" }
-    ]
-  },
-  {
-    type: "9:00 a 10:30 am · Sesión paralela · Sala Salud",
-    title: '"Relaciones Soberanas: la ciencia detrás de las relaciones prósperas y herramientas para cultivar conexiones significativas"',
-    track: "IA, Salud y Espiritualidad",
-    color: "var(--color-cyan)",
-    speakers: [
-      { name: "Emma Seppälä", role: "Psicóloga · Stanford & Yale" }
-    ]
-  },
-  {
-    type: "11:00 am a 12:30 pm · Conferencia · Sala Espiritualidad",
+    type: "10:10 - 11:00 AM · Sala Antártida (Capacidad: 110)",
     title: '"Espiritualidad cristiana e Inteligencia Artificial"',
-    track: "IA y Espiritualidad",
+    track: "Espiritual",
     color: "var(--color-lime)",
-    speakers: [
-      { name: "Padre David Jasso", role: "Sacerdote · Arquidiócesis de Monterrey" }
-    ]
+    speakers: [{ name: "Padre David Jasso", role: "Sacerdote · Arquidiócesis de Monterrey" }]
   },
   {
-    type: "11:00 am a 12:30 pm · Conferencia · Sala Espiritualidad",
-    title: '"¿Quién decide por ti? Libertad humana en la era del algoritmo"',
-    track: "IA, Salud y Espiritualidad",
-    color: "var(--color-cyan)",
-    speakers: [
-      { name: "Farid Dieck Assad", role: "Psicólogo · Influencer · 60M seguidores" }
-    ]
+    type: "10:10 - 11:00 AM · Sala Canadá A (Capacidad: 270)",
+    title: "Sala de Comunicación con Mauricio Martínez",
+    track: "Comunicación",
+    color: "var(--color-orange)",
+    speakers: [{ name: "Mauricio Martínez", role: "Actor y Cantante de Broadway" }]
   },
   {
-    type: "11:00 am a 12:30 pm · Sesión paralela · Sala Salud",
-    title: '"Diseño e implementación de soluciones tecnológicas de alto impacto en el sector salud"',
-    track: "IA, Salud y Espiritualidad",
-    color: "var(--color-cyan)",
+    type: "10:10 - 11:00 AM · Sala Europa (Capacidad: 280)",
+    title: "Sala de Liderazgo y Tecnología con Rotarios y Dr. Arumugam",
+    track: "Rotarios",
+    color: "var(--color-accent)",
     speakers: [
+      { name: "Rotarios Distrito 4130", role: "" },
       { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" }
     ]
   },
   {
-    type: "11:00 am a 12:30 pm · Sesión paralela · Sala Educación",
-    title: '"Del Potencial a la Oportunidad: El Camino de las Mujeres en la Economía Digital"',
-    track: "IA, Educación e Inclusión",
-    color: "var(--color-orange)",
-    speakers: [
-      { name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" }
-    ]
+    type: "10:10 - 11:00 AM · Sala Oceanía (Capacidad: 110)",
+    title: '"Relaciones Soberanas: Descubre la ciencia detrás de las relaciones prósperas y adquiere herramientas para cultivar conexiones significativas"',
+    track: "Salud",
+    color: "var(--color-cyan)",
+    speakers: [{ name: "Emma Seppälä", role: "Psicóloga · Stanford & Yale" }]
   },
   {
-    type: "11:00 am a 12:30 pm · Diálogo · Sala Autonomía Humana",
-    title: "Diálogo sobre liderazgo, comunidad y tecnología",
-    track: "IA y Autonomía Humana",
+    type: "10:10 - 11:00 AM · Sala Canadá B (Capacidad: 270)",
+    title: "Sala de Educación con Alejandro Almazán",
+    track: "Educación",
+    color: "var(--color-orange)",
+    speakers: [{ name: "Alejandro Almazán Zimerman", role: "Head of Google for Education · LATAM" }]
+  },
+  // --- 11:10 AM - 12:00 PM ---
+  {
+    type: "11:10 AM - 12:00 PM · Sala Antártida (Capacidad: 110)",
+    title: '"De Ingeniero Informático a Monje Budista"',
+    track: "Espiritual",
+    color: "var(--color-lime)",
+    speakers: [{ name: "Bhikkhu Pannakara", role: "Monje Budista" }]
+  },
+  {
+    type: "11:10 AM - 12:00 PM · Sala Canadá A (Capacidad: 270)",
+    title: '"¿Quién decide por ti? Libertad humana en la era del algoritmo"',
+    track: "Comunicación",
+    color: "var(--color-orange)",
+    speakers: [{ name: "Farid Dieck Assad", role: "Psicólogo · Influencer" }]
+  },
+  {
+    type: "11:10 AM - 12:00 PM · Sala Europa (Capacidad: 280)",
+    title: "Sala de Liderazgo Rotario con David Eaton y Mimi Edmunds",
+    track: "Rotarios",
     color: "var(--color-accent)",
     speakers: [
-      { name: "David Eaton", role: "Rotary Distrito 4130" },
+      { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" },
       { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora · CBS 60 Minutes" }
     ]
   },
   {
-    type: "11:00 am a 12:30 pm · Consejo Interreligioso · Sala Espiritualidad",
-    title: "Consejo Interreligioso",
-    track: "IA y Espiritualidad",
-    color: "var(--color-lime)",
-    speakers: [
-      { name: "Mons. Rogelio Cabrera López", role: "Arzobispo Metropolitano de Monterrey" },
-      { name: "Padre David Jasso", role: "Sacerdote · Arquidiócesis de Monterrey" },
-      { name: "Abuelo Maya Antonio Oxté", role: "Sabio Maya · Tzucacab, Yucatán" },
-      { name: "Bhikkhu Pannakara", role: "Monje Budista" }
-    ]
-  },
-  {
-    type: "Charter for Compassion",
-    title: "Charter for Compassion",
-    track: "IA, Salud y Espiritualidad",
+    type: "11:10 AM - 12:00 PM · Sala Oceanía (Capacidad: 110)",
+    title: "Sala de Salud con Dr. Jesús Gzz",
+    track: "Salud",
     color: "var(--color-cyan)",
-    speakers: [
-      { name: "Representante Charter for Compassion", role: "" }
-    ]
+    speakers: [{ name: "Dr. Jesús Gzz", role: "Médico y Conferencista" }]
   },
   {
-    type: "Presentación especial",
-    title: "Por definir",
-    track: "IA y Autonomía Humana",
-    color: "var(--color-accent)",
-    speakers: [
-      { name: "Nayo Escobar", role: "Empresario, músico y creador de contenido" }
-    ]
+    type: "11:10 AM - 12:00 PM · Sala Canadá B (Capacidad: 270)",
+    title: '"Del Cerebro al Aula: Repensando la Educación en la Era Digital"',
+    track: "Educación",
+    color: "var(--color-orange)",
+    speakers: [{ name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" }]
   },
+  // --- 12:10 - 1:00 PM ---
   {
-    type: "Presentación de libro",
-    title: "Inteligencia Artificial y Paz Mundial",
-    track: "IA y Espiritualidad",
+    type: "12:10 - 1:00 PM · Sala Antártida (Capacidad: 110)",
+    title: "Sala de Espiritualidad con Univ. Montemorelos",
+    track: "Espiritual",
     color: "var(--color-lime)",
+    speakers: [{ name: "Universidad de Montemorelos", role: "Representantes" }]
+  },
+  {
+    type: "12:10 - 1:00 PM · Sala Canadá A (Capacidad: 270)",
+    title: "Sala de Comunicación con Nayo Escobar",
+    track: "Comunicación",
+    color: "var(--color-orange)",
+    speakers: [{ name: "Nayo Escobar", role: "Empresario, músico y creador de contenido" }]
+  },
+  {
+    type: "12:10 - 1:00 PM · Sala Europa (Capacidad: 280)",
+    title: "Sala de Liderazgo Rotario (Mesa Redonda)",
+    track: "Rotarios",
+    color: "var(--color-accent)",
+    speakers: [{ name: "Líderes Rotarios", role: "Distrito 4130" }]
+  },
+  {
+    type: "12:10 - 1:00 PM · Sala Oceanía (Capacidad: 110)",
+    title: "Sala de Salud con Maricela",
+    track: "Salud",
+    color: "var(--color-cyan)",
+    speakers: [{ name: "Maricela", role: "Conferencista y Terapeuta" }]
+  },
+  {
+    type: "12:10 - 1:00 PM · Sala Canadá B (Capacidad: 270)",
+    title: "Sala de Educación (Cierre Pedagógico)",
+    track: "Educación",
+    color: "var(--color-orange)",
     speakers: [
-      { name: "Pastor Federico Elizondo", role: "Autor · Inteligencia Artificial y Paz Mundial" }
+      { name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" },
+      { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" }
     ]
+  },
+  // --- 1:00 PM ---
+  {
+    type: "1:00 PM · Todas las Salas",
+    title: "Caminata por la Paz (Clausura)",
+    track: "Clausura",
+    color: "var(--color-orange)",
+    speakers: []
   }
 ];
 
