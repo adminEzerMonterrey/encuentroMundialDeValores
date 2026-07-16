@@ -139,14 +139,14 @@ const agendaData = [
   },
   // --- 9:00 - 10:00 AM ---
   {
-    type: "9:00 - 10:00 AM · Sala Antártida (Capacidad: 110)",
+    type: "9:00 - 10:00 AM · Sala Antártida",
     title: "Sala de Espiritualidad con Pastor Elizondo",
     track: "Espiritual",
     color: "var(--color-lime)",
     speakers: [{ name: "Pastor Elizondo", role: "Conferencista" }]
   },
   {
-    type: "9:00 - 10:00 AM · Sala Canadá A (Capacidad: 270)",
+    type: "9:00 - 10:00 AM · Sala Canadá A",
     title: "Sala de Comunicación con Abuelo Maya y Yatra",
     track: "Comunicación",
     color: "var(--color-orange)",
@@ -156,7 +156,7 @@ const agendaData = [
     ]
   },
   {
-    type: "9:00 - 10:00 AM · Sala Europa (Capacidad: 280)",
+    type: "9:00 - 10:00 AM · Sala Europa",
     title: "Sala de Liderazgo Rotario con David Eaton y Salvador Rizzo",
     track: "Rotarios",
     color: "var(--color-accent)",
@@ -166,14 +166,14 @@ const agendaData = [
     ]
   },
   {
-    type: "9:00 - 10:00 AM · Sala Oceanía (Capacidad: 110)",
+    type: "9:00 - 10:00 AM · Sala Oceanía",
     title: '"La Nueva Frontera de la Medicina Inteligente"',
     track: "Salud",
     color: "var(--color-cyan)",
     speakers: [{ name: "Dr. Bimal Desai", role: "VP & CHIO · Children's Hospital of Philadelphia" }]
   },
   {
-    type: "9:00 - 10:00 AM · Sala Canadá B (Capacidad: 270)",
+    type: "9:00 - 10:00 AM · Sala Canadá B",
     title: '"Del Potencial a la Oportunidad: El Camino de las Mujeres en la Economía Digital"',
     track: "Educación",
     color: "var(--color-orange)",
@@ -181,21 +181,21 @@ const agendaData = [
   },
   // --- 10:10 - 11:00 AM ---
   {
-    type: "10:10 - 11:00 AM · Sala Antártida (Capacidad: 110)",
+    type: "10:10 - 11:00 AM · Sala Antártida",
     title: '"Espiritualidad cristiana e Inteligencia Artificial"',
     track: "Espiritual",
     color: "var(--color-lime)",
     speakers: [{ name: "Padre David Jasso", role: "Sacerdote · Arquidiócesis de Monterrey" }]
   },
   {
-    type: "10:10 - 11:00 AM · Sala Canadá A (Capacidad: 270)",
+    type: "10:10 - 11:00 AM · Sala Canadá A",
     title: "Sala de Comunicación con Mauricio Martínez",
     track: "Comunicación",
     color: "var(--color-orange)",
     speakers: [{ name: "Mauricio Martínez", role: "Actor y Cantante de Broadway" }]
   },
   {
-    type: "10:10 - 11:00 AM · Sala Europa (Capacidad: 280)",
+    type: "10:10 - 11:00 AM · Sala Europa",
     title: "Sala de Liderazgo y Tecnología con Rotarios y Dr. Arumugam",
     track: "Rotarios",
     color: "var(--color-accent)",
@@ -205,14 +205,14 @@ const agendaData = [
     ]
   },
   {
-    type: "10:10 - 11:00 AM · Sala Oceanía (Capacidad: 110)",
+    type: "10:10 - 11:00 AM · Sala Oceanía",
     title: '"Relaciones Soberanas: Descubre la ciencia detrás de las relaciones prósperas y adquiere herramientas para cultivar conexiones significativas"',
     track: "Salud",
     color: "var(--color-cyan)",
     speakers: [{ name: "Emma Seppälä", role: "Psicóloga · Stanford & Yale" }]
   },
   {
-    type: "10:10 - 11:00 AM · Sala Canadá B (Capacidad: 270)",
+    type: "10:10 - 11:00 AM · Sala Canadá B",
     title: "Sala de Educación con Alejandro Almazán",
     track: "Educación",
     color: "var(--color-orange)",
@@ -220,21 +220,21 @@ const agendaData = [
   },
   // --- 11:10 AM - 12:00 PM ---
   {
-    type: "11:10 AM - 12:00 PM · Sala Antártida (Capacidad: 110)",
+    type: "11:10 AM - 12:00 PM · Sala Antártida",
     title: '"De Ingeniero Informático a Monje Budista"',
     track: "Espiritual",
     color: "var(--color-lime)",
     speakers: [{ name: "Bhikkhu Pannakara", role: "Monje Budista" }]
   },
   {
-    type: "11:10 AM - 12:00 PM · Sala Canadá A (Capacidad: 270)",
+    type: "11:10 AM - 12:00 PM · Sala Canadá A",
     title: '"¿Quién decide por ti? Libertad humana en la era del algoritmo"',
     track: "Comunicación",
     color: "var(--color-orange)",
     speakers: [{ name: "Farid Dieck Assad", role: "Psicólogo · Influencer" }]
   },
   {
-    type: "11:10 AM - 12:00 PM · Sala Europa (Capacidad: 280)",
+    type: "11:10 AM - 12:00 PM · Sala Europa",
     title: "Sala de Liderazgo Rotario con David Eaton y Mimi Edmunds",
     track: "Rotarios",
     color: "var(--color-accent)",
@@ -244,14 +244,14 @@ const agendaData = [
     ]
   },
   {
-    type: "11:10 AM - 12:00 PM · Sala Oceanía (Capacidad: 110)",
+    type: "11:10 AM - 12:00 PM · Sala Oceanía",
     title: "Sala de Salud con Dr. Jesús Gzz",
     track: "Salud",
     color: "var(--color-cyan)",
     speakers: [{ name: "Dr. Jesús Gzz", role: "Médico y Conferencista" }]
   },
   {
-    type: "11:10 AM - 12:00 PM · Sala Canadá B (Capacidad: 270)",
+    type: "11:10 AM - 12:00 PM · Sala Canadá B",
     title: '"Del Cerebro al Aula: Repensando la Educación en la Era Digital"',
     track: "Educación",
     color: "var(--color-orange)",
@@ -259,35 +259,35 @@ const agendaData = [
   },
   // --- 12:10 - 1:00 PM ---
   {
-    type: "12:10 - 1:00 PM · Sala Antártida (Capacidad: 110)",
+    type: "12:10 - 1:00 PM · Sala Antártida",
     title: "Sala de Espiritualidad con Univ. Montemorelos",
     track: "Espiritual",
     color: "var(--color-lime)",
     speakers: [{ name: "Universidad de Montemorelos", role: "Representantes" }]
   },
   {
-    type: "12:10 - 1:00 PM · Sala Canadá A (Capacidad: 270)",
+    type: "12:10 - 1:00 PM · Sala Canadá A",
     title: "Sala de Comunicación con Nayo Escobar",
     track: "Comunicación",
     color: "var(--color-orange)",
     speakers: [{ name: "Nayo Escobar", role: "Empresario, músico y creador de contenido" }]
   },
   {
-    type: "12:10 - 1:00 PM · Sala Europa (Capacidad: 280)",
+    type: "12:10 - 1:00 PM · Sala Europa",
     title: "Sala de Liderazgo Rotario (Mesa Redonda)",
     track: "Rotarios",
     color: "var(--color-accent)",
     speakers: [{ name: "Líderes Rotarios", role: "Distrito 4130" }]
   },
   {
-    type: "12:10 - 1:00 PM · Sala Oceanía (Capacidad: 110)",
+    type: "12:10 - 1:00 PM · Sala Oceanía",
     title: "Sala de Salud con Maricela",
     track: "Salud",
     color: "var(--color-cyan)",
     speakers: [{ name: "Maricela", role: "Conferencista y Terapeuta" }]
   },
   {
-    type: "12:10 - 1:00 PM · Sala Canadá B (Capacidad: 270)",
+    type: "12:10 - 1:00 PM · Sala Canadá B",
     title: "Sala de Educación (Cierre Pedagógico)",
     track: "Educación",
     color: "var(--color-orange)",
