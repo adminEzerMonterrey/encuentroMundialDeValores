@@ -297,9 +297,9 @@ const speakersData = [
   },
   {
     img: "/speakers/santos-guzman-lopez-uanl.jpg",
-    imgScale: "1.1",
-    imgOffsetY: "0px",
-    imgPosition: "center",
+    imgScale: "1.0",
+    imgOffsetY: "5px",
+    imgPosition: "center 10%",
     initials: "SG",
     name: "Santos Guzmán López",
     company: "UANL",
@@ -651,9 +651,12 @@ const speakersData = [
   },
   {
     img: "/speakers/sofia-lozano-snively.jpeg?v=2",
-    imgScale: "1.6",
-    imgOffsetY: "-20px",
-    imgPosition: "center 15%",
+    imgScale: "1.25",
+    imgOffsetY: "0px",
+    imgPosition: "center 20%",
+    collageScale: "1.6",
+    collageOffsetY: "-25px",
+    collagePosition: "center 15%",
     initials: "SL",
     name: "Sofía Lozano Snively",
     company: "Ingenium ABP",
@@ -912,7 +915,7 @@ export default function Speakers() {
               }}
             >
               {speaker.img ? (
-                <img src={speaker.img.includes('?v=') ? speaker.img.replace(/v=\d+/, 'v=4') : `${speaker.img}?v=4`} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.imgPosition || undefined, transform: speaker.imgScale ? `scale(${speaker.imgScale})` : undefined, transformOrigin: speaker.imgScale ? 'top center' : undefined }} />
+                <img src={speaker.img.includes('?v=') ? speaker.img.replace(/v=\d+/, 'v=4') : `${speaker.img}?v=4`} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.collagePosition || speaker.imgPosition || undefined, transform: `${(speaker.collageScale || speaker.imgScale) ? `scale(${speaker.collageScale || speaker.imgScale})` : ''} ${(speaker.collageOffsetY || speaker.imgOffsetY) ? `translateY(${speaker.collageOffsetY || speaker.imgOffsetY})` : ''}`.trim() || undefined, transformOrigin: (speaker.collageScale || speaker.imgScale) ? 'top center' : undefined }} />
               ) : (
                 <div className="collage-fallback" style={{ background: speaker.gradient }}>{speaker.initials}</div>
               )}
