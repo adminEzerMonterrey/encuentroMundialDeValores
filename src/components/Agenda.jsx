@@ -245,7 +245,7 @@ const agendaData = [
   },
   {
     type: "11:10 AM - 12:00 PM · Sala Oceanía",
-    title: "Sala de Salud con Dr. Jesús González Álvarez",
+    title: "Sala de Salud con Dr. Jesús González",
     track: "Salud y Espiritualidad",
     color: "var(--color-cyan)",
     speakers: [{ name: "Dr. Jesús González Álvarez", role: "Médico y Conferencista" }]
