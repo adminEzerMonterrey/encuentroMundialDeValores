@@ -157,12 +157,11 @@ const agendaData = [
   },
   {
     type: "9:00 - 10:00 AM · Sala Europa",
-    title: "Sala de Liderazgo Rotario con David Eaton y Salvador Rizzo",
+    title: "Sala de Liderazgo Rotario con David Eaton",
     track: "Autonomía Humana",
     color: "var(--color-accent)",
     speakers: [
-      { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" },
-      { name: "Salvador Rizzo", role: "Líder Rotario" }
+      { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" }
     ]
   },
   {
