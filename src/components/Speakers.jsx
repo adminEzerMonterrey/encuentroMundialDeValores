@@ -651,9 +651,9 @@ const speakersData = [
   },
   {
     img: "/speakers/sofia-lozano-snively.jpeg?v=2",
-    imgScale: "1.2",
-    imgOffsetY: "0px",
-    imgPosition: "center",
+    imgScale: "1.6",
+    imgOffsetY: "-20px",
+    imgPosition: "center 15%",
     initials: "SL",
     name: "Sofía Lozano Snively",
     company: "Ingenium ABP",
