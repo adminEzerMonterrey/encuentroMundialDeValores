@@ -176,10 +176,11 @@ const agendaData = [
   },
   {
     type: "12:00 pm · Sesión de preguntas y respuestas",
-    title: "Q&R con David Eaton",
+    title: "Q&A con Marian Rojas y David Eaton",
     track: "IA y Autonomía Humana",
     color: "var(--color-accent)",
     speakers: [
+      { name: "Marian Rojas Estapé", role: "Psiquiatra · Instituto Rojas Estapé" },
       { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" }
     ]
   },

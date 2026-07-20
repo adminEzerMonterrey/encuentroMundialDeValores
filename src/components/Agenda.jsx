@@ -50,10 +50,11 @@ const agendaData = [
   },
   {
     type: "12:00 pm · Sesión de preguntas y respuestas",
-    title: "Q&R con David Eaton",
+    title: "Q&A con Marian Rojas y David Eaton",
     track: "IA y Autonomía Humana",
     color: "var(--color-accent)",
     speakers: [
+      { name: "Marian Rojas Estapé", role: "Psiquiatra · Instituto Rojas Estapé" },
       { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" }
     ]
   },
@@ -147,12 +148,12 @@ const agendaData = [
   },
   {
     type: "9:00 - 10:00 AM · Sala Canadá A",
-    title: "Sala de Comunicación con Abuelo Maya y Yatra",
+    title: "Sala de Comunicación con Abuelo Maya y Sebastian Yatra",
     track: "Autonomía Humana",
     color: "var(--color-accent)",
     speakers: [
       { name: "Abuelo Maya", role: "Líder Espiritual Maya" },
-      { name: "Yatra", role: "Músico y Facilitador" }
+      { name: "Sebastian Yatra", role: "Músico y Facilitador" }
     ]
   },
   {
@@ -244,10 +245,10 @@ const agendaData = [
   },
   {
     type: "11:10 AM - 12:00 PM · Sala Oceanía",
-    title: "Sala de Salud con Dr. Jesús Gzz",
+    title: "Sala de Salud con Dr. Jesús González Álvarez",
     track: "Salud y Espiritualidad",
     color: "var(--color-cyan)",
-    speakers: [{ name: "Dr. Jesús Gzz", role: "Médico y Conferencista" }]
+    speakers: [{ name: "Dr. Jesús González Álvarez", role: "Médico y Conferencista" }]
   },
   {
     type: "11:10 AM - 12:00 PM · Sala Canadá B",
@@ -280,10 +281,10 @@ const agendaData = [
   },
   {
     type: "12:10 - 1:00 PM · Sala Oceanía",
-    title: "Sala de Salud con Maricela",
+    title: "Sala de Salud con Marisela Reyes",
     track: "Salud y Espiritualidad",
     color: "var(--color-cyan)",
-    speakers: [{ name: "Maricela", role: "Conferencista y Terapeuta" }]
+    speakers: [{ name: "Marisela Reyes", role: "Conferencista y Terapeuta" }]
   },
   {
     type: "12:10 - 1:00 PM · Sala Canadá B",
