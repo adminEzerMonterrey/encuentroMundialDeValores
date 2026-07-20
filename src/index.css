@@ -4120,8 +4120,10 @@ a.nav__brand {
     line-height: 1.4;
   }
   .ag-card__header {
-    flex-wrap: wrap;
-    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
   .ag-card__track {
     font-size: 0.65rem;
