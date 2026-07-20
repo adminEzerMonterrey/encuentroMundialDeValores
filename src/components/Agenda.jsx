@@ -71,9 +71,9 @@ const agendaData = [
   },
   {
     type: "13:30 pm · Receso",
-    title: "Receso",
+    title: "",
     track: "Receso",
-    color: "var(--color-border-subtle)",
+    color: "var(--color-lime)",
     speakers: []
   },
   {
