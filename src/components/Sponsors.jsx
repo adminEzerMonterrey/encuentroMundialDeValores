@@ -12,51 +12,138 @@ export default function Sponsors() {
             <p className="section-subtitle">Instituciones y empresas que hacen posible el Encuentro Mundial de Valores 2026.</p>
           </div>
 
-          <div className="sponsors-tiers" style={{ display: 'flex', flexDirection: 'column', gap: '0', alignItems: 'center', width: '100%' }}>
-            {/* Fila 1 - Monterrey, UDEM, Tec, U-ERRE, UANL */}
-            <div className="sponsor-tier tier-1 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '0', width: '100%' }}>
+          <style>{`
+            .sponsors-grid {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              width: 100%;
+              margin-top: 2rem;
+            }
+            .sponsors-row {
+              display: grid;
+              gap: 16px;
+              width: 100%;
+              justify-content: center;
+            }
+            .sponsors-row-1 {
+              grid-template-columns: repeat(5, 1fr);
+            }
+            .sponsors-row-2 {
+              grid-template-columns: repeat(3, 1fr);
+              max-width: 60%;
+              margin: 0 auto;
+            }
+            .sponsors-row-3 {
+              grid-template-columns: repeat(6, 1fr);
+            }
+            .sponsors-row-4 {
+              grid-template-columns: repeat(5, 1fr);
+            }
+            .sponsor-card {
+              background: #ffffff;
+              border: 1px solid rgba(0, 0, 0, 0.08);
+              border-radius: 4px;
+              padding: 1.2rem 1rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              min-height: 90px;
+              box-sizing: border-box;
+              transition: all 0.2s ease;
+            }
+            .sponsor-card:hover {
+              transform: translateY(-2px);
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+              border-color: rgba(0, 0, 0, 0.15);
+            }
+            .sponsor-card img {
+              height: 55px;
+              width: auto;
+              max-width: 100%;
+              object-fit: contain;
+            }
+            @media (max-width: 1024px) {
+              .sponsors-row-1 { grid-template-columns: repeat(3, 1fr); }
+              .sponsors-row-2 { grid-template-columns: repeat(3, 1fr); max-width: 100%; }
+              .sponsors-row-3 { grid-template-columns: repeat(3, 1fr); }
+              .sponsors-row-4 { grid-template-columns: repeat(3, 1fr); }
+            }
+            @media (max-width: 640px) {
+              .sponsors-row-1, .sponsors-row-2, .sponsors-row-3, .sponsors-row-4 {
+                grid-template-columns: repeat(2, 1fr);
+              }
+              .sponsor-card {
+                padding: 0.8rem;
+                min-height: 80px;
+              }
+              .sponsor-card img {
+                height: 45px;
+              }
+            }
+            @media (max-width: 400px) {
+              .sponsors-row-1, .sponsors-row-2, .sponsors-row-3, .sponsors-row-4 {
+                grid-template-columns: 1fr;
+              }
+            }
+          `}</style>
+
+          <div className="sponsors-grid">
+            {/* Fila 1 - Monterrey, Educación, Arca Continental, Igualdad, San Pedro */}
+            <div className="sponsors-row sponsors-row-1 reveal-up">
               {[
                 { src: "Monterrey.png", alt: "Gobierno de Monterrey" },
-                { src: "UDEM.jpg", alt: "UDEM" },
-                { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
-                { src: "UANL.png", alt: "UANL" },
-                { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
-                { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos" },
-              ].map((sponsor, idx) => (
-                <div key={idx} style={{ flex: '1 1 15%', minWidth: '90px', padding: '1.2rem 1rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={{ height: '60px', width: 'auto', maxWidth: '160px', objectFit: 'contain' }} />
-                </div>
-              ))}
-            </div>
-
-            {/* Fila 2 - Educación NL, Igualdad, San Pedro, Arca Continental, Rotary */}
-            <div className="sponsor-tier tier-2 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '0', width: '100%' }}>
-              {[
                 { src: "secretaria-de-educacion-nl.png", alt: "Secretaría de Educación NL" },
+                { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "Arca Continental" },
                 { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión" },
                 { src: "san-pedro-garza-garcia.png", alt: "San Pedro Garza García" },
-                { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "Arca Continental" },
-                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", scale: 2.5, className: "sponsor-fundacion", containerClassName: "sponsor-fundacion-container" },
               ].map((sponsor, idx) => (
-                <div key={idx} className={sponsor.containerClassName || ''} style={{ flex: '1 1 18%', minWidth: '100px', padding: '1rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}?v=4`} alt={sponsor.alt} className={sponsor.className || ''} loading="lazy" style={{ height: sponsor.scale ? `${55 * sponsor.scale}px` : '55px', width: 'auto', maxWidth: sponsor.scale ? `${150 * sponsor.scale}px` : '150px', objectFit: 'contain' }} />
+                <div key={idx} className="sponsor-card">
+                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" />
                 </div>
               ))}
             </div>
 
-            {/* Fila 3 - Deacero, Fundación Montemayor, Chapa González, CFC, Berel, Consejo, Pasteles */}
-            <div className="sponsor-tier tier-3 reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'stretch', gap: '0', width: '100%' }}>
+            {/* Fila 2 - Bimbo, Xignux, Rotary */}
+            <div className="sponsors-row sponsors-row-2 reveal-up">
               {[
-                { src: "logo-fd-estandar.png", alt: "Fundación Deacero", scale: 1.15 },
-                { src: "Rotarios.jpeg", alt: "Rotary", scale: 0.8, className: "sponsor-rotary", containerClassName: "sponsor-rotary-container" },
-                { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González", scale: 1.5 },
-                { src: "cfc-logo-horizontal-naranja.jpeg", alt: "Charter for Compassion", scale: 1.2 },
-                { src: "BEREL.png", alt: "Berel", scale: 1.5 },
-                { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso", scale: 1.5 },
-                { src: "pasteles-de-laura.png", alt: "Pasteles de Laura", scale: 0.9, className: "sponsor-pasteles" },
+                { src: "BIMBO.jpg", alt: "Bimbo" },
+                { src: "XIGNUX.png", alt: "Xignux" },
+                { src: "Rotarios.jpeg", alt: "Rotary" },
               ].map((sponsor, idx) => (
-                <div key={idx} className={sponsor.containerClassName || ''} style={{ flex: sponsor.flex || '1 1 13%', minWidth: '90px', padding: '1.2rem', border: '1px solid rgba(0,0,0,0.08)', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/Sponsors/${sponsor.src}?v=4`} alt={sponsor.alt} className={sponsor.className || ''} loading="lazy" style={{ height: sponsor.height || (sponsor.scale ? `${50 * sponsor.scale}px` : '50px'), width: sponsor.width || 'auto', maxWidth: sponsor.maxWidth || (sponsor.scale ? `${130 * sponsor.scale}px` : '130px'), objectFit: 'contain' }} />
+                <div key={idx} className="sponsor-card">
+                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" />
+                </div>
+              ))}
+            </div>
+
+            {/* Fila 3 - Tec, UDEM, U-ERRE, Montemorelos, Deacero, Berel */}
+            <div className="sponsors-row sponsors-row-3 reveal-up">
+              {[
+                { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
+                { src: "UDEM.jpg", alt: "UDEM" },
+                { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
+                { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos" },
+                { src: "logo-fd-estandar.png", alt: "Fundación Deacero" },
+                { src: "BEREL.png", alt: "Berel" },
+              ].map((sponsor, idx) => (
+                <div key={idx} className="sponsor-card">
+                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" />
+                </div>
+              ))}
+            </div>
+
+            {/* Fila 4 - Chapa González, Montemayor, Consejo, CFC, Pasteles */}
+            <div className="sponsors-row sponsors-row-4 reveal-up">
+              {[
+                { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
+                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor" },
+                { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
+                { src: "cfc-logo-horizontal-naranja.jpeg", alt: "Charter for Compassion" },
+                { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" },
+              ].map((sponsor, idx) => (
+                <div key={idx} className="sponsor-card">
+                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" />
                 </div>
               ))}
             </div>
