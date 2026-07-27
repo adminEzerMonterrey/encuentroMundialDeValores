@@ -63,6 +63,10 @@ export default function Sponsors() {
               max-width: 100%;
               object-fit: contain;
             }
+            .sponsors-row-4 .sponsor-card img {
+              height: 70px;
+              transform: scale(1.15);
+            }
             @media (max-width: 1024px) {
               .sponsors-row-1 { grid-template-columns: repeat(3, 1fr); }
               .sponsors-row-2 { grid-template-columns: repeat(3, 1fr); max-width: 100%; }
@@ -79,6 +83,10 @@ export default function Sponsors() {
               }
               .sponsor-card img {
                 height: 45px;
+              }
+              .sponsors-row-4 .sponsor-card img {
+                height: 55px;
+                transform: scale(1.1);
               }
             }
             @media (max-width: 400px) {
