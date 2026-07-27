@@ -48,7 +48,7 @@ export default function Sponsors() {
               display: flex;
               align-items: center;
               justify-content: center;
-              min-height: 90px;
+              min-height: 105px;
               box-sizing: border-box;
               transition: all 0.2s ease;
             }
@@ -58,13 +58,13 @@ export default function Sponsors() {
               border-color: rgba(0, 0, 0, 0.15);
             }
             .sponsor-card img {
-              height: 55px;
+              height: 70px;
               width: auto;
               max-width: 100%;
               object-fit: contain;
             }
             .sponsors-row-4 .sponsor-card img {
-              height: 70px;
+              height: 80px;
               transform: scale(1.15);
             }
             @media (max-width: 1024px) {
@@ -79,13 +79,13 @@ export default function Sponsors() {
               }
               .sponsor-card {
                 padding: 0.8rem;
-                min-height: 80px;
+                min-height: 90px;
               }
               .sponsor-card img {
-                height: 45px;
+                height: 55px;
               }
               .sponsors-row-4 .sponsor-card img {
-                height: 55px;
+                height: 65px;
                 transform: scale(1.1);
               }
             }
