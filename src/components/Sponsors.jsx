@@ -145,13 +145,13 @@ export default function Sponsors() {
             <div className="sponsors-row sponsors-row-4 reveal-up">
               {[
                 { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
-                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor" },
+                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", style: { transform: 'scale(1.65)' } },
                 { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
                 { src: "cfc-logo-horizontal-naranja.jpeg", alt: "Charter for Compassion" },
                 { src: "pasteles-de-laura.png", alt: "Pasteles de Laura" },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" />
+                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
