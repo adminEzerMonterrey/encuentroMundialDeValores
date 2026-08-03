@@ -730,7 +730,12 @@ const speakersData = [
       "Más de 25 años de trayectoria en el sector salud y cooperación internacional"
     ],
     photoPosition: "left",
-    imgOffsetY: "20px",
+    imgScale: "1.3",
+    imgPosition: "center 10%",
+    imgOffsetY: "0px",
+    collageScale: "1.3",
+    collagePosition: "center 10%",
+    collageOffsetY: "0px",
     gradient: "linear-gradient(135deg,#059669,#8B5CF6)",
     trackClass: "track-a",
     trackName: "Salud",
