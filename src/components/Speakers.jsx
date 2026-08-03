@@ -295,22 +295,7 @@ const speakersData = [
     talkIcon: "📈",
     talkName: "IA en Educación Superior"
   },
-  {
-    img: "/speakers/santos-guzman-lopez-uanl.jpg",
-    imgScale: "1.0",
-    imgOffsetY: "5px",
-    imgPosition: "center 10%",
-    initials: "SG",
-    name: "Santos Guzmán López",
-    company: "UANL",
-    role: "Rector",
-    bio: "Rector de la Universidad Autónoma de Nuevo León (UANL), impulsando la excelencia académica, la investigación y la innovación tecnológica.",
-    gradient: "linear-gradient(135deg,#059669,#8B5CF6)",
-    trackClass: "track-c",
-    trackName: "Educación Superior",
-    talkIcon: "🎓",
-    talkName: "IA en Educación Superior"
-  },
+
   {
     img: "/speakers/angel-casan-marcos-uerre.jpg",
     initials: "AC",
@@ -725,7 +710,7 @@ const speakersData = [
     talkName: "Presentador"
   },
   {
-    img: "/speakers/dr-jesus-gonzalez-alvarez.png",
+    img: "/speakers/dr-jesus-gonzalez-alvarez.jpeg",
     initials: "JG",
     name: "Dr. Jesús González Álvarez",
     company: "ÍNTTEGRA Sistemas, Servicios y Salud",
