@@ -741,6 +741,34 @@ const speakersData = [
     trackName: "Salud",
     talkIcon: "🏥",
     talkName: "Medicina Regenerativa e Integrativa"
+  },
+  {
+    img: "/speakers/marisela-reyes.png",
+    initials: "MR",
+    name: "Marisela Reyes",
+    company: "YO SOY / PRO HUMAN",
+    role: "Fundadora, Conferencista y Terapeuta",
+    bio: "Experta en Desarrollo Humano con más de 30 años de experiencia. Fundadora de YO SOY y PRO HUMAN, enfocada en la consciencia plena y espiritualidad práctica.",
+    longBio: "Marisela Reyes es una mujer apasionada y experta en Desarrollo Humano, con más de 30 años de experiencia, coach, consultora y conferencista internacional. Es fundadora de YO SOY y PRO HUMAN, empresas dedicadas a transformar personas mediante programas especializados que integran procesos de consciencia plena y espiritualidad práctica.",
+    bullets: [
+      "Primera mujer presidenta de la FEITESM (1990), Consejo Directivo del Tec de Monterrey.",
+      "Ocupó cargos de Dirección General en empresas internacionales como Christus Muguerza y Grupo ALFA.",
+      "Creadora del Método de las 3 A's, la Experiencia YO SOY y el Programa para niños \"Grandes Pequeños\".",
+      "Autora del libro \"ANALIZO, AMO y AFIRMO\" para sanar tu pasado, vivir tu presente y diseñar tu futuro.",
+      "Certificaciones en programas internacionales como \"Heal your life\" (Louise L. Hay), Tetramap, Points of You, Thetahealing, Constelaciones Familiares y Reiki."
+    ],
+    photoPosition: "left",
+    imgScale: "1.0",
+    imgPosition: "center",
+    imgOffsetY: "0px",
+    collageScale: "1.0",
+    collagePosition: "center",
+    collageOffsetY: "0px",
+    gradient: "linear-gradient(135deg,#FF9900,#ef4444)",
+    trackClass: "track-a",
+    trackName: "Salud y Espiritualidad",
+    talkIcon: "🧘‍♀️",
+    talkName: "Consciencia Plena y Espiritualidad Práctica"
   }
 ];
 
