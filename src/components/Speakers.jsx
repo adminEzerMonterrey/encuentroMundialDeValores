@@ -557,10 +557,10 @@ const speakersData = [
   },
   {
     img: "/speakers/abuelo-maya-antonio-oxte.jpg",
-    imgScale: "0.85",
+    imgScale: "1.0",
     imgOffsetY: "0px",
-    imgPosition: "center 5%",
-    collageScale: "0.95",
+    imgPosition: "center",
+    collageScale: "1.0",
     collageOffsetY: "0px",
     collagePosition: "center",
     initials: "AO",
