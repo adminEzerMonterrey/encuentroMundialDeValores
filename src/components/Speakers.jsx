@@ -785,9 +785,9 @@ const speakersData = [
       "Promueve la defensa de los derechos del magisterio y una cultura de paz basada en la responsabilidad, la participación y los valores."
     ],
     photoPosition: "left",
-    imgScale: "0.8",
-    imgPosition: "center 0%",
-    imgOffsetY: "15px",
+    imgScale: "1.0",
+    imgPosition: "center 10%",
+    imgOffsetY: "0px",
     collageScale: "1.0",
     collagePosition: "center",
     collageOffsetY: "0px",
