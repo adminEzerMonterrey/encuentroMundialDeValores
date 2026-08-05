@@ -787,7 +787,7 @@ const speakersData = [
     photoPosition: "left",
     imgScale: "1.0",
     imgPosition: "center",
-    imgOffsetY: "0px",
+    imgOffsetY: "10px",
     collageScale: "1.0",
     collagePosition: "center",
     collageOffsetY: "0px",
