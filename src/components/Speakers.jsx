@@ -212,7 +212,7 @@ const speakersData = [
     talkName: "Tecnología y Educación"
   },
   {
-    img: "/speakers/alejandro-almazan-zimerman.jpg",
+    img: "/speakers/alejandro-almazan-zimerman.png",
     initials: "AA",
     name: "Alejandro Almazán Zimerman",
     company: "Google for Education",
