@@ -769,6 +769,33 @@ const speakersData = [
     trackName: "Salud y Espiritualidad",
     talkIcon: "🧘‍♀️",
     talkName: "Consciencia Plena y Espiritualidad Práctica"
+  },
+  {
+    img: "/speakers/juan-jose-gutierrez.png",
+    initials: "JG",
+    name: "Mtro. Juan José Gutiérrez",
+    company: "SNTE Sección 50",
+    role: "Secretario General",
+    bio: "Secretario General de la Sección 50 del SNTE. Maestro y doctor en Educación, impulsor de la filosofía 'Todo es Educación'.",
+    longBio: "El Mtro. Juan José Gutiérrez es el Secretario General de la Sección 50 del Sindicato Nacional de Trabajadores de la Educación (SNTE) en Nuevo León, organización que representa a más de 34,000 trabajadores de la educación. Combina la experiencia docente, la formación académica y el liderazgo sindical con una visión orientada al fortalecimiento de la educación pública y la promoción de una cultura de paz.",
+    bullets: [
+      "Secretario General de la Sección 50 del SNTE en Nuevo León.",
+      "Trayectoria que combina experiencia docente, formación académica (Maestro y Doctor en Educación) y liderazgo sindical.",
+      "Impulsor de la filosofía \"Todo es Educación\", sosteniendo que el aprendizaje trasciende las aulas y se construye en la familia, la comunidad, las instituciones y el entorno digital.",
+      "Promueve la defensa de los derechos del magisterio y una cultura de paz basada en la responsabilidad, la participación y los valores."
+    ],
+    photoPosition: "left",
+    imgScale: "1.0",
+    imgPosition: "center",
+    imgOffsetY: "0px",
+    collageScale: "1.0",
+    collagePosition: "center",
+    collageOffsetY: "0px",
+    gradient: "linear-gradient(135deg,#F0922A,#ef4444)",
+    trackClass: "track-b",
+    trackName: "Educación",
+    talkIcon: "🎓",
+    talkName: "Inteligencia Artificial vs. Inteligencia Natural: Retos de la Educación y la Sociedad"
   }
 ];
 

@@ -136,38 +136,57 @@ const agendaData = [
     bgColor: "var(--color-orange)"
   },
   {
-    type: "8:30 am · Ceremonia de apertura",
-    title: "Inauguración",
-    track: "IA, Salud y Espiritualidad",
-    color: "var(--color-cyan)",
+    type: "08:30 · Inauguración",
+    title: "Inauguración EMV 2026",
+    track: "Humanismo y Valores",
+    color: "var(--color-pink)",
     speakers: [
       { name: "Dra. María Cristina González Parás", role: "Directora EMV" },
       { name: "Mons. Rogelio Cabrera López", role: "Arzobispo Metropolitano de Monterrey" }
     ]
   },
   {
-    type: "10:00 am · Conferencia magistral",
-    title: '"Calma en tiempos de IA: la ciencia del bienestar emocional"',
-    track: "IA, Salud y Espiritualidad",
+    type: "09:30 · Ceremonia",
+    title: "Bendición especial - Reconocimiento 'David Noel Ramírez'",
+    track: "Humanismo y Valores",
+    color: "var(--color-pink)",
+    speakers: [
+      { name: "Mons. Rogelio Cabrera López", role: "Arzobispo Metropolitano de Monterrey" },
+      { name: "Dra. María Cristina González Parás", role: "Directora EMV" }
+    ]
+  },
+  {
+    type: "09:40 · Ceremonia",
+    title: "Certificación por la Compasión - Consejo Charter for Compassion",
+    track: "Humanismo y Valores",
+    color: "var(--color-pink)",
+    speakers: [
+      { name: "Abuelo Maya", role: "Líder Espiritual Maya" }
+    ]
+  },
+  {
+    type: "10:00 · Conferencia Magistral",
+    title: '"Calma en tiempos de la IA: la ciencia del bienestar emocional"',
+    track: "Autonomía Humana",
     color: "var(--color-cyan)",
     speakers: [
       { name: "Emma Seppälä", role: "Psicóloga · Stanford & Yale" }
     ]
   },
   {
-    type: "10:30 am · Conferencia magistral",
+    type: "10:30 · Conferencia Magistral",
     title: '"La mente en la era digital: dopamina, ansiedad y reconexión interior"',
-    track: "IA, Salud y Espiritualidad",
-    color: "var(--color-cyan)",
+    track: "Humanismo y Valores",
+    color: "var(--color-pink)",
     speakers: [
       { name: "Marian Rojas Estapé", role: "Psiquiatra · Experta en bienestar emocional" }
     ]
   },
   {
-    type: "11:15 am · Panel",
+    type: "11:15 · Panel",
     title: '"El Ser Humano como Guía, la IA como Soporte"',
-    track: "IA, Salud y Espiritualidad",
-    color: "var(--color-cyan)",
+    track: "Humanismo y Valores",
+    color: "var(--color-pink)",
     speakers: [
       { name: "Marian Rojas Estapé", role: "Psiquiatra · Instituto Rojas Estapé" },
       { name: "Mónica Zambrano Vignau", role: "HUMIND" },
@@ -175,57 +194,65 @@ const agendaData = [
     ]
   },
   {
-    type: "12:00 pm · Sesión de preguntas y respuestas",
-    title: "Q&A con Marian Rojas y David Eaton",
-    track: "IA y Autonomía Humana",
-    color: "var(--color-accent)",
+    type: "12:00 · Sesión Q&A",
+    title: "Q&A con David Eaton",
+    track: "Autonomía Humana",
+    color: "var(--color-cyan)",
     speakers: [
-      { name: "Marian Rojas Estapé", role: "Psiquiatra · Instituto Rojas Estapé" },
       { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" }
     ]
   },
   {
-    type: "12:30 pm · Panel",
+    type: "12:30 · Panel",
     title: '"IA Humanizada: Tecnología, Educación e Innovación Industrial Integrada"',
-    track: "IA, Educación e Inclusión",
-    color: "var(--color-orange)",
+    track: "Autonomía Humana",
+    color: "var(--color-cyan)",
     speakers: [
-      { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" },
       { name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" },
+      { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" },
       { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" }
     ]
   },
   {
-    type: "13:30 pm · Receso",
-    title: "",
+    type: "13:30 · Receso",
+    title: "Receso",
     track: "Receso",
-    color: "var(--color-lime)",
+    color: "var(--color-border-subtle)",
     speakers: []
   },
   {
-    type: "14:30 pm · Panel",
-    title: '"Reinventando la medicina en la frontera de la IA: Redefiniendo el papel del médico"',
-    track: "IA, Salud y Espiritualidad",
+    type: "14:30 · Panel",
+    title: '"Reinventando la Medicina en la Frontera de la IA"',
+    track: "Autonomía Humana",
     color: "var(--color-cyan)",
     speakers: [
-      { name: "Dra. Alma Rosa Marroquín", role: "Secretaria de Salud · Nuevo León" },
-      { name: "Dr. Bimal Desai", role: "VP & CHIO · Children's Hospital of Philadelphia" }
+      { name: "Dr. Bimal Desai", role: "VP & CHIO · Children's Hospital of Philadelphia" },
+      { name: "Dra. Alma Rosa Marroquín", role: "Secretaria de Salud · Nuevo León" }
     ]
   },
   {
-    type: "15:30 pm · Panel",
-    title: '"Educación en la Era de la IA: Retos y Oportunidades"',
-    track: "IA, Educación e Inclusión",
+    type: "15:10 · Conferencia",
+    title: '"Inteligencia Artificial vs. Inteligencia Natural: Retos de la Educación y la Sociedad"',
+    track: "Educación",
     color: "var(--color-orange)",
     speakers: [
-      { name: "Alejandro Almazán Zimerman", role: "Head of Google for Education · LATAM" },
-      { name: "Dra. Sofialeticia Morales Garza", role: "Coordinadora Ecosistema Educativo Legado NL" }
+      { name: "Mtro. Juan José Gutiérrez", role: "Secretario General · Sección 50 SNTE" }
     ]
   },
   {
-    type: "16:30 pm · Mesa de rectores",
-    title: '"¿Cómo integrar IA en la Educación Superior sin perder el Factor Humano?"',
-    track: "IA, Educación e Inclusión",
+    type: "15:30 · Panel",
+    title: '"Educación en la Era de la IA: Retos y Oportunidades"',
+    track: "Educación",
+    color: "var(--color-orange)",
+    speakers: [
+      { name: "Dra. Sofialeticia Morales Garza", role: "Coordinadora Ecosistema Educativo Legado NL" },
+      { name: "Alejandro Almazán Zimerman", role: "Head of Google for Education · LATAM" }
+    ]
+  },
+  {
+    type: "16:10 · Mesa de rectores",
+    title: '"Cómo Integrar IA en Educación Superior sin Perder el Factor Humano"',
+    track: "Educación",
     color: "var(--color-orange)",
     speakers: [
       { name: "Juan Paura García", role: "Secretario de Educación · Nuevo León" },
@@ -236,24 +263,34 @@ const agendaData = [
     ]
   },
   {
-    type: "17:15 pm · Panel",
-    title: '"El compromiso con la verdad en la era de la Inteligencia Artificial"',
-    track: "IA y Autonomía Humana",
-    color: "var(--color-accent)",
+    type: "17:00 · Panel",
+    title: '"El Compromiso con la Verdad en la Era de la IA"',
+    track: "Autonomía Humana",
+    color: "var(--color-cyan)",
     speakers: [
       { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora · CBS 60 Minutes" },
       { name: "Jorge Lerdo de Tejada", role: "Global Ambassador · Singularity University" }
     ]
   },
   {
-    type: "18:00 pm · Panel",
-    title: '"Ser Humano en escena: Creatividad, Arte e Identidad en tiempos de IA"',
-    track: "IA y Autonomía Humana",
-    color: "var(--color-accent)",
+    type: "17:40 · Panel",
+    title: '"Ser Humano en Escena: Creatividad, Arte e Identidad en Tiempos de IA"',
+    track: "Humanismo y Valores",
+    color: "var(--color-pink)",
     speakers: [
-      { name: "Mauricio Martínez", role: "Actor y cantante · Broadway" },
+      { name: "Sebastian Yatra", role: "Músico y Facilitador" },
       { name: "Farid Dieck Assad", role: "Psicólogo · Influencer · 60M seguidores" },
+      { name: "Mauricio Martínez", role: "Actor y cantante · Broadway" },
       { name: "Nayo Escobar", role: "Empresario, músico y creador de contenido" }
+    ]
+  },
+  {
+    type: "18:30 · Clausura",
+    title: "Cierre musical - Sebastián Yatra",
+    track: "Humanismo y Valores",
+    color: "var(--color-pink)",
+    speakers: [
+      { name: "Sebastian Yatra", role: "Músico y Facilitador" }
     ]
   },
 
@@ -264,138 +301,108 @@ const agendaData = [
     location: "CINTERMEX",
     bgColor: "var(--color-cyan)"
   },
+  // --- 9:00 - 10:30 AM ---
   {
-    type: "9:00 a 10:30 am · Taller / Sesión privada",
-    title: "Sesión Rotarios · Liderazgo, comunidad y tecnología al servicio del bien",
-    track: "IA y Autonomía Humana",
-    color: "var(--color-accent)",
-    speakers: [
-      { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" },
-      { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora" }
-    ]
-  },
-  {
-    type: "9:00 a 10:30 am · Sesión paralela · Sala Salud",
-    title: "La nueva frontera de la Medicina Inteligente",
-    track: "IA, Salud y Espiritualidad",
-    color: "var(--color-cyan)",
-    speakers: [
-      { name: "Dr. Bimal Desai", role: "VP & CHIO · Children's Hospital of Philadelphia" }
-    ]
-  },
-  {
-    type: "9:00 a 10:30 am · Sesión paralela · Sala Educación",
-    title: '"Del Cerebro al Aula: Repensando la Educación en la Era Digital"',
-    track: "IA, Educación e Inclusión",
-    color: "var(--color-orange)",
-    speakers: [
-      { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" }
-    ]
-  },
-  {
-    type: "9:00 a 10:30 am · Sesión especial · Sala Espiritualidad",
-    title: '"De Ingeniero Informático a Monje Budista" y Sabiduría ancestral',
-    track: "IA y Espiritualidad",
-    color: "var(--color-lime)",
+    type: "9:00 - 10:30 AM · Sala Antártida",
+    title: '"De Ingeniero Informático a Monje Budista"',
+    track: "Espiritualidad",
+    color: "var(--color-pink)",
     speakers: [
       { name: "Bhikkhu Pannakara", role: "Monje Budista" },
       { name: "Abuelo Maya Antonio Oxté", role: "Sabio Maya · Tzucacab, Yucatán" }
     ]
   },
   {
-    type: "9:00 a 10:30 am · Sesión paralela · Sala Salud",
-    title: '"Relaciones Soberanas: la ciencia detrás de las relaciones prósperas y herramientas para cultivar conexiones significativas"',
-    track: "IA, Salud y Espiritualidad",
-    color: "var(--color-cyan)",
+    type: "9:00 - 10:30 AM · Sala Europa",
+    title: '"Relaciones Soberanas: la ciencia de las conexiones prósperas"',
+    track: "Autonomía",
+    color: "var(--color-accent)",
     speakers: [
       { name: "Emma Seppälä", role: "Psicóloga · Stanford & Yale" }
     ]
   },
   {
-    type: "11:00 am a 12:30 pm · Conferencia · Sala Espiritualidad",
-    title: '"Espiritualidad cristiana e Inteligencia Artificial"',
-    track: "IA y Espiritualidad",
-    color: "var(--color-lime)",
+    type: "9:00 - 10:30 AM · Sala Oceanía",
+    title: '"La Nueva Frontera de la Medicina Inteligente"',
+    track: "Salud",
+    color: "var(--color-cyan)",
     speakers: [
-      { name: "Padre David Jasso", role: "Sacerdote · Arquidiócesis de Monterrey" }
+      { name: "Dr. Bimal Desai", role: "VP & CHIO · Children's Hospital of Philadelphia" }
     ]
   },
   {
-    type: "11:00 am a 12:30 pm · Conferencia · Sala Espiritualidad",
-    title: '"¿Quién decide por ti? Libertad humana en la era del algoritmo"',
-    track: "IA, Salud y Espiritualidad",
-    color: "var(--color-cyan)",
+    type: "9:00 - 10:30 AM · Sala Canadá 1",
+    title: '"Del Cerebro al Aula: Repensando la Educación en la Era Digital"',
+    track: "Educación",
+    color: "var(--color-orange)",
+    speakers: [
+      { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" }
+    ]
+  },
+  {
+    type: "9:00 - 10:30 AM · Sala Canadá 2",
+    title: "Liderazgo, comunidad y tecnología al servicio del bien",
+    track: "Rotarios",
+    color: "var(--color-lime)",
+    speakers: [
+      { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" },
+      { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora · CBS 60 Minutes" }
+    ]
+  },
+  // --- 11:00 AM - 12:30 PM ---
+  {
+    type: "11:00 AM - 12:30 PM · Sala Antártida",
+    title: '"Espiritualidad Cristiana e Inteligencia Artificial"',
+    track: "Espiritualidad",
+    color: "var(--color-pink)",
+    speakers: [
+      { name: "Padre David Jasso", role: "Sacerdote · Sacerdote · Arquidiócesis de Monterrey" }
+    ]
+  },
+  {
+    type: "11:00 AM - 12:30 PM · Sala Europa",
+    title: '"¿Quién Decide por Ti? Libertad Humana en la Era del Algoritmo"',
+    track: "Autonomía",
+    color: "var(--color-accent)",
     speakers: [
       { name: "Farid Dieck Assad", role: "Psicólogo · Influencer · 60M seguidores" }
     ]
   },
   {
-    type: "11:00 am a 12:30 pm · Sesión paralela · Sala Salud",
-    title: '"Diseño e implementación de soluciones tecnológicas de alto impacto en el sector salud"',
-    track: "IA, Salud y Espiritualidad",
+    type: "11:00 AM - 12:30 PM · Sala Oceanía",
+    title: '"Soluciones tecnológicas de alto impacto en el sector Salud"',
+    track: "Salud",
     color: "var(--color-cyan)",
     speakers: [
       { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" }
     ]
   },
   {
-    type: "11:00 am a 12:30 pm · Sesión paralela · Sala Educación",
-    title: '"Del Potencial a la Oportunidad: El Camino de las Mujeres en la Economía Digital"',
-    track: "IA, Educación e Inclusión",
+    type: "11:00 AM - 12:30 PM · Sala Canadá 1",
+    title: '"Del Potencial a la Oportunidad: el Camino de las Mujeres en la Economía Digital"',
+    track: "Educación",
     color: "var(--color-orange)",
     speakers: [
       { name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" }
     ]
   },
   {
-    type: "11:00 am a 12:30 pm · Diálogo · Sala Autonomía Humana",
+    type: "11:00 AM - 12:30 PM · Sala Canadá 2",
     title: "Diálogo sobre liderazgo, comunidad y tecnología",
-    track: "IA y Autonomía Humana",
-    color: "var(--color-accent)",
+    track: "Rotarios",
+    color: "var(--color-lime)",
     speakers: [
-      { name: "David Eaton", role: "Rotary Distrito 4130" },
+      { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" },
       { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora · CBS 60 Minutes" }
     ]
   },
+  // --- 1:00 PM ---
   {
-    type: "11:00 am a 12:30 pm · Consejo Interreligioso · Sala Espiritualidad",
-    title: "Consejo Interreligioso",
-    track: "IA y Espiritualidad",
-    color: "var(--color-lime)",
-    speakers: [
-      { name: "Mons. Rogelio Cabrera López", role: "Arzobispo Metropolitano de Monterrey" },
-      { name: "Padre David Jasso", role: "Sacerdote · Arquidiócesis de Monterrey" },
-      { name: "Abuelo Maya Antonio Oxté", role: "Sabio Maya · Tzucacab, Yucatán" },
-      { name: "Bhikkhu Pannakara", role: "Monje Budista" },
-      { name: "Gurudev Sri Sri Ravi Shankar", role: "Líder espiritual · Fundador Arte de Vivir" }
-    ]
-  },
-  {
-    type: "Charter for Compassion",
-    title: "Charter for Compassion",
-    track: "IA, Salud y Espiritualidad",
-    color: "var(--color-cyan)",
-    speakers: [
-      { name: "Representante Charter for Compassion", role: "" }
-    ]
-  },
-  {
-    type: "Presentación especial",
-    title: "Por definir",
-    track: "IA y Autonomía Humana",
-    color: "var(--color-accent)",
-    speakers: [
-      { name: "Nayo Escobar", role: "Empresario, músico y creador de contenido" }
-    ]
-  },
-  {
-    type: "Presentación de libro",
-    title: "Inteligencia Artificial y Paz Mundial",
-    track: "IA y Espiritualidad",
-    color: "var(--color-lime)",
-    speakers: [
-      { name: "Pastor Federico Elizondo", role: "Autor · Inteligencia Artificial y Paz Mundial" }
-    ]
+    type: "1:00 PM · Parque Fundidora",
+    title: "Cierre conjunto de las dos sedes",
+    track: "Clausura",
+    color: "var(--color-pink)",
+    speakers: []
   }
 ];
 
@@ -404,8 +411,8 @@ export default function Agenda() {
     <section className="section agenda" id="agenda" aria-labelledby="agendaHeading">
       <div className="container">
         <div className="section-header reveal-up">
-          <span className="section-tag">03 / AGENDA</span>
-          <h2 className="section-title" id="agendaHeading">Agenda Oficial</h2>
+          <span className="section-tag">03 / PROGRAMA</span>
+          <h2 className="section-title" id="agendaHeading">Programa Oficial</h2>
           <p className="section-subtitle">Orden cronológico de participación · <span className="text-accent">3 y 4 de octubre de 2026</span></p>
         </div>
 
