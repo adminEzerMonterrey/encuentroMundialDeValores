@@ -771,7 +771,7 @@ const speakersData = [
     talkName: "Consciencia Plena y Espiritualidad Práctica"
   },
   {
-    img: "/speakers/juan-jose-gutierrez.png",
+    img: "/speakers/juan-jose-gutierrez.jpg",
     initials: "JG",
     name: "Mtro. Juan José Gutiérrez",
     company: "SNTE Sección 50",
