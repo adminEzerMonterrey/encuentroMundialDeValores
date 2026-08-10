@@ -796,6 +796,28 @@ const speakersData = [
     trackName: "Educación",
     talkIcon: "🎓",
     talkName: "Inteligencia Artificial vs. Inteligencia Natural: Retos de la Educación y la Sociedad"
+  },
+  {
+    img: "/speakers/susana-cabrera.png",
+    initials: "SC",
+    name: "Susana Cabrera",
+    company: "Universidad Kirei",
+    role: "Fundadora y Rectora",
+    bio: "Fundadora y Rectora de la Universidad Kirei, líder en educación de la salud y la belleza a nivel nacional e internacional.",
+    longBio: "Susana Cabrera es fundadora y rectora de la Universidad Kirei, líder en educación de la salud y la belleza a nivel nacional e internacional.",
+    bullets: [
+      "Organizadora de uno de los congresos más importantes de Latinoamérica con alcance global.",
+      "Es fundadora y rectora de la Universidad Kirei, única institución con 12 RVOEs respaldados también por CIFRHS en las áreas de Salud y Belleza.",
+      "Organiza el Congreso Internacional Spa, Médico y Micropigmentación, que ya suma 10 ediciones, y es fundadora del Colegio de Especialistas en Estética Facial y Corporal, con registro oficial otorgado por la Secretaría de Educación.",
+      "Representa a la Universidad Kirei en sedes del Congreso Médico AMWC y del Congreso SOCHIMCE, llevando investigadores internacionales como speakers, y funge como juez internacional en competiciones del sector Spa y Micropigmentación.",
+      "Inició su trayectoria en el sector en 1985."
+    ],
+    photoPosition: "right",
+    gradient: "linear-gradient(135deg,#EC4899,#F59E0B)",
+    trackClass: "track-a",
+    trackName: "Salud y Bienestar",
+    talkIcon: "💆‍♀️",
+    talkName: "Educación de la Salud y la Belleza"
   }
 ];
 
