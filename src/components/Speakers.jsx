@@ -508,7 +508,7 @@ const speakersData = [
   {
     img: "/speakers/padre-david-jasso.png",
     imgPosition: "center 60%",
-    imgScale: "1.1",
+    imgScale: "0.9",
     imgOffsetY: "0px",
     initials: "DJ",
     name: "Padre David Jasso",
@@ -557,7 +557,7 @@ const speakersData = [
   },
   {
     img: "/speakers/abuelo-maya-antonio-oxte.jpg",
-    imgScale: "1.08",
+    imgScale: "0.9",
     imgOffsetY: "0px",
     imgPosition: "center",
     collageScale: "1.08",
@@ -758,7 +758,7 @@ const speakersData = [
       "Certificaciones en programas internacionales como \"Heal your life\" (Louise L. Hay), Tetramap, Points of You, Thetahealing, Constelaciones Familiares y Reiki."
     ],
     photoPosition: "left",
-    imgScale: "1.0",
+    imgScale: "0.85",
     imgPosition: "center",
     imgOffsetY: "0px",
     collageScale: "1.0",
@@ -813,6 +813,9 @@ const speakersData = [
       "Inició su trayectoria en el sector en 1985."
     ],
     photoPosition: "right",
+    imgScale: "1.08",
+    imgOffsetY: "15px",
+    imgPosition: "center",
     gradient: "linear-gradient(135deg,#EC4899,#F59E0B)",
     trackClass: "track-a",
     trackName: "Salud y Bienestar",
@@ -872,6 +875,51 @@ const speakersData = [
     trackName: "Salud y Bienestar",
     talkIcon: "🏥",
     talkName: "Transformación de los Sistemas de Salud"
+  },
+  {
+    img: "/speakers/jesus-ancer.png",
+    initials: "JA",
+    name: "Dr. Jesús Ancer Rodríguez",
+    company: "UANL / Fundación IMSS",
+    role: "Profesor Investigador y Ex Rector de la UANL",
+    bio: "Profesor investigador, ex Rector de la UANL y miembro de la Fundación del IMSS, con amplia trayectoria en medicina y anatomía patológica.",
+    longBio: "El Dr. Jesús Ancer es profesor investigador del Departamento de Patología de la Facultad de Medicina y Hospital Universitario \"Dr. José Eleuterio González\" de la UANL, miembro de la Fundación del IMSS y ex Rector de la UANL.",
+    bullets: [
+      "Médico Cirujano y Partero egresado de la Facultad de Medicina de la UANL, con doctorados en Medicina y en Anatomía Patológica por la UANL y la Universidad Autónoma de Madrid.",
+      "Ex Rector de la Universidad Autónoma de Nuevo León para el período 2009-2015 y ex Secretario General de la misma.",
+      "Fungió a nivel federal como Secretario del Consejo de Salubridad General e integrante de la Junta de Gobierno del Instituto Nacional de Cancerología.",
+      "Ex director de la Facultad de Medicina y Hospital Universitario \"Dr. José Eleuterio González\" y del Centro de Investigación y Desarrollo en Ciencias de la Salud, UANL.",
+      "Miembro de la Fundación del IMSS y del Consejo Técnico Consultivo de Participación Ciudadana para las Personas Adultas Mayores de Nuevo León.",
+      "Investigador miembro del Sistema Nacional de Investigadores con diversas publicaciones científicas y distinciones en el ámbito académico, gubernamental y social."
+    ],
+    photoPosition: "right",
+    gradient: "linear-gradient(135deg,#3B82F6,#1D4ED8)",
+    trackClass: "track-b",
+    trackName: "Educación",
+    talkIcon: "🎓",
+    talkName: "Retos de la Medicina y la Educación Superior"
+  },
+  {
+    img: "/speakers/carlos-sandoval.png",
+    initials: "CS",
+    name: "Carlos Sandoval Delgado",
+    company: "Grupo ORSAN",
+    role: "Presidente y Director General",
+    bio: "Presidente de Grupo ORSAN y fiduciario de la Fundación Rotaria, impulsor de proyectos comunitarios, filantropía y cultura de paz.",
+    longBio: "Carlos Sandoval Delgado es el presidente y director general de Grupo ORSAN, una de las empresas líderes en el sector energético en México. Es además un destacado promotor humanitario y fiduciario de la Fundación Rotaria de Rotary International.",
+    bullets: [
+      "Presidente y director general de Grupo ORSAN, liderando el sector energético y la distribución de combustibles en México.",
+      "Presidente de la Fundación ORSAN, la cual impulsa proyectos sociales de impacto comunitario y microcréditos para mujeres emprendedoras.",
+      "Fiduciario de la Fundación Rotaria de Rotary International para el período 2023-2027.",
+      "Ha ocupado cargos clave en Rotary, incluyendo Gobernador de Distrito 4130 y Coordinador de la Fundación Rotaria para la Zona 25A.",
+      "Reconocido promotor de la cultura de paz y el desarrollo económico y social en México y Latinoamérica."
+    ],
+    photoPosition: "right",
+    gradient: "linear-gradient(135deg,#EC4899,#F59E0B)",
+    trackClass: "track-b",
+    trackName: "Educación",
+    talkIcon: "🤝",
+    talkName: "Ética, Filantropía e Impacto Social"
   }
 ];
 
