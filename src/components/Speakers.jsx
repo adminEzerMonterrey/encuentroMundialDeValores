@@ -818,6 +818,60 @@ const speakersData = [
     trackName: "Salud y Bienestar",
     talkIcon: "💆‍♀️",
     talkName: "Educación de la Salud y la Belleza"
+  },
+  {
+    img: "/speakers/orlando-londono.png",
+    initials: "OL",
+    name: "Orlando Londoño",
+    company: "Sayani México / RML",
+    role: "Especialista en Derecho de Salud",
+    bio: "Especialista en Derecho Sanitario y Responsabilidad Médica, con amplia trayectoria en regulación sanitaria, bioética y cumplimiento normativo.",
+    longBio: "Orlando Londoño es Especialista en Derecho Sanitario y Maestro en Derecho de Salud y Responsabilidad Médica, cuenta con formación interdisciplinaria en Medicina. Licenciado en Derecho con Economía.",
+    bullets: [
+      "Sustenta su trabajo en regulación sanitaria, investigación clínica, bioética, responsabilidad médica y cumplimiento normativo.",
+      "Actualmente cursa el doctorado en Derecho, con investigación en Bioderecho enfocada en marcos jurídicos que integran ética, ciencia y protección de derechos humanos en salud e investigación clínica.",
+      "Es fundador y Director General de Responsabilidad Médica Legal (RML) desde 2018, firma de consultoría jurídico-sanitaria para instituciones de salud y organizaciones internacionales.",
+      "Se desempeña como Director de Operaciones de Sayani México (CRO), liderando investigación clínica y asuntos regulatorios en América Latina bajo estándares ICH-GCP.",
+      "Preside el Comité de Ética e Investigación de Axis Heilsa y es docente en UANL, Universidad Anáhuac, Universidad La Salle, Centro Carbonell, IDEJ e INEP.",
+      "Es miembro activo de AVANZAR, ALCEIC, del Consejo Mexicano para el Turismo Médico, y consultor externo de comités de ética en investigación en Colombia y Perú."
+    ],
+    photoPosition: "right",
+    gradient: "linear-gradient(135deg,#3B82F6,#8B5CF6)",
+    trackClass: "track-a",
+    trackName: "Salud y Bienestar",
+    talkIcon: "⚖️",
+    talkName: "Derecho de Salud y Responsabilidad Médica"
+  },
+  {
+    img: "/speakers/lilia-elida-garcia.png",
+    initials: "LG",
+    name: "Dra. Lilia Elida García Rodríguez",
+    company: "UDEM Health",
+    role: "Vicerrectora de Ciencias de la Salud",
+    bio: "Vicerrectora de Ciencias de la Salud de la Universidad de Monterrey (UDEM Health), especialista en oncología pediátrica y salud pública.",
+    longBio: "La Dra. Lilia Elida García Rodríguez es la Vicerrectora de Ciencias de la Salud de UDEM Health. Médica, académica, investigadora y líder institucional, con destacada trayectoria en oncología pediátrica, salud pública, gestión de servicios de salud, bioética y educación médica.",
+    bullets: [
+      "Su trayectoria se caracteriza por integrar la práctica clínica, la investigación y el liderazgo, con una profunda vocación de servicio y compromiso con la transformación de los sistemas de salud.",
+      "Es Médico Cirujano y Partero por la Universidad de Monterrey, especialista en Pediatría por el Hospital Christus Muguerza, con aval UDEM, y subespecialista en Oncología Pediátrica por el Hospital Infantil de México \"Federico Gómez\".",
+      "Doctorado en Administración y Gestión de los Servicios de Salud y una Maestría en Gestión de Hospitales y Servicios de Salud por la Universidad de Monterrey, además de estudios en Salud Pública Global por la T.H. Chan School of Public Health de Harvard University y un fellowship en Bioética Pediátrica por el Children's Mercy Hospital.",
+      "Su liderazgo en oncología pediátrica trasciende el ámbito nacional. Ha representado a América Latina en la Sociedad Internacional de Oncología Pediátrica y ocupa cargos de liderazgo en organizaciones científicas nacionales e internacionales.",
+      "En 2026 se desempeña como vicepresidenta de Young SIOP y Vocal de la Región Noreste de la Agrupación Mexicana de Hemato-Oncología Pediátrica.",
+      "Es también fundadora de World Child Cancer México.",
+      "De 2021 a 2023 fue Subsecretaria de Prevención y Control de Enfermedades de la Secretaría de Salud de Nuevo León.",
+      "Desde mayo de 2023 es Vicerrectora de Ciencias de la Salud de la Universidad de Monterrey, donde lidera UDEM Health, impulsando una visión que articula excelencia académica, investigación e innovación, atención integral y compromiso social."
+    ],
+    photoPosition: "left",
+    imgScale: "1.0",
+    imgPosition: "center center",
+    imgOffsetY: "0px",
+    collageScale: "1.0",
+    collagePosition: "center center",
+    collageOffsetY: "0px",
+    gradient: "linear-gradient(135deg,#10B981,#3B82F6)",
+    trackClass: "track-a",
+    trackName: "Salud y Bienestar",
+    talkIcon: "🏥",
+    talkName: "Transformación de los Sistemas de Salud"
   }
 ];
 
