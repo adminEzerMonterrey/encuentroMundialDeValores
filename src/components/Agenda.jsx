@@ -175,105 +175,203 @@ const agendaData = [
     location: "CINTERMEX",
     bgColor: "var(--color-cyan)"
   },
-  // --- 9:00 - 10:30 AM ---
+  // --- 9:00 - 10:00 AM ---
   {
-    type: "9:00 - 10:30 AM · Sala Antártida",
-    title: '"De Ingeniero Informático a Monje Budista"',
-    track: "Espiritualidad",
+    type: "9:00 - 10:00 AM · Sala Antártida",
+    title: '"Inteligencia Artificial y la Paz Mundial"',
+    track: "Espiritual",
     color: "var(--color-pink)",
     speakers: [
-      { name: "Bhikkhu Pannakara", role: "Monje Budista" },
-      { name: "Abuelo Maya Antonio Oxté", role: "Sabio Maya · Tzucacab, Yucatán" }
+      { name: "Pastor Federico Elizondo", role: "Presenta: Alma Rosa Asis" }
     ]
   },
   {
-    type: "9:00 - 10:30 AM · Sala Europa",
-    title: '"Relaciones Soberanas: la ciencia de las conexiones prósperas"',
-    track: "Autonomía",
+    type: "9:00 - 10:00 AM · Sala Europa",
+    title: "Diálogo y Encuentro",
+    track: "Comunicación",
     color: "var(--color-accent)",
     speakers: [
-      { name: "Emma Seppälä", role: "Psicóloga · Stanford & Yale" }
+      { name: "Abuelo Maya", role: "" },
+      { name: "Eduardo Dondé", role: "" },
+      { name: "Sebastián Latapí", role: "" },
+      { name: "Porfirio Bonilla", role: "" },
+      { name: "Sebastian Yatra", role: "" }
     ]
   },
   {
-    type: "9:00 - 10:30 AM · Sala Oceanía",
+    type: "9:00 - 10:00 AM · Sala Canadá A",
+    title: '"Paz Positiva: David Eaton y Carlos Sandoval - UDEM Paz"',
+    track: "Rotarios",
+    color: "var(--color-lime)",
+    speakers: [
+      { name: "David Eaton", role: "" },
+      { name: "Carlos Sandoval", role: "" }
+    ]
+  },
+  {
+    type: "9:00 - 10:00 AM · Sala Oceanía",
     title: '"La Nueva Frontera de la Medicina Inteligente"',
     track: "Salud",
     color: "var(--color-cyan)",
     speakers: [
-      { name: "Dr. Bimal Desai", role: "VP & CHIO · Children's Hospital of Philadelphia" }
+      { name: "Dr. Bimal Desai", role: "" }
     ]
   },
   {
-    type: "9:00 - 10:30 AM · Sala Canadá 1",
+    type: "9:00 - 10:00 AM · Sala Canadá B",
+    title: '"Del Potencial a la Oportunidad: El Camino de las Mujeres en la Economía Digital"',
+    track: "Educación",
+    color: "var(--color-orange)",
+    speakers: [
+      { name: "Caroline Sanchez Crozier", role: "" }
+    ]
+  },
+  // --- 10:10 - 11:00 AM ---
+  {
+    type: "10:10 - 11:00 AM · Sala Antártida",
+    title: '"Espiritualidad cristiana e Inteligencia Artificial"',
+    track: "Espiritual",
+    color: "var(--color-pink)",
+    speakers: [
+      { name: "Padre David Jasso", role: "" }
+    ]
+  },
+  {
+    type: "10:10 - 11:00 AM · Sala Europa",
+    title: "Diálogo y Encuentro",
+    track: "Comunicación",
+    color: "var(--color-accent)",
+    speakers: [
+      { name: "Mauricio Martínez", role: "" }
+    ]
+  },
+  {
+    type: "10:10 - 11:00 AM · Sala Canadá A",
+    title: '"Innovación con Propósito: Rotarios y Dr. Arumugam"',
+    track: "Rotarios",
+    color: "var(--color-lime)",
+    speakers: [
+      { name: "Dr. Arumugam Murukiah", role: "" }
+    ]
+  },
+  {
+    type: "10:10 - 11:00 AM · Sala Oceanía",
+    title: '"Relaciones Soberanas: Descubre la ciencia detrás de las relaciones prósperas y adquiere herramientas para cultivar conexiones significativas"',
+    track: "Salud",
+    color: "var(--color-cyan)",
+    speakers: [
+      { name: "Emma Seppälä", role: "" }
+    ]
+  },
+  {
+    type: "10:10 - 11:00 AM · Sala Canadá B",
+    title: "Conferencia",
+    track: "Educación",
+    color: "var(--color-orange)",
+    speakers: [
+      { name: "Alejandro Almazán Zimerman", role: "" }
+    ]
+  },
+  // --- 11:10 AM - 12:00 PM ---
+  {
+    type: "11:10 AM - 12:00 PM · Sala Antártida",
+    title: '"De Ingeniero Informático a Monje Budista"',
+    track: "Espiritual",
+    color: "var(--color-pink)",
+    speakers: [
+      { name: "Bhikkhu Pannakara", role: "" }
+    ]
+  },
+  {
+    type: "11:10 AM - 12:00 PM · Sala Europa",
+    title: '"¿Quién decide por ti? Libertad humana en la era del algoritmo"',
+    track: "Comunicación",
+    color: "var(--color-accent)",
+    speakers: [
+      { name: "Farid Dieck Assad", role: "" }
+    ]
+  },
+  {
+    type: "11:10 AM - 12:00 PM · Sala Canadá A",
+    title: '"Intercambio de Jóvenes, Embajadores de Paz"',
+    track: "Rotarios",
+    color: "var(--color-lime)",
+    speakers: [
+      { name: "David Eaton", role: "" },
+      { name: 'Marian "Mimi" Edmunds', role: "" },
+      { name: "Javier Prieto", role: "" }
+    ]
+  },
+  {
+    type: "11:10 AM - 12:00 PM · Sala Oceanía",
+    title: '"Los Retos de la Salud en la Era de la Tecnología Artificial"',
+    track: "Salud",
+    color: "var(--color-cyan)",
+    speakers: [
+      { name: "Dr. Jesús González Álvarez", role: "" },
+      { name: "Orlando Londoño", role: "" },
+      { name: "Dr. Jesús Ancer Rodríguez", role: "" },
+      { name: "Susana Cabrera", role: "" },
+      { name: "Dra. Lilia Elida García Rodríguez", role: "" }
+    ]
+  },
+  {
+    type: "11:10 AM - 12:00 PM · Sala Canadá B",
     title: '"Del Cerebro al Aula: Repensando la Educación en la Era Digital"',
     track: "Educación",
     color: "var(--color-orange)",
     speakers: [
-      { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" }
+      { name: "Dra. Melina Uncapher", role: "" }
     ]
   },
+  // --- 12:10 - 1:00 PM ---
   {
-    type: "9:00 - 10:30 AM · Sala Canadá 2",
-    title: "Liderazgo, comunidad y tecnología al servicio del bien",
-    track: "Rotarios",
-    color: "var(--color-lime)",
-    speakers: [
-      { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" },
-      { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora · CBS 60 Minutes" }
-    ]
-  },
-  // --- 11:00 AM - 12:30 PM ---
-  {
-    type: "11:00 AM - 12:30 PM · Sala Antártida",
-    title: '"Espiritualidad Cristiana e Inteligencia Artificial"',
-    track: "Espiritualidad",
+    type: "12:10 - 1:00 PM · Sala Antártida",
+    title: "Presentación de Universidad de Montemorelos",
+    track: "Espiritual",
     color: "var(--color-pink)",
     speakers: [
-      { name: "Padre David Jasso", role: "Sacerdote · Arquidiócesis de Monterrey" }
+      { name: "Universidad de Montemorelos", role: "" }
     ]
   },
   {
-    type: "11:00 AM - 12:30 PM · Sala Europa",
-    title: '"¿Quién Decide por Ti? Libertad Humana en la Era del Algoritmo"',
-    track: "Autonomía",
+    type: "12:10 - 1:00 PM · Sala Europa",
+    title: "Diálogo y Encuentro",
+    track: "Comunicación",
     color: "var(--color-accent)",
     speakers: [
-      { name: "Farid Dieck Assad", role: "Psicólogo · Influencer · 60M seguidores" }
+      { name: "Nayo Escobar", role: "" }
     ]
   },
   {
-    type: "11:00 AM - 12:30 PM · Sala Oceanía",
-    title: '"Soluciones tecnológicas de alto impacto en el sector Salud"',
+    type: "12:10 - 1:00 PM · Sala Canadá A",
+    title: '"Bioética y Prueba Cuádruple en la Era de IA"',
+    track: "Rotarios",
+    color: "var(--color-lime)",
+    speakers: []
+  },
+  {
+    type: "12:10 - 1:00 PM · Sala Oceanía",
+    title: "Presentación",
     track: "Salud",
     color: "var(--color-cyan)",
     speakers: [
-      { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" }
+      { name: "Marisela Reyes", role: "" }
     ]
   },
   {
-    type: "11:00 AM - 12:30 PM · Sala Canadá 1",
-    title: '"Del Potencial a la Oportunidad: el Camino de las Mujeres en la Economía Digital"',
+    type: "12:10 - 1:00 PM · Sala Canadá B",
+    title: "Presentación Sindicato",
     track: "Educación",
     color: "var(--color-orange)",
     speakers: [
-      { name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" }
-    ]
-  },
-  {
-    type: "11:00 AM - 12:30 PM · Sala Canadá 2",
-    title: "Diálogo sobre liderazgo, comunidad y tecnología",
-    track: "Rotarios",
-    color: "var(--color-lime)",
-    speakers: [
-      { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" },
-      { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora · CBS 60 Minutes" }
+      { name: "Mtro. Juan José Gutiérrez", role: "" }
     ]
   },
   // --- 1:00 PM ---
   {
     type: "1:00 PM · Parque Fundidora",
-    title: "Cierre conjunto de las dos sedes",
+    title: "Caminata por la Paz",
     track: "Clausura",
     color: "var(--color-pink)",
     speakers: []
