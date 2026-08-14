@@ -924,6 +924,29 @@ const speakersData = [
     trackName: "Educación",
     talkIcon: "🤝",
     talkName: "Ética, Filantropía e Impacto Social"
+  },
+  {
+    img: "/speakers/pablo-merino.png",
+    initials: "PM",
+    name: "Pablo Merino",
+    company: "Instituto del Ser y la Consciencia",
+    role: "Experto y mentor en espiritualidad y desarrollo humano",
+    bio: "Arquitecto por la UNAM con MBA, creador de la metodología La Neuroevolución y fundador de Daunis.",
+    longBio: "Arquitecto por la UNAM, con MBA del Tecnológico de Monterrey e IPADE Business School. Pablo Merino es experto y mentor en espiritualidad y desarrollo humano.",
+    bullets: [
+      "Conferencista creador de la metodología de desarrollo humano La Neuroevolución.",
+      "Es fundador del Instituto del Ser y la Consciencia, así como asesor y mediador familiar.",
+      "Además, fundó Daunis, una asociación civil para personas con Síndrome de Down.",
+      "Es especialista en educación especial por la Universidad de Málaga, España, y cuenta con un diplomado en Filosofía y una licenciatura en Pedagogía por la Universidad Panamericana.",
+      "Como coach empresarial en el programa NeuroMás, Merino empodera a líderes y corporaciones, fomentando equipos de alta sinergia.",
+      "Tiene amplia experiencia en la resolución de conflictos en empresas familiares."
+    ],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)",
+    trackClass: "track-a",
+    trackName: "Espiritualidad y Desarrollo Humano",
+    talkIcon: "🧘‍♂️",
+    talkName: "Espiritualidad y Desarrollo Humano"
   }
 ];
 
