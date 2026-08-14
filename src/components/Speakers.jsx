@@ -824,6 +824,10 @@ const speakersData = [
   },
   {
     img: "/speakers/orlando-londono.png",
+    imgPosition: "center 20%",
+    imgScale: "1.25",
+    collagePosition: "center 20%",
+    collageScale: "1.25",
     initials: "OL",
     name: "Orlando Londoño",
     company: "Sayani México / RML",
