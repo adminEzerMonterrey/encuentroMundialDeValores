@@ -947,6 +947,24 @@ const speakersData = [
     trackName: "Espiritualidad y Desarrollo Humano",
     talkIcon: "🧘‍♂️",
     talkName: "Espiritualidad y Desarrollo Humano"
+  },
+  {
+    img: "/speakers/eduardo-donde.jpg",
+    initials: "ED",
+    name: "Eduardo Dondé",
+    company: "Fundación Dondé",
+    role: "Maestro, CEO y Fundador",
+    bio: "CEO y Fundador de la Fundación Dondé, líder en educación especial y desarrollo e integración familiar.",
+    longBio: "Maestro, CEO y Fundador de la Fundación Dondé.",
+    bullets: [
+      "CEO y Fundador de la Fundación Dondé, que tiene una red de escuelas con un método de educación especial donde una psicóloga ayuda a reintegrar la participación familiar en los estudios y buen desarrollo del niñ@, y pueda toda la comunidad participar en una evolución social económica."
+    ],
+    photoPosition: "right",
+    gradient: "linear-gradient(135deg,#FF9900,#ef4444)",
+    trackClass: "track-b",
+    trackName: "Educación",
+    talkIcon: "🎓",
+    talkName: "Educación Especial e Integración Familiar"
   }
 ];
 
