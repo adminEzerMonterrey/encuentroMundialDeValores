@@ -959,7 +959,7 @@ const speakersData = [
   {
     img: "/speakers/eduardo-donde.jpg",
     imgPosition: "center 20%",
-    imgScale: "1.25",
+    imgScale: "1.0",
     collagePosition: "center 20%",
     collageScale: "1.25",
     initials: "ED",
