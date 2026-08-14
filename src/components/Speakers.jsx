@@ -927,6 +927,10 @@ const speakersData = [
   },
   {
     img: "/speakers/pablo-merino.png",
+    imgPosition: "center 20%",
+    imgScale: "1.25",
+    collagePosition: "center 20%",
+    collageScale: "1.25",
     initials: "PM",
     name: "Pablo Merino",
     company: "Instituto del Ser y la Consciencia",
@@ -950,6 +954,10 @@ const speakersData = [
   },
   {
     img: "/speakers/eduardo-donde.jpg",
+    imgPosition: "center 20%",
+    imgScale: "1.25",
+    collagePosition: "center 20%",
+    collageScale: "1.25",
     initials: "ED",
     name: "Eduardo Dondé",
     company: "Fundación Dondé",
