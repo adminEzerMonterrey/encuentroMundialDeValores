@@ -934,7 +934,7 @@ const speakersData = [
     imgPosition: "center 20%",
     imgScale: "1.25",
     collagePosition: "center 20%",
-    collageScale: "1.25",
+    collageScale: "1.45",
     initials: "PM",
     name: "Pablo Merino",
     company: "Instituto del Ser y la Consciencia",
