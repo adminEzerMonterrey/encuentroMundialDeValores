@@ -980,6 +980,10 @@ const speakersData = [
   },
   {
     img: "/speakers/sebastian-latapi.png",
+    imgPosition: "center 15%",
+    imgScale: "1.3",
+    collagePosition: "center 15%",
+    collageScale: "1.3",
     initials: "SL",
     name: "Sebastián Latapi",
     company: "Comerlat",
