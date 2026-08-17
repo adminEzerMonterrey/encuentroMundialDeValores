@@ -977,6 +977,23 @@ const speakersData = [
     trackName: "Educación",
     talkIcon: "🎓",
     talkName: "Educación Especial e Integración Familiar"
+  },
+  {
+    img: "/speakers/sebastian-latapi.png",
+    initials: "SL",
+    name: "Sebastián Latapi",
+    company: "Comerlat",
+    role: "CEO",
+    bio: "CEO de la empresa Comerlat. Participa activamente desde hace 7 años en apoyos estructurales ayudando a la niñez.",
+    longBio: "CEO de la empresa Comerlat. Participa activamente desde hace 7 años en apoyos estructurales ayudando a la niñez.",
+    bullets: [
+      "Participa activamente desde hace 7 años en apoyos estructurales ayudando a la niñez."
+    ],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#008FD3,#00C4CC)",
+    trackClass: "track-a",
+    trackName: "Social",
+    talkIcon: "👶"
   }
 ];
 
