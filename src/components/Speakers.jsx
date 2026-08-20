@@ -998,6 +998,18 @@ const speakersData = [
     trackClass: "track-a",
     trackName: "Social",
     talkIcon: "👶"
+  },
+  {
+    img: "/speakers/gregorio-martinez.png",
+    initials: "GM",
+    name: "Gregorio Martínez",
+    company: "Presentador",
+    role: "Presentador Sala Europa",
+    bio: "Presentador oficial en el Encuentro Mundial de Valores 2026.",
+    longBio: "Presentador oficial en el Encuentro Mundial de Valores 2026.",
+    bullets: [],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)"
   }
 ];
 
