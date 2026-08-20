@@ -173,29 +173,28 @@ const agendaData = [
   // --- 9:00 - 10:00 AM ---
   {
     type: "9:00 - 10:00 AM · Sala Antártida",
-    title: '"Inteligencia Artificial y la Paz Mundial"',
+    title: '"Inteligencia Artificial y Paz Mundial: una visión cristiana y ética"',
     track: "Espiritual",
     color: "var(--color-pink)",
     speakers: [
-      { name: "Pastor Federico Elizondo", role: "Presenta: Alma Rosa Asis" }
+      { name: "Pastor Federico Elizondo", role: "Presenta: Alma Rosa Asís" }
     ]
   },
   {
     type: "9:00 - 10:00 AM · Sala Europa",
-    title: "Diálogo y Encuentro",
+    title: '"Sabiduría ancestral y voz global: comunicar valores entre generaciones"',
     track: "Comunicación",
     color: "var(--color-accent)",
     speakers: [
-      { name: "Abuelo Maya", role: "" },
+      { name: "Abuelo Maya Antonio Oxté", role: "" },
+      { name: "Sebastián Yatra", role: "" },
       { name: "Eduardo Dondé", role: "" },
-      { name: "Sebastián Latapí", role: "" },
-      { name: "Porfirio Bonilla", role: "" },
-      { name: "Sebastian Yatra", role: "" }
+      { name: "Sebastián Latapí", role: "" }
     ]
   },
   {
     type: "9:00 - 10:00 AM · Sala Canadá A",
-    title: '"Paz Positiva: David Eaton y Carlos Sandoval - UDEM Paz"',
+    title: '"PAZ POSITIVA · UDEM Paz"',
     track: "Rotarios",
     color: "var(--color-lime)",
     speakers: [
@@ -218,7 +217,7 @@ const agendaData = [
     track: "Educación",
     color: "var(--color-orange)",
     speakers: [
-      { name: "Caroline Sanchez Crozier", role: "" }
+      { name: "Caroline Sánchez Crozier", role: "" }
     ]
   },
   // --- 10:10 - 11:00 AM ---
@@ -233,7 +232,7 @@ const agendaData = [
   },
   {
     type: "10:10 - 11:00 AM · Sala Europa",
-    title: "Diálogo y Encuentro",
+    title: '"Comunicar desde la autenticidad: la voz humana en la era de la IA"',
     track: "Comunicación",
     color: "var(--color-accent)",
     speakers: [
@@ -242,16 +241,17 @@ const agendaData = [
   },
   {
     type: "10:10 - 11:00 AM · Sala Canadá A",
-    title: '"Innovación con Propósito: Rotarios y Dr. Arumugam"',
+    title: '"Tecnología al servicio de la comunidad: alianzas para el desarrollo sostenible"',
     track: "Rotarios",
     color: "var(--color-lime)",
     speakers: [
-      { name: "Dr. Arumugam Murukiah", role: "" }
+      { name: "Dr. Arumugam Murukiah", role: "" },
+      { name: "Rotarios", role: "" }
     ]
   },
   {
     type: "10:10 - 11:00 AM · Sala Oceanía",
-    title: '"Relaciones Soberanas: Descubre la ciencia detrás de las relaciones prósperas y adquiere herramientas para cultivar conexiones significativas"',
+    title: '"Relaciones Soberanas: la ciencia detrás de las conexiones prósperas"',
     track: "Salud",
     color: "var(--color-cyan)",
     speakers: [
@@ -260,7 +260,7 @@ const agendaData = [
   },
   {
     type: "10:10 - 11:00 AM · Sala Canadá B",
-    title: "Conferencia",
+    title: '"IA, educación e inclusión: cerrar brechas en el aula del futuro"',
     track: "Educación",
     color: "var(--color-orange)",
     speakers: [
@@ -283,31 +283,31 @@ const agendaData = [
     track: "Comunicación",
     color: "var(--color-accent)",
     speakers: [
-      { name: "Farid Dieck Assad", role: "" }
+      { name: "Farid Dieck", role: "" }
     ]
   },
   {
     type: "11:10 AM - 12:00 PM · Sala Canadá A",
-    title: '"Intercambio de Jóvenes, Embajadores de Paz"',
+    title: '"Intercambio de jóvenes, embajadores de Paz"',
     track: "Rotarios",
     color: "var(--color-lime)",
     speakers: [
+      { name: "Javier Prieto", role: "" },
       { name: "David Eaton", role: "" },
-      { name: 'Marian "Mimi" Edmunds', role: "" },
-      { name: "Javier Prieto", role: "" }
+      { name: 'Marian "Mimi" Edmunds', role: "" }
     ]
   },
   {
     type: "11:10 AM - 12:00 PM · Sala Oceanía",
-    title: '"Los Retos de la Salud en la Era de la Tecnología Artificial"',
+    title: '"Los retos de la salud en la era de la tecnología artificial"',
     track: "Salud",
     color: "var(--color-cyan)",
     speakers: [
       { name: "Dr. Jesús González Álvarez", role: "" },
+      { name: "Lilia García", role: "" },
       { name: "Orlando Londoño", role: "" },
-      { name: "Dr. Jesús Ancer Rodríguez", role: "" },
       { name: "Susana Cabrera", role: "" },
-      { name: "Dra. Lilia Elida García Rodríguez", role: "" }
+      { name: "Jesús Ancer", role: "" }
     ]
   },
   {
@@ -322,41 +322,43 @@ const agendaData = [
   // --- 12:10 - 1:00 PM ---
   {
     type: "12:10 - 1:00 PM · Sala Antártida",
-    title: "Presentación de Universidad de Montemorelos",
+    title: '"¿Puede la Inteligencia Artificial tener valores? Un taller para explorar los límites de la IA y el papel irremplazable del ser humano."',
     track: "Espiritual",
     color: "var(--color-pink)",
     speakers: [
-      { name: "Universidad de Montemorelos", role: "" }
+      { name: "Dra. Flor Ontiveros Ramírez - Universidad de Montemorelos", role: "" }
     ]
   },
   {
     type: "12:10 - 1:00 PM · Sala Europa",
-    title: "Diálogo y Encuentro",
+    title: '"IA sabe todo de mi pero sólo yo sé quien soy."',
     track: "Comunicación",
     color: "var(--color-accent)",
-    speakers: [
-      { name: "Nayo Escobar", role: "" }
-    ]
-  },
-  {
-    type: "12:10 - 1:00 PM · Sala Canadá A",
-    title: '"Bioética y Prueba Cuádruple en la Era de IA"',
-    track: "Rotarios",
-    color: "var(--color-lime)",
-    speakers: []
-  },
-  {
-    type: "12:10 - 1:00 PM · Sala Oceanía",
-    title: "Presentación",
-    track: "Salud",
-    color: "var(--color-cyan)",
     speakers: [
       { name: "Marisela Reyes", role: "" }
     ]
   },
   {
+    type: "12:10 - 1:00 PM · Sala Canadá A",
+    title: '"Bioética y prueba cuádruple en la era de la IA"',
+    track: "Rotarios",
+    color: "var(--color-lime)",
+    speakers: [
+      { name: "Bioética", role: "" }
+    ]
+  },
+  {
+    type: "12:10 - 1:00 PM · Sala Oceanía",
+    title: '"IA Consciente: tecnología para volver a ti" (Del exceso de información al acompañamiento que transforma)',
+    track: "Salud",
+    color: "var(--color-cyan)",
+    speakers: [
+      { name: "Pablo Merino", role: "" }
+    ]
+  },
+  {
     type: "12:10 - 1:00 PM · Sala Canadá B",
-    title: "Presentación Sindicato",
+    title: '"SINDICATO · Educación y sociedad" (Ética en la Educación)',
     track: "Educación",
     color: "var(--color-orange)",
     speakers: [
@@ -366,7 +368,7 @@ const agendaData = [
   // --- 1:00 PM ---
   {
     type: "1:00 PM · Parque Fundidora",
-    title: "Caminata por la Paz",
+    title: "Caminata por la Paz (todas las salas)",
     track: "Clausura",
     color: "var(--color-pink)",
     speakers: []
