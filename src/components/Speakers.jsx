@@ -969,7 +969,11 @@ const speakersData = [
     bio: "CEO y Fundador de la Fundación Dondé, líder en educación especial y desarrollo e integración familiar.",
     longBio: "Maestro, CEO y Fundador de la Fundación Dondé.",
     bullets: [
-      "CEO y Fundador de la Fundación Dondé, que tiene una red de escuelas con un método de educación especial donde una psicóloga ayuda a reintegrar la participación familiar en los estudios y buen desarrollo del niñ@, y pueda toda la comunidad participar en una evolución social económica."
+      "CEO y Fundador de la Fundación Dondé, que tiene una red de escuelas con un método de educación especial donde una psicóloga ayuda a reintegrar la participación familiar en los estudios y buen desarrollo del niñ@, y pueda toda la comunidad participar en una evolución social económica.",
+      "Economista egresado del ITAM, con dos maestrías cursadas en Harvard.",
+      "Es CEO y fundador de Banco Dondé, el único banco social de México, cuyas utilidades se destinan íntegramente a programas educativos para la niñez en situación vulnerable.",
+      "Bajo su liderazgo, la Fundación ha beneficiado directamente a más de 750 mil niñas, niños y jóvenes a través de proyectos educativos a lo largo de más de 100 años de historia.",
+      "Impulsa modelos educativos innovadores enfocados en fortalecer el aprendizaje y la autoestima de menores en situación de vulnerabilidad, a través de los Módulos Educativos Dondé."
     ],
     photoPosition: "right",
     gradient: "linear-gradient(135deg,#FF9900,#ef4444)",
