@@ -758,8 +758,8 @@ const speakersData = [
       "Certificaciones en programas internacionales como \"Heal your life\" (Louise L. Hay), Tetramap, Points of You, Thetahealing, Constelaciones Familiares y Reiki."
     ],
     photoPosition: "left",
-    imgScale: "0.85",
-    imgPosition: "center",
+    imgScale: "1.2",
+    imgPosition: "center 20%",
     imgOffsetY: "0px",
     collageScale: "1.0",
     collagePosition: "center",
