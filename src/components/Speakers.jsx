@@ -977,7 +977,9 @@ const speakersData = [
     gradient: "linear-gradient(135deg,#008FD3,#00C4CC)",
     trackClass: "track-a",
     trackName: "Espiritual",
-    talkIcon: "🎓"
+    talkIcon: "🎓",
+    collageScale: "1.2",
+    collagePosition: "center 20%"
   },
   {
     img: "/speakers/yayetsy-ordonez.jpg",
@@ -1001,7 +1003,9 @@ const speakersData = [
     gradient: "linear-gradient(135deg,#EC4899,#F59E0B)",
     trackClass: "track-a",
     trackName: "Salud",
-    talkIcon: "🏥"
+    talkIcon: "🏥",
+    collageScale: "1.2",
+    collagePosition: "center 20%"
   },
   {
     img: "/speakers/eduardo-donde.jpg",
