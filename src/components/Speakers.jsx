@@ -1009,13 +1009,41 @@ const speakersData = [
     img: "/speakers/gregorio-martinez.png",
     initials: "GM",
     name: "Gregorio Martínez",
-    company: "Presentador",
-    role: "Presentador Sala Europa",
-    bio: "Presentador oficial en el Encuentro Mundial de Valores 2026.",
-    longBio: "Presentador oficial en el Encuentro Mundial de Valores 2026.",
-    bullets: [],
+    company: "Televisa / N+ Monterrey",
+    role: "Periodista y presentador de televisión",
+    bio: "Periodista y presentador de televisión regiomontano, conocido popularmente como \"Goyo\" Martínez.",
+    longBio: "Periodista y presentador de televisión regiomontano, conocido popularmente como \"Goyo\" Martínez.",
+    bullets: [
+      "Conductor principal de Las Noticias, el noticiero de Televisa/N+ Monterrey, al aire desde 1990, con transmisión de lunes a viernes de 7 a 9 pm.",
+      "También conduce Tribuna TV, programa semanal de entrevistas, análisis y opinión.",
+      "Forma parte del equipo de conductores de Noticieros Televisa en la Ciudad de México, participando ocasionalmente en coberturas nacionales (por ejemplo, cubrió la canonización de Juan XXIII y Juan Pablo II en el Vaticano).",
+      "Estudió la licenciatura en Economía, formación que combinó con su vocación periodística desde joven.",
+      "Colabora además con Grupo Fórmula, Posta y Código Magenta.",
+      "Con más de tres décadas frente a cámaras, es una de las figuras más reconocidas del periodismo informativo en Monterrey y Nuevo León."
+    ],
     photoPosition: "left",
     gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)"
+  },
+  {
+    img: "/speakers/misael-pedraza.png",
+    initials: "MP",
+    name: "Misael Pedraza",
+    company: "Universidad de Montemorelos",
+    role: "Lic. en Teología Pastoral",
+    bio: "Licenciado en Teología Pastoral por la Universidad de Montemorelos, Maestría en Terapia y Relaciones Familiares, Diplomado en Capellanía.",
+    longBio: "Licenciado en Teología Pastoral por la Universidad de Montemorelos, Maestría en Terapia y Relaciones Familiares, Diplomado en Capellanía.",
+    bullets: [
+      "25 años de experiencia ministerial y labor pastoral, atendiendo diferentes problemáticas en la comunidad de 4 estados del Norte de México.",
+      "Líder Juvenil en el estado de Baja California Sur, organizando eventos para niños, adolescentes y jóvenes.",
+      "Líder Ministerial de 25 Pastores y familias en la Misión Regiomontana Adventista (Norte de Nuevo León y Coahuila).",
+      "Representante Actual de la comunidad adventista ante el Consejo Interreligioso del Estado de Nuevo León y secretario actual del mismo por el periodo 2025-2027.",
+      "Líder plantador de comunidades en México y 27 países en Interamérica para Bienestar integral de comunidades en diferentes contextos sociales."
+    ],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#10B981,#3B82F6)",
+    trackClass: "track-a",
+    trackName: "Espiritual",
+    talkIcon: "🕊️"
   }
 ];
 
