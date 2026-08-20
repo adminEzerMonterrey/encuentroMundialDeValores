@@ -11,36 +11,34 @@ const agendaData = [
   },
   {
     type: "08:30 · Inauguración",
-    title: "Inauguración EMV 2026",
+    title: "Humanismo y Valores en la Era de la Inteligencia Artificial",
     track: "Humanismo y Valores",
     color: "var(--color-pink)",
     speakers: [
-      { name: "Dra. María Cristina González Parás", role: "Directora EMV" },
+      { name: "Comité organizador EMV", role: "" }
+    ]
+  },
+  {
+    type: "09:30 · Reconocimiento",
+    title: 'Entrega de Reconocimiento Póstumo a la Familia de "David Noel Ramírez" • Bendición del Consejo Interreligioso',
+    track: "Humanismo y Valores",
+    color: "var(--color-pink)",
+    speakers: [
       { name: "Mons. Rogelio Cabrera López", role: "Arzobispo Metropolitano de Monterrey" }
     ]
   },
   {
-    type: "09:30 · Ceremonia",
-    title: "Bendición especial - Reconocimiento 'David Noel Ramírez'",
+    type: "09:40 · Reconocimiento",
+    title: "Reconocimiento al Abuelo Maya • Certificación por la Compasión — Consejo Charter for Compassion",
     track: "Humanismo y Valores",
     color: "var(--color-pink)",
     speakers: [
-      { name: "Mons. Rogelio Cabrera López", role: "Arzobispo Metropolitano de Monterrey" },
-      { name: "Dra. María Cristina González Parás", role: "Directora EMV" }
+      { name: "Abuelo Maya Antonio Oxté", role: "Sabio Maya" }
     ]
   },
   {
-    type: "09:40 · Ceremonia",
-    title: "Certificación por la Compasión - Consejo Charter for Compassion",
-    track: "Humanismo y Valores",
-    color: "var(--color-pink)",
-    speakers: [
-      { name: "Abuelo Maya", role: "Líder Espiritual Maya" }
-    ]
-  },
-  {
-    type: "10:00 · Conferencia Magistral",
-    title: '"Calma en tiempos de la IA: la ciencia del bienestar emocional"',
+    type: "10:00 · Conferencia",
+    title: '"Calma en tiempos de inteligencia artificial: la ciencia del bienestar emocional"',
     track: "Autonomía Humana",
     color: "var(--color-cyan)",
     speakers: [
@@ -48,7 +46,7 @@ const agendaData = [
     ]
   },
   {
-    type: "10:30 · Conferencia Magistral",
+    type: "10:30 · Conferencia",
     title: '"La mente en la era digital: dopamina, ansiedad y reconexión interior"',
     track: "Humanismo y Valores",
     color: "var(--color-pink)",
@@ -58,7 +56,7 @@ const agendaData = [
   },
   {
     type: "11:15 · Panel",
-    title: '"El Ser Humano como Guía, la IA como Soporte"',
+    title: '"El Ser Humano como Guía, la IA como Soporte" (Humind • Ingenium)',
     track: "Humanismo y Valores",
     color: "var(--color-pink)",
     speakers: [
@@ -68,12 +66,12 @@ const agendaData = [
     ]
   },
   {
-    type: "12:00 · Sesión Q&A",
-    title: "Q&A con David Eaton",
+    type: "12:00 · Q&R",
+    title: "Q&R - Preguntas y respuestas abiertas",
     track: "Autonomía Humana",
     color: "var(--color-cyan)",
     speakers: [
-      { name: "David Eaton", role: "Gobernador Electo · Distrito Rotario 4130" }
+      { name: "David Eaton entrevista a Marian Rojas Estapé", role: "" }
     ]
   },
   {
@@ -82,7 +80,7 @@ const agendaData = [
     track: "Autonomía Humana",
     color: "var(--color-cyan)",
     speakers: [
-      { name: "Caroline Sanchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" },
+      { name: "Caroline Sánchez Crozier", role: "CEO CSC Consulting · Presidenta IA LULAC" },
       { name: "Dr. Arumugam Murukiah", role: "Fundador · Broadline Technologies" },
       { name: "Dra. Melina Uncapher", role: "Neurocientífica · SETA-ED" }
     ]
@@ -95,13 +93,13 @@ const agendaData = [
     speakers: []
   },
   {
-    type: "14:30 · Panel",
-    title: '"Reinventando la Medicina en la Frontera de la IA"',
+    type: "14:30 · Conferencia",
+    title: '"Reinventando la medicina en la frontera de la IA: redefiniendo el papel del médico"',
     track: "Autonomía Humana",
     color: "var(--color-cyan)",
     speakers: [
       { name: "Dr. Bimal Desai", role: "VP & CHIO · Children's Hospital of Philadelphia" },
-      { name: "Dra. Alma Rosa Marroquín", role: "Secretaria de Salud · Nuevo León" }
+      { name: "Dra. Alma Rosa Marroquín Escamilla", role: "Secretaria de Salud · Nuevo León" }
     ]
   },
   {
@@ -115,7 +113,7 @@ const agendaData = [
   },
   {
     type: "15:30 · Panel",
-    title: '"Educación en la Era de la IA: Retos y Oportunidades"',
+    title: '"Percepción y Uso de la IA en Secundaria"',
     track: "Educación",
     color: "var(--color-orange)",
     speakers: [
@@ -124,21 +122,19 @@ const agendaData = [
     ]
   },
   {
-    type: "16:10 · Mesa de rectores",
-    title: '"Cómo Integrar IA en Educación Superior sin Perder el Factor Humano"',
+    type: "16:10 · Panel de Rectores",
+    title: '"¿Cómo integrar IA en la Educación Superior sin perder el Factor Humano?"',
     track: "Educación",
     color: "var(--color-orange)",
     speakers: [
       { name: "Juan Paura García", role: "Secretario de Educación · Nuevo León" },
-      { name: "Ángel Casán Marcos", role: "Rector · Universidad Regiomontana U-ERRE" },
       { name: "Mario Adrián Flores Castro", role: "Vicepresidente · Tecnológico de Monterrey, Campus Monterrey" },
-      { name: "Por definir", role: "Próximo Rector · UDEM" },
-      { name: "Por definir", role: "Rector · UANL" }
+      { name: "Ángel Casán Marcos", role: "Rector · Universidad Regiomontana U-ERRE" }
     ]
   },
   {
     type: "17:00 · Panel",
-    title: '"El Compromiso con la Verdad en la Era de la IA"',
+    title: '"El compromiso con la verdad en la era de la Inteligencia Artificial"',
     track: "Autonomía Humana",
     color: "var(--color-cyan)",
     speakers: [
@@ -152,15 +148,14 @@ const agendaData = [
     track: "Humanismo y Valores",
     color: "var(--color-pink)",
     speakers: [
-      { name: "Sebastian Yatra", role: "Músico y Facilitador" },
       { name: "Farid Dieck Assad", role: "Psicólogo · Influencer · 60M seguidores" },
       { name: "Mauricio Martínez", role: "Actor y cantante · Broadway" },
       { name: "Nayo Escobar", role: "Empresario, músico y creador de contenido" }
     ]
   },
   {
-    type: "18:30 · Clausura",
-    title: "Cierre musical - Sebastián Yatra",
+    type: "18:30 · Cierre musical",
+    title: "Cierre musical - Celebración de cierre Día 1",
     track: "Humanismo y Valores",
     color: "var(--color-pink)",
     speakers: [
