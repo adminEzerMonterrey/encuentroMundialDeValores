@@ -978,6 +978,8 @@ const speakersData = [
     trackClass: "track-a",
     trackName: "Espiritual",
     talkIcon: "🎓",
+    imgScale: "1.2",
+    imgPosition: "center 20%",
     collageScale: "1.2",
     collagePosition: "center 20%"
   },
@@ -1004,6 +1006,8 @@ const speakersData = [
     trackClass: "track-a",
     trackName: "Salud",
     talkIcon: "🏥",
+    imgScale: "1.2",
+    imgPosition: "center 20%",
     collageScale: "1.2",
     collagePosition: "center 20%"
   },
