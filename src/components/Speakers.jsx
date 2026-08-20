@@ -508,7 +508,7 @@ const speakersData = [
   {
     img: "/speakers/padre-david-jasso.png",
     imgPosition: "center 60%",
-    imgScale: "0.9",
+    imgScale: "1.05",
     imgOffsetY: "0px",
     initials: "DJ",
     name: "Padre David Jasso",
@@ -557,7 +557,7 @@ const speakersData = [
   },
   {
     img: "/speakers/abuelo-maya-antonio-oxte.jpg",
-    imgScale: "0.9",
+    imgScale: "1.05",
     imgOffsetY: "0px",
     imgPosition: "center",
     collageScale: "1.08",
