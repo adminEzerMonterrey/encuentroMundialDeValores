@@ -953,8 +953,55 @@ const speakersData = [
     gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)",
     trackClass: "track-a",
     trackName: "Espiritualidad y Desarrollo Humano",
-    talkIcon: "🧘‍♂️",
+    talkIcon: "🧘\u200d♂️",
     talkName: "Espiritualidad y Desarrollo Humano"
+  },
+  {
+    img: "/speakers/flor-ontiveros.png",
+    initials: "FO",
+    name: "Flor Ontiveros",
+    company: "Universidad de Montemorelos",
+    role: "Directora del CIIDEC",
+    bio: "Doctora en Administración de Negocios, catedrática, investigadora, directiva académica, consultora empresarial y editora científica, con más de 25 años de experiencia.",
+    longBio: "Doctora en Administración de Negocios, catedrática, investigadora, directiva académica, consultora empresarial y editora científica, con más de 25 años de experiencia en educación superior.",
+    bullets: [
+      "Directora del Centro de Investigación e Innovación para el Desarrollo Empresarial y Corporativo (CIIDEC).",
+      "También se desempeña como Editora en Jefe de la Revista de Estudios Empresariales y Jurídicos de la Universidad de Montemorelos.",
+      "Su docencia e Investigación abarcan gestión del talento humano, innovación, transformación digital, Inteligencia artificial aplicada a la educación y los negocios, emprendimiento, sostenibilidad y bienestar organizacional.",
+      "Ha dirigido proyectos de investigación y tesis de distintos niveles académicos, con un enfoque en la aplicación del conocimiento para resolver problemas reales de organizaciones y comunidades.",
+      "Su acercamiento a la IA combina interés por la innovación tecnológica con una convicción ética: la tecnología debe estar al servicio del ser humano, no sustituirlo.",
+      "Cuenta con experiencia internacional: estancias académicas en Colombia, ponencias magistrales en Perú y Costa Rica, participación en Enactus Global Research (Bangkok, Tailandia), y colaboración con investigadores de Norte América, América Latina y el Caribe.",
+      "Concibe la educación, la investigación y la tecnología como medios para formar personas capaces de transformar positivamente su entorno, preguntándose siempre para qué innovamos y qué valores deben permanecer frente al cambio tecnológico."
+    ],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#008FD3,#00C4CC)",
+    trackClass: "track-a",
+    trackName: "Espiritual",
+    talkIcon: "🎓"
+  },
+  {
+    img: "/speakers/yayetsy-ordonez.jpg",
+    initials: "YO",
+    name: "Yayetsy Ordoñez",
+    company: "Facultad de Medicina UANL",
+    role: "Doctora en Bioética y Médica Familiar",
+    bio: "Doctora Honoris Causa, Doctorada en Bioética, Máster en Ciencias de la Juventud, Subespecialista en Trabajo con Familias y Médica Familiar.",
+    longBio: "Doctora Honoris Causa, Doctorada en Bioética, Máster en Ciencias de la Juventud, Subespecialista en Trabajo con Familias, Especialista en Medicina Familiar y Médica Cirujana y Partera.",
+    bullets: [
+      "Profesora del Departamento de Medicina Familiar de la Facultad de Medicina de la Universidad Autónoma de Nuevo León (UANL) e investigadora del Sistema Nacional de Investigadores e Investigadoras (SNII) por la SECIHT.",
+      "Su formación incluye Maestría en Ciencias de la Salud de la Adolescencia y Juventud por la Universidad de Guadalajara, así como Alta Especialidad en Trabajo con Familias en el Hospital Universitario de la UANL.",
+      "Es profesora del posgrado de Medicina Familiar y de Bioética universitaria, además de brindar atención médico-familiar.",
+      "Investigadora acreedora de premios nacionales y reconocimiento internacional por su trabajo sobre familias y adolescencia.",
+      "Es divulgadora científica y promotora de la Bioética a través de su blog Bioeticlass.",
+      "Actualmente es miembro del Colegio de Peritos del Norte y Perito Oficial del Poder Judicial del Estado de Nuevo León, y ofrece consultoría privada en Bioética y Medicina.",
+      "Entre sus líneas de Investigación destacan la historia clínica médico-familiar, la evaluación pericial del daño moral, y la aplicación de Inteligencia artificial en la práctica médica.",
+      "Ha participado como ponente en foros como el Simposio Estatal de Bioética de CONBIOÉTICA y el Congreso Internacional de Bioética del Instituto de Investigaciones en Bioética."
+    ],
+    photoPosition: "right",
+    gradient: "linear-gradient(135deg,#EC4899,#F59E0B)",
+    trackClass: "track-a",
+    trackName: "Salud",
+    talkIcon: "🏥"
   },
   {
     img: "/speakers/eduardo-donde.jpg",
