@@ -798,7 +798,7 @@ const speakersData = [
     talkName: "Inteligencia Artificial vs. Inteligencia Natural: Retos de la Educación y la Sociedad"
   },
   {
-    img: "/speakers/susana-cabrera.png",
+    img: "/speakers/susana-cabrera.jpg",
     initials: "SC",
     name: "Susana Cabrera",
     company: "Universidad Kirei",
