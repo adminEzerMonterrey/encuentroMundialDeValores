@@ -30,7 +30,7 @@ export default function Sponsors() {
               grid-template-columns: repeat(5, 1fr);
             }
             .sponsors-row-2 {
-              grid-template-columns: repeat(6, 1fr);
+              grid-template-columns: repeat(7, 1fr);
             }
             .sponsors-row-3 {
               grid-template-columns: repeat(6, 1fr);
@@ -114,7 +114,7 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 2 - Nuevo León OVC, Oficina de Convenciones, Bimbo, Acero, Xignux, Berel */}
+            {/* Fila 2 - Nuevo León OVC, Oficina de Convenciones, Bimbo, Acero, Xignux, Berel, Marinela */}
             <div className="sponsors-row sponsors-row-2 reveal-up">
               {[
                 { src: "nuevo-leon-ovc.png", alt: "Nuevo León OVC", style: { transform: 'scale(1.8)' } },
@@ -123,6 +123,7 @@ export default function Sponsors() {
                 { src: "logo-fd-estandar.png", alt: "Fundación Deacero" },
                 { src: "XIGNUX.png", alt: "Xignux" },
                 { src: "BEREL.png", alt: "Berel" },
+                { src: "marinela.png", alt: "Marinela", style: { transform: 'scale(1.15)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
