@@ -106,7 +106,7 @@ export default function Sponsors() {
                 { src: "secretaria-de-educacion-nl.png", alt: "Secretaría de Educación NL", style: { transform: 'scale(1.20)' } },
                 { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "Arca Continental" },
                 { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión", style: { transform: 'scale(1.20)' } },
-                { src: "san-pedro-garza-garcia.png", alt: "San Pedro Garza García" },
+                { src: "san-pedro-garza-garcia.png", alt: "San Pedro Garza García", style: { transform: 'scale(1.25)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
@@ -118,7 +118,7 @@ export default function Sponsors() {
             <div className="sponsors-row sponsors-row-2 reveal-up">
               {[
                 { src: "nuevo-leon-ovc.png", alt: "Nuevo León OVC", style: { transform: 'scale(1.8)' } },
-                { src: "oficina-convenciones-mty.png", alt: "Oficina de Convenciones y Visitantes de Monterrey" },
+                { src: "oficina-convenciones-mty.png", alt: "Oficina de Convenciones y Visitantes de Monterrey", style: { transform: 'scale(1.20)' } },
                 { src: "BIMBO.jpg", alt: "Bimbo" },
                 { src: "logo-fd-estandar.png", alt: "Fundación Deacero" },
                 { src: "XIGNUX.png", alt: "Xignux" },
@@ -134,11 +134,11 @@ export default function Sponsors() {
             {/* Fila 3 - Rotary, Tec, UDEM, U-ERRE, UANL, Montemorelos */}
             <div className="sponsors-row sponsors-row-3 reveal-up">
               {[
-                { src: "Rotarios.jpeg", alt: "Rotary" },
-                { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
+                { src: "Rotarios.jpeg", alt: "Rotary", style: { transform: 'scale(1.20)' } },
+                { src: "ITESM.png", alt: "Tecnológico de Monterrey", style: { transform: 'scale(1.20)' } },
                 { src: "UDEM.jpg", alt: "UDEM" },
-                { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
-                { src: "UANL.png", alt: "UANL" },
+                { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE", style: { transform: 'scale(1.35)' } },
+                { src: "UANL.png", alt: "UANL", style: { transform: 'scale(1.15)' } },
                 { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos", style: { transform: 'scale(1.20)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
@@ -147,16 +147,16 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 4 - Riisa, Value, Printel, Delta Solutions, Nouvell, Treviño Elizondo */}
+            {/* Fila 4 - Riisa, Value, Printel, Delta Solutions, Nouvell, EMEPE, Treviño Elizondo */}
             <div className="sponsors-row sponsors-row-4 reveal-up">
               {[
-                { src: "riisa.png", alt: "Fundación Riisa" },
+                { src: "riisa.png", alt: "Fundación Riisa", style: { transform: 'scale(1.20)' } },
                 { src: "value.png", alt: "Value Casa de Bolsa", style: { transform: 'scale(1.2)' } },
                 { src: "printel.png", alt: "Printel" },
                 { src: "delta-solutions.png", alt: "Delta Solutions", style: { transform: 'scale(1.75)' } },
-                { src: "nouvell.jpg", alt: "Nouvell" },
+                { src: "nouvell.jpg", alt: "Nouvell", style: { transform: 'scale(1.20)' } },
                 { src: "emepe.png", alt: "EMEPE", style: { transform: 'scale(1.15)' } },
-                { src: "trevino-elizondo.png", alt: "Asociación de Beneficencia Privada Treviño Elizondo" },
+                { src: "trevino-elizondo.png", alt: "Asociación de Beneficencia Privada Treviño Elizondo", style: { transform: 'scale(1.20)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
