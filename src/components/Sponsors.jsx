@@ -30,8 +30,8 @@ export default function Sponsors() {
               grid-template-columns: repeat(5, 1fr);
             }
             .sponsors-row-2 {
-              grid-template-columns: repeat(3, 1fr);
-              max-width: 60%;
+              grid-template-columns: repeat(4, 1fr);
+              max-width: 80%;
               margin: 0 auto;
             }
             .sponsors-row-3 {
@@ -112,12 +112,13 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 2 - Bimbo, Xignux, Rotary */}
+            {/* Fila 2 - Bimbo, Xignux, Rotary, Riisa */}
             <div className="sponsors-row sponsors-row-2 reveal-up">
               {[
                 { src: "BIMBO.jpg", alt: "Bimbo" },
                 { src: "XIGNUX.png", alt: "Xignux" },
                 { src: "Rotarios.jpeg", alt: "Rotary" },
+                { src: "riisa.png", alt: "Fundación Riisa" },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" />
