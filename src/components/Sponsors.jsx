@@ -105,11 +105,11 @@ export default function Sponsors() {
                 { src: "Monterrey.png", alt: "Gobierno de Monterrey" },
                 { src: "secretaria-de-educacion-nl.png", alt: "Secretaría de Educación NL" },
                 { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "Arca Continental" },
-                { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión" },
+                { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión", style: { transform: 'scale(1.45)' } },
                 { src: "san-pedro-garza-garcia.png", alt: "San Pedro Garza García" },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" />
+                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
@@ -117,7 +117,7 @@ export default function Sponsors() {
             {/* Fila 2 - Nuevo León OVC, Oficina de Convenciones, Bimbo, Acero, Xignux, Berel */}
             <div className="sponsors-row sponsors-row-2 reveal-up">
               {[
-                { src: "nuevo-leon-ovc.png", alt: "Nuevo León OVC", style: { transform: 'scale(1.1)' } },
+                { src: "nuevo-leon-ovc.png", alt: "Nuevo León OVC", style: { transform: 'scale(1.8)' } },
                 { src: "oficina-convenciones-mty.png", alt: "Oficina de Convenciones y Visitantes de Monterrey" },
                 { src: "BIMBO.jpg", alt: "Bimbo" },
                 { src: "logo-fd-estandar.png", alt: "Fundación Deacero" },
@@ -137,10 +137,10 @@ export default function Sponsors() {
                 { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
                 { src: "UDEM.jpg", alt: "UDEM" },
                 { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
-                { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos" },
+                { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos", style: { transform: 'scale(1.45)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" />
+                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
@@ -151,7 +151,7 @@ export default function Sponsors() {
                 { src: "riisa.png", alt: "Fundación Riisa" },
                 { src: "value.png", alt: "Value Casa de Bolsa", style: { transform: 'scale(1.2)' } },
                 { src: "printel.png", alt: "Printel" },
-                { src: "delta-solutions.png", alt: "Delta Solutions", style: { transform: 'scale(1.65)' } },
+                { src: "delta-solutions.png", alt: "Delta Solutions", style: { transform: 'scale(1.75)' } },
                 { src: "nouvell.jpg", alt: "Nouvell" },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
@@ -165,7 +165,7 @@ export default function Sponsors() {
               {[
                 { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
                 { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", style: { transform: 'scale(2.20)' } },
-                { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
+                { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso", style: { transform: 'scale(1.45)' } },
                 { src: "cfc-logo-horizontal-naranja.jpeg", alt: "Charter for Compassion" },
                 { src: "pasteles-de-laura.png", alt: "Pasteles de Laura", style: { transform: 'scale(1.65)' } },
               ].map((sponsor, idx) => (
