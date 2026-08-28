@@ -30,12 +30,12 @@ export default function Sponsors() {
               grid-template-columns: repeat(5, 1fr);
             }
             .sponsors-row-2 {
+              grid-template-columns: repeat(5, 1fr);
+            }
+            .sponsors-row-3 {
               grid-template-columns: repeat(4, 1fr);
               max-width: 80%;
               margin: 0 auto;
-            }
-            .sponsors-row-3 {
-              grid-template-columns: repeat(5, 1fr);
             }
             .sponsors-row-4 {
               grid-template-columns: repeat(5, 1fr);
@@ -74,8 +74,8 @@ export default function Sponsors() {
             }
             @media (max-width: 1024px) {
               .sponsors-row-1 { grid-template-columns: repeat(3, 1fr); }
-              .sponsors-row-2 { grid-template-columns: repeat(3, 1fr); max-width: 100%; }
-              .sponsors-row-3 { grid-template-columns: repeat(3, 1fr); }
+              .sponsors-row-2 { grid-template-columns: repeat(3, 1fr); }
+              .sponsors-row-3 { grid-template-columns: repeat(3, 1fr); max-width: 100%; }
               .sponsors-row-4 { grid-template-columns: repeat(3, 1fr); }
               .sponsors-row-5 { grid-template-columns: repeat(3, 1fr); max-width: 100%; }
             }
@@ -118,13 +118,14 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 2 - Tec, UDEM, U-ERRE, Montemorelos */}
+            {/* Fila 2 - Bimbo, Acero, Rotary, Xignux, Berel */}
             <div className="sponsors-row sponsors-row-2 reveal-up">
               {[
-                { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
-                { src: "UDEM.jpg", alt: "UDEM" },
-                { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
-                { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos" },
+                { src: "BIMBO.jpg", alt: "Bimbo" },
+                { src: "logo-fd-estandar.png", alt: "Fundación Deacero" },
+                { src: "Rotarios.jpeg", alt: "Rotary" },
+                { src: "XIGNUX.png", alt: "Xignux" },
+                { src: "BEREL.png", alt: "Berel" },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" />
@@ -132,14 +133,13 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 3 - Bimbo, Acero, Rotary, Xignux, Berel */}
+            {/* Fila 3 - Tec, UDEM, U-ERRE, Montemorelos */}
             <div className="sponsors-row sponsors-row-3 reveal-up">
               {[
-                { src: "BIMBO.jpg", alt: "Bimbo" },
-                { src: "logo-fd-estandar.png", alt: "Fundación Deacero" },
-                { src: "Rotarios.jpeg", alt: "Rotary" },
-                { src: "XIGNUX.png", alt: "Xignux" },
-                { src: "BEREL.png", alt: "Berel" },
+                { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
+                { src: "UDEM.jpg", alt: "UDEM" },
+                { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
+                { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos" },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" />
