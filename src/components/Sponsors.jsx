@@ -33,7 +33,7 @@ export default function Sponsors() {
               grid-template-columns: repeat(6, 1fr);
             }
             .sponsors-row-3 {
-              grid-template-columns: repeat(5, 1fr);
+              grid-template-columns: repeat(6, 1fr);
             }
             .sponsors-row-4 {
               grid-template-columns: repeat(5, 1fr);
@@ -130,13 +130,14 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 3 - Rotary, Tec, UDEM, U-ERRE, Montemorelos */}
+            {/* Fila 3 - Rotary, Tec, UDEM, U-ERRE, UANL, Montemorelos */}
             <div className="sponsors-row sponsors-row-3 reveal-up">
               {[
                 { src: "Rotarios.jpeg", alt: "Rotary" },
                 { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
                 { src: "UDEM.jpg", alt: "UDEM" },
                 { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
+                { src: "UANL.png", alt: "UANL" },
                 { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos", style: { transform: 'scale(1.20)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
