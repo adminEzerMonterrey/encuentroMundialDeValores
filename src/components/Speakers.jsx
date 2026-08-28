@@ -1099,6 +1099,27 @@ const speakersData = [
     trackClass: "track-a",
     trackName: "Espiritual",
     talkIcon: "🕊️"
+  },
+  {
+    img: "/speakers/enrique-bay.png",
+    initials: "EB",
+    name: "Enrique Bay",
+    company: "Fresh Consulting",
+    role: "Asesor en Inteligencia Artificial y Conductor de Podcast",
+    bio: "Ingeniero por el Tec de Monterrey y MBA por el MIT, es asesor en inteligencia artificial y conductor del podcast Humanos (IA, Capital y Poder).",
+    longBio: "Ingeniero por el Tec de Monterrey y MBA por el MIT, es asesor en inteligencia artificial y conductor del podcast Humanos (IA, Capital y Poder). Su trabajo parte de una idea simple: la IA es una herramienta poderosa, pero las preguntas que de verdad importan siguen siendo humanas.",
+    bullets: [
+      "Asesor en inteligencia artificial y conductor del podcast Humanos (IA, Capital y Poder)",
+      "Asesora a empresas y equipos en la adopción de IA con criterio, a través de Fresh Consulting",
+      "Escribe sobre el futuro que ya está ocurriendo en enriquebay.com",
+      "Su trabajo parte de una idea simple: la IA es una herramienta poderosa, pero las preguntas que de verdad importan siguen siendo humanas"
+    ],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)",
+    trackClass: "track-a",
+    trackName: "Tecnología",
+    talkIcon: "🎙️",
+    talkName: "Humanos (IA, Capital y Poder)"
   }
 ];
 
