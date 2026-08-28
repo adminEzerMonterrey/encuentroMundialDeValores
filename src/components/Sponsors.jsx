@@ -39,9 +39,7 @@ export default function Sponsors() {
               grid-template-columns: repeat(5, 1fr);
             }
             .sponsors-row-5 {
-              grid-template-columns: repeat(4, 1fr);
-              max-width: 80%;
-              margin: 0 auto;
+              grid-template-columns: repeat(5, 1fr);
             }
             .sponsor-card {
               background: #ffffff;
@@ -66,7 +64,7 @@ export default function Sponsors() {
               max-width: 100%;
               object-fit: contain;
             }
-            .sponsors-row-4 .sponsor-card img {
+            .sponsors-row-5 .sponsor-card img {
               height: 80px;
               transform: scale(1.15);
             }
@@ -75,7 +73,7 @@ export default function Sponsors() {
               .sponsors-row-2 { grid-template-columns: repeat(3, 1fr); max-width: 100%; }
               .sponsors-row-3 { grid-template-columns: repeat(3, 1fr); }
               .sponsors-row-4 { grid-template-columns: repeat(3, 1fr); }
-              .sponsors-row-5 { grid-template-columns: repeat(3, 1fr); max-width: 100%; }
+              .sponsors-row-5 { grid-template-columns: repeat(3, 1fr); }
             }
             @media (max-width: 640px) {
               .sponsors-row-1, .sponsors-row-2, .sponsors-row-3, .sponsors-row-4, .sponsors-row-5 {
@@ -88,7 +86,7 @@ export default function Sponsors() {
               .sponsor-card img {
                 height: 55px;
               }
-              .sponsors-row-4 .sponsor-card img {
+              .sponsors-row-5 .sponsor-card img {
                 height: 65px;
                 transform: scale(1.1);
               }
@@ -147,14 +145,14 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 4 - Chapa González, Montemayor, Consejo, CFC, Pasteles */}
+            {/* Fila 4 - Riisa, Value, Printel, Delta Solutions, Nouvell */}
             <div className="sponsors-row sponsors-row-4 reveal-up">
               {[
-                { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
-                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", style: { transform: 'scale(2.20)' } },
-                { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
-                { src: "cfc-logo-horizontal-naranja.jpeg", alt: "Charter for Compassion" },
-                { src: "pasteles-de-laura.png", alt: "Pasteles de Laura", style: { transform: 'scale(1.65)' } },
+                { src: "riisa.png", alt: "Fundación Riisa" },
+                { src: "value.png", alt: "Value Casa de Bolsa", style: { transform: 'scale(1.2)' } },
+                { src: "printel.png", alt: "Printel" },
+                { src: "delta-solutions.png", alt: "Delta Solutions", style: { transform: 'scale(1.65)' } },
+                { src: "nouvell.jpg", alt: "Nouvell" },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
@@ -162,13 +160,14 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 5 - Riisa, Printel, Delta Solutions, Nouvell */}
+            {/* Fila 5 - Chapa González, Montemayor, Consejo, CFC, Pasteles */}
             <div className="sponsors-row sponsors-row-5 reveal-up">
               {[
-                { src: "riisa.png", alt: "Fundación Riisa" },
-                { src: "printel.png", alt: "Printel" },
-                { src: "delta-solutions.png", alt: "Delta Solutions", style: { transform: 'scale(1.65)' } },
-                { src: "nouvell.jpg", alt: "Nouvell" },
+                { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
+                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", style: { transform: 'scale(2.20)' } },
+                { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
+                { src: "cfc-logo-horizontal-naranja.jpeg", alt: "Charter for Compassion" },
+                { src: "pasteles-de-laura.png", alt: "Pasteles de Laura", style: { transform: 'scale(1.65)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
