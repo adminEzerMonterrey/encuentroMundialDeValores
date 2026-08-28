@@ -30,9 +30,7 @@ export default function Sponsors() {
               grid-template-columns: repeat(5, 1fr);
             }
             .sponsors-row-2 {
-              grid-template-columns: repeat(4, 1fr);
-              max-width: 80%;
-              margin: 0 auto;
+              grid-template-columns: repeat(6, 1fr);
             }
             .sponsors-row-3 {
               grid-template-columns: repeat(5, 1fr);
@@ -118,16 +116,18 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 2 - Bimbo, Acero, Xignux, Berel */}
+            {/* Fila 2 - Bimbo, Acero, Xignux, Berel, Nuevo León OVC, Oficina de Convenciones */}
             <div className="sponsors-row sponsors-row-2 reveal-up">
               {[
                 { src: "BIMBO.jpg", alt: "Bimbo" },
                 { src: "logo-fd-estandar.png", alt: "Fundación Deacero" },
                 { src: "XIGNUX.png", alt: "Xignux" },
                 { src: "BEREL.png", alt: "Berel" },
+                { src: "nuevo-leon-ovc.png", alt: "Nuevo León OVC", style: { transform: 'scale(1.1)' } },
+                { src: "oficina-convenciones-mty.png", alt: "Oficina de Convenciones y Visitantes de Monterrey" },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" />
+                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
