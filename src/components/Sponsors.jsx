@@ -36,7 +36,7 @@ export default function Sponsors() {
               grid-template-columns: repeat(6, 1fr);
             }
             .sponsors-row-4 {
-              grid-template-columns: repeat(5, 1fr);
+              grid-template-columns: repeat(6, 1fr);
             }
             .sponsors-row-5 {
               grid-template-columns: repeat(5, 1fr);
@@ -146,7 +146,7 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 4 - Riisa, Value, Printel, Delta Solutions, Nouvell */}
+            {/* Fila 4 - Riisa, Value, Printel, Delta Solutions, Nouvell, Treviño Elizondo */}
             <div className="sponsors-row sponsors-row-4 reveal-up">
               {[
                 { src: "riisa.png", alt: "Fundación Riisa" },
@@ -154,6 +154,7 @@ export default function Sponsors() {
                 { src: "printel.png", alt: "Printel" },
                 { src: "delta-solutions.png", alt: "Delta Solutions", style: { transform: 'scale(1.75)' } },
                 { src: "nouvell.jpg", alt: "Nouvell" },
+                { src: "trevino-elizondo.png", alt: "Asociación de Beneficencia Privada Treviño Elizondo" },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
