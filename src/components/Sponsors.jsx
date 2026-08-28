@@ -39,7 +39,7 @@ export default function Sponsors() {
               grid-template-columns: repeat(6, 1fr);
             }
             .sponsors-row-5 {
-              grid-template-columns: repeat(5, 1fr);
+              grid-template-columns: repeat(6, 1fr);
             }
             .sponsor-card {
               background: #ffffff;
@@ -162,7 +162,7 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 5 - Chapa González, Montemayor, Consejo, CFC, Pasteles */}
+            {/* Fila 5 - Chapa González, Montemayor, Consejo, CFC, Pasteles, Museo de Historia */}
             <div className="sponsors-row sponsors-row-5 reveal-up">
               {[
                 { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
@@ -170,6 +170,7 @@ export default function Sponsors() {
                 { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso", style: { transform: 'scale(1.45)' } },
                 { src: "cfc-logo-horizontal-naranja.jpeg", alt: "Charter for Compassion" },
                 { src: "pasteles-de-laura.png", alt: "Pasteles de Laura", style: { transform: 'scale(1.65)' } },
+                { src: "museo-historia.png", alt: "Museo de Historia Mexicana" },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
