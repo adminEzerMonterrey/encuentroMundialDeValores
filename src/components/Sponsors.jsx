@@ -30,15 +30,15 @@ export default function Sponsors() {
               grid-template-columns: repeat(5, 1fr);
             }
             .sponsors-row-2 {
-              grid-template-columns: repeat(4, 1fr);
-              max-width: 80%;
+              grid-template-columns: repeat(3, 1fr);
+              max-width: 60%;
               margin: 0 auto;
             }
             .sponsors-row-3 {
               grid-template-columns: repeat(6, 1fr);
             }
             .sponsors-row-4 {
-              grid-template-columns: repeat(5, 1fr);
+              grid-template-columns: repeat(6, 1fr);
             }
             .sponsor-card {
               background: #ffffff;
@@ -112,13 +112,12 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 2 - Bimbo, Xignux, Rotary, Riisa */}
+            {/* Fila 2 - Bimbo, Xignux, Rotary */}
             <div className="sponsors-row sponsors-row-2 reveal-up">
               {[
                 { src: "BIMBO.jpg", alt: "Bimbo" },
                 { src: "XIGNUX.png", alt: "Xignux" },
                 { src: "Rotarios.jpeg", alt: "Rotary" },
-                { src: "riisa.png", alt: "Fundación Riisa" },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" />
@@ -142,9 +141,10 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 4 - Chapa González, Montemayor, Consejo, CFC, Pasteles */}
+            {/* Fila 4 - Riisa, Chapa González, Montemayor, Consejo, CFC, Pasteles */}
             <div className="sponsors-row sponsors-row-4 reveal-up">
               {[
+                { src: "riisa.png", alt: "Fundación Riisa" },
                 { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
                 { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", style: { transform: 'scale(1.65)' } },
                 { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso" },
