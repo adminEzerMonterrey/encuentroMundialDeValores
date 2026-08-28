@@ -114,15 +114,15 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 2 - Bimbo, Acero, Xignux, Berel, Nuevo León OVC, Oficina de Convenciones */}
+            {/* Fila 2 - Nuevo León OVC, Oficina de Convenciones, Bimbo, Acero, Xignux, Berel */}
             <div className="sponsors-row sponsors-row-2 reveal-up">
               {[
+                { src: "nuevo-leon-ovc.png", alt: "Nuevo León OVC", style: { transform: 'scale(1.1)' } },
+                { src: "oficina-convenciones-mty.png", alt: "Oficina de Convenciones y Visitantes de Monterrey" },
                 { src: "BIMBO.jpg", alt: "Bimbo" },
                 { src: "logo-fd-estandar.png", alt: "Fundación Deacero" },
                 { src: "XIGNUX.png", alt: "Xignux" },
                 { src: "BEREL.png", alt: "Berel" },
-                { src: "nuevo-leon-ovc.png", alt: "Nuevo León OVC", style: { transform: 'scale(1.1)' } },
-                { src: "oficina-convenciones-mty.png", alt: "Oficina de Convenciones y Visitantes de Monterrey" },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
