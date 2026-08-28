@@ -105,7 +105,7 @@ export default function Sponsors() {
                 { src: "Monterrey.png", alt: "Gobierno de Monterrey" },
                 { src: "secretaria-de-educacion-nl.png", alt: "Secretaría de Educación NL" },
                 { src: "ac-logo-100-aniversaario_sin-slogan_color.png", alt: "Arca Continental" },
-                { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión", style: { transform: 'scale(1.45)' } },
+                { src: "1-secretaria-de-igualdad-e-inclusion.png", alt: "Secretaría de Igualdad e Inclusión", style: { transform: 'scale(1.20)' } },
                 { src: "san-pedro-garza-garcia.png", alt: "San Pedro Garza García" },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
@@ -137,7 +137,7 @@ export default function Sponsors() {
                 { src: "ITESM.png", alt: "Tecnológico de Monterrey" },
                 { src: "UDEM.jpg", alt: "UDEM" },
                 { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
-                { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos", style: { transform: 'scale(1.45)' } },
+                { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos", style: { transform: 'scale(1.20)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
