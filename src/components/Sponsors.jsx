@@ -36,10 +36,10 @@ export default function Sponsors() {
               grid-template-columns: repeat(6, 1fr);
             }
             .sponsors-row-4 {
-              grid-template-columns: repeat(7, 1fr);
+              grid-template-columns: repeat(6, 1fr);
             }
             .sponsors-row-5 {
-              grid-template-columns: repeat(6, 1fr);
+              grid-template-columns: repeat(7, 1fr);
             }
             .sponsor-card {
               background: #ffffff;
@@ -64,10 +64,7 @@ export default function Sponsors() {
               max-width: 100%;
               object-fit: contain;
             }
-            .sponsors-row-5 .sponsor-card img {
-              height: 80px;
-              transform: scale(1.15);
-            }
+
             @media (max-width: 1024px) {
               .sponsors-row-1 { grid-template-columns: repeat(3, 1fr); }
               .sponsors-row-2 { grid-template-columns: repeat(3, 1fr); max-width: 100%; }
@@ -86,10 +83,7 @@ export default function Sponsors() {
               .sponsor-card img {
                 height: 55px;
               }
-              .sponsors-row-5 .sponsor-card img {
-                height: 65px;
-                transform: scale(1.1);
-              }
+
             }
             @media (max-width: 400px) {
               .sponsors-row-1, .sponsors-row-2, .sponsors-row-3, .sponsors-row-4, .sponsors-row-5 {
@@ -123,7 +117,7 @@ export default function Sponsors() {
                 { src: "logo-fd-estandar.png", alt: "Fundación Deacero" },
                 { src: "XIGNUX.png", alt: "Xignux", style: { transform: 'scale(1.30)' } },
                 { src: "BEREL.png", alt: "Berel" },
-                { src: "marinela.png", alt: "Marinela", style: { transform: 'scale(1.35)' } },
+                { src: "marinela.png", alt: "Marinela", style: { transform: 'scale(1.50)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
@@ -147,16 +141,15 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 4 - Riisa, Value, Printel, Delta Solutions, Nouvell, EMEPE, Treviño Elizondo */}
+            {/* Fila 4 - Riisa, Value, EMEPE, Treviño Elizondo, Chapa González, Montemayor */}
             <div className="sponsors-row sponsors-row-4 reveal-up">
               {[
                 { src: "riisa.png", alt: "Fundación Riisa", style: { transform: 'scale(1.20)' } },
                 { src: "value.png", alt: "Value Casa de Bolsa", style: { transform: 'scale(1.2)' } },
-                { src: "printel.png", alt: "Printel" },
-                { src: "delta-solutions.png", alt: "Delta Solutions", style: { transform: 'scale(1.75)' } },
-                { src: "nouvell.jpg", alt: "Nouvell", style: { transform: 'scale(1.20)' } },
-                { src: "emepe.png", alt: "EMEPE", style: { transform: 'scale(1.30)' } },
+                { src: "emepe.png", alt: "EMEPE", style: { transform: 'scale(1.45)' } },
                 { src: "trevino-elizondo.png", alt: "Asociación de Beneficencia Privada Treviño Elizondo", style: { transform: 'scale(1.20)' } },
+                { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González", style: { transform: 'scale(1.15)' } },
+                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", style: { transform: 'scale(2.20)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
@@ -164,13 +157,14 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 5 - Chapa González, Montemayor, Consejo, CFC, Pasteles, Museo de Historia */}
+            {/* Fila 5 - Printel, Delta Solutions, Nouvell, Consejo, CFC, Pasteles, Museo de Historia */}
             <div className="sponsors-row sponsors-row-5 reveal-up">
               {[
-                { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González" },
-                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", style: { transform: 'scale(2.20)' } },
+                { src: "printel.png", alt: "Printel" },
+                { src: "delta-solutions.png", alt: "Delta Solutions", style: { transform: 'scale(1.75)' } },
+                { src: "nouvell.jpg", alt: "Nouvell", style: { transform: 'scale(1.20)' } },
                 { src: "consejo-interreligioso.png", alt: "Consejo Interreligioso", style: { transform: 'scale(1.45)' } },
-                { src: "cfc-logo-horizontal-naranja.jpeg", alt: "Charter for Compassion" },
+                { src: "cfc-logo-horizontal-naranja.jpeg", alt: "Charter for Compassion", style: { transform: 'scale(1.10)' } },
                 { src: "pasteles-de-laura.png", alt: "Pasteles de Laura", style: { transform: 'scale(1.65)' } },
                 { src: "museo-historia.png", alt: "Museo de Historia Mexicana", style: { transform: 'scale(1.40)' } },
               ].map((sponsor, idx) => (
