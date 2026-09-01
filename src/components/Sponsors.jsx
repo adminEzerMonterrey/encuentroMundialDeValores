@@ -146,7 +146,7 @@ export default function Sponsors() {
               {[
                 { src: "riisa.png", alt: "Fundación Riisa", style: { transform: 'scale(1.20)' } },
                 { src: "value.png", alt: "Value Casa de Bolsa", style: { transform: 'scale(1.2)' } },
-                { src: "emepe.png", alt: "EMEPE", style: { transform: 'scale(1.45)' } },
+                { src: "emepe.png", alt: "EMEPE", style: { transform: 'scale(1.85)' } },
                 { src: "trevino-elizondo.png", alt: "Asociación de Beneficencia Privada Treviño Elizondo", style: { transform: 'scale(1.20)' } },
                 { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González", style: { transform: 'scale(1.15)' } },
                 { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", style: { transform: 'scale(2.20)' } },
