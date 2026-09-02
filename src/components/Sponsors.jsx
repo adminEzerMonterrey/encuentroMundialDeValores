@@ -125,24 +125,8 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 3 - Rotary, Tec, UDEM, U-ERRE, UANL, Montemorelos */}
+            {/* Fila 3 - Riisa, Value, EMEPE, Treviño Elizondo, Chapa González, Montemayor */}
             <div className="sponsors-row sponsors-row-3 reveal-up">
-              {[
-                { src: "Rotarios.jpeg", alt: "Rotary", style: { transform: 'scale(1.20)' } },
-                { src: "ITESM.png", alt: "Tecnológico de Monterrey", style: { transform: 'scale(1.20)' } },
-                { src: "UDEM.jpg", alt: "UDEM" },
-                { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
-                { src: "UANL.png", alt: "UANL", style: { transform: 'scale(1.15)' } },
-                { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos", style: { transform: 'scale(1.20)' } },
-              ].map((sponsor, idx) => (
-                <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
-                </div>
-              ))}
-            </div>
-
-            {/* Fila 4 - Riisa, Value, EMEPE, Treviño Elizondo, Chapa González, Montemayor */}
-            <div className="sponsors-row sponsors-row-4 reveal-up">
               {[
                 { src: "riisa.png", alt: "Fundación Riisa", style: { transform: 'scale(1.20)' } },
                 { src: "value.png", alt: "Value Casa de Bolsa", style: { transform: 'scale(1.2)' } },
@@ -150,6 +134,22 @@ export default function Sponsors() {
                 { src: "trevino-elizondo.png", alt: "Asociación de Beneficencia Privada Treviño Elizondo", style: { transform: 'scale(1.20)' } },
                 { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González", style: { transform: 'scale(1.15)' } },
                 { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", style: { transform: 'scale(2.20)' } },
+              ].map((sponsor, idx) => (
+                <div key={idx} className="sponsor-card">
+                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
+                </div>
+              ))}
+            </div>
+
+            {/* Fila 4 - Rotary, Tec, UDEM, U-ERRE, UANL, Montemorelos */}
+            <div className="sponsors-row sponsors-row-4 reveal-up">
+              {[
+                { src: "Rotarios.jpeg", alt: "Rotary", style: { transform: 'scale(1.20)' } },
+                { src: "ITESM.png", alt: "Tecnológico de Monterrey", style: { transform: 'scale(1.20)' } },
+                { src: "UDEM.jpg", alt: "UDEM" },
+                { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
+                { src: "UANL.png", alt: "UANL", style: { transform: 'scale(1.15)' } },
+                { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos", style: { transform: 'scale(1.20)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
                   <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
