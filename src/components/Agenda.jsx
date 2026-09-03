@@ -67,11 +67,12 @@ const agendaData = [
   },
   {
     type: "12:00 · Q&R",
-    title: "Q&R - Preguntas y respuestas abiertas",
+    title: "David Eaton entrevista a Marian Rojas · Preguntas y respuestas abiertas",
     track: "Autonomía Humana",
     color: "var(--color-cyan)",
     speakers: [
-      { name: "David Eaton entrevista a Marian Rojas Estapé", role: "" }
+      { name: "David Eaton", role: "" },
+      { name: "Marian Rojas Estapé", role: "" }
     ]
   },
   {
@@ -139,7 +140,8 @@ const agendaData = [
     color: "var(--color-cyan)",
     speakers: [
       { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora · CBS 60 Minutes" },
-      { name: "Jorge Lerdo de Tejada", role: "Global Ambassador · Singularity University" }
+      { name: "Jorge Lerdo de Tejada", role: "Global Ambassador · Singularity University" },
+      { name: "Gregorio Martínez", role: "Periodista y presentador de televisión" }
     ]
   },
   {
@@ -148,18 +150,18 @@ const agendaData = [
     track: "Humanismo y Valores",
     color: "var(--color-pink)",
     speakers: [
-      { name: "Farid Dieck Assad", role: "Psicólogo · Influencer · 60M seguidores" },
+      { name: "Farid Dieck", role: "Psicólogo · Conferencista" },
       { name: "Mauricio Martínez", role: "Actor y cantante · Broadway" },
       { name: "Nayo Escobar", role: "Empresario, músico y creador de contenido" }
     ]
   },
   {
-    type: "18:30 · Cierre musical",
-    title: "Cierre musical - Celebración de cierre Día 1",
+    type: "18:30 · Celebración de cierre",
+    title: "Celebración de cierre · Día 1",
     track: "Humanismo y Valores",
     color: "var(--color-pink)",
     speakers: [
-      { name: "Sebastian Yatra", role: "Músico y Facilitador" }
+      { name: "Encuentro Mundial de Valores", role: "" }
     ]
   },
 
@@ -246,7 +248,7 @@ const agendaData = [
     color: "var(--color-lime)",
     speakers: [
       { name: "Dr. Arumugam Murukiah", role: "" },
-      { name: "Rotarios", role: "" }
+      { name: "David Eaton", role: "" }
     ]
   },
   {
@@ -322,16 +324,16 @@ const agendaData = [
   // --- 12:10 - 1:00 PM ---
   {
     type: "12:10 - 1:00 PM · Sala Antártida",
-    title: '"¿Puede la Inteligencia Artificial tener valores? Un taller para explorar los límites de la IA y el papel irremplazable del ser humano."',
+    title: '"¿Puede la Inteligencia Artificial tener valores?" · Los límites de la IA y el papel del ser humano',
     track: "Espiritual",
     color: "var(--color-pink)",
     speakers: [
-      { name: "Dra. Flor Ontiveros Ramírez - Universidad de Montemorelos", role: "" }
+      { name: "Dra. Flor Ontiveros", role: "Universidad de Montemorelos" }
     ]
   },
   {
     type: "12:10 - 1:00 PM · Sala Europa",
-    title: '"IA sabe todo de mi pero sólo yo sé quien soy."',
+    title: '"IA sabe todo de mí, pero sólo yo sé quién soy"',
     track: "Comunicación",
     color: "var(--color-accent)",
     speakers: [
@@ -344,12 +346,12 @@ const agendaData = [
     track: "Rotarios",
     color: "var(--color-lime)",
     speakers: [
-      { name: "Bioética", role: "" }
+      { name: "Yeyetsi Ordoñez", role: "Doctora en Bioética y Médica Familiar" }
     ]
   },
   {
     type: "12:10 - 1:00 PM · Sala Oceanía",
-    title: '"IA Consciente: tecnología para volver a ti" (Del exceso de información al acompañamiento que transforma)',
+    title: '"IA Consciente: tecnología para volver a ti" · Del exceso de información al acompañamiento que transforma',
     track: "Salud",
     color: "var(--color-cyan)",
     speakers: [
@@ -358,17 +360,17 @@ const agendaData = [
   },
   {
     type: "12:10 - 1:00 PM · Sala Canadá B",
-    title: '"SINDICATO · Educación y sociedad" (Ética en la Educación)',
+    title: '"Ética en la Educación"',
     track: "Educación",
     color: "var(--color-orange)",
     speakers: [
-      { name: "Mtro. Juan José Gutiérrez", role: "" }
+      { name: "Mtro. Juan José Gutiérrez", role: "Secretario General · Sección 50 SNTE" }
     ]
   },
   // --- 1:00 PM ---
   {
     type: "1:00 PM · Parque Fundidora",
-    title: "Caminata por la Paz (todas las salas)",
+    title: "Caminata por la Paz · Parque Fundidora",
     track: "Clausura",
     color: "var(--color-pink)",
     speakers: []

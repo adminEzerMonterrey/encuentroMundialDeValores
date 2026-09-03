@@ -163,7 +163,7 @@ const speakersData = [
   {
     img: "/speakers/dra-melina-uncapher.jpg",
     initials: "MU",
-    name: "Dr. Melina Uncapher",
+    name: "Dra. Melina Uncapher",
     company: "SETA-ED",
     role: "CEO y Fundadora",
     bio: "Neurocientífica educativa con más de 20 años en investigación. Cofundadora del Institute for Applied Neuroscience.",
@@ -174,7 +174,7 @@ const speakersData = [
       "Ex Profesora de Neurociencia Educativa en Stanford University y UC San Francisco (UCSF)",
       "Cofundadora del Institute for Applied Neuroscience, nonprofit que equipa a educadores con herramientas basadas en ciencia del aprendizaje",
       "Investigadora financiada por los National Institutes of Health (NIH) sobre el impacto de la tecnología en la cognición estudiantil",
-      "Publicaciones académicas citadas más de 4,000 veces; destacada en The New York Times, PBS y FrontlineScript Supervisor en el documental de PBS \"The Brain\" y productora de un cortometraje premiado sobre el cerebro",
+      "Publicaciones académicas citadas más de 4,000 veces; destacada en The New York Times, PBS y Frontline. Script Supervisor en el documental de PBS \"The Brain\" y productora de un cortometraje premiado sobre el cerebro",
       "MacArthur Scholar: su trabajo guía a legisladores en prácticas basadas en evidencia sobre memoria y justicia",
       "Doctorado en Neurobiología, UC Irvine; Posdoctorado en Stanford University"
     ],
@@ -190,7 +190,7 @@ const speakersData = [
     imgPosition: "top center",
     imgScale: "1.05",
     initials: "CC",
-    name: "Caroline Sanchez Crozier",
+    name: "Caroline Sánchez Crozier",
     company: "CSC Consulting Group",
     role: "CEO & Fundadora",
     bio: "Líder tecnológico y presidenta del Comité de Tecnología e IA de LULAC. Inmigrante mexicana y pionera en equidad digital.",
@@ -308,7 +308,7 @@ const speakersData = [
       "Más de 31 años en Grupo Alfa como líder de Recursos Humanos y Director General de empresas globales (DuPont, BASEL, Akzo, Teijin)",
       "Vicepresidente de CONCAMIN y de CAINTRA; miembro del Consejo Coordinador Empresarial y COPARMEX",
       "Presidente del Comité Ciudadano para la Calidad de los Servicios de Salud de Nuevo León",
-      "Condecoración de la Orden de Isabel la Católica, otorgada por el Rey de España Juan Carlos Impulsor del modelo educativo U-ERRE: laboratorios de aprendizaje en IA, gobernanza e Industria 4.0"
+      "Condecoración de la Orden de Isabel la Católica, otorgada por el Rey de España Juan Carlos I. Impulsor del modelo educativo U-ERRE: laboratorios de aprendizaje en IA, gobernanza e Industria 4.0"
     ],
     photoPosition: "left",
     gradient: "linear-gradient(135deg,#008FD3,#003f7f)",
@@ -411,7 +411,7 @@ const speakersData = [
   {
     img: "/speakers/sebastian-yatra.png",
     initials: "SY",
-    name: "Sebastian Yatra",
+    name: "Sebastián Yatra",
     company: "Embajador de Causas Sociales",
     role: "Cantautor y Activista",
     bio: "Embajador de Causas Sociales y fenómeno musical internacional. Nominado al Grammy y ganador de 2 Latin Grammys.",
@@ -519,11 +519,11 @@ const speakersData = [
     bullets: [
       "En 2003 suspende su formación sacerdotal, trabajando siete años en el Club de Futbol Monterrey Rayados, siendo además campeón del Futbol Mexicano en 2009 y 2010.",
       "Fue miembro de distintos consejos consultivos y asesor de movimientos ciudadanos y fundó su empresa \"La Fábrica de Respuestas\".",
-      "En 2013 regresa al seminario, terminando su formación sacerdotal en 2018, donde ha realizo una diversidad de actividades: asesor pastoral de grupos y movimientos apostólicos a nivel local y nacional",
-      "EAutor de libros, secretario adjunto y adscrito del CELAM 2019-2023,",
+      "En 2013 regresa al seminario, terminando su formación sacerdotal en 2018, donde ha realizado una diversidad de actividades: asesor pastoral de grupos y movimientos apostólicos a nivel local y nacional",
+      "Autor de libros, secretario adjunto y adscrito del CELAM 2019-2023,",
       "Vicario Parroquial, Vicecanciller y administrador parroquial, secretario técnico del proyecto global de Pastoral 2031-2033 y miembro del comité técnico de la Novena Intercontinental Guadalupana",
       "Actualmente, es Rector del Templo Expiatorio San Luis Gonzaga, Auxiliar del Moderador de la Curia para el Talento Humano y ProVicario Episcopal de la Vicaría de Pastoral.",
-      "AA nivel Latinoamericano, junto a Mons. Rogelio Cabrera, es asesor de la Unión Cristiana Internacional de Ejecutivos de Empresas (UNIAPAC)"
+      "A nivel Latinoamericano, junto a Mons. Rogelio Cabrera, es asesor de la Unión Cristiana Internacional de Ejecutivos de Empresas (UNIAPAC)"
     ],
     photoPosition: "left",
     gradient: "linear-gradient(135deg,#FF9900,#e65c00)",
@@ -619,7 +619,7 @@ const speakersData = [
   {
     img: "/speakers/monica-zambrano-vignau.jpg",
     initials: "MZ",
-    name: "Monica Zambrano Vignau",
+    name: "Mónica Zambrano Vignau",
     company: "Humind Care A.C.",
     role: "Cofundadora",
     bio: "Cofundadora de Humind Care A.C. Mónica convirtió el dolor en propósito tras perder a su hijo por suicidio, impulsando la salud mental de niños y adolescentes.",
@@ -720,7 +720,7 @@ const speakersData = [
     bullets: [
       "CEO y Director General de ÍNTTEGRA, Sistemas, Servicios y Salud, S. de R.L. de C.V.",
       "Director General del Plan Desarrollo Salud Mundial y su Centro de Salud Mundial (desde 2023)",
-      "Director General del Centro de Cooperación Internacional y de la Oficina de Gestión de Proyectos y Comodities (desde 2024)",
+      "Director General del Centro de Cooperación Internacional y de la Oficina de Gestión de Proyectos y Commodities (desde 2024)",
       "Miembro del Comité Ejecutivo del Centro de Cooperación Internacional Grupo Sirius (desde 2023)",
       "Jefe de Área del Hospital San Lucas en Monterrey, Nuevo León",
       "Especialista en Medicina Regenerativa e Integrativa, Rehabilitación Física y Kinesiología",
@@ -959,7 +959,7 @@ const speakersData = [
   {
     img: "/speakers/flor-ontiveros.png",
     initials: "FO",
-    name: "Flor Ontiveros",
+    name: "Dra. Flor Ontiveros",
     company: "Universidad de Montemorelos",
     role: "Directora del CIIDEC",
     bio: "Doctora en Administración de Negocios, catedrática, investigadora, directiva académica, consultora empresarial y editora científica, con más de 25 años de experiencia.",
@@ -984,9 +984,9 @@ const speakersData = [
     collagePosition: "center 20%"
   },
   {
-    img: "/speakers/yayetsy-ordonez.jpg",
+    img: "/speakers/yeyetsi-ordonez.jpg",
     initials: "YO",
-    name: "Yayetsy Ordoñez",
+    name: "Yeyetsi Ordoñez",
     company: "Facultad de Medicina UANL",
     role: "Doctora en Bioética y Médica Familiar",
     bio: "Doctora Honoris Causa, Doctorada en Bioética, Máster en Ciencias de la Juventud, Subespecialista en Trabajo con Familias y Médica Familiar.",
@@ -1006,6 +1006,7 @@ const speakersData = [
     trackClass: "track-a",
     trackName: "Salud",
     talkIcon: "🏥",
+    talkName: "Bioética y prueba cuádruple en la era de la IA",
     imgScale: "1.2",
     imgPosition: "center 20%",
     collageScale: "1.2",
@@ -1044,7 +1045,7 @@ const speakersData = [
     collagePosition: "center 15%",
     collageScale: "1.3",
     initials: "SL",
-    name: "Sebastián Latapi",
+    name: "Sebastián Latapí",
     company: "Comerlat",
     role: "CEO",
     bio: "CEO de la empresa Comerlat. Participa activamente desde hace 7 años en apoyos estructurales ayudando a la niñez.",
@@ -1102,6 +1103,12 @@ const speakersData = [
   },
   {
     img: "/speakers/enrique-bay.png",
+    imgPosition: "center 20%",
+    imgScale: "1.45",
+    imgOffsetY: "-25px",
+    collagePosition: "center 20%",
+    collageScale: "1.45",
+    collageOffsetY: "-20px",
     initials: "EB",
     name: "Enrique Bay",
     company: "Fresh Consulting",
@@ -1120,6 +1127,33 @@ const speakersData = [
     trackName: "Tecnología",
     talkIcon: "🎙️",
     talkName: "Humanos (IA, Capital y Poder)"
+  },
+  {
+    img: "/speakers/roberto-gonzalez.jpg",
+    imgPosition: "center 15%",
+    imgScale: "1.15",
+    collagePosition: "center 15%",
+    collageScale: "1.15",
+    initials: "RG",
+    name: "Roberto González",
+    company: "Grupo Casthél Patrimonial / ITESM",
+    role: "Doctor en Administración con Especialidad en Finanzas Familiares",
+    bio: "Doctor en Administración con Especialidad en Finanzas Familiares por el ITESM. Cuenta con más de 25 años en la industria aseguradora y 35 años como catedrático universitario.",
+    longBio: "Doctor en Administración con Especialidad en Finanzas Familiares por el ITESM. Cuenta con 15 años de experiencia en el sector financiero y más de 25 años en la industria aseguradora como CEO de Grupo Casthél Patrimonial Agente de Seguros, S.A. de C.V. Además, cuenta con 35 años de trayectoria como catedrático en profesional y posgrado en ITESM y UANL en materias de Finanzas Corporativas.",
+    bullets: [
+      "Doctor en Administración con Especialidad en Finanzas Familiares ITESM",
+      "15 años en Sector Financiero (Banca, Casa de Bolsa y Grupo Financiero)",
+      "25 años en la Industria Aseguradora CEO de Grupo Casthél Patrimonial Agente de Seguros, S.A. de C.V.",
+      "Formación Master en Seguros GNP Moderador del CLI",
+      "Expositor en Campamento de Agentes y diferentes Regionales y DAs LAE",
+      "UANL MBA especialidad en Finanzas",
+      "Spenta University 35 años como Catedrático en Profesional y Posgrado en ITESM y UANL en materias del área de Finanzas Corporativas"
+    ],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#1E3A8A,#0284C7)",
+    trackClass: "track-a",
+    trackName: "Finanzas Familiares",
+    talkIcon: "💼"
   }
 ];
 
@@ -1350,7 +1384,15 @@ export default function Speakers() {
             <div className={`speakers-modal-body ${activeModalSpeaker.photoPosition === 'left' ? 'speakers-modal-body--photo-left' : 'speakers-modal-body--photo-right'}`}>
               <div className="speakers-modal-photo">
                 {activeModalSpeaker.img ? (
-                  <img src={activeModalSpeaker.img} alt={activeModalSpeaker.name} />
+                  <img 
+                    src={activeModalSpeaker.img} 
+                    alt={activeModalSpeaker.name} 
+                    style={{ 
+                      objectPosition: activeModalSpeaker.modalPosition || activeModalSpeaker.imgPosition || undefined,
+                      transform: `${(activeModalSpeaker.modalScale || activeModalSpeaker.imgScale) ? `scale(${activeModalSpeaker.modalScale || activeModalSpeaker.imgScale})` : ''} ${(activeModalSpeaker.modalOffsetY || activeModalSpeaker.imgOffsetY) ? `translateY(${activeModalSpeaker.modalOffsetY || activeModalSpeaker.imgOffsetY})` : ''}`.trim() || undefined,
+                      transformOrigin: (activeModalSpeaker.modalScale || activeModalSpeaker.imgScale) ? 'top center' : undefined
+                    }}
+                  />
                 ) : (
                   <div className="speakers-modal-fallback" style={{ background: activeModalSpeaker.gradient }}>
                     {activeModalSpeaker.initials}
