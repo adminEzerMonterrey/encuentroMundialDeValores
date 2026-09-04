@@ -147,14 +147,15 @@ const speakersData = [
     initials: "AM",
     name: "Dr. Arumugam Murukiah",
     company: "Broadline Technologies",
-    role: "Emprendedor y Líder Digital",
-    bio: "Emprendedor y líder digital con 4 décadas transformando sistemas públicos y corporativos.",
-    longBio: "Emprendedor y líder digital con 4 décadas transformando sistemas públicos y corporativos.",
+    role: "Fundador de Broadline Technologies",
+    bio: "Fundador de Broadline Technologies. Emprendedor y líder de innovación industrial con 35 años en TI e Industria 4.0.",
+    longBio: "Fundador de Broadline Technologies. Emprendedor y líder de innovación industrial con 35 años en TI e Industria 4.0.",
     bullets: [
       "Ha diseñado e implementado soluciones tecnológicas de alto impacto en salud, logística y energía.",
       "Ha colaborado con corporaciones globales como IBM, HP, SAP, Siemens y Xerox, liderando proyectos críticos de infraestructura tecnológica y operaciones globales.",
       "Fundador de Broadline Technologies, impulsando transformación digital en gobiernos, salud y empresas.",
-      "Su modelo de cadena de suministro para el sistema de salud pública del estado de Tamil Nadu, India, es considerado una referencia internacional por organismos multilaterales debido a su eficiencia y escalabilidad."
+      "Su modelo de cadena de suministro para el sistema de salud pública del estado de Tamil Nadu, India, es considerado una referencia internacional por organismos multilaterales debido a su eficiencia y escalabilidad.",
+      "Líder digital con 4 décadas transformando sistemas públicos y corporativos."
     ],
     photoPosition: "right",
     gradient: "linear-gradient(135deg,#F0922A,#ef4444)",
