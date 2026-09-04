@@ -428,27 +428,25 @@ const speakersData = [
     initials: "SY",
     name: "Sebastián Yatra",
     company: "Embajador de Causas Sociales",
-    role: "Cantautor y Activista",
-    bio: "Embajador de Causas Sociales y fenómeno musical internacional. Nominado al Grammy y ganador de 2 Latin Grammys.",
-    longBio: "Sebastián Obando Giraldo, conocido artísticamente como Sebastián Yatra, nació en Medellín, Colombia. Es un fenómeno musical internacional y Embajador de Causas Sociales. Alcanzó reconocimiento internacional con su sencillo 'Traicionera' (2016) y se consolidó en la música global. Billboard lo ha descrito como 'en una racha ganadora' y NPR señaló: 'Parece que Sebastián Yatra lo puede hacer todo'.",
+    role: "Fenómeno Musical Internacional",
+    bio: "Fenómeno Musical Internacional y Embajador de Causas Sociales. Cierre Musical del Encuentro Mundial de Valores.",
+    longBio: "Fenómeno Musical Internacional y Embajador de Causas Sociales.",
     bullets: [
-      "Ganador de 2 Premios Grammy Latino (2022): Mejor Canción Pop y Mejor Álbum Pop Vocal por \"Dharma\"",
-      "Nominado al Grammy (EE.UU.) por Mejor Álbum de Pop Latino (2020 y 2023)",
-      "10 premios Billboard Latin Music Awards y 4 premios Premio Lo Nuestro",
-      "Discos de Diamante en España, México, Guatemala, El Salvador, Honduras, Costa Rica, Nicaragua y Panamá",
-      "Multi-platino en Colombia, España, Argentina, Perú, México, EE.UU., Chile, Ecuador y Venezuela",
-      "Colaboraciones con Carlos Vives, Daddy Yankee, Luis Fonsi, Reik, Aitana, Pablo Alborán, entre otros",
-      "Exitoso \"Dharma Tour\" con sold-outs en toda América Latina y España (2022-2023)",
-      "Actor y presentador: participación en producciones de televisión y cine internacionales",
-      "Activista social: utiliza su plataforma para causas benéficas y conciencia social",
-      "Más de 30 millones de oyentes mensuales en Spotify; canciones con miles de millones de reproducciones"
+      "Ganador de 2 Premios Grammy Latino (2022): Mejor Canción Pop y Mejor Álbum Pop Vocal por \"Dharma\". Nominado al Grammy (EE.UU.) por Mejor Álbum de Pop Latino (2020 y 2023).",
+      "10 premios Billboard Latin Music Awards y 4 premios Premio Lo Nuestro. Discos de Diamante en España, México, Guatemala, El Salvador, Honduras, Costa Rica, Nicaragua y Panamá.",
+      "Alcanzó reconocimiento internacional con su sencillo \"Traicionera\" (2016) y se consolidó en la música global. Billboard lo describió como \"en una racha ganadora\" y NPR señaló: \"Parece que Sebastián Yatra lo puede hacer todo\".",
+      "Multiplatino en Colombia, España, Argentina, Perú, México, EE.UU., Chile, Ecuador y Venezuela.",
+      "Colaboraciones con Carlos Vives, Daddy Yankee, Luis Fonsi, Reik, Aitana, Pablo Alborán, entre otros.",
+      "Exitoso \"Dharma Tour\" con soldouts en toda América Latina y España (2022-2023). Actor y presentador: participación en producciones de televisión y cine internacionales.",
+      "Activista social: utiliza su plataforma para causas benéficas y conciencia social.",
+      "Más de 30 millones de oyentes mensuales en Spotify; canciones con miles de millones de reproducciones."
     ],
     photoPosition: "left",
     gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)",
     trackClass: "track-a",
-    trackName: "Causas Sociales y Música",
+    trackName: "Cierre Musical",
     talkIcon: "🎵",
-    talkName: "El poder de la música en las causas sociales"
+    talkName: "Cierre Musical"
   },
   {
     img: "/speakers/jorge-lerdo-de-tejada.jpeg",
@@ -531,16 +529,16 @@ const speakersData = [
     name: "Padre David Jasso",
     company: "Arquidiócesis de Monterrey",
     role: "Sacerdote",
-    bio: "Sacerdote, comunicólogo y ex directivo del Club Rayados. Promotor del talento humano y la pastoral social latinoamericana.",
+    bio: "Sacerdote de la Arquidiócesis de Monterrey. Licenciado en Comunicación con estudios en Humanidades, Filosofía, Teología, Ciencias de la Educación y Comercio Internacional.",
     longBio: "Es sacerdote de la Arquidiócesis de Monterrey. Es Lic. En Comunicación y cuenta con estudios de Humanidades, Filosofía, Teología, Ciencias de la Educación y Comercio Internacional.",
     bullets: [
       "En 2003 suspende su formación sacerdotal, trabajando siete años en el Club de Futbol Monterrey Rayados, siendo además campeón del Futbol Mexicano en 2009 y 2010.",
       "Fue miembro de distintos consejos consultivos y asesor de movimientos ciudadanos y fundó su empresa \"La Fábrica de Respuestas\".",
-      "En 2013 regresa al seminario, terminando su formación sacerdotal en 2018, donde ha realizado una diversidad de actividades: asesor pastoral de grupos y movimientos apostólicos a nivel local y nacional",
-      "Autor de libros, secretario adjunto y adscrito del CELAM 2019-2023,",
-      "Vicario Parroquial, Vicecanciller y administrador parroquial, secretario técnico del proyecto global de Pastoral 2031-2033 y miembro del comité técnico de la Novena Intercontinental Guadalupana",
+      "En 2013 regresa al seminario, terminando su formación sacerdotal en 2018, donde ha realizado una diversidad de actividades: asesor pastoral de grupos y movimientos apostólicos a nivel local y nacional.",
+      "Autor de libros, secretario adjunto y adscrito del CELAM 2019-2023.",
+      "Vicario Parroquial, Vicecanciller y administrador parroquial, secretario técnico del proyecto global de Pastoral 2031-2033 y miembro del comité técnico de la Novena Intercontinental Guadalupana.",
       "Actualmente, es Rector del Templo Expiatorio San Luis Gonzaga, Auxiliar del Moderador de la Curia para el Talento Humano y ProVicario Episcopal de la Vicaría de Pastoral.",
-      "A nivel Latinoamericano, junto a Mons. Rogelio Cabrera, es asesor de la Unión Cristiana Internacional de Ejecutivos de Empresas (UNIAPAC)"
+      "A nivel Latinoamericano, junto a Mons. Rogelio Cabrera, es asesor de la Unión Cristiana Internacional de Ejecutivos de Empresas (UNIAPAC)."
     ],
     photoPosition: "left",
     gradient: "linear-gradient(135deg,#FF9900,#e65c00)",
@@ -601,18 +599,19 @@ const speakersData = [
     initials: "FE",
     name: "Pastor Federico Elizondo",
     company: "Autor",
-    role: "Autor",
-    bio: "Autor del libro: Inteligencia Artificial y Paz Mundial, una visión cristiana ética.",
-    longBio: "Autor del libro: Inteligencia Artificial y Paz Mundial, una visión cristiana ética.",
+    role: "Pastor y Autor",
+    bio: "\"Inteligencia Artificial y Paz Mundial: una visión cristiana y ética\". Autor del libro: Inteligencia Artificial y Paz Mundial.",
+    longBio: "\"Inteligencia Artificial y Paz Mundial: una visión cristiana y ética\". Autor del libro: Inteligencia Artificial y Paz Mundial.",
     bullets: [
-      "Autor del libro: Inteligencia Artificial y Paz Mundial"
+      "Conferencia: \"Inteligencia Artificial y Paz Mundial: una visión cristiana y ética\".",
+      "Autor del libro: \"Inteligencia Artificial y Paz Mundial: una visión cristiana ética\" (Dr. Federico Elizondo B. DD)."
     ],
     photoPosition: "left",
     gradient: "linear-gradient(135deg,#0078D4,#00c6ff)",
     trackClass: "track-a",
     trackName: "Espiritualidad",
     talkIcon: "📖",
-    talkName: "IA y Paz Mundial"
+    talkName: "\"Inteligencia Artificial y Paz Mundial: una visión cristiana y ética\""
   },
   {
     img: "/speakers/javier-prieto.jpg",
@@ -981,12 +980,12 @@ const speakersData = [
     name: "Dra. Flor Ontiveros",
     company: "Universidad de Montemorelos",
     role: "Directora del CIIDEC",
-    bio: "Doctora en Administración de Negocios, catedrática, investigadora, directiva académica, consultora empresarial y editora científica, con más de 25 años de experiencia.",
+    bio: "Doctora en Administración de Negocios, catedrática, investigadora, directiva académica, consultora empresarial y editora científica, con más de 25 años de experiencia en educación superior.",
     longBio: "Doctora en Administración de Negocios, catedrática, investigadora, directiva académica, consultora empresarial y editora científica, con más de 25 años de experiencia en educación superior.",
     bullets: [
       "Directora del Centro de Investigación e Innovación para el Desarrollo Empresarial y Corporativo (CIIDEC).",
       "También se desempeña como Editora en Jefe de la Revista de Estudios Empresariales y Jurídicos de la Universidad de Montemorelos.",
-      "Su docencia e Investigación abarcan gestión del talento humano, innovación, transformación digital, Inteligencia artificial aplicada a la educación y los negocios, emprendimiento, sostenibilidad y bienestar organizacional.",
+      "Su docencia e investigación abarcan gestión del talento humano, innovación, transformación digital, inteligencia artificial aplicada a la educación y los negocios, emprendimiento, sostenibilidad y bienestar organizacional.",
       "Ha dirigido proyectos de investigación y tesis de distintos niveles académicos, con un enfoque en la aplicación del conocimiento para resolver problemas reales de organizaciones y comunidades.",
       "Su acercamiento a la IA combina interés por la innovación tecnológica con una convicción ética: la tecnología debe estar al servicio del ser humano, no sustituirlo.",
       "Cuenta con experiencia internacional: estancias académicas en Colombia, ponencias magistrales en Perú y Costa Rica, participación en Enactus Global Research (Bangkok, Tailandia), y colaboración con investigadores de Norte América, América Latina y el Caribe.",
@@ -1137,10 +1136,11 @@ const speakersData = [
     bio: "Ingeniero por el Tec de Monterrey y MBA por el MIT, es asesor en inteligencia artificial y conductor del podcast Humanos (IA, Capital y Poder).",
     longBio: "Ingeniero por el Tec de Monterrey y MBA por el MIT, es asesor en inteligencia artificial y conductor del podcast Humanos (IA, Capital y Poder). Su trabajo parte de una idea simple: la IA es una herramienta poderosa, pero las preguntas que de verdad importan siguen siendo humanas.",
     bullets: [
-      "Asesor en inteligencia artificial y conductor del podcast Humanos (IA, Capital y Poder)",
-      "Asesora a empresas y equipos en la adopción de IA con criterio, a través de Fresh Consulting",
-      "Escribe sobre el futuro que ya está ocurriendo en enriquebay.com",
-      "Su trabajo parte de una idea simple: la IA es una herramienta poderosa, pero las preguntas que de verdad importan siguen siendo humanas"
+      "Operador, asesor en inteligencia artificial y conductor de podcast. Ingeniero Industrial por el Tecnológico de Monterrey, MBA por el MIT. Conduce Humanos.",
+      "Podcast en español sobre inteligencia artificial, capital y poder.",
+      "Asesora a empresas y equipos en la adopción de IA con criterio, a través de Fresh Consulting.",
+      "Escribe sobre el futuro que ya está ocurriendo en enriquebay.com.",
+      "Su trabajo parte de una idea simple: la IA es una herramienta poderosa, pero las preguntas que de verdad importan siguen siendo humanas."
     ],
     photoPosition: "left",
     gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)",
