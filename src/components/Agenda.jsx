@@ -306,7 +306,7 @@ const agendaData = [
     color: "var(--color-cyan)",
     speakers: [
       { name: "Dr. Jesús González Álvarez", role: "" },
-      { name: "Dra. Lilia García", role: "" },
+      { name: "Dra. Lilia Elida García Rodríguez", role: "" },
       { name: "Orlando Londoño", role: "" },
       { name: "Susana Cabrera", role: "" },
       { name: "Dr. Jesús Ancer", role: "" }
