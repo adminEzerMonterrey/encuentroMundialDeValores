@@ -387,14 +387,14 @@ const speakersData = [
     imgPosition: "center",
     initials: "NE",
     name: "Nayo Escobar",
-    company: "Empresario",
-    role: "Empresario, músico y creador de contenido",
-    bio: "Empresario y músico originario de Monterrey con más de 2 millones de suscriptores en YouTube realizando entrevistas inspiracionales.",
-    longBio: "Empresario, músico y creador de contenido originario de Monterrey, Nuevo León, México. Es conocido por su canal de YouTube con más de 2 millones de suscriptores, donde realiza entrevistas inspiracionales, y por su trayectoria como conferencista motivacional.",
+    company: "Empresario y Músico",
+    role: "Empresario, Músico y Creador de Contenido",
+    bio: "Empresario, músico y creador de contenido. Conferencista motivacional.",
+    longBio: "Empresario, músico y creador de contenido. Conferencista motivacional.",
     bullets: [
       "Conferencista motivacional con presencia en escenarios internacionales en México y Latinoamérica.",
-      "Canal de YouTube con más de 2 millones de suscriptores y contenido viral de entrevistas inspiracionales",
-      "Músico y empresario originario de Monterrey, Nuevo León, con amplia trayectoria en el ámbito del entretenimiento y el desarrollo personal"
+      "Canal de YouTube con más de 2 millones de suscriptores y contenido viral de entrevistas inspiracionales.",
+      "Músico y empresario originario de Monterrey, Nuevo León, con amplia trayectoria en el ámbito del entretenimiento y el desarrollo personal."
     ],
     photoPosition: "left",
     gradient: "linear-gradient(135deg,#059669,#8B5CF6)",
