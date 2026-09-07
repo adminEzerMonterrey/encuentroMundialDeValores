@@ -555,17 +555,17 @@ const speakersData = [
     img: "/speakers/bhikkhu-pannakara.png",
     initials: "BP",
     name: "Bhikkhu Pannakara",
-    company: "Monje Budista",
-    role: "Ingeniero",
-    bio: "Ingeniero convertido en monje budista, promotor de la 'Caminata por la Paz' uniendo conocimiento moderno con sabiduría eterna.",
-    longBio: "Monje budista y ingeniero vietnamita-estadounidense, reconocido por liderar una histórica \"Caminata por la Paz\" desde Texas hasta Washington, D.C.",
+    company: "Huong Dao Vipassana Bhavana",
+    role: "Monje Budista e Ingeniero",
+    bio: "Monje budista e ingeniero vietnamita-estadounidense, reconocido por liderar una histórica \"Caminata por la Paz\" desde Texas hasta Washington, D.C.",
+    longBio: "Monje budista e ingeniero vietnamita-estadounidense, reconocido por liderar una histórica \"Caminata por la Paz\" desde Texas hasta Washington, D.C.",
     bullets: [
       "Es vicepresidente del centro budista Huong Dao Vipassana Bhavana en Fort Worth, Texas.",
       "Su vida es una singular historia de transformación: del mundo de la tecnología a una vida dedicada por completo a la paz y la compasión.",
       "Al graduarse en Tecnología de la Información en la Universidad de Texas, se adentró en un futuro que muchos considerarían exitoso. Sin embargo, tras ese éxito se escondía una pregunta más profunda: cómo servir a la humanidad de una manera que verdaderamente sane el sufrimiento.",
       "Respondiendo a esa llamada interior, abandonó el camino convencional de un ingeniero y eligió el antiguo camino del Buda.",
-      "A través de la ordenación y la meditación, transformó su vida en un mensaje vivo de bondad amorosa",
-      "Hoy, como líder de la Caminata por la Paz, camina no para sí mismo, sino para el mundo, llevando la compasión a través de ciudades, culturas y corazones. Su trayectoria conecta el conocimiento moderno con la sabiduría eterna"
+      "A través de la ordenación y la meditación, transformó su vida en un mensaje vivo de bondad amorosa.",
+      "Hoy, como líder de la Caminata por la Paz, camina no para sí mismo, sino para el mundo, llevando la compasión a través de ciudades, culturas y corazones. Su trayectoria conecta el conocimiento moderno con la sabiduría eterna."
     ],
     photoPosition: "left",
     gradient: "linear-gradient(135deg,#2E86C1,#8B5CF6)",
