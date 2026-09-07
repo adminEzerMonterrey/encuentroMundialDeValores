@@ -730,14 +730,14 @@ const speakersData = [
   {
     img: "/speakers/dr-gerardo-de-jesus-mendoza-jimenez.png",
     initials: "GM",
-    name: "Dr. Gerardo de Jesús Mendoza",
-    company: "Desarrollo Magisterial",
-    role: "Encargado de la Subsecretaría",
+    name: "Dr. Gerardo de Jesús Mendoza Jiménez",
+    company: "Subsecretaría de Desarrollo Magisterial",
+    role: "Encargado de la Subsecretaría de Desarrollo Magisterial",
     bio: "Encargado de la Subsecretaría de Desarrollo Magisterial. Presentador del evento.",
-    longBio: "Dr. Gerardo de Jesús Mendoza Jiménez\nEncargado de la Subsecretaría de Desarrollo Magisterial\nPRESENTADOR",
+    longBio: "Encargado de la Subsecretaría de Desarrollo Magisterial. Presentador del Encuentro Mundial de Valores.",
     bullets: [
-      "Encargado de la Subsecretaría de Desarrollo Magisterial del Estado",
-      "Presentador oficial del evento"
+      "Encargado de la Subsecretaría de Desarrollo Magisterial.",
+      "Presentador del Encuentro Mundial de Valores."
     ],
     photoPosition: "left",
     gradient: "linear-gradient(135deg,#E91E8C,#8B5CF6)",
@@ -1025,10 +1025,10 @@ const speakersData = [
   {
     img: "/speakers/yeyetsi-ordonez.jpg",
     initials: "YO",
-    name: "Yeyetsi Ordoñez",
+    name: "Dra. Yeyetsi Ordoñez",
     company: "Facultad de Medicina UANL",
     role: "Doctora en Bioética y Médica Familiar",
-    bio: "Doctora Honoris Causa, Doctorada en Bioética, Máster en Ciencias de la Juventud, Subespecialista en Trabajo con Familias y Médica Familiar.",
+    bio: "Doctora Honoris Causa, Doctorada en Bioética, Máster en Ciencias de la Juventud, Subespecialista en Trabajo con Familias, Especialista en Medicina Familiar y Médica Cirujana y Partera.",
     longBio: "Doctora Honoris Causa, Doctorada en Bioética, Máster en Ciencias de la Juventud, Subespecialista en Trabajo con Familias, Especialista en Medicina Familiar y Médica Cirujana y Partera.",
     bullets: [
       "Profesora del Departamento de Medicina Familiar de la Facultad de Medicina de la Universidad Autónoma de Nuevo León (UANL) e investigadora del Sistema Nacional de Investigadores e Investigadoras (SNII) por la SECIHT.",
@@ -1128,8 +1128,8 @@ const speakersData = [
     img: "/speakers/misael-pedraza.png",
     initials: "MP",
     name: "Misael Pedraza",
-    company: "Universidad de Montemorelos",
-    role: "Lic. en Teología Pastoral",
+    company: "Universidad de Montemorelos / Consejo Interreligioso de NL",
+    role: "Lic. en Teología Pastoral y Terapeuta Familiar",
     bio: "Licenciado en Teología Pastoral por la Universidad de Montemorelos, Maestría en Terapia y Relaciones Familiares, Diplomado en Capellanía.",
     longBio: "Licenciado en Teología Pastoral por la Universidad de Montemorelos, Maestría en Terapia y Relaciones Familiares, Diplomado en Capellanía.",
     bullets: [

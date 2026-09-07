@@ -346,7 +346,7 @@ const agendaData = [
     track: "Rotarios",
     color: "var(--color-lime)",
     speakers: [
-      { name: "Yeyetsi Ordoñez", role: "Doctora en Bioética y Médica Familiar" }
+      { name: "Dra. Yeyetsi Ordoñez", role: "Doctora en Bioética y Médica Familiar" }
     ]
   },
   {
