@@ -49,7 +49,7 @@ function SpeakerCard({ speaker, index, isCurrent, onClick, onOpenModal }) {
       {/* Photo */}
       <div className="sc-card__photo">
         {speaker.img
-          ? <img src={speaker.img.includes('?v=') ? speaker.img.replace(/v=\d+/, 'v=4') : `${speaker.img}?v=4`} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.imgPosition || undefined, transform: `${speaker.imgScale ? `scale(${speaker.imgScale})` : ''} ${speaker.imgOffsetY ? `translateY(${speaker.imgOffsetY})` : ''}`.trim() || undefined, transformOrigin: speaker.imgScale ? 'top center' : undefined }} />
+          ? <img src={speaker.img.includes('?v=') ? speaker.img.replace(/v=\d+/, 'v=5') : `${speaker.img}?v=5`} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.imgPosition || undefined, transform: `${speaker.imgScale ? `scale(${speaker.imgScale})` : ''} ${speaker.imgOffsetY ? `translateY(${speaker.imgOffsetY})` : ''}`.trim() || undefined, transformOrigin: speaker.imgScale ? 'top center' : undefined }} />
           : <div className="sc-card__photo-fallback" style={{ '--gradient': speaker.gradient }}>{speaker.initials}</div>}
       </div>
 
@@ -217,6 +217,9 @@ const speakersData = [
   },
   {
     img: "/speakers/alejandro-almazan-zimerman.png",
+    imgPosition: "center 15%",
+    collagePosition: "center 15%",
+    modalPosition: "center 10%",
     initials: "AA",
     name: "Alejandro Almazán Zimerman",
     company: "Google for Education",
@@ -1344,7 +1347,7 @@ export default function Speakers() {
               }}
             >
               {speaker.img ? (
-                <img src={speaker.img.includes('?v=') ? speaker.img.replace(/v=\d+/, 'v=4') : `${speaker.img}?v=4`} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.collagePosition || speaker.imgPosition || undefined, transform: `${(speaker.collageScale || speaker.imgScale) ? `scale(${speaker.collageScale || speaker.imgScale})` : ''} ${(speaker.collageOffsetY || speaker.imgOffsetY) ? `translateY(${speaker.collageOffsetY || speaker.imgOffsetY})` : ''}`.trim() || undefined, transformOrigin: (speaker.collageScale || speaker.imgScale) ? 'top center' : undefined }} />
+                <img src={speaker.img.includes('?v=') ? speaker.img.replace(/v=\d+/, 'v=5') : `${speaker.img}?v=5`} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.collagePosition || speaker.imgPosition || undefined, transform: `${(speaker.collageScale || speaker.imgScale) ? `scale(${speaker.collageScale || speaker.imgScale})` : ''} ${(speaker.collageOffsetY || speaker.imgOffsetY) ? `translateY(${speaker.collageOffsetY || speaker.imgOffsetY})` : ''}`.trim() || undefined, transformOrigin: (speaker.collageScale || speaker.imgScale) ? 'top center' : undefined }} />
               ) : (
                 <div className="collage-fallback" style={{ background: speaker.gradient }}>{speaker.initials}</div>
               )}
@@ -1408,7 +1411,7 @@ export default function Speakers() {
               <div className="speakers-modal-photo">
                 {activeModalSpeaker.img ? (
                   <img 
-                    src={activeModalSpeaker.img} 
+                    src={activeModalSpeaker.img.includes('?v=') ? activeModalSpeaker.img.replace(/v=\d+/, 'v=5') : `${activeModalSpeaker.img}?v=5`} 
                     alt={activeModalSpeaker.name} 
                     style={{ 
                       objectPosition: activeModalSpeaker.modalPosition || activeModalSpeaker.imgPosition || undefined,
