@@ -19,24 +19,6 @@ const agendaData = [
     ]
   },
   {
-    type: "09:30 · Reconocimiento",
-    title: 'Entrega de Reconocimiento Póstumo a la Familia de "David Noel Ramírez" • Bendición del Consejo Interreligioso',
-    track: "Humanismo y Valores",
-    color: "var(--color-pink)",
-    speakers: [
-      { name: "Mons. Rogelio Cabrera López", role: "Arzobispo Metropolitano de Monterrey" }
-    ]
-  },
-  {
-    type: "09:40 · Reconocimiento",
-    title: "Reconocimiento al Abuelo Maya • Certificación por la Compasión — Consejo Charter for Compassion",
-    track: "Humanismo y Valores",
-    color: "var(--color-pink)",
-    speakers: [
-      { name: "Abuelo Maya Antonio Oxté", role: "Sabio Maya" }
-    ]
-  },
-  {
     type: "10:00 · Conferencia",
     title: '"Calma en tiempos de inteligencia artificial: la ciencia del bienestar emocional"',
     track: "Autonomía Humana",
@@ -382,8 +364,8 @@ export default function Agenda() {
     <section className="section agenda" id="agenda" aria-labelledby="agendaHeading">
       <div className="container">
         <div className="section-header reveal-up">
-          <span className="section-tag">03 / PROGRAMA PRELIMINAR</span>
-          <h2 className="section-title" id="agendaHeading">Programa Preliminar</h2>
+          <span className="section-tag">03 / PROGRAMA</span>
+          <h2 className="section-title" id="agendaHeading">Programa</h2>
           <p className="section-subtitle"><span className="text-accent">3 y 4 de octubre de 2026</span></p>
         </div>
 
