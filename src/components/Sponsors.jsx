@@ -131,13 +131,13 @@ export default function Sponsors() {
                 { src: "riisa.png", alt: "Fundación Riisa", style: { transform: 'scale(1.20)' } },
                 { src: "value.png", alt: "Value Casa de Bolsa", style: { transform: 'scale(1.2)' } },
                 { src: "emepe.png", alt: "EMEPE", style: { transform: 'scale(1.85)' } },
-                { src: "media-group.png", alt: "Media Group", style: { transform: 'scale(1.30)' } },
+                { src: "media-group.png", alt: "V Media Group", style: { transform: 'scale(1.30)' } },
                 { src: "trevino-elizondo.png", alt: "Asociación de Beneficencia Privada Treviño Elizondo", style: { transform: 'scale(1.20)' } },
                 { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González", style: { transform: 'scale(1.15)' } },
                 { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", style: { transform: 'scale(2.20)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
+                  <img src={`/Sponsors/${sponsor.src}?v=6`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
