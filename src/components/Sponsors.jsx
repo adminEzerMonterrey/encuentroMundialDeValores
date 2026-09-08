@@ -33,7 +33,7 @@ export default function Sponsors() {
               grid-template-columns: repeat(7, 1fr);
             }
             .sponsors-row-3 {
-              grid-template-columns: repeat(6, 1fr);
+              grid-template-columns: repeat(7, 1fr);
             }
             .sponsors-row-4 {
               grid-template-columns: repeat(6, 1fr);
@@ -125,12 +125,13 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 3 - Riisa, Value, EMEPE, Treviño Elizondo, Chapa González, Montemayor */}
+            {/* Fila 3 - Riisa, Value, EMEPE, Media Group, Treviño Elizondo, Chapa González, Montemayor */}
             <div className="sponsors-row sponsors-row-3 reveal-up">
               {[
                 { src: "riisa.png", alt: "Fundación Riisa", style: { transform: 'scale(1.20)' } },
                 { src: "value.png", alt: "Value Casa de Bolsa", style: { transform: 'scale(1.2)' } },
                 { src: "emepe.png", alt: "EMEPE", style: { transform: 'scale(1.85)' } },
+                { src: "media-group.png", alt: "Media Group", style: { transform: 'scale(1.30)' } },
                 { src: "trevino-elizondo.png", alt: "Asociación de Beneficencia Privada Treviño Elizondo", style: { transform: 'scale(1.20)' } },
                 { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González", style: { transform: 'scale(1.15)' } },
                 { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", style: { transform: 'scale(2.20)' } },
