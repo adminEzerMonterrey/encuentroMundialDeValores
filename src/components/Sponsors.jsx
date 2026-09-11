@@ -36,7 +36,10 @@ export default function Sponsors() {
               grid-template-columns: repeat(7, 1fr);
             }
             .sponsors-row-4 {
-              grid-template-columns: repeat(6, 1fr);
+              grid-template-columns: repeat(8, 1fr);
+            }
+            .sponsors-row-4 .sponsor-card {
+              padding: 1rem 0.6rem;
             }
             .sponsors-row-5 {
               grid-template-columns: repeat(7, 1fr);
@@ -69,7 +72,7 @@ export default function Sponsors() {
               .sponsors-row-1 { grid-template-columns: repeat(3, 1fr); }
               .sponsors-row-2 { grid-template-columns: repeat(3, 1fr); max-width: 100%; }
               .sponsors-row-3 { grid-template-columns: repeat(3, 1fr); }
-              .sponsors-row-4 { grid-template-columns: repeat(3, 1fr); }
+              .sponsors-row-4 { grid-template-columns: repeat(4, 1fr); }
               .sponsors-row-5 { grid-template-columns: repeat(3, 1fr); }
             }
             @media (max-width: 640px) {
@@ -142,18 +145,20 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 4 - Rotary, Tec, UDEM, U-ERRE, UANL, Montemorelos */}
+            {/* Fila 4 - Televisa Monterrey, Rotary, Tec, UDEM, U-ERRE, UANL, Montemorelos, Canal 28 */}
             <div className="sponsors-row sponsors-row-4 reveal-up">
               {[
+                { src: "televisa-monterrey.png", alt: "Televisa Monterrey", style: { transform: 'scale(1.15)' } },
                 { src: "Rotarios.jpeg", alt: "Rotary", style: { transform: 'scale(1.20)' } },
                 { src: "ITESM.png", alt: "Tecnológico de Monterrey", style: { transform: 'scale(1.20)' } },
                 { src: "UDEM.jpg", alt: "UDEM" },
                 { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
                 { src: "UANL.png", alt: "UANL", style: { transform: 'scale(1.15)' } },
                 { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos", style: { transform: 'scale(1.20)' } },
+                { src: "canal-28.jpg", alt: "Canal 28", style: { transform: 'scale(1.05)', borderRadius: '6px' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
+                  <img src={`/Sponsors/${sponsor.src}?v=14`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
