@@ -16,21 +16,15 @@ export default function Sponsors() {
             .sponsors-grid {
               display: flex;
               flex-direction: column;
-              gap: 28px;
+              gap: 16px;
               width: 100%;
               margin-top: 2rem;
-              background: #ffffff;
-              border-radius: 16px;
-              padding: 3rem 2.5rem;
-              box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
-              box-sizing: border-box;
             }
             .sponsors-row {
               display: grid;
               gap: 16px;
               width: 100%;
               justify-content: center;
-              align-items: center;
             }
             .sponsors-row-1 {
               grid-template-columns: repeat(5, 1fr);
@@ -39,11 +33,7 @@ export default function Sponsors() {
               grid-template-columns: repeat(7, 1fr);
             }
             .sponsors-row-3 {
-              grid-template-columns: repeat(9, 1fr);
-              gap: 12px;
-            }
-            .sponsors-row-3 .sponsor-card {
-              padding: 0.4rem 0.2rem;
+              grid-template-columns: repeat(7, 1fr);
             }
             .sponsors-row-4 {
               grid-template-columns: repeat(6, 1fr);
@@ -52,32 +42,30 @@ export default function Sponsors() {
               grid-template-columns: repeat(7, 1fr);
             }
             .sponsor-card {
-              background: transparent;
-              border: none;
-              border-radius: 0;
-              padding: 0.6rem 0.4rem;
+              background: #ffffff;
+              border: 1px solid rgba(0, 0, 0, 0.08);
+              border-radius: 4px;
+              padding: 1.2rem 1rem;
               display: flex;
               align-items: center;
               justify-content: center;
-              min-height: 85px;
+              min-height: 105px;
               box-sizing: border-box;
-              transition: transform 0.2s ease, opacity 0.2s ease;
+              transition: all 0.2s ease;
             }
             .sponsor-card:hover {
-              transform: scale(1.06);
+              transform: translateY(-2px);
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+              border-color: rgba(0, 0, 0, 0.15);
             }
             .sponsor-card img {
-              height: 65px;
+              height: 70px;
               width: auto;
               max-width: 100%;
               object-fit: contain;
             }
 
             @media (max-width: 1024px) {
-              .sponsors-grid {
-                padding: 2rem 1.5rem;
-                gap: 20px;
-              }
               .sponsors-row-1 { grid-template-columns: repeat(3, 1fr); }
               .sponsors-row-2 { grid-template-columns: repeat(3, 1fr); max-width: 100%; }
               .sponsors-row-3 { grid-template-columns: repeat(3, 1fr); }
@@ -85,21 +73,17 @@ export default function Sponsors() {
               .sponsors-row-5 { grid-template-columns: repeat(3, 1fr); }
             }
             @media (max-width: 640px) {
-              .sponsors-grid {
-                padding: 1.5rem 1rem;
-                border-radius: 12px;
-                gap: 16px;
-              }
               .sponsors-row-1, .sponsors-row-2, .sponsors-row-3, .sponsors-row-4, .sponsors-row-5 {
                 grid-template-columns: repeat(2, 1fr);
               }
               .sponsor-card {
-                padding: 0.4rem 0.2rem;
-                min-height: 75px;
+                padding: 0.8rem;
+                min-height: 90px;
               }
               .sponsor-card img {
-                height: 50px;
+                height: 55px;
               }
+
             }
             @media (max-width: 400px) {
               .sponsors-row-1, .sponsors-row-2, .sponsors-row-3, .sponsors-row-4, .sponsors-row-5 {
@@ -141,21 +125,19 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 3 - Riisa, Value, Media Group, Televisa Monterrey, Canal 28, EMEPE, Treviño Elizondo, Chapa González, Montemayor */}
+            {/* Fila 3 - Riisa, Value, EMEPE, Media Group, Treviño Elizondo, Chapa González, Montemayor */}
             <div className="sponsors-row sponsors-row-3 reveal-up">
               {[
-                { src: "riisa.png", alt: "Fundación Riisa", style: { transform: 'scale(1.15)' } },
-                { src: "value.png", alt: "Value Casa de Bolsa", style: { transform: 'scale(1.15)' } },
-                { src: "media-group.png", alt: "V Media Group", style: { transform: 'scale(1.20)' } },
-                { src: "televisa-monterrey.png", alt: "Televisa Monterrey", style: { transform: 'scale(1.15)' } },
-                { src: "canal-28.jpg", alt: "Canal 28", style: { transform: 'scale(1.05)', borderRadius: '6px' } },
-                { src: "emepe.png", alt: "EMEPE", style: { transform: 'scale(1.70)' } },
-                { src: "trevino-elizondo.png", alt: "Asociación de Beneficencia Privada Treviño Elizondo", style: { transform: 'scale(1.15)' } },
-                { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González", style: { transform: 'scale(1.10)' } },
-                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", style: { transform: 'scale(1.90)' } },
+                { src: "riisa.png", alt: "Fundación Riisa", style: { transform: 'scale(1.20)' } },
+                { src: "value.png", alt: "Value Casa de Bolsa", style: { transform: 'scale(1.2)' } },
+                { src: "emepe.png", alt: "EMEPE", style: { transform: 'scale(1.85)' } },
+                { src: "media-group.png", alt: "V Media Group", style: { transform: 'scale(1.30)' } },
+                { src: "trevino-elizondo.png", alt: "Asociación de Beneficencia Privada Treviño Elizondo", style: { transform: 'scale(1.20)' } },
+                { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González", style: { transform: 'scale(1.15)' } },
+                { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", style: { transform: 'scale(2.20)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=12`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
+                  <img src={`/Sponsors/${sponsor.src}?v=6`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
