@@ -42,13 +42,12 @@ export default function Sponsors() {
               grid-template-columns: repeat(7, 1fr);
             }
             .sponsors-row-4 {
-              grid-template-columns: repeat(8, 1fr);
-              gap: 14px;
-            }
-            .sponsors-row-4 .sponsor-card {
-              padding: 0.4rem 0.2rem;
+              grid-template-columns: repeat(6, 1fr);
             }
             .sponsors-row-5 {
+              grid-template-columns: repeat(6, 1fr);
+            }
+            .sponsors-row-6 {
               grid-template-columns: repeat(7, 1fr);
             }
             .sponsor-card {
@@ -81,8 +80,9 @@ export default function Sponsors() {
               .sponsors-row-1 { grid-template-columns: repeat(3, 1fr); }
               .sponsors-row-2 { grid-template-columns: repeat(3, 1fr); max-width: 100%; }
               .sponsors-row-3 { grid-template-columns: repeat(3, 1fr); }
-              .sponsors-row-4 { grid-template-columns: repeat(4, 1fr); }
+              .sponsors-row-4 { grid-template-columns: repeat(3, 1fr); }
               .sponsors-row-5 { grid-template-columns: repeat(3, 1fr); }
+              .sponsors-row-6 { grid-template-columns: repeat(3, 1fr); }
             }
             @media (max-width: 640px) {
               .sponsors-grid {
@@ -90,7 +90,7 @@ export default function Sponsors() {
                 border-radius: 12px;
                 gap: 16px;
               }
-              .sponsors-row-1, .sponsors-row-2, .sponsors-row-3, .sponsors-row-4, .sponsors-row-5 {
+              .sponsors-row-1, .sponsors-row-2, .sponsors-row-3, .sponsors-row-4, .sponsors-row-5, .sponsors-row-6 {
                 grid-template-columns: repeat(2, 1fr);
               }
               .sponsor-card {
@@ -102,7 +102,7 @@ export default function Sponsors() {
               }
             }
             @media (max-width: 400px) {
-              .sponsors-row-1, .sponsors-row-2, .sponsors-row-3, .sponsors-row-4, .sponsors-row-5 {
+              .sponsors-row-1, .sponsors-row-2, .sponsors-row-3, .sponsors-row-4, .sponsors-row-5, .sponsors-row-6 {
                 grid-template-columns: 1fr;
               }
             }
@@ -158,26 +158,40 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 4 - Televisa Monterrey, Rotary, Tec, UDEM, U-ERRE, UANL, Montemorelos, Canal 28 */}
+            {/* Fila 4 - Canal 28, Televisa Monterrey, 6W News, EZER, Publirex, Entre Plantas y Flores */}
             <div className="sponsors-row sponsors-row-4 reveal-up">
               {[
+                { src: "canal-28.jpg", alt: "Canal 28", style: { transform: 'scale(1.05)', borderRadius: '6px' } },
                 { src: "televisa-monterrey.png", alt: "Televisa Monterrey", style: { transform: 'scale(1.15)' } },
+                { src: "6w-news.png", alt: "6W News", style: { transform: 'scale(1.15)' } },
+                { src: "ezer.png", alt: "EZER La Casa del Voluntario", style: { transform: 'scale(1.20)' } },
+                { src: "publirex.jpg", alt: "Publirex", style: { transform: 'scale(1.20)' } },
+                { src: "entre-plantas-y-flores.png", alt: "Entre Plantas y Flores", style: { transform: 'scale(1.30)' } },
+              ].map((sponsor, idx) => (
+                <div key={idx} className="sponsor-card">
+                  <img src={`/Sponsors/${sponsor.src}?v=16`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
+                </div>
+              ))}
+            </div>
+
+            {/* Fila 5 - Rotary, Tec, UDEM, U-ERRE, UANL, Montemorelos */}
+            <div className="sponsors-row sponsors-row-5 reveal-up">
+              {[
                 { src: "Rotarios.jpeg", alt: "Rotary", style: { transform: 'scale(1.20)' } },
                 { src: "ITESM.png", alt: "Tecnológico de Monterrey", style: { transform: 'scale(1.20)' } },
                 { src: "UDEM.jpg", alt: "UDEM" },
                 { src: "u-erre-logotipo-comercial-rgb.png", alt: "U-ERRE" },
                 { src: "UANL.png", alt: "UANL", style: { transform: 'scale(1.15)' } },
                 { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos", style: { transform: 'scale(1.20)' } },
-                { src: "canal-28.jpg", alt: "Canal 28", style: { transform: 'scale(1.05)', borderRadius: '6px' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=14`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
+                  <img src={`/Sponsors/${sponsor.src}?v=16`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
 
-            {/* Fila 5 - Printel, Delta Solutions, Nouvell, Consejo, CFC, Pasteles, Museo de Historia */}
-            <div className="sponsors-row sponsors-row-5 reveal-up">
+            {/* Fila 6 - Printel, Delta Solutions, Nouvell, Consejo, CFC, Pasteles, Museo de Historia */}
+            <div className="sponsors-row sponsors-row-6 reveal-up">
               {[
                 { src: "printel.png", alt: "Printel" },
                 { src: "delta-solutions.png", alt: "Delta Solutions", style: { transform: 'scale(1.75)' } },
@@ -188,7 +202,7 @@ export default function Sponsors() {
                 { src: "museo-historia.png", alt: "Museo de Historia Mexicana", style: { transform: 'scale(1.40)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=5`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
+                  <img src={`/Sponsors/${sponsor.src}?v=16`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
