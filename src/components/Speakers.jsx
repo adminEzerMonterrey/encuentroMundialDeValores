@@ -335,6 +335,32 @@ const speakersData = [
     talkName: "IA en Educación Superior"
   },
   {
+    img: "/speakers/dr-jean-g-guerrero-dib.jpg",
+    initials: "JG",
+    name: "Dr. Jean G. Guerrero Dib",
+    company: "Universidad de Monterrey (UDEM)",
+    role: "Director de Identidad y Principios Institucionales",
+    bio: "Director de Identidad y Principios Institucionales de la UDEM. Especialista en ética e integridad académica, con más de 23 años en la educación y doctorado en Innovación Educativa.",
+    longBio: "Director de Identidad y Principios Institucionales de la Universidad de Monterrey (UDEM). Especialista en ética e integridad académica, con más de 23 años en el ámbito educativo. Cuenta con un Doctorado en Innovación Educativa por el Tecnológico de Monterrey y una destacada trayectoria directiva e internacional.",
+    bullets: [
+      "Director de Identidad y Principios Institucionales de la Universidad de Monterrey (UDEM).",
+      "Antes dirigió su Centro de Integridad y Ética por más de 6 años.",
+      "Ha sido directivo en el Tecnológico de Monterrey y en los Liceos de Monterrey.",
+      "Ingeniero en Sistemas Computacionales (UDEM). Cuenta con maestrías por la University of Hull, el IPADE y la Universidad de Navarra, y un Doctorado en Innovación Educativa por el Tec de Monterrey.",
+      "Fue ingeniero en Citibank, Softtek y Atcor, esta última en Silicon Valley.",
+      "Fue consejero del International Center for Academic Integrity y es miembro del Consejo Editorial del International Journal for Educational Integrity.",
+      "Vicepresidente de la Comisión de Ética y Cumplimiento del Instituto de Control Interno y miembro de la Junta de Gobierno de la Ciudad de los Niños.",
+      "Docente en la UDEM y en el ICAMI.",
+      "Ha impartido conferencias en México, Estados Unidos, Latinoamérica, Turquía y los Emiratos Árabes Unidos."
+    ],
+    photoPosition: "left",
+    gradient: "linear-gradient(135deg,#F59E0B,#D97706)",
+    trackClass: "track-c",
+    trackName: "Educación Superior",
+    talkIcon: "🎓",
+    talkName: "IA en Educación Superior"
+  },
+  {
     img: "/speakers/mauricio-martinez.jpg",
     initials: "MM",
     name: "Mauricio Martínez",

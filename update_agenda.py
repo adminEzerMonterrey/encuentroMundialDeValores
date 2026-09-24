@@ -257,7 +257,7 @@ const agendaData = [
       { name: "Juan Paura García", role: "Secretario de Educación · Nuevo León" },
       { name: "Ángel Casán Marcos", role: "Rector · Universidad Regiomontana U-ERRE" },
       { name: "Mario Adrián Flores Castro", role: "Vicepresidente · Tecnológico de Monterrey, Campus Monterrey" },
-      { name: "Por definir", role: "Próximo Rector · UDEM" },
+      { name: "Dr. Jean G. Guerrero Dib", role: "Director de Identidad y Principios Institucionales · Universidad de Monterrey UDEM" },
       { name: "Por definir", role: "Rector · UANL" }
     ]
   },

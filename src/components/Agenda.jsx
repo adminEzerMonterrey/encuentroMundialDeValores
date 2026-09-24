@@ -109,9 +109,10 @@ const agendaData = [
     track: "Educación",
     color: "var(--color-orange)",
     speakers: [
+      { name: "Ángel Casán Marcos", role: "Rector · Universidad Regiomontana U-ERRE" },
       { name: "Dr. Juan Paura García", role: "Secretario de Educación · Nuevo León" },
       { name: "Mario Adrián Flores Castro", role: "Vicepresidente · Tecnológico de Monterrey, Campus Monterrey" },
-      { name: "Ángel Casán Marcos", role: "Rector · Universidad Regiomontana U-ERRE" }
+      { name: "Dr. Jean G. Guerrero Dib", role: "Director de Identidad y Principios Institucionales · Universidad de Monterrey UDEM" }
     ]
   },
   {
