@@ -81,8 +81,7 @@ const agendaData = [
     track: "Autonomía Humana",
     color: "var(--color-cyan)",
     speakers: [
-      { name: "Dr. Bimal Desai", role: "VP & CHIO · Children's Hospital of Philadelphia" },
-      { name: "Dra. Alma Rosa Marroquín Escamilla", role: "Secretaria de Salud · Nuevo León" }
+      { name: "Dr. Bimal Desai", role: "VP & CHIO · Children's Hospital of Philadelphia" }
     ]
   },
   {
@@ -121,7 +120,7 @@ const agendaData = [
     track: "Autonomía Humana",
     color: "var(--color-cyan)",
     speakers: [
-      { name: 'Marian "Mimi" Edmunds', role: "Periodista y Productora · CBS 60 Minutes" },
+      { name: 'Marianna "Mimi" Edmunds', role: "Periodista y Productora · CBS 60 Minutes" },
       { name: "Jorge Lerdo de Tejada", role: "Global Ambassador · Singularity University" },
       { name: "Gregorio Martínez", role: "Periodista y presentador de televisión" }
     ]
@@ -278,7 +277,7 @@ const agendaData = [
     speakers: [
       { name: "Javier Prieto", role: "" },
       { name: "David Eaton", role: "" },
-      { name: 'Marian "Mimi" Edmunds', role: "" }
+      { name: 'Marianna "Mimi" Edmunds', role: "" }
     ]
   },
   {

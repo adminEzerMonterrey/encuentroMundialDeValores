@@ -243,29 +243,6 @@ const speakersData = [
     talkName: "IA en Educación"
   },
   {
-    img: "/speakers/dra-alma-rosa-marroquin.jpg",
-    initials: "AR",
-    name: "Dra. Alma Rosa Marroquín Escamilla",
-    company: "Gobierno de Nuevo León",
-    role: "Secretaria de Salud",
-    bio: "Secretaria de Salud del Estado de Nuevo León, Administración 2021-2027. Médica pediatra y doctora en medicina, liderando la transformación del sistema de salud.",
-    longBio: "Secretaria de Salud del Estado de Nuevo León, Administración 2021-2027. Médica pediatra y doctora en medicina, liderando actualmente la transformación del sistema de salud de Nuevo León.",
-    bullets: [
-      "Primera mujer en ocupar el cargo de Secretaria de Salud de Nuevo León (2021-2027).",
-      "Su gestión se enfoca en un modelo innovador de atención integral con cobertura universal, priorizando la equidad, la prevención y el bienestar de todas las personas.",
-      "Doctora en Medicina con especialidad en Pediatría.",
-      "Impulsora del fideicomiso para enfermedades de alto costo y cobertura universal en NL.",
-      "Reconocida en el Top 60 Mujeres Más Poderosas de México.",
-      "Experiencia previa como Directora de Hospitales de los Servicios de Salud de Nuevo León."
-    ],
-    photoPosition: "left",
-    gradient: "linear-gradient(135deg,#059669,#8B5CF6)",
-    trackClass: "track-a",
-    trackName: "Salud",
-    talkIcon: "🏥",
-    talkName: "Reinventing Medicine"
-  },
-  {
     img: "/speakers/dra-sofialeticia-morales-garza.png",
     initials: "SM",
     name: "Dra. Sofialeticia Morales Garza",
@@ -406,7 +383,7 @@ const speakersData = [
   {
     img: "/speakers/marian-mimi-edmunds.jpg",
     initials: "ME",
-    name: 'Marian "Mimi" Edmunds',
+    name: 'Marianna "Mimi" Edmunds',
     company: "CBS News / PBS",
     role: "Periodista y Productora Documental",
     bio: "Experimentada periodista y productora con más de 30 años en investigación y documental.",

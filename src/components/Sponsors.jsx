@@ -166,10 +166,10 @@ export default function Sponsors() {
                 { src: "6w-news.png", alt: "6W News", style: { transform: 'scale(1.15)' } },
                 { src: "ezer.png", alt: "EZER La Casa del Voluntario", style: { transform: 'scale(1.20)' } },
                 { src: "publirex.jpg", alt: "Publirex", style: { transform: 'scale(1.20)' } },
-                { src: "entre-plantas-y-flores.png", alt: "Entre Plantas y Flores", style: { transform: 'scale(1.30)' } },
+                { src: "entre-plantas-y-flores.png", alt: "Entre Plantas y Flores", style: { transform: 'scale(1.45)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=16`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
+                  <img src={`/Sponsors/${sponsor.src}?v=17`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
