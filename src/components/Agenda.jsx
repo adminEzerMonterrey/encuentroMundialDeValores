@@ -139,11 +139,11 @@ const agendaData = [
   },
   {
     type: "18:30 · Celebración de cierre",
-    title: "Celebración de cierre · Día 1",
+    title: "Celebración de cierre · Cierre musical: Sebastián Yatra",
     track: "Humanismo y Valores",
     color: "var(--color-pink)",
     speakers: [
-      { name: "Encuentro Mundial de Valores", role: "" }
+      { name: "Sebastián Yatra", role: "Cierre Musical" }
     ]
   },
 

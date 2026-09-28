@@ -501,31 +501,29 @@ const speakersData = [
     talkName: "Ser Humano en escena"
   },
   {
-    img: "/speakers/mons-rogelio-cabrera-lopez.jpg",
-    imgScale: "1.4",
-    initials: "RC",
-    name: "Mons. Rogelio Cabrera López",
+    img: "/speakers/mons-carlos-alberto-santos-garcia.jpg",
+    initials: "CS",
+    name: "Mons. Carlos Alberto Santos García",
     company: "Arquidiócesis de Monterrey",
-    role: "Arzobispo Metropolitano",
-    bio: "Arzobispo Metropolitano de Monterrey desde 2012 y Presidente emérito de la Conferencia del Episcopado Mexicano.",
-    longBio: "Arzobispo Metropolitano de Monterrey desde 2012 y Presidente emérito de la Conferencia del Episcopado Mexicano. Con formación en Teología de universidades romanas, ha participado activamente en diálogos nacionales por la paz y justicia social.",
+    role: "Obispo Auxiliar y Vicario General",
+    bio: "Obispo Auxiliar de la Arquidiócesis de Monterrey y Vicario General. Doctor en Teología Bíblica por la Pontificia Universidad Gregoriana en Roma.",
+    longBio: "Obispo Auxiliar de la Arquidiócesis de Monterrey y Vicario General. Con sólida formación académica y pastoral, es Licenciado en Teología Bíblica por la Universidad Pontificia de México y Doctor en Teología Bíblica por la Pontificia Universidad Gregoriana en Roma. Ha servido como formador y Rector del Seminario Arquidiocesano de Monterrey.",
     bullets: [
-      "Arzobispo Metropolitano de Monterrey desde el 3 de octubre de 2012, nombrado por el Papa Benedicto XVI.",
-      "Presidente de la Conferencia del Episcopado Mexicano (CEM) 2018-2021.",
-      "Presidente del Consejo Económico de CELAM (Conferencia del Episcopado Latinoamericano) 2019.",
-      "Miembro de la Pontificia Comisión para América Latina (desde 2020).",
-      "Miembro del Dicasterio para el Servicio del Desarrollo Humano Integral (desde 2026).",
-      "Audiencia privada con el Papa León XIV en el Vaticano (octubre 2025).",
-      "Anteriormente Arzobispo de Tuxtla Gutiérrez (2004-2012) y Obispo de Tapachula y Tacámbaro.",
-      "Licenciatura en Teología, Pontificia Universidad Gregoriana, Roma; Licenciatura en Sagrada Escritura, Pontificio Instituto Bíblico, Roma.",
-      "Con formación en Teología de universidades romanas, ha participado activamente en diálogos nacionales por la paz y justicia social."
+      "Obispo Auxiliar de la Arquidiócesis de Monterrey y Vicario General (desde 2023).",
+      "Doctor en Teología Bíblica por la Pontificia Universidad Gregoriana en Roma.",
+      "Licenciado en Teología Bíblica por la Universidad Pontificia de México.",
+      "Estudios eclesiásticos en el Seminario de Monterrey y en la Universidad Pontificia de México.",
+      "Ordenado sacerdote el 15 de agosto de 2002 por el Cardenal Adolfo Suárez Rivera.",
+      "Ha sido Maestro, Formador y Rector del Seminario Arquidiocesano de Monterrey.",
+      "Miembro del Colegio de Consultores y Delegado para los sacerdotes en Misión.",
+      "Ha sido Vicario, Administrador y Párroco en diversas comunidades de la Arquidiócesis de Monterrey."
     ],
     photoPosition: "left",
     gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)",
     trackClass: "track-a",
-    trackName: "Reconocimiento",
+    trackName: "Espiritualidad",
     talkIcon: "🕊️",
-    talkName: "Reconocimiento"
+    talkName: "Paz y Espiritualidad"
   },
   {
     img: "/speakers/padre-david-jasso.png",
@@ -545,7 +543,7 @@ const speakersData = [
       "Autor de libros, secretario adjunto y adscrito del CELAM 2019-2023.",
       "Vicario Parroquial, Vicecanciller y administrador parroquial, secretario técnico del proyecto global de Pastoral 2031-2033 y miembro del comité técnico de la Novena Intercontinental Guadalupana.",
       "Actualmente, es Rector del Templo Expiatorio San Luis Gonzaga, Auxiliar del Moderador de la Curia para el Talento Humano y ProVicario Episcopal de la Vicaría de Pastoral.",
-      "A nivel Latinoamericano, junto a Mons. Rogelio Cabrera, es asesor de la Unión Cristiana Internacional de Ejecutivos de Empresas (UNIAPAC)."
+      "A nivel Latinoamericano, es asesor de la Unión Cristiana Internacional de Ejecutivos de Empresas (UNIAPAC)."
     ],
     photoPosition: "left",
     gradient: "linear-gradient(135deg,#FF9900,#e65c00)",

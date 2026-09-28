@@ -142,7 +142,7 @@ const agendaData = [
     color: "var(--color-pink)",
     speakers: [
       { name: "Dra. María Cristina González Parás", role: "Directora EMV" },
-      { name: "Mons. Rogelio Cabrera López", role: "Arzobispo Metropolitano de Monterrey" }
+      { name: "Mons. Carlos Alberto Santos García", role: "Obispo Auxiliar y Vicario General de Monterrey" }
     ]
   },
   {
@@ -151,7 +151,7 @@ const agendaData = [
     track: "Humanismo y Valores",
     color: "var(--color-pink)",
     speakers: [
-      { name: "Mons. Rogelio Cabrera López", role: "Arzobispo Metropolitano de Monterrey" },
+      { name: "Mons. Carlos Alberto Santos García", role: "Obispo Auxiliar y Vicario General de Monterrey" },
       { name: "Dra. María Cristina González Parás", role: "Directora EMV" }
     ]
   },
