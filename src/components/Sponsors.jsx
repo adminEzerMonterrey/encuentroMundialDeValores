@@ -42,7 +42,7 @@ export default function Sponsors() {
               grid-template-columns: repeat(7, 1fr);
             }
             .sponsors-row-4 {
-              grid-template-columns: repeat(6, 1fr);
+              grid-template-columns: repeat(7, 1fr);
             }
             .sponsors-row-5 {
               grid-template-columns: repeat(6, 1fr);
@@ -158,9 +158,10 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 4 - Canal 28, Televisa Monterrey, 6W News, EZER, Publirex, Entre Plantas y Flores */}
+            {/* Fila 4 - Publikt, Canal 28, Televisa Monterrey, 6W News, EZER, Publirex, Entre Plantas y Flores */}
             <div className="sponsors-row sponsors-row-4 reveal-up">
               {[
+                { src: "publikt.png", alt: "Publikt", style: { transform: 'scale(1.10)' } },
                 { src: "canal-28.jpg", alt: "Canal 28", style: { transform: 'scale(1.05)', borderRadius: '6px' } },
                 { src: "televisa-monterrey.png", alt: "Televisa Monterrey", style: { transform: 'scale(1.15)' } },
                 { src: "6w-news.png", alt: "6W News", style: { transform: 'scale(1.15)' } },
@@ -169,7 +170,7 @@ export default function Sponsors() {
                 { src: "entre-plantas-y-flores.png", alt: "Entre Plantas y Flores", style: { transform: 'scale(1.45)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=17`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
+                  <img src={`/Sponsors/${sponsor.src}?v=18`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
