@@ -337,7 +337,7 @@ const agendaData = [
     track: "Salud",
     color: "var(--color-cyan)",
     speakers: [
-      { name: "Pablo Merino", role: "" }
+      { name: "Pablo Merino", role: "Fundador · Instituto del Ser y la Consciencia" }
     ]
   },
   {

@@ -49,7 +49,7 @@ function SpeakerCard({ speaker, index, isCurrent, onClick, onOpenModal }) {
       {/* Photo */}
       <div className="sc-card__photo">
         {speaker.img
-          ? <img src={speaker.img.includes('?v=') ? speaker.img.replace(/v=\d+/, 'v=5') : `${speaker.img}?v=5`} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.imgPosition || undefined, transform: `${speaker.imgScale ? `scale(${speaker.imgScale})` : ''} ${speaker.imgOffsetY ? `translateY(${speaker.imgOffsetY})` : ''}`.trim() || undefined, transformOrigin: speaker.imgScale ? 'top center' : undefined }} />
+          ? <img src={speaker.img.includes('?v=') ? speaker.img.replace(/v=\d+/, 'v=6') : `${speaker.img}?v=6`} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.imgPosition || undefined, transform: `${speaker.imgScale ? `scale(${speaker.imgScale})` : ''} ${speaker.imgOffsetY ? `translateY(${speaker.imgOffsetY})` : ''}`.trim() || undefined, transformOrigin: speaker.imgScale ? 'top center' : undefined }} />
           : <div className="sc-card__photo-fallback" style={{ '--gradient': speaker.gradient }}>{speaker.initials}</div>}
       </div>
 
@@ -485,11 +485,11 @@ const speakersData = [
     initials: "FD",
     name: "Farid Dieck",
     company: "Creador de contenido",
-    role: "Psicólogo y Conferencista",
-    bio: "Psicólogo, autor y creador de contenido de Monterrey, Nuevo León. Máster en Salud Mental por la Univ. de León y maestría por Centro Eleia.",
-    longBio: "Psicólogo, autor y creador de contenido de Monterrey, Nuevo León. Tiene un Master en Salud Mental: Clínica Psicoanalítica por la Universidad de León de España y actualmente está terminando una Maestría en Psicoterapia Psicoanalítica por el Centro Eleia.",
+    role: "Psicólogo, Autor y Conferencista",
+    bio: "Psicólogo, autor y creador de contenido de Monterrey, Nuevo León. Master en Salud Mental por la Universidad de León de España y Maestro en Psicoterapia Psicoanalítica.",
+    longBio: "Psicólogo, autor y creador de contenido de Monterrey, Nuevo León. Master en Salud Mental por la Universidad de León de España y Maestro en Psicoterapia Psicoanalítica.",
     bullets: [
-      "Cuenta con más de 10 millones de seguidores en sus diferentes redes sociales.",
+      "Cuenta con más de 80 millones de seguidores en sus diferentes redes sociales.",
       "Ha dado conferencias en más de 10 países en América y Europa.",
       "Se ha consolidado como una de las figuras más influyentes en el ámbito de la psicología, filosofía y creación de contenido reflexivo en Latinoamérica."
     ],
@@ -502,21 +502,24 @@ const speakersData = [
   },
   {
     img: "/speakers/mons-carlos-alberto-santos-garcia.jpg",
+    imgPosition: "center 15%",
     initials: "CS",
-    name: "Mons. Carlos Alberto Santos García",
+    name: "Mons. Carlos Alberto Santos",
     company: "Arquidiócesis de Monterrey",
     role: "Obispo Auxiliar y Vicario General",
-    bio: "Obispo Auxiliar de la Arquidiócesis de Monterrey y Vicario General. Doctor en Teología Bíblica por la Pontificia Universidad Gregoriana en Roma.",
-    longBio: "Obispo Auxiliar de la Arquidiócesis de Monterrey y Vicario General. Con sólida formación académica y pastoral, es Licenciado en Teología Bíblica por la Universidad Pontificia de México y Doctor en Teología Bíblica por la Pontificia Universidad Gregoriana en Roma. Ha servido como formador y Rector del Seminario Arquidiocesano de Monterrey.",
+    bio: "Obispo auxiliar de la Arquidiócesis de Monterrey y Vicario general. Doctor en Teología Bíblica por la Pontificia Universidad Gregoriana en Roma.",
+    longBio: "Obispo auxiliar de la Arquidiócesis de Monterrey y Vicario general. Doctor en Teología Bíblica por la Pontificia Universidad Gregoriana en Roma y Licenciado por la Universidad Pontificia de México. Ha sido Maestro, Formador y Rector del Seminario Arquidiocesano de Monterrey.",
     bullets: [
-      "Obispo Auxiliar de la Arquidiócesis de Monterrey y Vicario General (desde 2023).",
-      "Doctor en Teología Bíblica por la Pontificia Universidad Gregoriana en Roma.",
-      "Licenciado en Teología Bíblica por la Universidad Pontificia de México.",
-      "Estudios eclesiásticos en el Seminario de Monterrey y en la Universidad Pontificia de México.",
+      "Obispo Auxiliar y Vicario General.",
+      "Miembro del Colegio de Consultores.",
+      "Delegado para los sacerdotes en Misión.",
+      "Estudios en el Seminario de Monterrey y en la Universidad Pontificia de México.",
       "Ordenado sacerdote el 15 de agosto de 2002 por el Cardenal Adolfo Suárez Rivera.",
+      "Licenciado en Teología Bíblica por la Universidad Pontificia de México.",
+      "Doctor en Teología Bíblica por la Pontificia Universidad Gregoriana en Roma.",
       "Ha sido Maestro, Formador y Rector del Seminario Arquidiocesano de Monterrey.",
-      "Miembro del Colegio de Consultores y Delegado para los sacerdotes en Misión.",
-      "Ha sido Vicario, Administrador y Párroco en diversas comunidades de la Arquidiócesis de Monterrey."
+      "Ha sido Vicario, Administrador y Párroco en diversas comunidades de la Arquidiócesis de Monterrey.",
+      "Desde el año 2023, obispo auxiliar de la arquidiócesis de Monterrey y vicario general."
     ],
     photoPosition: "left",
     gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)",
@@ -979,8 +982,8 @@ const speakersData = [
     name: "Pablo Merino",
     company: "Instituto del Ser y la Consciencia",
     role: "Experto y mentor en espiritualidad y desarrollo humano",
-    bio: "Arquitecto por la UNAM, con MBA del Tecnológico de Monterrey e IPADE Business School. Experto y mentor en espiritualidad y desarrollo humano.",
-    longBio: "Arquitecto por la UNAM, con MBA del Tecnológico de Monterrey e IPADE Business School. Experto y mentor en espiritualidad y desarrollo humano.",
+    bio: "Pedagogo por la Universidad Panamericana. Fundador del Instituto del Ser y la Consciencia. Coach empresarial, asesor y mediador familiar, así como experto y mentor en espiritualidad y desarrollo humano.",
+    longBio: "Pedagogo por la Universidad Panamericana. Fundador del Instituto del Ser y la Consciencia. Coach empresarial, asesor y mediador familiar, así como, experto y mentor en espiritualidad y desarrollo humano.",
     bullets: [
       "Conferencista creador de la metodología de desarrollo humano La Neuroevolución.",
       "Es fundador del Instituto del Ser y la Consciencia, así como asesor y mediador familiar.",
@@ -992,9 +995,9 @@ const speakersData = [
     photoPosition: "left",
     gradient: "linear-gradient(135deg,#8B5CF6,#2E86C1)",
     trackClass: "track-a",
-    trackName: "Espiritualidad y Desarrollo Humano",
-    talkIcon: "🧘\u200d♂️",
-    talkName: "Espiritualidad y Desarrollo Humano"
+    trackName: "Salud y Espiritualidad",
+    talkIcon: "🧘‍♂️",
+    talkName: "IA Consciente: tecnología para volver a ti"
   },
   {
     img: "/speakers/flor-ontiveros.png",
@@ -1364,7 +1367,7 @@ export default function Speakers() {
               }}
             >
               {speaker.img ? (
-                <img src={speaker.img.includes('?v=') ? speaker.img.replace(/v=\d+/, 'v=5') : `${speaker.img}?v=5`} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.collagePosition || speaker.imgPosition || undefined, transform: `${(speaker.collageScale || speaker.imgScale) ? `scale(${speaker.collageScale || speaker.imgScale})` : ''} ${(speaker.collageOffsetY || speaker.imgOffsetY) ? `translateY(${speaker.collageOffsetY || speaker.imgOffsetY})` : ''}`.trim() || undefined, transformOrigin: (speaker.collageScale || speaker.imgScale) ? 'top center' : undefined }} />
+                <img src={speaker.img.includes('?v=') ? speaker.img.replace(/v=\d+/, 'v=6') : `${speaker.img}?v=6`} alt={speaker.name} loading="lazy" style={{ objectPosition: speaker.collagePosition || speaker.imgPosition || undefined, transform: `${(speaker.collageScale || speaker.imgScale) ? `scale(${speaker.collageScale || speaker.imgScale})` : ''} ${(speaker.collageOffsetY || speaker.imgOffsetY) ? `translateY(${speaker.collageOffsetY || speaker.imgOffsetY})` : ''}`.trim() || undefined, transformOrigin: (speaker.collageScale || speaker.imgScale) ? 'top center' : undefined }} />
               ) : (
                 <div className="collage-fallback" style={{ background: speaker.gradient }}>{speaker.initials}</div>
               )}
@@ -1428,7 +1431,7 @@ export default function Speakers() {
               <div className="speakers-modal-photo">
                 {activeModalSpeaker.img ? (
                   <img 
-                    src={activeModalSpeaker.img.includes('?v=') ? activeModalSpeaker.img.replace(/v=\d+/, 'v=5') : `${activeModalSpeaker.img}?v=5`} 
+                    src={activeModalSpeaker.img.includes('?v=') ? activeModalSpeaker.img.replace(/v=\d+/, 'v=6') : `${activeModalSpeaker.img}?v=6`} 
                     alt={activeModalSpeaker.name} 
                     style={{ 
                       objectPosition: activeModalSpeaker.modalPosition || activeModalSpeaker.imgPosition || undefined,
