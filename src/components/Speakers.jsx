@@ -78,7 +78,7 @@ function SpeakerCard({ speaker, index, isCurrent, onClick, onOpenModal }) {
 // Data Array to keep JSX clean
 const speakersData = [
   {
-    img: "/speakers/marian-rojas-estape.jpg",
+    img: "/speakers/marian-rojas-estape.webp",
     initials: "MR",
     name: "Marian Rojas Estapé",
     company: "Instituto Rojas Estapé",
@@ -96,7 +96,7 @@ const speakersData = [
     talkName: "La mente en la era digital: dopamina, ansiedad y reconexión interior"
   },
   { 
-    img: "/speakers/dr-bimal-desai.jpg", 
+    img: "/speakers/dr-bimal-desai.webp", 
     initials: "BD", 
     name: "Dr. Bimal Desai", 
     company: "Children's Hospital Philadelphia", 
@@ -120,7 +120,7 @@ const speakersData = [
     talkName: "Reinventing Medicine" 
   },
   {
-    img: "/speakers/emma-seppala.jpg",
+    img: "/speakers/emma-seppala.webp",
     initials: "ES",
     name: "Emma Seppälä",
     company: "Stanford",
@@ -143,7 +143,7 @@ const speakersData = [
     talkName: "Calma en tiempos de inteligencia artificial: la ciencia del bienestar emocional"
   },
   {
-    img: "/speakers/dr-arumugam-mrukiah.jpg",
+    img: "/speakers/dr-arumugam-mrukiah.webp",
     initials: "AM",
     name: "Dr. Arumugam Murukiah",
     company: "Broadline Technologies",
@@ -165,7 +165,7 @@ const speakersData = [
     talkName: "IA Humanizada"
   },
   {
-    img: "/speakers/dra-melina-uncapher.jpg",
+    img: "/speakers/dra-melina-uncapher.webp",
     initials: "MU",
     name: "Dra. Melina Uncapher",
     company: "SETA-ED",
@@ -190,7 +190,7 @@ const speakersData = [
     talkName: "Neurociencia Educativa"
   },
   {
-    img: "/speakers/caroline-sanchez-crozier.jpeg",
+    img: "/speakers/caroline-sanchez-crozier.webp",
     imgPosition: "top center",
     imgScale: "1.05",
     initials: "CC",
@@ -216,7 +216,7 @@ const speakersData = [
     talkName: "Tecnología y Educación"
   },
   {
-    img: "/speakers/alejandro-almazan-zimerman.png",
+    img: "/speakers/alejandro-almazan-zimerman.webp",
     imgPosition: "center 15%",
     collagePosition: "center 15%",
     modalPosition: "center 10%",
@@ -243,7 +243,7 @@ const speakersData = [
     talkName: "IA en Educación"
   },
   {
-    img: "/speakers/dra-sofialeticia-morales-garza.png",
+    img: "/speakers/dra-sofialeticia-morales-garza.webp",
     initials: "SM",
     name: "Dra. Sofialeticia Morales Garza",
     company: "Legado Nuevo León",
@@ -265,7 +265,7 @@ const speakersData = [
     talkName: "IA en Educación"
   },
   {
-    img: "/speakers/juan-paura-garcia.png",
+    img: "/speakers/juan-paura-garcia.webp",
     initials: "JP",
     name: "Juan Paura García",
     company: "Gobierno de Nuevo León",
@@ -290,7 +290,7 @@ const speakersData = [
   },
 
   {
-    img: "/speakers/angel-casan-marcos-uerre.jpg",
+    img: "/speakers/angel-casan-marcos-uerre.webp",
     initials: "AC",
     name: "Ángel Casán Marcos",
     company: "U-ERRE",
@@ -313,7 +313,7 @@ const speakersData = [
     talkName: "IA en Educación Superior"
   },
   {
-    img: "/speakers/mario-adrian-flores-tec.jpg",
+    img: "/speakers/mario-adrian-flores-tec.webp",
     initials: "MF",
     name: "Mario Adrián Flores",
     company: "Tecnológico de Monterrey",
@@ -335,7 +335,7 @@ const speakersData = [
     talkName: "IA en Educación Superior"
   },
   {
-    img: "/speakers/dr-jean-g-guerrero-dib.jpg",
+    img: "/speakers/dr-jean-g-guerrero-dib.webp",
     initials: "JG",
     name: "Dr. Jean G. Guerrero Dib",
     company: "Universidad de Monterrey (UDEM)",
@@ -361,7 +361,7 @@ const speakersData = [
     talkName: "IA en Educación Superior"
   },
   {
-    img: "/speakers/mauricio-martinez.jpg",
+    img: "/speakers/mauricio-martinez.webp",
     initials: "MM",
     name: "Mauricio Martínez",
     company: "Broadway / Televisión",
@@ -386,7 +386,7 @@ const speakersData = [
     talkName: "Ser Humano en escena"
   },
   {
-    img: "/speakers/nayo-escobar.jpeg",
+    img: "/speakers/nayo-escobar.webp",
     imgPosition: "center",
     initials: "NE",
     name: "Nayo Escobar",
@@ -407,7 +407,7 @@ const speakersData = [
     talkName: "Ser Humano en escena"
   },
   {
-    img: "/speakers/marian-mimi-edmunds.jpg",
+    img: "/speakers/marian-mimi-edmunds.webp",
     initials: "ME",
     name: 'Marianna "Mimi" Edmunds',
     company: "CBS News / PBS",
@@ -431,7 +431,7 @@ const speakersData = [
     talkName: "Compromiso con la verdad"
   },
   {
-    img: "/speakers/sebastian-yatra.png",
+    img: "/speakers/sebastian-yatra.webp",
     initials: "SY",
     name: "Sebastián Yatra",
     company: "Embajador de Causas Sociales",
@@ -456,7 +456,7 @@ const speakersData = [
     talkName: "Cierre Musical"
   },
   {
-    img: "/speakers/jorge-lerdo-de-tejada.jpeg",
+    img: "/speakers/jorge-lerdo-de-tejada.webp",
     initials: "JL",
     name: "Jorge Lerdo de Tejada",
     company: "Singularity University",
@@ -481,7 +481,7 @@ const speakersData = [
     talkName: "Compromiso con la verdad"
   },
   {
-    img: "/speakers/farid-dieck-assad.jpg",
+    img: "/speakers/farid-dieck-assad.webp",
     initials: "FD",
     name: "Farid Dieck",
     company: "Creador de contenido",
@@ -501,7 +501,7 @@ const speakersData = [
     talkName: "Ser Humano en escena"
   },
   {
-    img: "/speakers/mons-carlos-alberto-santos-garcia.jpg",
+    img: "/speakers/mons-carlos-alberto-santos-garcia.webp",
     imgPosition: "center 15%",
     initials: "CS",
     name: "Mons. Carlos Alberto Santos",
@@ -529,7 +529,7 @@ const speakersData = [
     talkName: "Paz y Espiritualidad"
   },
   {
-    img: "/speakers/padre-david-jasso.png",
+    img: "/speakers/padre-david-jasso.webp",
     imgPosition: "center top",
     imgScale: "1.08",
     imgOffsetY: "0px",
@@ -556,7 +556,7 @@ const speakersData = [
     talkName: "Conexión y Fe"
   },
   {
-    img: "/speakers/bhikkhu-pannakara.png",
+    img: "/speakers/bhikkhu-pannakara.webp",
     initials: "BP",
     name: "Bhikkhu Pannakara",
     company: "Huong Dao Vipassana Bhavana",
@@ -579,7 +579,7 @@ const speakersData = [
     talkName: "Paz y Compasión"
   },
   {
-    img: "/speakers/abuelo-maya-antonio-oxte.jpg",
+    img: "/speakers/abuelo-maya-antonio-oxte.webp",
     imgScale: "1.08",
     imgOffsetY: "0px",
     imgPosition: "center top",
@@ -607,7 +607,7 @@ const speakersData = [
     talkName: "Sabiduría Ancestral"
   },
   {
-    img: "/speakers/pastor-federico.jpeg",
+    img: "/speakers/pastor-federico.webp",
     initials: "FE",
     name: "Pastor Federico Elizondo",
     company: "Fomento Pastoral de México, A.C.",
@@ -634,7 +634,7 @@ const speakersData = [
     talkName: "\"Inteligencia Artificial y Paz Mundial: una visión cristiana y ética\""
   },
   {
-    img: "/speakers/javier-prieto.jpg",
+    img: "/speakers/javier-prieto.webp",
     initials: "JP",
     name: "Javier Prieto",
     company: "SELIDER",
@@ -656,7 +656,7 @@ const speakersData = [
     talkName: "Maestro de Ceremonias"
   },
   {
-    img: "/speakers/monica-zambrano-vignau.jpg",
+    img: "/speakers/monica-zambrano-vignau.webp",
     initials: "MZ",
     name: "Mónica Zambrano Vignau",
     company: "Humind Care A.C.",
@@ -679,7 +679,7 @@ const speakersData = [
     talkName: "El Ser Humano como Guía"
   },
   {
-    img: "/speakers/sofia-lozano-snively.jpeg?v=2",
+    img: "/speakers/sofia-lozano-snively.webp?v=2",
     imgScale: "1.05",
     imgOffsetY: "0px",
     imgPosition: "center 15%",
@@ -706,7 +706,7 @@ const speakersData = [
     talkName: "El Ser Humano como Guía"
   },
   {
-    img: "/speakers/david-eaton.jpg",
+    img: "/speakers/david-eaton.webp",
     initials: "DE",
     name: "David Eaton",
     company: "Rotary Distrito 4130 / CPKC Railroad",
@@ -732,7 +732,7 @@ const speakersData = [
     talkName: "Liderazgo Rotario"
   },
   {
-    img: "/speakers/dr-gerardo-de-jesus-mendoza-jimenez.png",
+    img: "/speakers/dr-gerardo-de-jesus-mendoza-jimenez.webp",
     initials: "GM",
     name: "Dr. Gerardo de Jesús Mendoza Jiménez",
     company: "Subsecretaría de Desarrollo Magisterial",
@@ -751,7 +751,7 @@ const speakersData = [
     talkName: "Presentador"
   },
   {
-    img: "/speakers/dr-jesus-gonzalez-alvarez.jpeg",
+    img: "/speakers/dr-jesus-gonzalez-alvarez.webp",
     initials: "JG",
     name: "Dr. Jesús González Álvarez",
     company: "ÍNTTEGRA Sistemas y Servicios en Salud",
@@ -783,7 +783,7 @@ const speakersData = [
     talkName: "Medicina Regenerativa e Integrativa"
   },
   {
-    img: "/speakers/marisela-reyes.png",
+    img: "/speakers/marisela-reyes.webp",
     initials: "MR",
     name: "Marisela Reyes",
     company: "YO SOY / PRO HUMAN",
@@ -811,7 +811,7 @@ const speakersData = [
     talkName: "Consciencia Plena y Espiritualidad Práctica"
   },
   {
-    img: "/speakers/juan-jose-gutierrez.jpg",
+    img: "/speakers/juan-jose-gutierrez.webp",
     initials: "JG",
     name: "Mtro. Juan José Gutiérrez",
     company: "SNTE Sección 50",
@@ -839,7 +839,7 @@ const speakersData = [
     talkName: "Inteligencia Artificial vs. Inteligencia Natural: Retos de la Educación y la Sociedad"
   },
   {
-    img: "/speakers/susana-cabrera.jpg",
+    img: "/speakers/susana-cabrera.webp",
     initials: "SC",
     name: "Susana Cabrera",
     company: "Universidad Kirei",
@@ -864,7 +864,7 @@ const speakersData = [
     talkName: "Educación de la Salud y la Belleza"
   },
   {
-    img: "/speakers/orlando-londono.png",
+    img: "/speakers/orlando-londono.webp",
     imgPosition: "center 20%",
     imgScale: "1.45",
     collagePosition: "center 20%",
@@ -891,7 +891,7 @@ const speakersData = [
     talkName: "Derecho de Salud y Responsabilidad Médica"
   },
   {
-    img: "/speakers/lilia-elida-garcia.png",
+    img: "/speakers/lilia-elida-garcia.webp",
     initials: "LG",
     name: "Dra. Lilia Elida García Rodríguez",
     company: "UDEM Health",
@@ -922,7 +922,7 @@ const speakersData = [
     talkName: "Transformación de los Sistemas de Salud"
   },
   {
-    img: "/speakers/jesus-ancer.png",
+    img: "/speakers/jesus-ancer.webp",
     initials: "JA",
     name: "Dr. Jesús Ancer Rodríguez",
     company: "UANL / Fundación IMSS",
@@ -947,7 +947,7 @@ const speakersData = [
     talkName: "Retos de la Medicina y la Educación Superior"
   },
   {
-    img: "/speakers/carlos-sandoval.png",
+    img: "/speakers/carlos-sandoval.webp",
     initials: "CS",
     name: "Carlos Sandoval",
     company: "Grupo ORSAN",
@@ -973,7 +973,7 @@ const speakersData = [
     talkName: "Ética, Filantropía e Impacto Social"
   },
   {
-    img: "/speakers/pablo-merino.png",
+    img: "/speakers/pablo-merino.webp",
     imgPosition: "center 20%",
     imgScale: "1.25",
     collagePosition: "center 20%",
@@ -1000,7 +1000,7 @@ const speakersData = [
     talkName: "IA Consciente: tecnología para volver a ti"
   },
   {
-    img: "/speakers/flor-ontiveros.png",
+    img: "/speakers/flor-ontiveros.webp",
     initials: "FO",
     name: "Dra. Flor Ontiveros",
     company: "Universidad de Montemorelos",
@@ -1027,7 +1027,7 @@ const speakersData = [
     collagePosition: "center 20%"
   },
   {
-    img: "/speakers/yeyetsi-ordonez.jpg",
+    img: "/speakers/yeyetsi-ordonez.webp",
     initials: "YO",
     name: "Dra. Yeyetsi Ordoñez",
     company: "Facultad de Medicina UANL",
@@ -1056,7 +1056,7 @@ const speakersData = [
     collagePosition: "center 20%"
   },
   {
-    img: "/speakers/eduardo-donde.jpg",
+    img: "/speakers/eduardo-donde.webp",
     imgPosition: "center 20%",
     imgScale: "1.0",
     collagePosition: "center 20%",
@@ -1082,7 +1082,7 @@ const speakersData = [
     talkName: "Educación Especial e Integración Familiar"
   },
   {
-    img: "/speakers/sebastian-latapi.png",
+    img: "/speakers/sebastian-latapi.webp",
     imgPosition: "center 15%",
     imgScale: "1.3",
     collagePosition: "center 15%",
@@ -1106,7 +1106,7 @@ const speakersData = [
     talkName: "Apoyo a la Niñez y Salud"
   },
   {
-    img: "/speakers/gregorio-martinez.png",
+    img: "/speakers/gregorio-martinez.webp",
     initials: "GM",
     name: "Gregorio Martínez",
     company: "Televisa / N+ Monterrey",
@@ -1129,7 +1129,7 @@ const speakersData = [
     talkName: "El compromiso con la verdad en la era de la IA"
   },
   {
-    img: "/speakers/misael-pedraza.png",
+    img: "/speakers/misael-pedraza.webp",
     initials: "MP",
     name: "Misael Pedraza",
     company: "Universidad de Montemorelos / Consejo Interreligioso de NL",
@@ -1150,7 +1150,7 @@ const speakersData = [
     talkIcon: "🕊️"
   },
   {
-    img: "/speakers/enrique-bay.png",
+    img: "/speakers/enrique-bay.webp",
     imgPosition: "center 15%",
     imgScale: "1.15",
     collagePosition: "center 15%",
@@ -1176,7 +1176,7 @@ const speakersData = [
     talkName: "Humanos (IA, Capital y Poder)"
   },
   {
-    img: "/speakers/roberto-gonzalez.jpg",
+    img: "/speakers/roberto-gonzalez.webp",
     imgPosition: "center 15%",
     imgScale: "1.15",
     collagePosition: "center 15%",

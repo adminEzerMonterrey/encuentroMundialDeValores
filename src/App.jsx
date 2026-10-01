@@ -18,7 +18,7 @@ function SplashScreen({ onDone }) {
     // Solo mostramos las barras por unos instantes antes de revelar
     const t = setTimeout(() => {
       setPhase('revealing');
-    }, 800); // 800ms de espera antes de abrir las cortinas
+    }, 200); // breve pausa antes de abrir las cortinas
 
     return () => clearTimeout(t);
   }, []);
@@ -28,7 +28,7 @@ function SplashScreen({ onDone }) {
       setTimeout(() => {
         document.body.style.overflow = '';
         onDone();
-      }, 1200); // Tiempo que tardan las cortinas en subir
+      }, 1000); // Tiempo que tardan las cortinas en subir
     }
   }, [phase, onDone]);
 
@@ -77,7 +77,7 @@ function App() {
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
+    }, { threshold: 0, rootMargin: '0px 0px -32px 0px' });
 
     els.forEach(el => io.observe(el));
 
