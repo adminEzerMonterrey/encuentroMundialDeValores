@@ -39,16 +39,16 @@ export default function Sponsors() {
               grid-template-columns: repeat(7, 1fr);
             }
             .sponsors-row-3 {
-              grid-template-columns: repeat(7, 1fr);
+              grid-template-columns: repeat(8, 1fr);
             }
             .sponsors-row-4 {
-              grid-template-columns: repeat(8, 1fr);
+              grid-template-columns: repeat(7, 1fr);
             }
             .sponsors-row-5 {
               grid-template-columns: repeat(6, 1fr);
             }
             .sponsors-row-6 {
-              grid-template-columns: repeat(7, 1fr);
+              grid-template-columns: repeat(8, 1fr);
             }
             .sponsor-card {
               background: transparent;
@@ -141,24 +141,25 @@ export default function Sponsors() {
               ))}
             </div>
 
-            {/* Fila 3 - Riisa, Value, EMEPE, Media Group, Treviño Elizondo, Chapa González, Montemayor */}
+            {/* Fila 3 - Riisa, Value, EMEPE, EZER, Media Group, Treviño Elizondo, Chapa González, Montemayor */}
             <div className="sponsors-row sponsors-row-3 reveal-up">
               {[
                 { src: "riisa.png", alt: "Fundación Riisa", style: { transform: 'scale(1.20)' } },
                 { src: "value.png", alt: "Value Casa de Bolsa", style: { transform: 'scale(1.2)' } },
                 { src: "emepe.png", alt: "EMEPE", style: { transform: 'scale(1.85)' } },
+                { src: "ezer.png", alt: "EZER La Casa del Voluntario", style: { transform: 'scale(1.20)' } },
                 { src: "media-group.png", alt: "V Media Group", style: { transform: 'scale(1.30)' } },
                 { src: "trevino-elizondo.png", alt: "Asociación de Beneficencia Privada Treviño Elizondo", style: { transform: 'scale(1.20)' } },
                 { src: "fundacion-chapa-gonzalez.png", alt: "Fundación Chapa González", style: { transform: 'scale(1.15)' } },
                 { src: "logo-fundacion-alta-01.png", alt: "Fundación Beneficencia Jesús M. Montemayor", style: { transform: 'scale(2.20)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=6`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
+                  <img src={`/Sponsors/${sponsor.src}?v=20`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
 
-            {/* Fila 4 - Publikt, Zion Robotics, Canal 28, Televisa Monterrey, 6W News, EZER, Publirex, Entre Plantas y Flores */}
+            {/* Fila 4 - Publikt, Zion Robotics, Canal 28, Televisa Monterrey, 6W News, Publirex, Entre Plantas y Flores */}
             <div className="sponsors-row sponsors-row-4 reveal-up">
               {[
                 { src: "publikt.png", alt: "Publikt", style: { transform: 'scale(1.10)' } },
@@ -166,12 +167,11 @@ export default function Sponsors() {
                 { src: "canal-28.jpg", alt: "Canal 28", style: { transform: 'scale(1.05)', borderRadius: '6px' } },
                 { src: "televisa-monterrey.png", alt: "Televisa Monterrey", style: { transform: 'scale(1.15)' } },
                 { src: "6w-news.png", alt: "6W News", style: { transform: 'scale(1.15)' } },
-                { src: "ezer.png", alt: "EZER La Casa del Voluntario", style: { transform: 'scale(1.20)' } },
                 { src: "publirex.jpg", alt: "Publirex", style: { transform: 'scale(1.20)' } },
                 { src: "entre-plantas-y-flores.png", alt: "Entre Plantas y Flores", style: { transform: 'scale(1.45)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=19`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
+                  <img src={`/Sponsors/${sponsor.src}?v=20`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
@@ -187,14 +187,15 @@ export default function Sponsors() {
                 { src: "universidadMontemorelos.jpeg", alt: "Universidad de Montemorelos", style: { transform: 'scale(1.20)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=16`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
+                  <img src={`/Sponsors/${sponsor.src}?v=20`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
 
-            {/* Fila 6 - Printel, Delta Solutions, Nouvell, Consejo, CFC, Pasteles, Museo de Historia */}
+            {/* Fila 6 - Voxoy, Printel, Delta Solutions, Nouvell, Consejo, CFC, Pasteles, Museo de Historia */}
             <div className="sponsors-row sponsors-row-6 reveal-up">
               {[
+                { src: "voxoy.png", alt: "Voxoy" },
                 { src: "printel.png", alt: "Printel" },
                 { src: "delta-solutions.png", alt: "Delta Solutions", style: { transform: 'scale(1.75)' } },
                 { src: "nouvell.jpg", alt: "Nouvell", style: { transform: 'scale(1.20)' } },
@@ -204,7 +205,7 @@ export default function Sponsors() {
                 { src: "museo-historia.png", alt: "Museo de Historia Mexicana", style: { transform: 'scale(1.40)' } },
               ].map((sponsor, idx) => (
                 <div key={idx} className="sponsor-card">
-                  <img src={`/Sponsors/${sponsor.src}?v=16`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
+                  <img src={`/Sponsors/${sponsor.src}?v=20`} alt={sponsor.alt} loading="lazy" style={sponsor.style} />
                 </div>
               ))}
             </div>
